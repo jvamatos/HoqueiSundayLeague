@@ -103,6 +103,17 @@ def evaluate(m, test_mask, params, label=None, verbose=True):
     return pd.DataFrame(res).T, pm
 
 
+def load_matches(feature_files=("features_players.csv",)):
+    """Played games, with per-game feature columns joined by event_id (0 when missing)."""
+    m = pd.read_csv(DATA / "matches.csv")
+    m = m[m.played].reset_index(drop=True)
+    for f in feature_files:
+        if (DATA / f).exists():
+            fe = pd.read_csv(DATA / f)
+            m = m.merge(fe, on="event_id", how="left")
+    return m
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--tune", action="store_true", help="grid-search params on 2021-23")

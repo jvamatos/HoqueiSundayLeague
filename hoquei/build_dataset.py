@@ -1,4 +1,4 @@
-"""Merge archive (2015/16-2020/21) and API (2021/22-) games into data/matches.csv."""
+"""Merge archive (2007/08-2020/21) and API (2021/22-) games into data/matches.csv."""
 import html
 
 import pandas as pd
@@ -11,9 +11,10 @@ COLS = ["season", "competition", "phase", "round", "date", "home", "away",
 
 
 def load():
-    a = pd.read_csv(DATA / "archive_matches.csv")
-    b = pd.read_csv(DATA / "api_matches.csv")
-    m = pd.concat([a, b], ignore_index=True)
+    o = pd.read_csv(DATA / "archive_old_matches.csv")  # 2007/08 - 2014/15
+    a = pd.read_csv(DATA / "archive_matches.csv")      # 2015/16 - 2020/21
+    b = pd.read_csv(DATA / "api_matches.csv")          # 2021/22 -
+    m = pd.concat([o, a, b], ignore_index=True)
     # re-apply the alias table so name fixes don't need a re-scrape
     m["home"] = m.home.map(team_key)
     m["away"] = m.away.map(team_key)

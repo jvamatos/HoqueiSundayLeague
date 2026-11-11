@@ -11,7 +11,8 @@ from datetime import date
 import numpy as np
 import pandas as pd
 
-from .common import DATA
+from .common import DATA, team_key
+from .players import absence_features
 from .model import Params, TeamModel, division
 
 LEAGUES = {"1div": "1ª Divisão", "2div_norte": "2ª Divisão Norte", "2div_sul": "2ª Divisão Sul"}
@@ -62,6 +63,26 @@ def simulate_season(model, games, comp, sims, rng):
     return out.sort_values(["exp_points", "p_champion"], ascending=False).reset_index(drop=True)
 
 
+FEATURE_FILES = ("features_players.csv", "features_discipline.csv")
+
+
+def apply_absences(up, spec):
+    """Set squad/goalkeeper features of upcoming games for teams with known absences."""
+    notes = []
+    for part in filter(None, (x.strip() for x in spec.split(";"))):
+        team, _, players = part.partition(":")
+        sq, gk, found = absence_features(team.strip(), [p.strip() for p in players.split(",") if p.strip()])
+        key = team_key(team)
+        for side in "ha":
+            mask = up["home" if side == "h" else "away"] == key
+            up.loc[mask, f"sq_known_{side}"] = sq
+            up.loc[mask, f"gk_known_{side}"] = gk
+        notes.append(f"{name(key)} without {', '.join(found)}: squad power {100 * (np.exp(sq) - 1):+.0f}%"
+                     + (f", goalkeeper change {gk:+.2f} goals/game" if gk else ""))
+        print(notes[-1])
+    return notes
+
+
 def pct(x):
     return f"{100 * x:.0f}%"
 
@@ -71,10 +92,15 @@ def main():
     ap.add_argument("--as-of", default=str(date.today()))
     ap.add_argument("--days", type=int, default=8, help="predict games in the next N days")
     ap.add_argument("--sims", type=int, default=10000)
+    ap.add_argument("--absent", default="",
+                    help='known absences, e.g. "Benfica: Pau Bargallo, Zé Miranda; Porto: Malian"')
     args = ap.parse_args()
 
     m = pd.read_csv(DATA / "matches.csv")
     m["played"] = m.played.astype(bool)
+    for f in FEATURE_FILES:  # per-game features (squad strength, goalkeeper, ...)
+        if (DATA / f).exists():
+            m = m.merge(pd.read_csv(DATA / f), on="event_id", how="left")
     as_of = pd.Timestamp(args.as_of)
     # Only use results known before the as_of date
     m.loc[pd.to_datetime(m.date) >= as_of, "played"] = False
@@ -89,6 +115,8 @@ def main():
     d = pd.to_datetime(m.date)
     up = m[~m.played & (d >= as_of) & (d < as_of + pd.Timedelta(days=args.days))
            & m.competition.isin(LEAGUES) & (m.phase == "regular")]
+    up = up.copy()
+    notes = apply_absences(up, args.absent)
     preds = model.predict_df(up)
     up = up[["date", "competition", "round"]].join(preds)
     up.to_csv(out / "upcoming.csv", index=False)
@@ -111,6 +139,8 @@ def main():
              f"Model fitted on all games before {as_of.date()}, recent games weighted more "
              f"(half-life {model.params.half_life_days:.0f} days). Probabilities are for the "
              f"regulation-time result (no overtime / penalties).", ""]
+    if notes:
+        lines += ["**Ausências consideradas:** " + "; ".join(notes), ""]
     for comp, label in LEAGUES.items():
         g = cur[(cur.competition == comp) & (cur.phase == "regular")]
         if g.empty:
