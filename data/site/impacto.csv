@@ -1,0 +1,76 @@
+id,liga,jogador,equipa,posicao,ataque_pct,defesa_pct,impacto,jogos
+5815,1ª Divisão,Nil Roca,Benfica,Campo,13,-15,28,135
+5315,1ª Divisão,Gonzalo “Nolito” Romero,Sporting,Campo,11,-14,25,135
+4470,1ª Divisão,Constantino “Conti” Acevedo,Benfica,GR,5,-17,24,123
+6264,1ª Divisão,Zé Miranda,Benfica,Campo,8,-14,22,120
+4617,1ª Divisão,Pedro Henriques,Benfica,GR,6,-15,22,111
+4682,1ª Divisão,Xavier Malián “Mali”,Porto,GR,8,-14,22,151
+5782,1ª Divisão,Miguel Rocha,Barcelos,Campo,14,-7,21,131
+6667,1ª Divisão,Francisco “Kiko” Fernandes,Oliveirense,GR,9,-11,21,86
+21151,1ª Divisão,Alejandro “Xano” Edo,Sporting,GR,5,-14,21,123
+5120,1ª Divisão,Eduard “Edu” Lamas,Porto,Campo,10,-10,21,136
+5304,1ª Divisão,Gonçalo Pinto,Benfica,Campo,8,-12,20,149
+4439,1ª Divisão,André Girão,Sporting,GR,7,-13,20,98
+5481,1ª Divisão,João Rodrigues,Benfica,Campo,8,-11,20,65
+4945,1ª Divisão,Carlo di Benedetto,Porto,Campo,10,-9,19,146
+6006,1ª Divisão,Roberto “Roby” di Benedetto,Benfica,Campo,6,-13,19,131
+4734,1ª Divisão,Alessandro Verona,Sporting,Campo,9,-10,19,125
+28460,1ª Divisão,Guillem Torrents,Barcelos,GR,17,-3,19,32
+6429,1ª Divisão,Miguel Rocha,Candelária,GR,1,-16,19,112
+5282,1ª Divisão,Gonçalo Alves,Porto,Campo,9,-9,18,151
+4829,1ª Divisão,Andrés Castaño,Juventude de Viana,Campo,10,-8,18,110
+5955,1ª Divisão,Rafael “Rafa” Bessa,Sporting,Campo,7,-11,18,123
+5489,1ª Divisão,João Souto,Oliveirense,Campo,10,-8,18,138
+5171,1ª Divisão,Facundo “Facu” Navarro,Sporting,Campo,4,-13,17,126
+5017,1ª Divisão,Danilo Rampulla,Sporting,Campo,7,-10,17,133
+4670,1ª Divisão,Tiago Rodrigues,Juventude de Viana,GR,7,-9,17,61
+6245,2ª Divisão Sul,Xavier “Xavi” Lourenço,Turquel,Campo,6,-9,15,103
+5024,2ª Divisão Norte,David Castaño,Espinho,Campo,5,-8,14,111
+4684,2ª Divisão Sul,Zé Diogo Macedo,Alenquer,GR,9,-5,13,42
+5592,2ª Divisão Sul,Lucas Vicente,Alcobacense,Campo,-3,-15,13,109
+20865,2ª Divisão Sul,Guilherme “Gui” Duro,Turquel,GR,11,-2,12,54
+5221,2ª Divisão Sul,Francisco “Kiko” Contins,Alenquer,Campo,10,-3,12,101
+6159,2ª Divisão Sul,Tiago Mateus,Turquel,Campo,3,-8,11,109
+20690,2ª Divisão Sul,Miguel Matias,Benfica B,Campo,12,0,11,44
+5624,2ª Divisão Sul,Manuel Correia,Parede,Campo,1,-9,10,102
+15160,2ª Divisão Norte,Miguel Santos,Famalicense,GR,2,-8,10,34
+6061,2ª Divisão Sul,Salvador André,Turquel,Campo,6,-4,10,106
+20807,2ª Divisão Sul,Martim Vicente,Alcobacense,Campo,2,-7,10,55
+6620,2ª Divisão Norte,Diogo Fernandes,Póvoa,Campo,3,-6,10,52
+19704,2ª Divisão Norte,Martim Almeida,Famalicense,Campo,0,-9,9,65
+4702,2ª Divisão Sul,Afonso Sousa,Paço de Arcos,Campo,6,-3,9,111
+20735,2ª Divisão Norte,Tiago Estarreja,Académica,GR,6,-3,9,39
+33401,2ª Divisão Norte,Martim Oliveira,Póvoa,GR,-3,-11,9,25
+5009,2ª Divisão Sul,Daniel Passos,Turquel,Campo,5,-4,9,112
+4678,2ª Divisão Sul,Tomás Ventura,Alenquer,GR,4,-4,9,47
+6166,2ª Divisão Norte,Tiago Pereira “Bolinhas”,Póvoa,Campo,3,-5,8,109
+5086,2ª Divisão Sul,Diogo Pernas,Parede,Campo,4,-4,8,85
+4901,2ª Divisão Sul,Bernardo Sousa,Paço de Arcos,Campo,5,-3,8,104
+16939,2ª Divisão Norte,João Pereira,Póvoa,Campo,7,-1,8,82
+5310,2ª Divisão Norte,Gonçalo Silva,Póvoa,Campo,-2,-9,8,95
+6260,2ª Divisão Sul,Zé Costa,Turquel,Campo,7,-2,8,108
+40308,2ª Divisão Sul,Lourenço Miguelito,Paço de Arcos,Campo,3,-5,8,16
+4898,2ª Divisão Sul,Bernardo Ramalho,Parede,Campo,3,-5,8,92
+5523,2ª Divisão Norte,José Campos “Ziga”,Póvoa,Campo,2,-6,8,51
+6132,2ª Divisão Sul,Tiago Almeida,Turquel,Campo,3,-5,7,74
+4487,2ª Divisão Sul,Diogo Rodrigues “Matraco”,Paço de Arcos,GR,4,-4,7,101
+5227,2ª Divisão Sul,Francisco Beirante,Marinhense,Campo,4,-3,7,102
+20552,2ª Divisão Norte,Gonçalo Leal,Porto B,Campo,5,-2,7,27
+20786,2ª Divisão Sul,Tiago Duarte,Parede,Campo,0,-7,7,77
+5771,2ª Divisão Sul,Miguel Fortunato,Alenquer,Campo,4,-3,7,97
+5726,2ª Divisão Sul,Matéo Avondo,Alenquer,Campo,4,-3,7,56
+33384,2ª Divisão Sul,Lourenço Soares,Salesiana,GR,3,-4,7,51
+4695,2ª Divisão Norte,Afonso Lima,Carvalhos,Campo,3,-3,6,110
+20610,2ª Divisão Norte,Vasco Almeida,Valongo B,Campo,5,-1,6,27
+4996,2ª Divisão Norte,Cristiano Fangueiro,Póvoa,Campo,3,-3,6,46
+20702,2ª Divisão Norte,José Pedro Cunha,Valongo B,Campo,4,-2,6,31
+40300,2ª Divisão Norte,Diogo Abreu,Valongo B,Campo,2,-3,5,17
+5101,2ª Divisão Norte,Duarte “Duda” Terra,Cambra,Campo,3,-2,5,107
+22111,2ª Divisão Norte,Gonçalo Barbosa,Famalicense,Campo,1,-4,5,55
+5104,2ª Divisão Norte,Duarte Ferreira,Porto B,Campo,-1,-5,5,19
+20580,2ª Divisão Norte,Bruno Torres,Oliveirense B,GR,-1,-5,5,48
+20576,2ª Divisão Norte,Tomás Almeida,Oliveirense B,Campo,0,-5,5,41
+6246,2ª Divisão Norte,Xavier “Xavi” Pinho,Cambra,Campo,4,-1,4,110
+5116,2ª Divisão Norte,Edgar Peralta,Famalicense,Campo,2,-2,4,42
+5328,2ª Divisão Norte,Guilherme Leitão,Póvoa,Campo,3,-1,4,68
+14857,2ª Divisão Norte,Luís Melo,Póvoa,Campo,2,-2,4,98

@@ -60,6 +60,30 @@ def goal_rates(m, p, as_of):
     return ((agg["sum"] + 6 * 0.25) / (agg["count"] + 6)).to_dict()
 
 
+REGULAR = 0.3   # expected weight per game to count as a regular (outfield sum is 4, goalkeeper 1)
+
+
+def summarise(season, team, old, new, d_att, d_def, d_goals, ratings):
+    """Squad change of one team so far this season: effects and the main players in / out."""
+    names = _names()
+    imp = lambda pid: sum(ratings.get(pid, (0, 0)))
+    ins = sorted([pid for pid, w in new.items() if w >= REGULAR and old.get(pid, 0) < REGULAR / 3], key=imp, reverse=True)
+    outs = sorted([pid for pid, w in old.items() if w >= REGULAR and new.get(pid, 0) < REGULAR / 3], key=imp, reverse=True)
+    nm = lambda ids: ", ".join(names.get(i, str(i)) for i in ids[:3])
+    return dict(season=season, team=team, d_att=d_att, d_def=d_def, d_goals=d_goals,
+                arrivals=len(ins), departures=len(outs), main_arrivals=nm(ins), main_departures=nm(outs))
+
+
+_NAMES = {}
+
+
+def _names():
+    if not _NAMES:
+        n = pd.read_csv(DATA / "players.csv")
+        _NAMES.update(dict(zip(n.player_id, n.name.str.replace("®", "", regex=False).str.strip())))
+    return _NAMES
+
+
 def main():
     m, p = impact.load_participation()
     seasons = sorted(m.season.unique())
@@ -84,6 +108,7 @@ def main():
             return att, dfn, gls
 
         seen = {}   # team -> list of event ids this season so far
+        latest = {}
         for r in cur.itertuples():
             row = {"event_id": r.event_id}
             for side, tid in (("h", r.home_id), ("a", r.away_id)):
@@ -99,13 +124,13 @@ def main():
                         row[f"tr_att_{side}"] = (na - oa) * fade
                         row[f"tr_def_{side}"] = (nd - od) * fade
                         row[f"tr_gls_{side}"] = np.log(max(ng, 0.1) / max(og, 0.1)) * fade
-                        if k == 0:
-                            summary.append(dict(season=season, team=r.home if side == "h" else r.away,
-                                                d_att=na - oa, d_def=nd - od, d_goals=ng - og,
-                                                arrivals=len(set(new) - set(old[tid])),
-                                                departures=len(set(old[tid]) - set(new))))
+                        # latest state of the season for this team (overwritten game by game)
+                        latest[tid] = (season, r.home if side == "h" else r.away, old[tid], new,
+                                       na - oa, nd - od, ng - og)
                 seen[tid] = evs
             rows.append(row)
+        for season_, team, o, n, da, dd, dg in latest.values():
+            summary.append(summarise(season_, team, o, n, da, dd, dg, ratings))
     f = pd.DataFrame(rows)
     f.to_csv(DATA / "features_transfers.csv", index=False)
     s = pd.DataFrame(summary)

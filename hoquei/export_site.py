@@ -111,6 +111,32 @@ def main():
                   "favorito": fav, "acertou": np.where(fav == res, "sim", "não")}
                  ).sort_values(["data", "liga"]).to_csv(OUT / "ultimos_resultados.csv", index=False)
 
+    # 8. transfers: squad change vs last season, as % change in goals scored / conceded
+    tr = pd.read_csv(DATA / "transfers_summary.csv")
+    season_now = tr.season.max()
+    tr = tr[(tr.season == season_now) & tr.team.isin(league_of)].copy()
+    pd.DataFrame({
+        "id": tr.team.str.replace(" ", "-"), "liga": tr.team.map(league_of).map(LEAGUES), "equipa": tr.team.map(nm),
+        "ataque_pct": np.round(100 * (np.exp(tr.d_att) - 1)).astype(int),
+        "defesa_pct": np.round(100 * (np.exp(-tr.d_def) - 1)).astype(int),
+        "saldo": np.round(100 * (np.exp(tr.d_att) - 1) - 100 * (np.exp(-tr.d_def) - 1)).astype(int),
+        "entradas": tr.arrivals, "saidas": tr.departures,
+        "principais_entradas": tr.main_arrivals.fillna(""), "principais_saidas": tr.main_departures.fillna(""),
+    }).sort_values("saldo", ascending=False).to_csv(OUT / "mercado.csv", index=False)
+
+    # 9. player impact: % change in the team's goals scored / conceded per full game played
+    im = pd.read_csv(DATA / "player_impact.csv")
+    im = im[im.team.isin(league_of) & (im.games >= 15)].copy()
+    im["liga"] = im.team.map(league_of).map(LEAGUES)
+    im = im.sort_values("impact", ascending=False).groupby("liga").head(25)
+    pd.DataFrame({
+        "id": im.player_id, "liga": im.liga, "jogador": im.name.str.replace("®", "", regex=False).str.strip(),
+        "equipa": im.team.map(nm), "posicao": np.where(im.goalkeeper, "GR", "Campo"),
+        "ataque_pct": np.round(100 * (np.exp(im.attack) - 1)).astype(int),
+        "defesa_pct": np.round(100 * (np.exp(-im.defence) - 1)).astype(int),
+        "impacto": np.round(100 * im.impact).astype(int), "jogos": im.games.astype(int),
+    }).to_csv(OUT / "impacto.csv", index=False)
+
     # 7. model accuracy (walk-forward backtest, test period 2023/24 -> Nov 2026)
     pd.DataFrame([
         {"modelo": "Frequências base (sempre o mesmo palpite)", "acerto": 51.7, "log_loss": 0.977},

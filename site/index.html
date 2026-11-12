@@ -54,6 +54,9 @@
   .hp-list .mark-ok { color: var(--color-ok); font-weight: var(--cds-font-weight-medium); }
   .hp-list .mark-bad { color: var(--color-bad); font-weight: var(--cds-font-weight-medium); }
   .hp-list .sub { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .good { color: var(--color-ok); }
+  .bad { color: var(--color-bad); }
+  .hp-names { white-space: normal !important; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); min-width: 14em; }
 </style>
 
 <div class="hp">
@@ -73,6 +76,7 @@
       <button class="hp-tab" role="tab" data-tab="classificacao" aria-selected="false">Classificação</button>
       <button class="hp-tab" role="tab" data-tab="equipas" aria-selected="false">Equipas</button>
       <button class="hp-tab" role="tab" data-tab="jogadores" aria-selected="false">Jogadores</button>
+      <button class="hp-tab" role="tab" data-tab="mercado" aria-selected="false">Mercado</button>
       <button class="hp-tab" role="tab" data-tab="powerplay" aria-selected="false">Power play</button>
       <button class="hp-tab" role="tab" data-tab="modelo" aria-selected="false">Modelo</button>
     </div>
@@ -162,6 +166,39 @@
         </div>
       </div>
     </div>
+    <div class="hp-card" id="impacto">
+      <h2 class="hp-h2">Impacto na equipa</h2>
+      <p class="hp-note">Quanto a equipa muda quando o jogador joga um jogo inteiro: % de golos marcados e sofridos, já descontando colegas e adversários. Inclui guarda-redes. Como os titulares jogam quase sempre juntos, o valor reflete também a força da equipa. Desde 2021/22, mínimo 15 jogos.</p>
+      <div class="hp-wrap">
+        <table class="hp-table" data-source="impacto" data-row-key="id">
+          <thead><tr>
+            <th data-field="jogador">Jogador</th><th data-field="equipa">Equipa</th><th data-field="posicao">Posição</th>
+            <th data-field="ataque_pct" class="num">Golos marcados</th><th data-field="defesa_pct" class="num">Golos sofridos</th>
+            <th data-field="impacto" class="num">Impacto total</th><th data-field="jogos" class="num">Jogos</th>
+          </tr></thead>
+          <tbody data-draw="impacto"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- MERCADO -->
+  <section class="hp-section" id="mercado" hidden>
+    <div class="hp-card" id="mercado-card">
+      <h2 class="hp-h2">Quem se reforçou?</h2>
+      <p class="hp-note">Plantel desta época (jogadores convocados até agora) comparado com o da época passada, usando o impacto de cada jogador. Golos marcados: quanto mais, melhor. Golos sofridos: quanto menos, melhor. Conta só jogadores habituais. É uma estimativa no papel: nas previsões o efeito das transferências quase não mudou o acerto, porque os resultados das primeiras jornadas depressa mostram o nível real.</p>
+      <div class="hp-wrap">
+        <table class="hp-table" data-source="mercado" data-row-key="id">
+          <thead><tr>
+            <th data-field="equipa">Equipa</th><th data-field="saldo" class="num">Saldo</th>
+            <th data-field="ataque_pct" class="num">Golos marcados</th><th data-field="defesa_pct" class="num">Golos sofridos</th>
+            <th data-field="entradas" class="num">Entradas</th><th data-field="saidas" class="num">Saídas</th>
+            <th data-field="principais_entradas">Principais entradas</th><th data-field="principais_saidas">Principais saídas</th>
+          </tr></thead>
+          <tbody data-draw="mercado"></tbody>
+        </table>
+      </div>
+    </div>
   </section>
 
   <!-- POWER PLAY -->
@@ -214,7 +251,8 @@
   HP.num = (v, d = 1) => (v === null || v === '' || v === undefined) ? '—' : (+v).toFixed(d).replace('.', ',');
   HP.date = (s) => d3.utcFormat('%d/%m')(new Date(s + 'T00:00:00Z'));
   HP.rows = (id) => { const r = dash.data(id); return r.status === 'ok' ? r.data : null; };
-  HP.ALL = ['jogos', 'ultimos', 'classificacao', 'pontos-chart', 'equipas', 'equipas-chart', 'marcadores', 'guarda-redes', 'pp'];
+  HP.ALL = ['jogos', 'ultimos', 'classificacao', 'pontos-chart', 'equipas', 'equipas-chart', 'marcadores', 'guarda-redes', 'pp', 'mercado', 'impacto'];
+  HP.signed = (v) => (v === null || v === '' || v === undefined) ? '—' : `${+v > 0 ? '+' : ''}${Math.round(+v)}%`;
   // fill a <tbody> with one <tr> per row; cols: [field, cls, format]
   HP.fill = (tb, rows, key, cols, colspan) => {
     tb.replaceChildren();
@@ -382,6 +420,28 @@
       ['golos_por_pp', 'num fav', (v) => HP.num(v, 2)], ['inferioridades', 'num'], ['golos_sofridos_por_inferioridade', 'num', (v) => HP.num(v, 2)],
       ['golos_em_inferioridade', 'num'],
     ], 9);
+  });
+
+  // more goals scored is good, fewer conceded is good
+  const tone = (good) => (r, f) => (+r[f] === 0 ? 'num dim' : `num ${(+r[f] > 0) === good ? 'good' : 'bad'}`);
+  dash.draw('mercado', (tb) => {
+    const r = HP.rows('mercado');
+    const rows = r && r.filter((x) => x.liga === HP.liga).sort((a, b) => +b.saldo - +a.saldo);
+    HP.fill(tb, rows, 'id', [
+      ['equipa'], ['saldo', (x) => tone(true)(x, 'saldo') + ' fav', HP.signed],
+      ['ataque_pct', (x) => tone(true)(x, 'ataque_pct'), HP.signed], ['defesa_pct', (x) => tone(false)(x, 'defesa_pct'), HP.signed],
+      ['entradas', 'num'], ['saidas', 'num'], ['principais_entradas', 'hp-names'], ['principais_saidas', 'hp-names'],
+    ], 8);
+  });
+
+  dash.draw('impacto', (tb) => {
+    const r = HP.rows('impacto');
+    const rows = r && r.filter((x) => x.liga === HP.liga).slice(0, 20);
+    HP.fill(tb, rows, 'id', [
+      ['jogador'], ['equipa', 'dim'], ['posicao', 'dim'],
+      ['ataque_pct', (x) => tone(true)(x, 'ataque_pct'), HP.signed], ['defesa_pct', (x) => tone(false)(x, 'defesa_pct'), HP.signed],
+      ['impacto', 'num fav', (v) => (+v > 0 ? '+' : '') + v], ['jogos', 'num dim'],
+    ], 7);
   });
 
   dash.draw('precisao', (tb) => {
