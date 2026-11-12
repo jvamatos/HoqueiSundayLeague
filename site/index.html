@@ -55,6 +55,13 @@
   .hp-list .mark-bad { color: var(--color-bad); font-weight: var(--cds-font-weight-medium); }
   .hp-list .sub { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
   .good { color: var(--color-ok); }
+  .hp-stats { display: grid; grid-template-columns: 1fr auto auto; column-gap: 12px; row-gap: 8px; align-items: baseline; font-variant-numeric: tabular-nums; }
+  .hp-stats .lbl { color: var(--color-fg); }
+  .hp-stats .lbl small { display: block; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .hp-stats b { font-weight: var(--cds-font-weight-medium); text-align: right; font-size: var(--cds-font-size-heading); }
+  .hp-stats .rk { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); min-width: 5.5em; text-align: right; }
+  .hp-stats .rk.top { color: var(--color-ok); }
+  .hp-stats .rk.low { color: var(--color-bad); }
   .hp-facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: var(--cds-gap-md); align-items: start; }
   .hp-facts ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
   .hp-facts li { display: flex; flex-direction: column; gap: 3px; line-height: 1.45; }
@@ -65,7 +72,7 @@
 
 <div class="hp">
   <header class="hp-head" id="topo">
-    <h1 class="hp-title">Hóquei Previsões</h1>
+    <h1 class="hp-title">Hóquei Predictions</h1>
     <p class="hp-lede" id="resumo">Na 1ª Divisão, <b data-draw="t1-nome">—</b> é o favorito ao título com <b data-draw="t1-p">—</b> de probabilidade, à frente de <b data-draw="t2-nome">—</b> (<b data-draw="t2-p">—</b>) e <b data-draw="t3-nome">—</b> (<b data-draw="t3-p">—</b>).</p>
     <ul class="hp-how" id="como-ler">
       <li><b>Esta semana</b>: quem é favorito em cada jogo. A barra mostra as hipóteses de vitória da casa, empate e vitória de fora.</li>
@@ -79,6 +86,7 @@
       <button class="hp-tab" role="tab" data-tab="semana" aria-selected="true">Esta semana</button>
       <button class="hp-tab" role="tab" data-tab="classificacao" aria-selected="false">Classificação</button>
       <button class="hp-tab" role="tab" data-tab="equipas" aria-selected="false">Equipas</button>
+      <button class="hp-tab" role="tab" data-tab="estatisticas" aria-selected="false">Estatísticas</button>
       <button class="hp-tab" role="tab" data-tab="jogadores" aria-selected="false">Jogadores</button>
       <button class="hp-tab" role="tab" data-tab="mercado" aria-selected="false">Mercado</button>
       <button class="hp-tab" role="tab" data-tab="curiosidades" aria-selected="false">Curiosidades</button>
@@ -104,7 +112,7 @@
   </section>
 
   <!-- CLASSIFICAÇÃO -->
-  <section class="hp-section" id="classificacao" hidden>
+  <section class="hp-section" id="classificacao" hidden="">
     <div class="hp-card" id="pontos">
       <h2 class="hp-h2">Pontos esperados no fim da fase regular</h2>
       <p class="hp-note">Média de 10 000 simulações do resto da época, jogo a jogo. A barra escura são os pontos já conquistados.</p>
@@ -127,7 +135,7 @@
   </section>
 
   <!-- EQUIPAS -->
-  <section class="hp-section" id="equipas" hidden>
+  <section class="hp-section" id="equipas" hidden="">
     <div class="hp-card" id="mapa">
       <h2 class="hp-h2">Ataque e defesa</h2>
       <p class="hp-note">Golos que cada equipa marca e sofre por jogo contra uma equipa média da sua liga, segundo o modelo. Mais à direita, melhor ataque; mais acima, melhor defesa.</p>
@@ -148,7 +156,7 @@
   </section>
 
   <!-- JOGADORES -->
-  <section class="hp-section" id="jogadores" hidden>
+  <section class="hp-section" id="jogadores" hidden="">
     <div class="hp-grid">
       <div class="hp-card" id="marcadores">
         <h2 class="hp-h2">Marcadores</h2>
@@ -187,14 +195,79 @@
     </div>
   </section>
 
+  <!-- ESTATÍSTICAS -->
+  <section class="hp-section" id="estatisticas" hidden>
+    <div class="hp-bar">
+      <div class="hp-tabs">
+        <select class="dash-select" id="est-equipa" aria-label="Equipa" data-draw="est-equipa" data-source="estatisticas"></select>
+        <select class="dash-select" id="est-periodo" aria-label="Período">
+          <option value="2025/26">Época 2025/26</option>
+          <option value="desde 2023/24">Desde 2023/24</option>
+        </select>
+      </div>
+    </div>
+    <p class="hp-note" data-draw="est-contexto" data-source="estatisticas">—</p>
+    <div class="hp-grid">
+      <div class="hp-card" id="est-resumo">
+        <h2 class="hp-h2">Resumo</h2>
+        <div class="hp-stats">
+          <span class="lbl">Pontos por jogo</span><b data-draw="est" data-m="pontos_por_jogo" data-fmt="num2">—</b><span class="rk" data-draw="est-rank" data-m="pontos_por_jogo">—</span>
+          <span class="lbl">Golos marcados por jogo</span><b data-draw="est" data-m="golos_marcados_jogo" data-fmt="num2">—</b><span class="rk" data-draw="est-rank" data-m="golos_marcados_jogo">—</span>
+          <span class="lbl">Golos sofridos por jogo</span><b data-draw="est" data-m="golos_sofridos_jogo" data-fmt="num2">—</b><span class="rk" data-draw="est-rank" data-m="golos_sofridos_jogo">—</span>
+          <span class="lbl">Pontos acima do esperado<small>Pontos reais menos os que o modelo previa antes de cada jogo. Positivo: rendeu mais do que a sua força (ou teve sorte).</small></span><b data-draw="est" data-m="pontos_vs_esperado" data-fmt="signed1">—</b><span class="rk" data-draw="est-rank" data-m="pontos_vs_esperado">—</span>
+        </div>
+      </div>
+      <div class="hp-card" id="est-momentos">
+        <h2 class="hp-h2">Momentos do jogo</h2>
+        <div class="hp-stats">
+          <span class="lbl">Ganha quando marca primeiro</span><b data-draw="est" data-m="vitorias_marca_primeiro" data-fmt="pct">—</b><span class="rk" data-draw="est-rank" data-m="vitorias_marca_primeiro">—</span>
+          <span class="lbl">Pontos por jogo quando sofre primeiro</span><b data-draw="est" data-m="pontos_sofre_primeiro" data-fmt="num2">—</b><span class="rk" data-draw="est-rank" data-m="pontos_sofre_primeiro">—</span>
+          <span class="lbl">Ganha quando está a ganhar ao intervalo</span><b data-draw="est" data-m="vitorias_ganha_intervalo" data-fmt="pct">—</b><span class="rk" data-draw="est-rank" data-m="vitorias_ganha_intervalo">—</span>
+          <span class="lbl">Não perde quando está a perder ao intervalo</span><b data-draw="est" data-m="nao_perde_perde_intervalo" data-fmt="pct">—</b><span class="rk" data-draw="est-rank" data-m="nao_perde_perde_intervalo">—</span>
+          <span class="lbl">Jogos decididos por 1 golo ou empate<small>Vitórias, empates e derrotas; ao lado, pontos por jogo nesses jogos.</small></span><b data-draw="est" data-m="registo_1_golo" data-fmt="text">—</b><span class="rk" data-draw="est-rank" data-m="pontos_jogos_1_golo">—</span>
+          <span class="lbl">Saldo de golos por jogo na 1ª parte</span><b data-draw="est" data-m="saldo_1a_parte" data-fmt="signed2">—</b><span class="rk" data-draw="est-rank" data-m="saldo_1a_parte">—</span>
+          <span class="lbl">Saldo de golos por jogo na 2ª parte</span><b data-draw="est" data-m="saldo_2a_parte" data-fmt="signed2">—</b><span class="rk" data-draw="est-rank" data-m="saldo_2a_parte">—</span>
+        </div>
+      </div>
+      <div class="hp-card" id="est-bolas-paradas">
+        <h2 class="hp-h2">Bolas paradas</h2>
+        <div class="hp-stats">
+          <span class="lbl">Penáltis marcados / tentados</span><b data-draw="est" data-m="penaltis" data-fmt="text">—</b><span class="rk" data-draw="est" data-m="penaltis_convertidos" data-fmt="pct">—</span>
+          <span class="lbl">Livres diretos marcados / tentados</span><b data-draw="est" data-m="livres" data-fmt="text">—</b><span class="rk" data-draw="est" data-m="livres_convertidos" data-fmt="pct">—</span>
+          <span class="lbl">Penáltis do adversário que entram</span><b data-draw="est" data-m="penaltis_sofridos_convertidos" data-fmt="pct">—</b><span class="rk" data-draw="est-rank" data-m="penaltis_sofridos_convertidos">—</span>
+          <span class="lbl">Livres diretos do adversário que entram</span><b data-draw="est" data-m="livres_sofridos_convertidos" data-fmt="pct">—</b><span class="rk" data-draw="est-rank" data-m="livres_sofridos_convertidos">—</span>
+        </div>
+      </div>
+      <div class="hp-card" id="est-dependencia">
+        <h2 class="hp-h2">Quem marca</h2>
+        <div class="hp-stats">
+          <span class="lbl">Golos do melhor marcador<small>Percentagem dos golos da equipa marcados pelo seu melhor marcador.</small></span><b data-draw="est" data-m="pct_melhor_marcador" data-fmt="pct">—</b><span class="rk"></span>
+          <span class="lbl">Jogadores diferentes a marcar</span><b data-draw="est" data-m="marcadores_diferentes" data-fmt="int">—</b><span class="rk"></span>
+        </div>
+      </div>
+    </div>
+    <div class="hp-grid">
+      <div class="hp-card" id="est-quando">
+        <h2 class="hp-h2">Quando marca e quando sofre</h2>
+        <p class="hp-note">Golos por períodos de 5 minutos (2 partes de 25 minutos). Para cima, marcados; para baixo, sofridos.</p>
+        <div class="hp-chart" data-draw="est-tempos" data-source="tempos" style="min-height: 240px"></div>
+      </div>
+      <div class="hp-card" id="est-como">
+        <h2 class="hp-h2">Como marca</h2>
+        <p class="hp-note">Tipo de cada golo marcado, segundo o jogada-a-jogada.</p>
+        <div class="hp-chart" data-draw="est-tipos" data-source="estatisticas" style="min-height: 200px"></div>
+      </div>
+    </div>
+  </section>
+
   <!-- CURIOSIDADES -->
-  <section class="hp-section" id="curiosidades" hidden>
+  <section class="hp-section" id="curiosidades" hidden="">
     <p class="hp-note">Factos calculados a partir dos nossos dados: resultados desde 2007/08, jogadores desde 2021/22 e jogada-a-jogada desde 2022/23. Escolha a liga no menu.</p>
     <div class="hp-facts" data-draw="factos" data-source="factos"></div>
   </section>
 
   <!-- MERCADO -->
-  <section class="hp-section" id="mercado" hidden>
+  <section class="hp-section" id="mercado" hidden="">
     <div class="hp-card" id="mercado-card">
       <h2 class="hp-h2">Quem se reforçou?</h2>
       <p class="hp-note">Plantel desta época (jogadores convocados até agora) comparado com o da época passada, usando o impacto de cada jogador. Golos marcados: quanto mais, melhor. Golos sofridos: quanto menos, melhor. Conta só jogadores habituais. É uma estimativa no papel: nas previsões o efeito das transferências quase não mudou o acerto, porque os resultados das primeiras jornadas depressa mostram o nível real.</p>
@@ -213,7 +286,7 @@
   </section>
 
   <!-- POWER PLAY -->
-  <section class="hp-section" id="powerplay" hidden>
+  <section class="hp-section" id="powerplay" hidden="">
     <div class="hp-card" id="pp">
       <div class="hp-bar">
         <h2 class="hp-h2">Power play e inferioridade</h2>
@@ -237,7 +310,7 @@
   </section>
 
   <!-- MODELO -->
-  <section class="hp-section" id="modelo" hidden>
+  <section class="hp-section" id="modelo" hidden="">
     <div class="hp-card" id="precisao-card">
       <h2 class="hp-h2">Quão bom é o modelo?</h2>
       <p class="hp-lede" id="historico-resumo" data-draw="historico-resumo" data-source="historico">—</p>
@@ -268,7 +341,9 @@
   HP.num = (v, d = 1) => (v === null || v === '' || v === undefined) ? '—' : (+v).toFixed(d).replace('.', ',');
   HP.date = (s) => d3.utcFormat('%d/%m')(new Date(s + 'T00:00:00Z'));
   HP.rows = (id) => { const r = dash.data(id); return r.status === 'ok' ? r.data : null; };
-  HP.ALL = ['factos', 'jogos', 'ultimos', 'classificacao', 'pontos-chart', 'equipas', 'equipas-chart', 'marcadores', 'guarda-redes', 'pp', 'mercado', 'impacto'];
+  HP.periodo = '2025/26';
+  HP.EST = ['est-equipa', 'est-contexto', 'est', 'est-rank', 'est-tempos', 'est-tipos'];
+  HP.ALL = ['est-equipa', 'est-contexto', 'est', 'est-rank', 'est-tempos', 'est-tipos', 'factos', 'jogos', 'ultimos', 'classificacao', 'pontos-chart', 'equipas', 'equipas-chart', 'marcadores', 'guarda-redes', 'pp', 'mercado', 'impacto'];
   HP.signed = (v) => (v === null || v === '' || v === undefined) ? '—' : `${+v > 0 ? '+' : ''}${Math.round(+v)}%`;
   // fill a <tbody> with one <tr> per row; cols: [field, cls, format]
   HP.fill = (tb, rows, key, cols, colspan) => {
@@ -293,6 +368,8 @@
   const start = (location.hash || '').slice(1);
   if (tabs.some((t) => t.dataset.tab === start)) show(start);
   document.querySelectorAll('#liga').forEach((s) => s.addEventListener('change', () => { HP.liga = s.value; HP.ALL.forEach((n) => dash.draw(n)); }));
+  document.querySelectorAll('#est-periodo').forEach((s) => s.addEventListener('change', () => { HP.periodo = s.value; HP.EST.forEach((n) => dash.draw(n)); }));
+  document.querySelectorAll('#est-equipa').forEach((s) => s.addEventListener('change', () => { HP.equipa = s.value; HP.EST.forEach((n) => dash.draw(n)); }));
   document.querySelectorAll('#epoca').forEach((s) => s.addEventListener('change', () => { HP.epoca = s.value; dash.draw('pp'); }));
 </script>
 
@@ -509,6 +586,95 @@
       });
       card.append(h, ul); box.appendChild(card);
     });
+  });
+
+  // ---- Estatísticas: one team, one period
+  HP.estTeams = () => {
+    const r = HP.rows('estatisticas');
+    return r ? [...new Set(r.filter((x) => x.liga === HP.liga && x.periodo === HP.periodo).map((x) => x.equipa))].sort((a, b) => a.localeCompare(b, 'pt')) : [];
+  };
+  HP.estRow = () => {
+    const r = HP.rows('estatisticas'); if (!r) return null;
+    const teams = HP.estTeams();
+    const team = teams.includes(HP.equipa) ? HP.equipa : teams[0];
+    return r.find((x) => x.equipa === team && x.periodo === HP.periodo && x.liga === HP.liga) || null;
+  };
+  dash.draw('est-equipa', (sel) => {
+    const teams = HP.estTeams();
+    sel.replaceChildren(...teams.map((t) => new Option(t, t)));
+    if (teams.length) sel.value = teams.includes(HP.equipa) ? HP.equipa : teams[0];
+  });
+  dash.draw('est-contexto', (el) => {
+    const x = HP.estRow();
+    el.textContent = x ? `${x.equipa}: ${x.jogos} jogos de campeonato (fase regular e playoff), sobretudo na ${x.liga_periodo}. A posição compara com as ${x.equipas_liga} equipas desta época que jogaram nessa liga no mesmo período.` : 'Sem dados suficientes para esta equipa neste período.';
+  });
+  HP.fmt = (v, f) => {
+    if (v === null || v === undefined || v === '' || (f !== 'text' && isNaN(+v))) return '—';
+    if (f === 'pct') return `${Math.round(+v)}%`;
+    if (f === 'num2') return HP.num(v, 2);
+    if (f === 'int') return String(Math.round(+v));
+    if (f === 'signed1') return (+v > 0 ? '+' : '') + HP.num(v, 1);
+    if (f === 'signed2') return (+v > 0 ? '+' : '') + HP.num(v, 2);
+    return String(v);
+  };
+  dash.draw('est', (el) => {
+    const x = HP.estRow(); const m = el.dataset.m;
+    el.textContent = x ? HP.fmt(x[m], el.dataset.fmt) : '—';
+    if (x) { el.dataset.source = 'estatisticas'; el.dataset.field = m; el.dataset.where = `id=${encodeURIComponent(x.id)}`; }
+  });
+  dash.draw('est-rank', (el) => {
+    const x = HP.estRow(); const rk = x && x[`rank_${el.dataset.m}`];
+    if (!x || rk === '' || rk === undefined || isNaN(+rk)) { el.textContent = '—'; el.className = 'rk'; return; }
+    const n = +x.equipas_liga;
+    el.textContent = `${Math.round(+rk)}º de ${n}`;
+    el.className = 'rk' + (+rk <= 3 ? ' top' : +rk > n - 3 ? ' low' : '');
+    el.dataset.source = 'estatisticas'; el.dataset.field = `rank_${el.dataset.m}`; el.dataset.where = `id=${encodeURIComponent(x.id)}`;
+  });
+
+  dash.draw('est-tempos', (box) => {
+    const r = HP.rows('tempos'); const x = HP.estRow();
+    box.replaceChildren();
+    if (!r || !x) { box.textContent = '—'; return; }
+    const rows = r.filter((d) => d.equipa === x.equipa && d.periodo === x.periodo && d.liga === x.liga).sort((a, b) => +a.ordem - +b.ordem);
+    const W = box.clientWidth || 600, H = 240, m = { t: 14, r: 8, b: 30, l: 30 };
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('height', H).attr('viewBox', `0 0 ${W} ${H}`)
+      .attr('role', 'img').attr('aria-label', `Golos marcados e sofridos por período de 5 minutos, ${x.equipa}`);
+    const max = d3.max(rows, (d) => Math.max(+d.golos_marcados, +d.golos_sofridos)) || 1;
+    const xs = d3.scaleBand().domain(rows.map((d) => d.minuto)).range([m.l, W - m.r]).padding(0.2);
+    const y = d3.scaleLinear().domain([-max, max]).range([H - m.b, m.t]);
+    svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(4).tickFormat((v) => Math.abs(v)))
+      .call((g) => g.select('.domain').remove()).call((g) => g.selectAll('line').style('stroke', 'var(--cds-chart-grid)'));
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(0)).attr('y2', y(0)).style('stroke', 'var(--cds-chart-axis)');
+    const half = xs('25-30\'');
+    if (half !== undefined) svg.append('line').attr('x1', half - xs.step() * 0.1).attr('x2', half - xs.step() * 0.1).attr('y1', m.t).attr('y2', H - m.b).style('stroke', 'var(--cds-chart-reference)').style('stroke-dasharray', '3 3');
+    const tip = HP.tip(box);
+    const g = svg.append('g').selectAll('g').data(rows).join('g');
+    g.append('rect').attr('x', (d) => xs(d.minuto)).attr('width', xs.bandwidth()).attr('y', (d) => y(+d.golos_marcados)).attr('height', (d) => y(0) - y(+d.golos_marcados)).style('fill', dash.colors[0]);
+    g.append('rect').attr('x', (d) => xs(d.minuto)).attr('width', xs.bandwidth()).attr('y', y(0)).attr('height', (d) => y(-d.golos_sofridos) - y(0)).style('fill', 'var(--cds-chart-status-critical)').style('opacity', 0.7);
+    g.append('rect').attr('x', (d) => xs(d.minuto) - xs.step() * 0.1).attr('width', xs.step()).attr('y', m.t).attr('height', H - m.t - m.b).style('fill', 'transparent')
+      .on('pointermove', (ev, d) => tip.show(ev, `${d.minuto}: ${d.golos_marcados} marcados, ${d.golos_sofridos} sofridos`)).on('pointerleave', () => tip.hide());
+    const ticks = rows.filter((d, i) => W > 480 || i % 2 === 0);
+    svg.append('g').selectAll('text').data(ticks).join('text').attr('x', (d) => xs(d.minuto) + xs.bandwidth() / 2).attr('y', H - 10).attr('text-anchor', 'middle').text((d) => d.minuto);
+  });
+
+  dash.draw('est-tipos', (box) => {
+    const x = HP.estRow();
+    box.replaceChildren();
+    if (!x) { box.textContent = '—'; return; }
+    const types = [['pct_bola_corrida', 'Bola corrida'], ['pct_power_play', 'Power play'], ['pct_livre_direto', 'Livre direto'],
+      ['pct_penalti', 'Penálti'], ['pct_inferioridade', 'Em inferioridade'], ['pct_recarga', 'Recarga']]
+      .map(([f, label]) => ({ f, label, v: +x[f] })).filter((d) => !isNaN(d.v));
+    if (!types.length) { box.textContent = 'Golos insuficientes neste período.'; return; }
+    const W = box.clientWidth || 500, rowH = 26, m = { t: 4, r: 44, b: 4, l: 120 };
+    const H = m.t + m.b + types.length * rowH;
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('height', H).attr('viewBox', `0 0 ${W} ${H}`)
+      .attr('role', 'img').attr('aria-label', `Tipos de golo, ${x.equipa}`);
+    const xs = d3.scaleLinear().domain([0, 100]).range([m.l, W - m.r]);
+    const y = d3.scaleBand().domain(types.map((d) => d.label)).range([m.t, H - m.b]).padding(0.25);
+    const g = svg.append('g').selectAll('g').data(types).join('g');
+    g.append('text').attr('class', 'lbl').attr('x', m.l - 8).attr('y', (d) => y(d.label) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').text((d) => d.label);
+    g.append('rect').attr('x', xs(0)).attr('y', (d) => y(d.label)).attr('height', y.bandwidth()).attr('rx', 2).attr('width', (d) => xs(d.v) - xs(0)).style('fill', dash.colors[0]);
+    g.append('text').attr('x', (d) => xs(d.v) + 4).attr('y', (d) => y(d.label) + y.bandwidth() / 2).attr('dy', '0.35em').text((d) => `${Math.round(d.v)}%`);
   });
 
   dash.draw('precisao', (tb) => {
