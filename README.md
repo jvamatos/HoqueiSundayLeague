@@ -99,6 +99,17 @@ What we learned:
   log strictness). This slightly improves goal-total predictions (over/under 7.5 log loss
   0.668 → 0.666) but not who wins, so it is not in the default model.
 
+* **Player impact (adjusted plus-minus, `hoquei/impact.py`):** every player gets an attack
+  and a defence rating from who played in each game since 2021/22 (starters weigh more than
+  bench players), fitted together so each player is credited only for what he adds beyond
+  teammates and opponents. Outfield substitutions are not in the play-by-play (99.9% of the
+  logged substitutions are goalkeeper changes), so on-rink plus-minus per goal is not
+  possible. Result: no reliable gain. Test 2023–26 0.8144 → 0.8141 log loss, but 2022/23
+  gets worse (0.821 → 0.837 even with strong shrinkage). The attack part overlaps with the
+  squad-scoring feature (its effect even gets the wrong sign), and the ratings mostly
+  reflect team quality because regulars almost always play together. It is not in the
+  default model; the ratings are in `data/player_impact.csv` as a statistic.
+
 Power-play statistics (goals per PP, penalty kill, short-handed goals, cards and referee
 tables) are in `data/analysis/power_play.md`. Key facts: about 1.1 power plays per team
 per game, 0.5–0.7 goals per power play (including the free hit that comes with a blue

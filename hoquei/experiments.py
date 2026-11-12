@@ -8,12 +8,13 @@ from .backtest import evaluate, load_matches as _load
 
 
 def load_matches():
-    return _load(("features_players.csv", "features_discipline.csv"))
+    return _load(("features_players.csv", "features_discipline.csv", "features_impact.csv"))
 from .model import Params
 
 BASE = dict(half_life_days=240, l2=2.0, prior_half_life=1095)
 
 SQ_GK = (("sq_known", "own"), ("gk_known", "opp"))
+IMP = (("imp_att", "own"), ("imp_def", "opp"))
 VARIANTS = {
     "baseline (no prior)": Params(240, 0.5, prior_half_life=None, features=()),
     "long-run prior": Params(**BASE, features=()),
@@ -23,6 +24,8 @@ VARIANTS = {
     "+ squad + gk + power play": Params(**BASE, features=SQ_GK + (("ppx", "own"),)),
     "+ squad + gk + referee": Params(**BASE, features=SQ_GK + (("ref", "own"),)),
     "+ squad + gk + pp + referee": Params(**BASE, features=SQ_GK + (("ppx", "own"), ("ref", "own"))),
+    "+ squad + gk + impact": Params(**BASE, features=SQ_GK + IMP),
+    "impact only (no squad/gk)": Params(**BASE, features=IMP),
 }
 
 
