@@ -82,21 +82,73 @@
   .hp-chip { align-self: flex-start; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); border: 1px solid var(--color-border-line); border-radius: 999px; padding: 0 8px; }
   .bad { color: var(--color-bad); }
   .hp-names { white-space: normal !important; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); min-width: 14em; }
+
+  /* ---------- design layer ---------- */
+  .hp { gap: var(--cds-gap-xl); }
+  .hp-head { gap: var(--cds-gap-sm); }
+  .hp-top { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--cds-gap-md); }
+  .hp-eyebrow { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-transform: uppercase; letter-spacing: .08em; }
+  .hp-title { font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.05; letter-spacing: -0.01em; }
+  .hp-lede { font-size: var(--cds-font-size-heading); color: var(--color-fg-muted); line-height: 1.45; max-width: 60ch; }
+  .hp-lede b { color: var(--color-fg); }
+  .hp-howto summary { cursor: pointer; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); width: fit-content; }
+  .hp-howto ul { margin: var(--cds-gap-xs) 0 0; padding-left: 1.1em; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); line-height: 1.6; }
+  .hp-nav { display: flex; gap: 2px; overflow-x: auto; border-bottom: 1px solid var(--color-border-line); scrollbar-width: none; position: sticky; top: env(safe-area-inset-top, 0px); background: var(--color-bg); z-index: 2; }
+  .hp-nav::-webkit-scrollbar { display: none; }
+  .hp-nav .hp-tab { border: 0; border-radius: 0; background: transparent; padding: 10px 12px; color: var(--color-fg-muted); white-space: nowrap; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+  .hp-nav .hp-tab:hover { color: var(--color-fg); }
+  .hp-nav .hp-tab[aria-selected="true"] { background: transparent; color: var(--color-fg); border-bottom-color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+  .hp-section { gap: var(--cds-gap-lg); }
+  .hp-card { border-radius: calc(var(--cds-radius) * 1.5); gap: var(--cds-gap-sm); box-shadow: 0 1px 2px color-mix(in srgb, var(--color-fg) 5%, transparent); }
+  .hp-h2 { font-size: var(--cds-font-size-heading); letter-spacing: -0.005em; }
+  .hp-note { font-size: var(--cds-font-size-caption); line-height: 1.5; }
+  .hp-table th { text-transform: uppercase; letter-spacing: .05em; font-size: 11px; padding: 8px 10px; }
+  .hp-table td { padding: 9px 10px; border-bottom-color: color-mix(in srgb, var(--color-border-line) 70%, transparent); }
+  .hp-table tbody tr:hover td { background: color-mix(in srgb, var(--color-fg) 4%, transparent); }
+  .hp-table tbody tr:last-child td { border-bottom: 0; }
+  .hp-game { border-radius: calc(var(--cds-radius) * 1.5); padding: var(--cds-pad-lg); gap: 10px; transition: transform .15s ease, box-shadow .15s ease; }
+  @media (prefers-reduced-motion: no-preference) { .hp-game:hover { transform: translateY(-1px); box-shadow: 0 6px 18px color-mix(in srgb, var(--color-fg) 8%, transparent); } }
+  .hp-game-teams { font-size: 1.15rem; }
+  .hp-stack { height: 8px; gap: 2px; background: transparent; }
+  .hp-stack i { border-radius: 999px; }
+  .hp-verdict { font-weight: var(--cds-font-weight-medium); }
+  .hp-list li { padding: 10px 0; }
+  .hp-ficha { gap: var(--cds-gap-md); }
+  .hp-ficha-teams { font-size: 1.15rem; padding-bottom: var(--cds-gap-sm); border-bottom: 1px solid var(--color-border-line); }
+  .hp-ficha-rows { gap: 4px 16px; }
+  .hp-ficha-rows .k { margin-top: 10px; }
+  .hp-chip { background: color-mix(in srgb, var(--color-fg) 5%, transparent); border-color: transparent; }
+  .hp-facts .hp-card { gap: var(--cds-gap-md); }
+  .hp-stats { row-gap: 12px; }
+  .hp-stats b { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: 1.35rem; }
+  .dash-select { min-width: 10rem; }
 </style>
 
 <div class="hp">
   <header class="hp-head" id="topo">
-    <h1 class="hp-title">Hóquei Predictions</h1>
-    <p class="hp-lede" id="resumo">Na 1ª Divisão, <b data-draw="t1-nome">—</b> é o favorito ao título com <b data-draw="t1-p">—</b> de probabilidade, à frente de <b data-draw="t2-nome">—</b> (<b data-draw="t2-p">—</b>) e <b data-draw="t3-nome">—</b> (<b data-draw="t3-p">—</b>).</p>
-    <ul class="hp-how" id="como-ler">
-      <li><b>Esta semana</b>: quem é favorito em cada jogo. A barra mostra as hipóteses de vitória da casa, empate e vitória de fora.</li>
-      <li><b>Classificação</b>: como deve acabar a época, a partir de 10 000 simulações.</li>
-      <li>Escolha a liga no menu à direita. As percentagens são para os 50 minutos (sem prolongamento nem penáltis).</li>
-    </ul>
+    <div class="hp-top">
+      <div class="hp-titles">
+        <p class="hp-eyebrow">Hóquei em patins · Época 2026/27</p>
+        <h1 class="hp-title">Hóquei Predictions</h1>
+      </div>
+      <select class="dash-select" id="liga" aria-label="Liga">
+        <option value="1ª Divisão">1ª Divisão</option>
+        <option value="2ª Divisão Norte">2ª Divisão Norte</option>
+        <option value="2ª Divisão Sul">2ª Divisão Sul</option>
+      </select>
+    </div>
+    <p class="hp-lede" id="resumo">Na 1ª Divisão, <b data-draw="t1-nome">—</b> é o favorito ao título com <b data-draw="t1-p">—</b>, à frente de <b data-draw="t2-nome">—</b> (<b data-draw="t2-p">—</b>) e <b data-draw="t3-nome">—</b> (<b data-draw="t3-p">—</b>).</p>
+    <details class="hp-howto" id="como-ler">
+      <summary>Como ler este painel</summary>
+      <ul>
+        <li>As percentagens são para os 50 minutos de jogo, sem prolongamento nem penáltis.</li>
+        <li>A liga escolhida no menu aplica-se a todas as secções.</li>
+        <li>O modelo usa todos os resultados desde 2007/08, a Taça, as competições europeias e os plantéis de cada jogo.</li>
+      </ul>
+    </details>
   </header>
 
-  <div class="hp-bar">
-    <div class="hp-tabs" role="tablist" aria-label="Secções">
+    <nav class="hp-nav" role="tablist" aria-label="Secções">
       <button class="hp-tab" role="tab" data-tab="semana" aria-selected="true">Esta semana</button>
       <button class="hp-tab" role="tab" data-tab="fichas" aria-selected="false">Fichas 2ª Sul</button>
       <button class="hp-tab" role="tab" data-tab="classificacao" aria-selected="false">Classificação</button>
@@ -107,13 +159,7 @@
       <button class="hp-tab" role="tab" data-tab="curiosidades" aria-selected="false">Curiosidades</button>
       <button class="hp-tab" role="tab" data-tab="powerplay" aria-selected="false">Power play</button>
       <button class="hp-tab" role="tab" data-tab="modelo" aria-selected="false">Modelo</button>
-    </div>
-    <select class="dash-select" id="liga" aria-label="Liga">
-      <option value="1ª Divisão">1ª Divisão</option>
-      <option value="2ª Divisão Norte">2ª Divisão Norte</option>
-      <option value="2ª Divisão Sul">2ª Divisão Sul</option>
-    </select>
-  </div>
+    </nav>
 
   <!-- ESTA SEMANA -->
   <section class="hp-section" id="semana">
@@ -121,14 +167,14 @@
     <div class="hp-games" data-draw="jogos" data-source="jogos"></div>
     <div class="hp-card" id="ultimos">
       <h2 class="hp-h2">Como correu a última semana</h2>
-      <p class="hp-note">Em todas as ligas, o favorito do modelo ganhou <b data-draw="acertos" data-source="acerto_semana" data-field="acertos" data-row="0">—</b> de <b data-draw="total" data-source="acerto_semana" data-field="jogos" data-row="0">—</b> jogos. As percentagens foram calculadas antes de cada jogo.</p>
+      <p class="hp-note">O favorito do modelo ganhou <b data-draw="acertos" data-source="acerto_semana" data-field="acertos" data-row="0">—</b> de <b data-draw="total" data-source="acerto_semana" data-field="jogos" data-row="0">—</b> jogos. As percentagens foram calculadas antes de cada jogo.</p>
       <ul class="hp-list" data-draw="ultimos" data-source="ultimos"></ul>
     </div>
   </section>
 
   <!-- FICHAS 2ª SUL -->
   <section class="hp-section" id="fichas" hidden>
-    <p class="hp-note">Contexto para os vossos palpites da 2ª Divisão Sul, jogo a jogo. Fator casa: diferença de golos por jogo em casa menos fora, nos últimos 3 anos (mais alto = muito mais forte em casa; nas contas do modelo, esta diferença entre equipas não se repete de época para época, mas fica aqui para cada um julgar). A previsão do modelo está fechada no fim de cada ficha, para não influenciar.</p>
+    <p class="hp-note">Tudo o que ajuda a fazer o palpite, jogo a jogo. O fator casa compara a diferença de golos em casa e fora nos últimos 3 anos. A previsão do modelo fica fechada no fim de cada ficha.</p>
     <div class="hp-fichas" data-draw="fichas" data-source="fichas"></div>
   </section>
 
@@ -136,12 +182,12 @@
   <section class="hp-section" id="classificacao" hidden="">
     <div class="hp-card" id="pontos">
       <h2 class="hp-h2">Pontos esperados no fim da fase regular</h2>
-      <p class="hp-note">Média de 10 000 simulações do resto da época, jogo a jogo. A barra escura são os pontos já conquistados.</p>
+      <p class="hp-note">10 000 simulações do resto da época. A parte escura são os pontos já conquistados.</p>
       <div class="hp-chart" data-draw="pontos-chart" data-source="classificacao"></div>
     </div>
     <div class="hp-card" id="odds">
       <h2 class="hp-h2">Probabilidades da época</h2>
-      <p class="hp-note">Hipótese de cada equipa acabar a fase regular em 1º, na zona alta (top 8, que vai ao playoff, na 1ª Divisão; top 2 nas 2ª Divisões) ou nos 3 últimos lugares. Formato assumido a partir das épocas anteriores.</p>
+      <p class="hp-note">Zona alta: top 8 (playoff) na 1ª Divisão, top 2 nas 2ª Divisões. Desce: 3 últimos.</p>
       <div class="hp-wrap">
         <table class="hp-table" data-source="classificacao" data-row-key="id">
           <thead><tr>
@@ -159,7 +205,7 @@
   <section class="hp-section" id="equipas" hidden="">
     <div class="hp-card" id="mapa">
       <h2 class="hp-h2">Ataque e defesa</h2>
-      <p class="hp-note">Golos que cada equipa marca e sofre por jogo contra uma equipa média da sua liga, segundo o modelo. Mais à direita, melhor ataque; mais acima, melhor defesa.</p>
+      <p class="hp-note">Golos por jogo contra uma equipa média da liga. À direita, melhor ataque; em cima, melhor defesa.</p>
       <div class="hp-chart" data-draw="equipas-chart" data-source="equipas" style="min-height: 360px"></div>
     </div>
     <div class="hp-card" id="ranking">
@@ -181,7 +227,7 @@
     <div class="hp-grid">
       <div class="hp-card" id="marcadores">
         <h2 class="hp-h2">Marcadores</h2>
-        <p class="hp-note">Golos por jogo no último ano, com mais peso nos jogos recentes. Golos na 2ª Divisão valem 0,7. Segue o jogador entre clubes.</p>
+        <p class="hp-note">Golos por jogo no último ano, com mais peso nos jogos recentes.</p>
         <div class="hp-wrap">
           <table class="hp-table" data-source="marcadores" data-row-key="id">
             <thead><tr><th data-field="jogador">Jogador</th><th data-field="equipa">Equipa</th><th data-field="golos_por_jogo" class="num">Golos/jogo</th><th data-field="jogos_recentes" class="num">Jogos</th></tr></thead>
@@ -191,7 +237,7 @@
       </div>
       <div class="hp-card" id="guarda-redes">
         <h2 class="hp-h2">Guarda-redes</h2>
-        <p class="hp-note">Golos evitados por jogo: quantos golos o adversário costuma marcar menos os que este guarda-redes sofreu.</p>
+        <p class="hp-note">Golos que o adversário costuma marcar, menos os que sofreu, por jogo.</p>
         <div class="hp-wrap">
           <table class="hp-table" data-source="guarda_redes" data-row-key="id">
             <thead><tr><th data-field="jogador">Guarda-redes</th><th data-field="equipa">Equipa</th><th data-field="golos_evitados_por_jogo" class="num">Evitados/jogo</th><th data-field="jogos_recentes" class="num">Jogos</th></tr></thead>
@@ -212,7 +258,7 @@
           <select class="dash-select" id="ps-equipa" aria-label="Equipa" data-draw="ps-equipa" data-source="jogadores_stats"></select>
         </div>
       </div>
-      <p class="hp-note">Jogos de campeonato (fase regular e playoff) dos jogadores que estão esta época na liga escolhida. Tipo de golo segundo o jogada-a-jogada (desde 2022/23). Assistências só existem na 1ª Divisão, desde 2025/26. Penáltis e livres: marcados / tentados. Clique no título de uma coluna para ordenar.</p>
+      <p class="hp-note">Jogos de campeonato. Assistências só na 1ª Divisão, desde 2025/26. Penáltis e livres: marcados / tentados. Clique numa coluna para ordenar.</p>
       <div class="hp-wrap">
         <table class="hp-table" data-source="jogadores_stats" data-row-key="id">
           <thead><tr>
@@ -230,7 +276,7 @@
     </div>
     <div class="hp-card" id="estatisticas-gr">
       <h2 class="hp-h2">Estatísticas de guarda-redes</h2>
-      <p class="hp-note">Mesmo período e equipa escolhidos acima. Penáltis e livres diretos: defendidos / enfrentados.</p>
+      <p class="hp-note">Penáltis e livres diretos: defendidos / enfrentados.</p>
       <div class="hp-wrap">
         <table class="hp-table" data-source="gr_stats" data-row-key="id">
           <thead><tr>
@@ -313,12 +359,12 @@
     <div class="hp-grid">
       <div class="hp-card" id="est-quando">
         <h2 class="hp-h2">Quando marca e quando sofre</h2>
-        <p class="hp-note">Golos por períodos de 5 minutos (2 partes de 25 minutos). Para cima, marcados; para baixo, sofridos.</p>
+        <p class="hp-note">Por períodos de 5 minutos. Em cima, marcados; em baixo, sofridos.</p>
         <div class="hp-chart" data-draw="est-tempos" data-source="tempos" style="min-height: 240px"></div>
       </div>
       <div class="hp-card" id="est-como">
         <h2 class="hp-h2">Como marca</h2>
-        <p class="hp-note">Tipo de cada golo marcado, segundo o jogada-a-jogada.</p>
+        <p class="hp-note">Tipo de cada golo marcado.</p>
         <div class="hp-chart" data-draw="est-tipos" data-source="estatisticas" style="min-height: 200px"></div>
       </div>
     </div>
@@ -326,7 +372,7 @@
 
   <!-- CURIOSIDADES -->
   <section class="hp-section" id="curiosidades" hidden="">
-    <p class="hp-note">Factos calculados a partir dos nossos dados: resultados desde 2007/08, jogadores desde 2021/22 e jogada-a-jogada desde 2022/23. Escolha a liga no menu.</p>
+    <p class="hp-note">Recordes, figuras e manias de cada equipa, calculados a partir dos dados.</p>
     <div class="hp-facts" data-draw="factos" data-source="factos"></div>
   </section>
 
@@ -378,7 +424,7 @@
     <div class="hp-card" id="precisao-card">
       <h2 class="hp-h2">Quão bom é o modelo?</h2>
       <p class="hp-lede" id="historico-resumo" data-draw="historico-resumo" data-source="historico">—</p>
-      <p class="hp-note">Testado em 1 762 jogos de 2023/24 a novembro de 2026, como se fosse em direto: em cada semana o modelo só conhecia os jogos anteriores. "Acerta o resultado" é a percentagem de jogos em que o resultado mais provável (casa, empate ou fora) aconteceu. A última coluna é uma medida técnica de erro das probabilidades: quanto menor, melhor.</p>
+      <p class="hp-note">Testado em 1 750 jogos de 2023/24 a novembro de 2026, como se fosse em direto: em cada semana o modelo só conhecia os jogos anteriores. "Acerta o resultado" é a percentagem de jogos em que o resultado mais provável (casa, empate ou fora) aconteceu. A última coluna é uma medida técnica de erro das probabilidades: quanto menor, melhor.</p>
       <div class="hp-wrap">
         <table class="hp-table" data-source="precisao" data-row-key="modelo">
           <thead><tr><th data-field="modelo">Modelo</th><th data-field="acerto" class="num">Acerta o resultado (%)</th><th data-field="log_loss" class="num">Erro (log loss)</th></tr></thead>
