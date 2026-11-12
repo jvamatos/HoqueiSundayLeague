@@ -18,6 +18,9 @@ from .common import DATA
 from .model import Params, TeamModel, division, regulation_scores
 
 
+EVAL_LEAGUES = ("1div", "2div_norte", "2div_sul")  # predictions are scored on these only
+
+
 def outcomes(m):
     hg, ag = regulation_scores(m)
     return np.select([hg > ag, hg == ag], [0, 1], 2), hg, ag
@@ -122,7 +125,7 @@ def main():
     d = pd.to_datetime(m.date)
 
     if args.tune:
-        val = (d >= "2021-08-01") & (d < "2023-08-01")
+        val = (d >= "2021-08-01") & (d < "2023-08-01") & m.competition.isin(EVAL_LEAGUES)
         rows = []
         for hl, l2, db in itertools.product([120, 180, 240, 365, 540], [1, 3, 10], [0.0, 0.1, 0.2]):
             r, _ = evaluate(m, val, Params(hl, l2, db), verbose=False)
@@ -131,7 +134,7 @@ def main():
         print(pd.DataFrame(rows).sort_values("logloss").head(10).to_string())
         return
 
-    test = d >= "2023-08-01"  # 2023/24 onwards: never used for tuning
+    test = (d >= "2023-08-01") & m.competition.isin(EVAL_LEAGUES)  # 2023/24 on, never used for tuning
     params = Params()
     res, pm = evaluate(m, test, params)
     print(f"Backtest {m[test].date.min()} -> {m[test].date.max()}  ({test.sum()} games)  params={params}")

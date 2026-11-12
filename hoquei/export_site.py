@@ -139,10 +139,21 @@ def main():
 
     # 7. model accuracy (walk-forward backtest, test period 2023/24 -> Nov 2026)
     pd.DataFrame([
-        {"modelo": "Frequências base (sempre o mesmo palpite)", "acerto": 51.7, "log_loss": 0.977},
-        {"modelo": "Elo", "acerto": 64.5, "log_loss": 0.851},
-        {"modelo": "Este modelo", "acerto": 65.9, "log_loss": 0.814},
+        {"modelo": "Frequências base (sempre o mesmo palpite)", "acerto": 51.7, "log_loss": 0.976},
+        {"modelo": "Elo", "acerto": 64.7, "log_loss": 0.841},
+        {"modelo": "Este modelo", "acerto": 66.2, "log_loss": 0.811},
     ]).to_csv(OUT / "precisao.csv", index=False)
+    # 10. live track record (predictions logged before each game, scored after)
+    from .track_record import score
+    g, summ = score()
+    cols = ["jogo", "data", "liga", "casa", "fora", "resultado", "p_casa", "p_empate", "p_fora", "favorito", "acertou"]
+    if g.empty:
+        pd.DataFrame(columns=cols).to_csv(OUT / "historico.csv", index=False)
+    else:
+        pd.DataFrame({"jogo": g.game, "data": g.date, "liga": g.competition.map(LEAGUES), "casa": g.home.map(nm),
+                      "fora": g.away.map(nm), "resultado": g.result, "p_casa": pct(g.p_home), "p_empate": pct(g.p_draw),
+                      "p_fora": pct(g.p_away), "favorito": g.favourite.map({"home": "casa", "draw": "empate", "away": "fora"}),
+                      "acertou": np.where(g.hit, "sim", "não")}).sort_values("data", ascending=False).to_csv(OUT / "historico.csv", index=False)
     print(f"exported to {OUT}: " + ", ".join(sorted(p.name for p in OUT.glob("*.csv"))))
 
 

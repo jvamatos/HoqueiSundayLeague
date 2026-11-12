@@ -229,6 +229,7 @@
   <section class="hp-section" id="modelo" hidden>
     <div class="hp-card" id="precisao-card">
       <h2 class="hp-h2">Quão bom é o modelo?</h2>
+      <p class="hp-lede" id="historico-resumo" data-draw="historico-resumo" data-source="historico">—</p>
       <p class="hp-note">Testado em 1 762 jogos de 2023/24 a novembro de 2026, como se fosse em direto: em cada semana o modelo só conhecia os jogos anteriores. "Acerta o resultado" é a percentagem de jogos em que o resultado mais provável (casa, empate ou fora) aconteceu. A última coluna é uma medida técnica de erro das probabilidades: quanto menor, melhor.</p>
       <div class="hp-wrap">
         <table class="hp-table" data-source="precisao" data-row-key="modelo">
@@ -237,9 +238,14 @@
         </table>
       </div>
     </div>
+    <div class="hp-card" id="historico">
+      <h2 class="hp-h2">Histórico em direto</h2>
+      <p class="hp-note">Cada previsão fica registada antes do jogo e é avaliada depois do resultado. Começou a 12/11/2026; não inclui testes ao passado. Todas as ligas.</p>
+      <ul class="hp-list" data-draw="historico" data-source="historico"></ul>
+    </div>
     <div class="hp-card" id="como">
       <h2 class="hp-h2">Como funciona</h2>
-      <p class="hp-note">Cada equipa tem uma força de ataque e de defesa, estimada com todos os resultados desde 2007/08. Os jogos recentes contam mais (meia-vida de 240 dias) e cada clube parte da sua força dos últimos três anos. 1ª e 2ª Divisões estão na mesma escala, ligadas pelas equipas que sobem e descem. Quando se sabe que um jogador ou guarda-redes falha o jogo, a previsão é ajustada pelo seu peso na equipa. Dados: hoqueipatins.pt e arquivo.hoqueipatins.pt.</p>
+      <p class="hp-note">Cada equipa tem uma força de ataque e de defesa, estimada com todos os resultados desde 2007/08 e, desde 2021/22, também com a Taça, a Elite Cup, as competições europeias e as ligas de Espanha, Itália e França (para medir os adversários europeus). Os jogos recentes contam mais (meia-vida de 240 dias) e cada clube parte da sua força dos últimos três anos. 1ª e 2ª Divisões estão na mesma escala, ligadas pelas equipas que sobem e descem. Quando se sabe que um jogador ou guarda-redes falha o jogo, a previsão é ajustada pelo seu peso na equipa. Os golos das duas equipas variam em conjunto (jogos abertos ou fechados), o que melhora a previsão do resultado exato. Dados: hoqueipatins.pt e arquivo.hoqueipatins.pt.</p>
     </div>
   </section>
 </div>
@@ -442,6 +448,35 @@
       ['ataque_pct', (x) => tone(true)(x, 'ataque_pct'), HP.signed], ['defesa_pct', (x) => tone(false)(x, 'defesa_pct'), HP.signed],
       ['impacto', 'num fav', (v) => (+v > 0 ? '+' : '') + v], ['jogos', 'num dim'],
     ], 7);
+  });
+
+  dash.draw('historico-resumo', (el) => {
+    const r = HP.rows('historico');
+    if (!r) { el.textContent = '—'; return; }
+    el.textContent = r.length
+      ? `Desde 12/11/2026, o favorito do modelo ganhou ${r.filter((x) => x.acertou === 'sim').length} de ${r.length} jogos (${Math.round(100 * r.filter((x) => x.acertou === 'sim').length / r.length)}%).`
+      : 'O registo em direto começou a 12/11/2026. Os primeiros resultados aparecem depois da próxima jornada.';
+  });
+
+  dash.draw('historico', (ul) => {
+    const r = HP.rows('historico');
+    ul.replaceChildren();
+    if (!r || !r.length) { const li = document.createElement('li'); li.className = 'sub'; li.textContent = r ? 'Ainda sem jogos avaliados.' : 'A carregar…'; ul.appendChild(li); return; }
+    r.slice(0, 40).forEach((g) => {
+      const at = (tag, cls, text, field) => { const e = document.createElement(tag); if (cls) e.className = cls; e.textContent = text;
+        if (field) { e.dataset.source = 'historico'; e.dataset.field = field; e.dataset.where = `jogo=${encodeURIComponent(g.jogo)}`; } return e; };
+      const ok = g.acertou === 'sim';
+      const li = document.createElement('li');
+      const mark = at('span', ok ? 'mark-ok' : 'mark-bad', ok ? '✓' : '✗', 'acertou');
+      const body = document.createElement('div');
+      const line = document.createElement('div');
+      line.append(at('span', null, g.casa, 'casa'), ' ', at('b', null, g.resultado, 'resultado'), ' ', at('span', null, g.fora, 'fora'));
+      const favField = g.favorito === 'casa' ? 'p_casa' : g.favorito === 'fora' ? 'p_fora' : 'p_empate';
+      const favName = g.favorito === 'casa' ? g.casa : g.favorito === 'fora' ? g.fora : 'o empate';
+      const sub = document.createElement('div'); sub.className = 'sub';
+      sub.append(`${g.liga} · ${HP.date(g.data)} · previsão: ${favName} `, at('span', null, HP.pct(g[favField]), favField));
+      body.append(line, sub); li.append(mark, body); ul.appendChild(li);
+    });
   });
 
   dash.draw('precisao', (tb) => {

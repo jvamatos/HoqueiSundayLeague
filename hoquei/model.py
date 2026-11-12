@@ -23,13 +23,23 @@ from dataclasses import dataclass, field
 import numpy as np
 import pandas as pd
 from scipy.optimize import minimize
-from scipy.stats import poisson
+from scipy.stats import gamma, poisson
 
 MAX_GOALS = 25
 
 
+# scoring level / home advantage groups
+GROUPS = ["1div", "2div", "cup", "europe", "esp", "ita", "fra"]
+
+
 def division(competition):
-    return "1div" if competition == "1div" else "2div"
+    if competition == "1div":
+        return "1div"
+    if str(competition).startswith("2div"):
+        return "2div"
+    if competition in ("taca", "elite_cup", "supertaca"):
+        return "cup"
+    return competition if competition in GROUPS else "1div"
 
 
 def regulation_scores(m):
@@ -44,6 +54,10 @@ class Params:
     half_life_days: float = 240.0
     l2: float = 2.0
     draw_boost: float = 0.0          # multiplies the diagonal of the score matrix by (1 + draw_boost)
+    # shared "game tempo": both teams' expected goals are scaled by one Gamma(k, 1/k) factor per
+    # game. It captures that open games are high-scoring for both sides (scores correlate +0.08
+    # and vary ~5% more than Poisson). None = independent Poisson.
+    tempo_k: float = 40.0
     prior_half_life: float = 1095.0  # shrink toward each club's long-run (3-year half-life) rating
     prior_weight: float = 1.0        # how much of the long-run rating is used as prior mean
     # per-game features ((name, "own"|"opp"), ...); see players.py
@@ -89,7 +103,9 @@ class TeamModel:
             prior_att = prior_def = np.zeros(T)
 
         hi, ai = m.home.map(idx).values, m.away.map(idx).values
-        g = (m.competition.map(division) == "2div").astype(int).values  # 0=1div, 1=2div
+        K = len(GROUPS)
+        g = m.competition.map(division).map({k: i for i, k in enumerate(GROUPS)}).values
+        hv = 1.0 - m.get("neutral", pd.Series(False, index=m.index)).fillna(False).astype(float).values
         y_h, y_a, w = hg.values.astype(float), ag.values.astype(float), m.w.values
         F = len(p.features)
         Xh = np.zeros((len(m), F)); Xa = np.zeros((len(m), F))
@@ -99,31 +115,31 @@ class TeamModel:
             Xh[:, k], Xa[:, k] = (fh, fa) if kind == "own" else (fa, fh)
 
         def unpack(x):
-            return x[0:2], x[2:4], x[4:4 + T], x[4 + T:4 + 2 * T], x[4 + 2 * T:]
+            return x[0:K], x[K:2 * K], x[2 * K:2 * K + T], x[2 * K + T:2 * K + 2 * T], x[2 * K + 2 * T:]
 
         def nll(x):
             lev, ha, att, dfn, b = unpack(x)
-            eta_h = lev[g] + ha[g] + att[hi] - dfn[ai] + Xh @ b
+            eta_h = lev[g] + ha[g] * hv + att[hi] - dfn[ai] + Xh @ b
             eta_a = lev[g] + att[ai] - dfn[hi] + Xa @ b
             lam_h, lam_a = np.exp(eta_h), np.exp(eta_a)
             da, dd = att - prior_att, dfn - prior_def
             f = np.sum(w * (lam_h - y_h * eta_h + lam_a - y_a * eta_a))
             f += p.l2 * (da @ da + dd @ dd) + 1e-3 * (b @ b)
             r_h, r_a = w * (lam_h - y_h), w * (lam_a - y_a)
-            g_lev = np.bincount(g, r_h + r_a, 2)
-            g_ha = np.bincount(g, r_h, 2)
+            g_lev = np.bincount(g, r_h + r_a, K)
+            g_ha = np.bincount(g, r_h * hv, K)
             g_att = np.bincount(hi, r_h, T) + np.bincount(ai, r_a, T) + 2 * p.l2 * da
             g_dfn = -np.bincount(ai, r_h, T) - np.bincount(hi, r_a, T) + 2 * p.l2 * dd
             g_b = Xh.T @ r_h + Xa.T @ r_a + 2e-3 * b
             return f, np.concatenate([g_lev, g_ha, g_att, g_dfn, g_b])
 
-        x0 = np.zeros(4 + 2 * T + F)
-        x0[0:2] = np.log(np.average((y_h + y_a) / 2, weights=w))
-        x0[4:4 + T], x0[4 + T:4 + 2 * T] = prior_att, prior_def
+        x0 = np.zeros(2 * K + 2 * T + F)
+        x0[0:K] = np.log(np.average((y_h + y_a) / 2, weights=w))
+        x0[2 * K:2 * K + T], x0[2 * K + T:2 * K + 2 * T] = prior_att, prior_def
         res = minimize(nll, x0, jac=True, method="L-BFGS-B")
         lev, ha, att, dfn, b = unpack(res.x)
-        self.level = {"1div": lev[0], "2div": lev[1]}
-        self.home_adv = {"1div": ha[0], "2div": ha[1]}
+        self.level = dict(zip(GROUPS, lev))
+        self.home_adv = dict(zip(GROUPS, ha))
         self.attack, self.defence = att, dfn
         self.beta = {f: b[k] for k, (f, _) in enumerate(p.features)}
         self.as_of = as_of
@@ -153,7 +169,12 @@ class TeamModel:
 
     def score_matrix(self, lh, la):
         k = np.arange(MAX_GOALS + 1)
-        mat = np.outer(poisson.pmf(k, lh), poisson.pmf(k, la))
+        tk = self.params.tempo_k
+        if tk:
+            q = gamma.ppf((np.arange(40) + 0.5) / 40, tk, scale=1 / tk)
+            mat = sum(np.outer(poisson.pmf(k, lh * x), poisson.pmf(k, la * x)) for x in q) / len(q)
+        else:
+            mat = np.outer(poisson.pmf(k, lh), poisson.pmf(k, la))
         if self.params.draw_boost:
             mat[np.diag_indices_from(mat)] *= 1 + self.params.draw_boost
         return mat / mat.sum()
