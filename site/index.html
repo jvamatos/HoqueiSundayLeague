@@ -62,6 +62,9 @@
   .hp-stats .rk { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); min-width: 5.5em; text-align: right; }
   .hp-stats .rk.top { color: var(--color-ok); }
   .hp-stats .rk.low { color: var(--color-bad); }
+  .hp-table th[data-sort] { cursor: pointer; user-select: none; }
+  .hp-table th[aria-sort="descending"]::after { content: " ↓"; }
+  .hp-table th[aria-sort="ascending"]::after { content: " ↑"; }
   .hp-facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: var(--cds-gap-md); align-items: start; }
   .hp-facts ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
   .hp-facts li { display: flex; flex-direction: column; gap: 3px; line-height: 1.45; }
@@ -177,6 +180,49 @@
             <tbody data-draw="guarda-redes"></tbody>
           </table>
         </div>
+      </div>
+    </div>
+    <div class="hp-card" id="estatisticas-jogadores">
+      <div class="hp-bar">
+        <h2 class="hp-h2">Estatísticas de jogadores</h2>
+        <div class="hp-tabs">
+          <select class="dash-select" id="ps-periodo" aria-label="Período">
+            <option value="2025/26">Época 2025/26</option>
+            <option value="2026/27">Época 2026/27</option>
+            <option value="desde 2023/24">Desde 2023/24</option>
+          </select>
+          <select class="dash-select" id="ps-equipa" aria-label="Equipa" data-draw="ps-equipa" data-source="jogadores_stats"></select>
+        </div>
+      </div>
+      <p class="hp-note">Jogos de campeonato (fase regular e playoff) dos jogadores que estão esta época na liga escolhida. Tipo de golo segundo o jogada-a-jogada (desde 2022/23). Assistências só existem na 1ª Divisão, desde 2025/26. Penáltis e livres: marcados / tentados. Clique no título de uma coluna para ordenar.</p>
+      <div class="hp-wrap">
+        <table class="hp-table" data-source="jogadores_stats" data-row-key="id">
+          <thead><tr>
+            <th data-field="jogador" data-sort="jogador">Jogador</th><th data-field="equipa">Equipa</th>
+            <th data-field="jogos" data-sort="jogos" class="num">J</th><th data-field="golos" data-sort="golos" class="num" aria-sort="descending">Golos</th>
+            <th data-field="golos_por_jogo" data-sort="golos_por_jogo" class="num">G/J</th><th data-field="assistencias" data-sort="assistencias" class="num">Assist.</th>
+            <th data-field="golos_mais_assist" data-sort="golos_mais_assist" class="num">G+A</th><th data-field="bola_corrida" data-sort="bola_corrida" class="num">Bola corrida</th>
+            <th data-field="power_play" data-sort="power_play" class="num">Power play</th><th data-field="inferioridade" data-sort="inferioridade" class="num">Inferioridade</th>
+            <th data-field="penaltis" data-sort="penaltis_marcados" class="num">Penáltis</th><th data-field="livres" data-sort="livres_marcados" class="num">Livres</th>
+            <th data-field="recarga" data-sort="recarga" class="num">Recarga</th><th data-field="azuis" data-sort="azuis" class="num">Azuis</th>
+          </tr></thead>
+          <tbody data-draw="pstats"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="hp-card" id="estatisticas-gr">
+      <h2 class="hp-h2">Estatísticas de guarda-redes</h2>
+      <p class="hp-note">Mesmo período e equipa escolhidos acima. Penáltis e livres diretos: defendidos / enfrentados.</p>
+      <div class="hp-wrap">
+        <table class="hp-table" data-source="gr_stats" data-row-key="id">
+          <thead><tr>
+            <th data-field="jogador">Guarda-redes</th><th data-field="equipa">Equipa</th><th data-field="jogos" class="num">J</th>
+            <th data-field="sofridos_por_jogo" class="num">Sofridos/jogo</th>
+            <th data-field="penaltis_defendidos" class="num">Penáltis defendidos</th><th data-field="pct_penaltis_defendidos" class="num">%</th>
+            <th data-field="livres_defendidos" class="num">Livres defendidos</th><th data-field="pct_livres_defendidos" class="num">%</th>
+          </tr></thead>
+          <tbody data-draw="gkstats"></tbody>
+        </table>
       </div>
     </div>
     <div class="hp-card" id="impacto">
@@ -342,8 +388,9 @@
   HP.date = (s) => d3.utcFormat('%d/%m')(new Date(s + 'T00:00:00Z'));
   HP.rows = (id) => { const r = dash.data(id); return r.status === 'ok' ? r.data : null; };
   HP.periodo = '2025/26';
+  HP.psPeriodo = '2025/26'; HP.psEquipa = ''; HP.psSort = 'golos'; HP.psDir = 'desc';
   HP.EST = ['est-equipa', 'est-contexto', 'est', 'est-rank', 'est-tempos', 'est-tipos'];
-  HP.ALL = ['est-equipa', 'est-contexto', 'est', 'est-rank', 'est-tempos', 'est-tipos', 'factos', 'jogos', 'ultimos', 'classificacao', 'pontos-chart', 'equipas', 'equipas-chart', 'marcadores', 'guarda-redes', 'pp', 'mercado', 'impacto'];
+  HP.ALL = ['ps-equipa', 'pstats', 'gkstats', 'est-equipa', 'est-contexto', 'est', 'est-rank', 'est-tempos', 'est-tipos', 'factos', 'jogos', 'ultimos', 'classificacao', 'pontos-chart', 'equipas', 'equipas-chart', 'marcadores', 'guarda-redes', 'pp', 'mercado', 'impacto'];
   HP.signed = (v) => (v === null || v === '' || v === undefined) ? '—' : `${+v > 0 ? '+' : ''}${Math.round(+v)}%`;
   // fill a <tbody> with one <tr> per row; cols: [field, cls, format]
   HP.fill = (tb, rows, key, cols, colspan) => {
@@ -370,6 +417,15 @@
   document.querySelectorAll('#liga').forEach((s) => s.addEventListener('change', () => { HP.liga = s.value; HP.ALL.forEach((n) => dash.draw(n)); }));
   document.querySelectorAll('#est-periodo').forEach((s) => s.addEventListener('change', () => { HP.periodo = s.value; HP.EST.forEach((n) => dash.draw(n)); }));
   document.querySelectorAll('#est-equipa').forEach((s) => s.addEventListener('change', () => { HP.equipa = s.value; HP.EST.forEach((n) => dash.draw(n)); }));
+  document.querySelectorAll('#ps-periodo').forEach((s) => s.addEventListener('change', () => { HP.psPeriodo = s.value; ['ps-equipa', 'pstats', 'gkstats'].forEach((n) => dash.draw(n)); }));
+  document.querySelectorAll('#ps-equipa').forEach((s) => s.addEventListener('change', () => { HP.psEquipa = s.value; ['pstats', 'gkstats'].forEach((n) => dash.draw(n)); }));
+  document.querySelectorAll('#estatisticas-jogadores th[data-sort]').forEach((th) => th.addEventListener('click', () => {
+    const k = th.dataset.sort;
+    HP.psDir = HP.psSort === k && HP.psDir === 'desc' ? 'asc' : (k === 'jogador' ? 'asc' : 'desc');
+    HP.psSort = k;
+    document.querySelectorAll('#estatisticas-jogadores th[data-sort]').forEach((o) => o.setAttribute('aria-sort', o === th ? (HP.psDir === 'asc' ? 'ascending' : 'descending') : 'none'));
+    dash.draw('pstats');
+  }));
   document.querySelectorAll('#epoca').forEach((s) => s.addEventListener('change', () => { HP.epoca = s.value; dash.draw('pp'); }));
 </script>
 
@@ -675,6 +731,42 @@
     g.append('text').attr('class', 'lbl').attr('x', m.l - 8).attr('y', (d) => y(d.label) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').text((d) => d.label);
     g.append('rect').attr('x', xs(0)).attr('y', (d) => y(d.label)).attr('height', y.bandwidth()).attr('rx', 2).attr('width', (d) => xs(d.v) - xs(0)).style('fill', dash.colors[0]);
     g.append('text').attr('x', (d) => xs(d.v) + 4).attr('y', (d) => y(d.label) + y.bandwidth() / 2).attr('dy', '0.35em').text((d) => `${Math.round(d.v)}%`);
+  });
+
+  // ---- player statistics tables
+  dash.draw('ps-equipa', (sel) => {
+    const r = HP.rows('jogadores_stats');
+    const teams = r ? [...new Set(r.filter((x) => x.liga === HP.liga && x.periodo === HP.psPeriodo).map((x) => x.equipa))].sort((a, b) => a.localeCompare(b, 'pt')) : [];
+    sel.replaceChildren(new Option('Todas as equipas', ''), ...teams.map((t) => new Option(t, t)));
+    sel.value = teams.includes(HP.psEquipa) ? HP.psEquipa : '';
+  });
+  const psVal = (x, k) => (k === 'jogador' ? x.jogador : (x[k] === '' || x[k] === undefined ? -1 : +x[k]));
+  dash.draw('pstats', (tb) => {
+    const r = HP.rows('jogadores_stats');
+    let rows = r && r.filter((x) => x.liga === HP.liga && x.periodo === HP.psPeriodo && (!HP.psEquipa || x.equipa === HP.psEquipa));
+    if (rows) {
+      const dir = HP.psDir === 'asc' ? 1 : -1;
+      rows = rows.slice().sort((a, b) => {
+        const va = psVal(a, HP.psSort), vb = psVal(b, HP.psSort);
+        return (typeof va === 'string' ? va.localeCompare(vb, 'pt') : va - vb) * dir || +b.golos - +a.golos;
+      }).slice(0, HP.psEquipa ? 40 : 30);
+    }
+    const n0 = (v) => (v === '' || v === undefined || v === null ? '—' : String(Math.round(+v)));
+    HP.fill(tb, rows, 'id', [
+      ['jogador'], ['equipa', 'dim'], ['jogos', 'num dim'], ['golos', 'num fav'], ['golos_por_jogo', 'num', (v) => HP.num(v, 2)],
+      ['assistencias', 'num', n0], ['golos_mais_assist', 'num', n0], ['bola_corrida', 'num'], ['power_play', 'num'],
+      ['inferioridade', 'num'], ['penaltis', 'num'], ['livres', 'num'], ['recarga', 'num'], ['azuis', 'num dim'],
+    ], 14);
+  });
+  dash.draw('gkstats', (tb) => {
+    const r = HP.rows('gr_stats');
+    const rows = r && r.filter((x) => x.liga === HP.liga && x.periodo === HP.psPeriodo && (!HP.psEquipa || x.equipa === HP.psEquipa) && +x.jogos >= (HP.psEquipa ? 1 : 5))
+      .sort((a, b) => +b.jogos - +a.jogos).slice(0, 20);
+    const p0 = (v) => (v === '' || v === undefined || v === null ? '—' : `${Math.round(+v)}%`);
+    HP.fill(tb, rows, 'id', [
+      ['jogador'], ['equipa', 'dim'], ['jogos', 'num dim'], ['sofridos_por_jogo', 'num', (v) => HP.num(v, 2)],
+      ['penaltis_defendidos', 'num'], ['pct_penaltis_defendidos', 'num fav', p0], ['livres_defendidos', 'num'], ['pct_livres_defendidos', 'num fav', p0],
+    ], 8);
   });
 
   dash.draw('precisao', (tb) => {
