@@ -1,0 +1,262 @@
+id,liga,equipa,ordem,categoria,facto
+academica_1,2ª Divisão Norte,Académica,1,História,Nunca jogou na 1ª Divisão desde 2007/08.
+academica_2,2ª Divisão Norte,Académica,2,Recorde,"Maior vitória: 13-3 em casa contra o Carvalhos, a 24/02/2018."
+academica_3,2ª Divisão Norte,Académica,3,Recorde,Maior série sem perder no campeonato: 7 jogos (até 24/02/2018).
+academica_4,2ª Divisão Norte,Académica,4,Jogadores,"Melhor marcador do clube desde 2021/22: Diogo Graça, com 96 golos em todas as competições."
+academica_5,2ª Divisão Norte,Académica,5,Jogadores,"Mais golos num só jogo: 4, por Gonçalo Oliveira contra o Famalicense (24/05/2025)."
+academica_6,2ª Divisão Norte,Académica,6,Guarda-redes,Miguel Mateus defendeu 5 penáltis e 39 livres diretos desde 2021/22.
+academica_7,2ª Divisão Norte,Académica,7,Estilo,Equipa das reviravoltas: 7 vitórias depois de estar a perder por 2 ou mais golos desde 2022/23 (2º na liga). A maior: recuperou de 2 golos de desvantagem e ganhou 7-6 ao Feira.
+alcobacense_1,2ª Divisão Sul,Alcobacense,1,História,Nunca jogou na 1ª Divisão desde 2007/08.
+alcobacense_2,2ª Divisão Sul,Alcobacense,2,Recorde,"Maior vitória: 7-0 fora contra o Biblioteca, a 26/04/2014."
+alcobacense_3,2ª Divisão Sul,Alcobacense,3,Recorde,Maior série sem perder no campeonato: 11 jogos (até 01/11/2025).
+alcobacense_4,2ª Divisão Sul,Alcobacense,4,Jogadores,"Melhor marcador do clube desde 2021/22: Thomas Molina, com 40 golos em todas as competições."
+alcobacense_5,2ª Divisão Sul,Alcobacense,5,Jogadores,"Mais golos num só jogo: 6, por Thomas Molina contra o Benfica B (07/12/2024)."
+alcobacense_6,2ª Divisão Sul,Alcobacense,6,Guarda-redes,Santino Facca defendeu 18 penáltis e 47 livres diretos desde 2021/22.
+alenquer_1,2ª Divisão Sul,Alenquer,1,História,1 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2007/08).
+alenquer_2,2ª Divisão Sul,Alenquer,2,Recorde,"Maior vitória: 17-3 em casa contra o HC PDL, a 13/04/2019."
+alenquer_3,2ª Divisão Sul,Alenquer,3,Recorde,Maior série sem perder no campeonato: 10 jogos (até 17/05/2014).
+alenquer_4,2ª Divisão Sul,Alenquer,4,Jogadores,"Melhor marcador do clube desde 2021/22: Mário “Marinho” Rodrigues, com 187 golos em todas as competições."
+alenquer_5,2ª Divisão Sul,Alenquer,5,Jogadores,"Mais golos num só jogo: 8, por Mário “Marinho” Rodrigues contra o Oeiras (13/05/2023)."
+alenquer_6,2ª Divisão Sul,Alenquer,6,Guarda-redes,Igor Alves defendeu 8 penáltis e 29 livres diretos desde 2021/22.
+alenquer_7,2ª Divisão Sul,Alenquer,7,Estilo,Equipa das reviravoltas: 7 vitórias depois de estar a perder por 2 ou mais golos desde 2022/23 (2º na liga). A maior: recuperou de 4 golos de desvantagem e ganhou 6-5 ao Benfica B.
+barcelos_1,1ª Divisão,Barcelos,1,História,20 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2007/08).
+barcelos_2,1ª Divisão,Barcelos,2,Recorde,"Maior vitória: 18-0 em casa contra o ACD Gulpilhares, a 12/01/2013."
+barcelos_3,1ª Divisão,Barcelos,3,Recorde,Maior série sem perder no campeonato: 13 jogos (até 08/04/2017).
+barcelos_4,1ª Divisão,Barcelos,4,Jogadores,"Melhor marcador do clube desde 2021/22: Miguel Rocha, com 153 golos em todas as competições."
+barcelos_5,1ª Divisão,Barcelos,5,Jogadores,"Mais golos num só jogo: 6, por Miguel Rocha contra o Carvalhos (04/01/2026)."
+barcelos_6,1ª Divisão,Barcelos,6,Guarda-redes,Constantino “Conti” Acevedo defendeu 28 penáltis e 78 livres diretos desde 2021/22.
+barcelos-b_1,2ª Divisão Norte,Barcelos B,1,História,Nunca jogou na 1ª Divisão desde 2007/08.
+barcelos-b_2,2ª Divisão Norte,Barcelos B,2,Recorde,"Maior vitória: 10-0 em casa contra o CD Cucujães, a 14/11/2015."
+barcelos-b_3,2ª Divisão Norte,Barcelos B,3,Recorde,Maior série sem perder no campeonato: 5 jogos (até 28/11/2015).
+barcelos-b_4,2ª Divisão Norte,Barcelos B,4,Jogadores,"Melhor marcador do clube desde 2021/22: Samuel Araújo, com 15 golos em todas as competições."
+barcelos-b_5,2ª Divisão Norte,Barcelos B,5,Guarda-redes,Martim Oliveira defendeu 10 penáltis e 10 livres diretos desde 2021/22.
+benfica_1,1ª Divisão,Benfica,1,História,20 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2007/08).
+benfica_2,1ª Divisão,Benfica,2,Recorde,"Maior vitória: 21-4 em casa contra o ACD Gulpilhares, a 23/02/2013."
+benfica_3,1ª Divisão,Benfica,3,Recorde,Maior série sem perder no campeonato: 50 jogos (até 07/05/2016).
+benfica_4,1ª Divisão,Benfica,4,Jogadores,"Melhor marcador do clube desde 2021/22: Lucas Ordoñez, com 104 golos em todas as competições."
+benfica_5,1ª Divisão,Benfica,5,Jogadores,"Mais golos num só jogo: 6, por Diogo Rafael “Chiquinho” contra o Murches (16/04/2023)."
+benfica_6,1ª Divisão,Benfica,6,Guarda-redes,Pedro Henriques defendeu 25 penáltis e 67 livres diretos desde 2021/22.
+benfica-b_1,2ª Divisão Sul,Benfica B,1,História,Nunca jogou na 1ª Divisão desde 2007/08.
+benfica-b_2,2ª Divisão Sul,Benfica B,2,Recorde,"Maior vitória: 13-1 em casa contra o UDC Nafarros, a 12/12/2015."
+benfica-b_3,2ª Divisão Sul,Benfica B,3,Recorde,Maior série sem perder no campeonato: 12 jogos (até 10/12/2016).
+benfica-b_4,2ª Divisão Sul,Benfica B,4,Jogadores,"Melhor marcador do clube desde 2021/22: Martim Costa, com 106 golos em todas as competições."
+benfica-b_5,2ª Divisão Sul,Benfica B,5,Jogadores,"Mais golos num só jogo: 7, por Diogo Duarte contra o Oeiras (17/01/2026)."
+benfica-b_6,2ª Divisão Sul,Benfica B,6,Guarda-redes,Ricardo Vaz defendeu 7 penáltis e 27 livres diretos desde 2021/22.
+benfica-b_7,2ª Divisão Sul,Benfica B,7,Casa,"Fortaleza: ganha 70% dos jogos em casa no campeonato desde 2022/23, o melhor registo da liga."
+braga_1,1ª Divisão,Braga,1,História,18 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2007/08).
+braga_2,1ª Divisão,Braga,2,Recorde,"Maior vitória: 12-1 em casa contra o CAR Taipense, a 29/10/2016."
+braga_3,1ª Divisão,Braga,3,Recorde,Maior série sem perder no campeonato: 27 jogos (até 03/06/2017).
+braga_4,1ª Divisão,Braga,4,Jogadores,"Melhor marcador do clube desde 2021/22: António Trabulo, com 54 golos em todas as competições."
+braga_5,1ª Divisão,Braga,5,Jogadores,"Mais golos num só jogo: 5, por Pedro Mendes contra o Famalicense (04/12/2022)."
+braga_6,1ª Divisão,Braga,6,Guarda-redes,Nelson Filipe defendeu 11 penáltis e 37 livres diretos desde 2021/22.
+braga_7,1ª Divisão,Braga,7,Estilo,"18% dos seus golos (desde 2022/23) chegam nos últimos 5 minutos, a 2ª maior percentagem da liga."
+cambra_1,2ª Divisão Norte,Cambra,1,História,6 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2007/08).
+cambra_2,2ª Divisão Norte,Cambra,2,Recorde,"Maior vitória: 19-2 em casa contra o Famalicense, a 24/03/2012."
+cambra_3,2ª Divisão Norte,Cambra,3,Recorde,Maior série sem perder no campeonato: 17 jogos (até 09/06/2012).
+cambra_4,2ª Divisão Norte,Cambra,4,Jogadores,"Melhor marcador do clube desde 2021/22: Miguel “Migas” Oliveira, com 150 golos em todas as competições."
+cambra_5,2ª Divisão Norte,Cambra,5,Jogadores,"Mais golos num só jogo: 5, por Tiago Almeida contra o Espinho (23/03/2024)."
+cambra_6,2ª Divisão Norte,Cambra,6,Guarda-redes,David Nogueira defendeu 35 penáltis e 107 livres diretos desde 2021/22.
+candelaria_1,1ª Divisão,Candelária,1,História,12 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2007/08).
+candelaria_2,1ª Divisão,Candelária,2,Recorde,"Maior vitória: 15-2 fora contra o Maritimo, a 18/05/2022."
+candelaria_3,1ª Divisão,Candelária,3,Recorde,Maior série sem perder no campeonato: 17 jogos (até 01/06/2024).
+candelaria_4,1ª Divisão,Candelária,4,Jogadores,"Melhor marcador do clube desde 2021/22: Joel “Negro” Martín, com 64 golos em todas as competições."
+candelaria_5,1ª Divisão,Candelária,5,Jogadores,"Mais golos num só jogo: 5, por Damián Paez “Pipi” contra o CRIAR-T (27/01/2024)."
+candelaria_6,1ª Divisão,Candelária,6,Guarda-redes,Miguel Rocha defendeu 38 penáltis e 83 livres diretos desde 2021/22.
+carvalhos_1,2ª Divisão Norte,Carvalhos,1,História,5 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2008/09).
+carvalhos_2,2ª Divisão Norte,Carvalhos,2,Recorde,"Maior vitória: 10-1 fora contra o Escola Livre, a 02/04/2010."
+carvalhos_3,2ª Divisão Norte,Carvalhos,3,Recorde,Maior série sem perder no campeonato: 13 jogos (até 22/10/2016).
+carvalhos_4,2ª Divisão Norte,Carvalhos,4,Jogadores,"Melhor marcador do clube desde 2021/22: Afonso Lima, com 110 golos em todas as competições."
+carvalhos_5,2ª Divisão Norte,Carvalhos,5,Jogadores,"Mais golos num só jogo: 7, por Afonso Lima contra o Infante (03/06/2023)."
+carvalhos_6,2ª Divisão Norte,Carvalhos,6,Guarda-redes,André Almeida defendeu 36 penáltis e 80 livres diretos desde 2021/22.
+criar-t_1,2ª Divisão Sul,CRIAR-T,1,História,Nunca jogou na 1ª Divisão desde 2007/08.
+criar-t_2,2ª Divisão Sul,CRIAR-T,2,Recorde,"Maior vitória: 10-4 em casa contra o Vilafranquense, a 04/05/2024."
+criar-t_3,2ª Divisão Sul,CRIAR-T,3,Recorde,Maior série sem perder no campeonato: 6 jogos (até 13/12/2025).
+criar-t_4,2ª Divisão Sul,CRIAR-T,4,Jogadores,"Melhor marcador do clube desde 2021/22: Filipe Bernardino, com 46 golos em todas as competições."
+criar-t_5,2ª Divisão Sul,CRIAR-T,5,Jogadores,"Mais golos num só jogo: 5, por Rafael Ogura “Jatugalão” contra o Alenquer (15/11/2025)."
+criar-t_6,2ª Divisão Sul,CRIAR-T,6,Guarda-redes,Rogério Silva defendeu 14 penáltis e 17 livres diretos desde 2021/22.
+espinho_1,2ª Divisão Norte,Espinho,1,História,5 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2007/08).
+espinho_2,2ª Divisão Norte,Espinho,2,Recorde,"Maior vitória: 11-0 fora contra o CAR Taipense, a 29/04/2017."
+espinho_3,2ª Divisão Norte,Espinho,3,Recorde,Maior série sem perder no campeonato: 14 jogos (até 24/10/2009).
+espinho_4,2ª Divisão Norte,Espinho,4,Jogadores,"Melhor marcador do clube desde 2021/22: André Pinto, com 45 golos em todas as competições."
+espinho_5,2ª Divisão Norte,Espinho,5,Jogadores,"Mais golos num só jogo: 5, por André Pinto contra o Sobreira (18/11/2023)."
+espinho_6,2ª Divisão Norte,Espinho,6,Guarda-redes,Ricardo Silva defendeu 24 penáltis e 92 livres diretos desde 2021/22.
+espinho_7,2ª Divisão Norte,Espinho,7,Estilo,Equipa das reviravoltas: 8 vitórias depois de estar a perder por 2 ou mais golos desde 2022/23 (1º na liga). A maior: recuperou de 4 golos de desvantagem e ganhou 7-6 ao Académica.
+espinho_8,2ª Divisão Norte,Espinho,8,Estilo,"22% dos seus golos (desde 2022/23) chegam nos últimos 5 minutos, a 2ª maior percentagem da liga."
+espinho_9,2ª Divisão Norte,Espinho,9,Disciplina,"A que mais cartões azuis vê na liga: 1,64 por jogo desde 2023/24."
+famalicense_1,2ª Divisão Norte,Famalicense,1,História,3 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2020/21).
+famalicense_2,2ª Divisão Norte,Famalicense,2,Recorde,"Maior vitória: 13-2 fora contra o OH Sports, a 16/05/2026."
+famalicense_3,2ª Divisão Norte,Famalicense,3,Recorde,Maior série sem perder no campeonato: 15 jogos (até 04/06/2022).
+famalicense_4,2ª Divisão Norte,Famalicense,4,Jogadores,"Melhor marcador do clube desde 2021/22: Juan José “Juanjo” López, com 62 golos em todas as competições."
+famalicense_5,2ª Divisão Norte,Famalicense,5,Jogadores,"Mais golos num só jogo: 6, por Guilherme Leitão contra o OH Sports (16/05/2026)."
+famalicense_6,2ª Divisão Norte,Famalicense,6,Guarda-redes,Tiago Freitas defendeu 11 penáltis e 30 livres diretos desde 2021/22.
+fisica_1,2ª Divisão Sul,Física,1,História,7 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2009/10).
+fisica_2,2ª Divisão Sul,Física,2,Recorde,"Maior vitória: 18-2 em casa contra o HC Vasco da Gama, a 22/04/2017."
+fisica_3,2ª Divisão Sul,Física,3,Recorde,Maior série sem perder no campeonato: 15 jogos (até 02/02/2008).
+fisica_4,2ª Divisão Sul,Física,4,Jogadores,"Melhor marcador do clube desde 2021/22: Fábio “Fabinho” Cambão, com 77 golos em todas as competições."
+fisica_5,2ª Divisão Sul,Física,5,Jogadores,"Mais golos num só jogo: 5, por João Lima contra o Parede (04/11/2023)."
+fisica_6,2ª Divisão Sul,Física,6,Guarda-redes,Marcelo Araújo defendeu 28 penáltis e 22 livres diretos desde 2021/22.
+fisica_7,2ª Divisão Sul,Física,7,Disciplina,"A mais disciplinada da liga: 0,98 cartões azuis por jogo desde 2023/24."
+grandola_1,2ª Divisão Sul,Grândola,1,História,1 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2017/18).
+grandola_2,2ª Divisão Sul,Grândola,2,Recorde,"Maior vitória: 16-2 em casa contra o UDC Nafarros, a 23/01/2016."
+grandola_3,2ª Divisão Sul,Grândola,3,Recorde,Maior série sem perder no campeonato: 8 jogos (até 07/02/2015).
+grandola_4,2ª Divisão Sul,Grândola,4,Jogadores,"Melhor marcador do clube desde 2021/22: Mauro Rabiti, com 17 golos em todas as competições."
+grandola_5,2ª Divisão Sul,Grândola,5,Guarda-redes,António Monteiro defendeu 1 penáltis e 15 livres diretos desde 2021/22.
+grandola_6,2ª Divisão Sul,Grândola,6,Estilo,"Gosta de decidir no fim: 21% dos seus golos (desde 2022/23) são marcados nos últimos 5 minutos, a maior percentagem da liga."
+juventude-viana_1,1ª Divisão,Juventude de Viana,1,História,17 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2007/08).
+juventude-viana_2,1ª Divisão,Juventude de Viana,2,Recorde,"Maior vitória: 13-1 em casa contra o ACR Pesseg. Vouga, a 25/05/2013."
+juventude-viana_3,1ª Divisão,Juventude de Viana,3,Recorde,Maior série sem perder no campeonato: 15 jogos (até 13/04/2024).
+juventude-viana_4,1ª Divisão,Juventude de Viana,4,Jogadores,"Melhor marcador do clube desde 2021/22: Nuno “Gabi” Silva, com 64 golos em todas as competições."
+juventude-viana_5,1ª Divisão,Juventude de Viana,5,Jogadores,"Mais golos num só jogo: 4, por Afonso Sousa contra o Académica (31/01/2026)."
+juventude-viana_6,1ª Divisão,Juventude de Viana,6,Guarda-redes,Bruno Guia defendeu 19 penáltis e 40 livres diretos desde 2021/22.
+lavra_1,2ª Divisão Norte,Lavra,1,História,Nunca jogou na 1ª Divisão desde 2007/08.
+lavra_2,2ª Divisão Norte,Lavra,2,Recorde,"Maior vitória: 8-0 em casa contra o CD Cucujães, a 08/11/2014."
+lavra_3,2ª Divisão Norte,Lavra,3,Recorde,Maior série sem perder no campeonato: 8 jogos (até 22/11/2014).
+lavra_4,2ª Divisão Norte,Lavra,4,Jogadores,"Melhor marcador do clube desde 2021/22: João Abreu, com 2 golos em todas as competições."
+lavra_5,2ª Divisão Norte,Lavra,5,Estilo,"Gosta de decidir no fim: 33% dos seus golos (desde 2022/23) são marcados nos últimos 5 minutos, a maior percentagem da liga."
+marinhense_1,2ª Divisão Sul,Marinhense,1,História,2 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2018/19).
+marinhense_2,2ª Divisão Sul,Marinhense,2,Recorde,"Maior vitória: 13-2 em casa contra o GDC Fânzeres, a 23/11/2019."
+marinhense_3,2ª Divisão Sul,Marinhense,3,Recorde,Maior série sem perder no campeonato: 29 jogos (até 18/07/2021).
+marinhense_4,2ª Divisão Sul,Marinhense,4,Jogadores,"Melhor marcador do clube desde 2021/22: Gonçalo Domingues, com 114 golos em todas as competições."
+marinhense_5,2ª Divisão Sul,Marinhense,5,Jogadores,"Mais golos num só jogo: 5, por Nicolás “Nico” Carmona contra o Valongo B (18/05/2024)."
+marinhense_6,2ª Divisão Sul,Marinhense,6,Guarda-redes,Albert Mola defendeu 27 penáltis e 58 livres diretos desde 2021/22.
+marinhense_7,2ª Divisão Sul,Marinhense,7,Estilo,"20% dos seus golos (desde 2022/23) chegam nos últimos 5 minutos, a 2ª maior percentagem da liga."
+mealhada_1,2ª Divisão Norte,Mealhada,1,História,1 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2013/14).
+mealhada_2,2ª Divisão Norte,Mealhada,2,Recorde,"Maior vitória: 10-1 em casa contra o Pacense, a 17/12/2011."
+mealhada_3,2ª Divisão Norte,Mealhada,3,Recorde,Maior série sem perder no campeonato: 11 jogos (até 02/03/2013).
+mealhada_4,2ª Divisão Norte,Mealhada,4,Jogadores,"Melhor marcador do clube desde 2021/22: Bruno Caniceiro, com 4 golos em todas as competições."
+mealhada_5,2ª Divisão Norte,Mealhada,5,Casa,"Fortaleza: ganha 100% dos jogos em casa no campeonato desde 2022/23, o melhor registo da liga."
+murches_1,2ª Divisão Sul,Murches,1,História,3 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2022/23).
+murches_2,2ª Divisão Sul,Murches,2,Recorde,"Maior vitória: 10-0 em casa contra o Biblioteca, a 06/11/2021."
+murches_3,2ª Divisão Sul,Murches,3,Recorde,Maior série sem perder no campeonato: 11 jogos (até 23/04/2022).
+murches_4,2ª Divisão Sul,Murches,4,Jogadores,"Melhor marcador do clube desde 2021/22: Tomás Moreira, com 39 golos em todas as competições."
+murches_5,2ª Divisão Sul,Murches,5,Jogadores,"Mais golos num só jogo: 4, por Afonso Esteves contra o Entroncamento (11/04/2026)."
+murches_6,2ª Divisão Sul,Murches,6,Guarda-redes,Rodrigo Vieira defendeu 27 penáltis e 67 livres diretos desde 2021/22.
+oeiras_1,1ª Divisão,Oeiras,1,História,4 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2008/09).
+oeiras_2,1ª Divisão,Oeiras,2,Recorde,"Maior vitória: 24-2 em casa contra o C Stella Maris, a 28/05/2011."
+oeiras_3,1ª Divisão,Oeiras,3,Recorde,Maior série sem perder no campeonato: 19 jogos (até 31/05/2008).
+oeiras_4,1ª Divisão,Oeiras,4,Jogadores,"Melhor marcador do clube desde 2021/22: Diogo Neves, com 74 golos em todas as competições."
+oeiras_5,1ª Divisão,Oeiras,5,Jogadores,"Mais golos num só jogo: 4, por Gonçalo Suissas contra o Marinhense (08/10/2022)."
+oeiras_6,1ª Divisão,Oeiras,6,Guarda-redes,Marcelo Araújo defendeu 11 penáltis e 32 livres diretos desde 2021/22.
+oliveirense_1,1ª Divisão,Oliveirense,1,História,20 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2007/08).
+oliveirense_2,1ª Divisão,Oliveirense,2,Recorde,"Maior vitória: 16-4 em casa contra o Tigres, a 06/04/2013."
+oliveirense_3,1ª Divisão,Oliveirense,3,Recorde,Maior série sem perder no campeonato: 15 jogos (até 23/02/2019).
+oliveirense_4,1ª Divisão,Oliveirense,4,Jogadores,"Melhor marcador do clube desde 2021/22: Lucas Martínez, com 101 golos em todas as competições."
+oliveirense_5,1ª Divisão,Oliveirense,5,Jogadores,"Mais golos num só jogo: 4, por Lucas Martínez contra o Turquel (09/12/2023)."
+oliveirense_6,1ª Divisão,Oliveirense,6,Guarda-redes,Alejandro “Xano” Edo defendeu 18 penáltis e 45 livres diretos desde 2021/22.
+oliveirense-b_1,2ª Divisão Norte,Oliveirense B,1,História,Nunca jogou na 1ª Divisão desde 2007/08.
+oliveirense-b_2,2ª Divisão Norte,Oliveirense B,2,Recorde,"Maior vitória: 9-0 fora contra o Leiria e Marrazes, a 23/11/2024."
+oliveirense-b_3,2ª Divisão Norte,Oliveirense B,3,Recorde,Maior série sem perder no campeonato: 7 jogos (até 09/12/2025).
+oliveirense-b_4,2ª Divisão Norte,Oliveirense B,4,Jogadores,"Melhor marcador do clube desde 2021/22: Diogo Lemos, com 57 golos em todas as competições."
+oliveirense-b_5,2ª Divisão Norte,Oliveirense B,5,Jogadores,"Mais golos num só jogo: 4, por Diogo Lemos contra o Paredes (12/03/2024)."
+oliveirense-b_6,2ª Divisão Norte,Oliveirense B,6,Guarda-redes,Pedro Bessa defendeu 19 penáltis e 28 livres diretos desde 2021/22.
+pacense_1,1ª Divisão,Pacense,1,História,4 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2023/24).
+pacense_2,1ª Divisão,Pacense,2,Recorde,"Maior vitória: 13-1 em casa contra o HC Paço de Rei, a 03/12/2011."
+pacense_3,1ª Divisão,Pacense,3,Recorde,Maior série sem perder no campeonato: 20 jogos (até 28/01/2023).
+pacense_4,1ª Divisão,Pacense,4,Jogadores,"Melhor marcador do clube desde 2021/22: Nuno Pereira “Miccoli”, com 63 golos em todas as competições."
+pacense_5,1ª Divisão,Pacense,5,Jogadores,"Mais golos num só jogo: 6, por João “Joca” Guimarães contra o Sporting (16/11/2024)."
+pacense_6,1ª Divisão,Pacense,6,Guarda-redes,Gabriel “Gabi” Costa defendeu 23 penáltis e 42 livres diretos desde 2021/22.
+paco-arcos_1,2ª Divisão Sul,Paço de Arcos,1,História,12 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2009/10).
+paco-arcos_2,2ª Divisão Sul,Paço de Arcos,2,Recorde,"Maior vitória: 14-0 em casa contra o Vilafranquense, a 14/03/2009."
+paco-arcos_3,2ª Divisão Sul,Paço de Arcos,3,Recorde,Maior série sem perder no campeonato: 14 jogos (até 05/03/2011).
+paco-arcos_4,2ª Divisão Sul,Paço de Arcos,4,Jogadores,"Melhor marcador do clube desde 2021/22: Bruno Frade, com 130 golos em todas as competições."
+paco-arcos_5,2ª Divisão Sul,Paço de Arcos,5,Jogadores,"Mais golos num só jogo: 7, por Bruno Frade contra o Entroncamento (01/02/2025)."
+paco-arcos_6,2ª Divisão Sul,Paço de Arcos,6,Guarda-redes,Diogo Rodrigues “Matraco” defendeu 38 penáltis e 68 livres diretos desde 2021/22.
+paco-arcos_7,2ª Divisão Sul,Paço de Arcos,7,Estilo,Equipa das reviravoltas: 9 vitórias depois de estar a perder por 2 ou mais golos desde 2022/23 (1º na liga). A maior: recuperou de 3 golos de desvantagem e ganhou 5-4 ao Biblioteca.
+parede_1,2ª Divisão Sul,Parede,1,História,2 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2021/22).
+parede_2,2ª Divisão Sul,Parede,2,Recorde,"Maior vitória: 12-0 em casa contra o CD Boliqueime, a 03/11/2007."
+parede_3,2ª Divisão Sul,Parede,3,Recorde,Maior série sem perder no campeonato: 22 jogos (até 19/06/2021).
+parede_4,2ª Divisão Sul,Parede,4,Jogadores,"Melhor marcador do clube desde 2021/22: Bernardo Ramalho, com 77 golos em todas as competições."
+parede_5,2ª Divisão Sul,Parede,5,Jogadores,"Mais golos num só jogo: 4, por Bernardo Ramalho contra o Murches (09/05/2026)."
+parede_6,2ª Divisão Sul,Parede,6,Guarda-redes,António “Tony” Mendonça defendeu 30 penáltis e 72 livres diretos desde 2021/22.
+porto_1,1ª Divisão,Porto,1,História,20 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2007/08).
+porto_2,1ª Divisão,Porto,2,Recorde,"Maior vitória: 19-0 fora contra o ACD Gulpilhares, a 23/03/2013."
+porto_3,1ª Divisão,Porto,3,Recorde,Maior série sem perder no campeonato: 44 jogos (até 10/01/2009).
+porto_4,1ª Divisão,Porto,4,Jogadores,"Melhor marcador do clube desde 2021/22: Gonçalo Alves, com 212 golos em todas as competições."
+porto_5,1ª Divisão,Porto,5,Jogadores,"Mais golos num só jogo: 7, por Gonçalo Alves contra o Barcelos (28/05/2022)."
+porto_6,1ª Divisão,Porto,6,Guarda-redes,Xavier Malián “Mali” defendeu 30 penáltis e 72 livres diretos desde 2021/22.
+porto_7,1ª Divisão,Porto,7,Casa,"Fortaleza: ganha 89% dos jogos em casa no campeonato desde 2022/23, o melhor registo da liga."
+porto_8,1ª Divisão,Porto,8,Disciplina,"A mais disciplinada da liga: 0,86 cartões azuis por jogo desde 2023/24."
+porto-b_1,2ª Divisão Norte,Porto B,1,História,Nunca jogou na 1ª Divisão desde 2007/08.
+porto-b_2,2ª Divisão Norte,Porto B,2,Recorde,"Maior vitória: 10-2 em casa contra o Póvoa, a 03/02/2018."
+porto-b_3,2ª Divisão Norte,Porto B,3,Recorde,Maior série sem perder no campeonato: 8 jogos (até 12/10/2021).
+porto-b_4,2ª Divisão Norte,Porto B,4,Jogadores,"Melhor marcador do clube desde 2021/22: Miguel Henriques, com 33 golos em todas as competições."
+porto-b_5,2ª Divisão Norte,Porto B,5,Jogadores,"Mais golos num só jogo: 7, por Roc Pujadas contra o Sanjoanense (01/11/2022)."
+porto-b_6,2ª Divisão Norte,Porto B,6,Guarda-redes,Tiago Rodrigues defendeu 5 penáltis e 24 livres diretos desde 2021/22.
+povoa_1,2ª Divisão Norte,Póvoa,1,História,2 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2014/15).
+povoa_2,2ª Divisão Norte,Póvoa,2,Recorde,"Maior vitória: 13-1 em casa contra o Valongo B, a 23/11/2024."
+povoa_3,2ª Divisão Norte,Póvoa,3,Recorde,Maior série sem perder no campeonato: 24 jogos (até 17/05/2014).
+povoa_4,2ª Divisão Norte,Póvoa,4,Jogadores,"Melhor marcador do clube desde 2021/22: Diogo Fernandes, com 100 golos em todas as competições."
+povoa_5,2ª Divisão Norte,Póvoa,5,Jogadores,"Mais golos num só jogo: 8, por Diogo Fernandes contra o Maia (21/05/2022)."
+povoa_6,2ª Divisão Norte,Póvoa,6,Guarda-redes,Rodolfo Sobral defendeu 47 penáltis e 77 livres diretos desde 2021/22.
+riba-dave_1,1ª Divisão,Riba d'Ave,1,História,10 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2011/12).
+riba-dave_2,1ª Divisão,Riba d'Ave,2,Recorde,"Maior vitória: 11-1 em casa contra o Barcelos B, a 10/10/2015."
+riba-dave_3,1ª Divisão,Riba d'Ave,3,Recorde,Maior série sem perder no campeonato: 11 jogos (até 13/10/2018).
+riba-dave_4,1ª Divisão,Riba d'Ave,4,Jogadores,"Melhor marcador do clube desde 2021/22: Franco Pósito, com 51 golos em todas as competições."
+riba-dave_5,1ª Divisão,Riba d'Ave,5,Jogadores,"Mais golos num só jogo: 4, por Franco Pósito contra o Sanjoanense (17/04/2025)."
+riba-dave_6,1ª Divisão,Riba d'Ave,6,Guarda-redes,Álvaro Shehda defendeu 25 penáltis e 109 livres diretos desde 2021/22.
+riba-dave_7,1ª Divisão,Riba d'Ave,7,Disciplina,"A que mais cartões azuis vê na liga: 1,79 por jogo desde 2023/24."
+salesiana_1,2ª Divisão Sul,Salesiana,1,História,Nunca jogou na 1ª Divisão desde 2007/08.
+salesiana_2,2ª Divisão Sul,Salesiana,2,Recorde,"Maior vitória: 13-3 em casa contra o Vilafranquense, a 07/11/2020."
+salesiana_3,2ª Divisão Sul,Salesiana,3,Recorde,Maior série sem perder no campeonato: 7 jogos (até 29/11/2014).
+salesiana_4,2ª Divisão Sul,Salesiana,4,Jogadores,"Melhor marcador do clube desde 2021/22: Tiago Barnabé, com 38 golos em todas as competições."
+salesiana_5,2ª Divisão Sul,Salesiana,5,Jogadores,"Mais golos num só jogo: 4, por Afonso Esteves contra o Alcobacense (14/12/2024)."
+salesiana_6,2ª Divisão Sul,Salesiana,6,Guarda-redes,Diogo Eduardo defendeu 30 penáltis e 55 livres diretos desde 2021/22.
+sanjoanense_1,1ª Divisão,Sanjoanense,1,História,9 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2014/15).
+sanjoanense_2,1ª Divisão,Sanjoanense,2,Recorde,"Maior vitória: 15-4 em casa contra o Académica, a 20/04/2024."
+sanjoanense_3,1ª Divisão,Sanjoanense,3,Recorde,Maior série sem perder no campeonato: 24 jogos (até 25/05/2024).
+sanjoanense_4,1ª Divisão,Sanjoanense,4,Jogadores,"Melhor marcador do clube desde 2021/22: Hugo Santos, com 193 golos em todas as competições."
+sanjoanense_5,1ª Divisão,Sanjoanense,5,Jogadores,"Mais golos num só jogo: 7, por Hugo Santos contra o Murches (12/04/2025)."
+sanjoanense_6,1ª Divisão,Sanjoanense,6,Guarda-redes,Guilherme Pedruco defendeu 5 penáltis e 29 livres diretos desde 2021/22.
+sporting_1,1ª Divisão,Sporting,1,História,15 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2012/13).
+sporting_2,1ª Divisão,Sporting,2,Recorde,"Maior vitória: 14-2 fora contra o Mealhada, a 03/12/2023."
+sporting_3,1ª Divisão,Sporting,3,Recorde,Maior série sem perder no campeonato: 25 jogos (até 05/01/2019).
+sporting_4,1ª Divisão,Sporting,4,Jogadores,"Melhor marcador do clube desde 2021/22: Gonzalo “Nolito” Romero, com 128 golos em todas as competições."
+sporting_5,1ª Divisão,Sporting,5,Jogadores,"Mais golos num só jogo: 6, por Ferran Font contra o Turquel (06/04/2024)."
+sporting_6,1ª Divisão,Sporting,6,Guarda-redes,André Girão defendeu 12 penáltis e 85 livres diretos desde 2021/22.
+sporting_7,1ª Divisão,Sporting,7,Estilo,Equipa das reviravoltas: 6 vitórias depois de estar a perder por 2 ou mais golos desde 2022/23 (1º na liga). A maior: recuperou de 4 golos de desvantagem e ganhou 8-4 ao Tomar.
+sporting-b_1,2ª Divisão Sul,Sporting B,1,História,Nunca jogou na 1ª Divisão desde 2007/08.
+sporting-b_2,2ª Divisão Sul,Sporting B,2,Recorde,"Maior vitória: 16-5 em casa contra o Maritimo, a 24/03/2018."
+sporting-b_3,2ª Divisão Sul,Sporting B,3,Recorde,Maior série sem perder no campeonato: 7 jogos (até 01/11/2025).
+sporting-b_4,2ª Divisão Sul,Sporting B,4,Jogadores,"Melhor marcador do clube desde 2021/22: Miguel Franco, com 49 golos em todas as competições."
+sporting-b_5,2ª Divisão Sul,Sporting B,5,Jogadores,"Mais golos num só jogo: 5, por Miguel Franco contra o Benfica B (18/05/2025)."
+sporting-b_6,2ª Divisão Sul,Sporting B,6,Guarda-redes,Lourenço Soares defendeu 18 penáltis e 44 livres diretos desde 2021/22.
+termas_1,2ª Divisão Norte,Termas,1,História,Nunca jogou na 1ª Divisão desde 2007/08.
+termas_2,2ª Divisão Norte,Termas,2,Recorde,"Maior vitória: 6-2 fora contra o Maia, a 12/11/2023."
+termas_3,2ª Divisão Norte,Termas,3,Recorde,Maior série sem perder no campeonato: 6 jogos (até 18/04/2026).
+termas_4,2ª Divisão Norte,Termas,4,Jogadores,"Melhor marcador do clube desde 2021/22: Matthew “Matt” Baker, com 29 golos em todas as competições."
+termas_5,2ª Divisão Norte,Termas,5,Jogadores,"Mais golos num só jogo: 4, por Matthew “Matt” Baker contra o Sobreira (04/10/2025)."
+termas_6,2ª Divisão Norte,Termas,6,Guarda-redes,Sérgio Costa defendeu 9 penáltis e 29 livres diretos desde 2021/22.
+tojal_1,2ª Divisão Sul,Tojal,1,História,Nunca jogou na 1ª Divisão desde 2007/08.
+tojal_2,2ª Divisão Sul,Tojal,2,Recorde,"Maior vitória: 6-2 em casa contra o Física, a 02/12/2023."
+tojal_3,2ª Divisão Sul,Tojal,3,Jogadores,"Melhor marcador do clube desde 2021/22: Rui Mendes, com 2 golos em todas as competições."
+tojal_4,2ª Divisão Sul,Tojal,4,Disciplina,"A que mais cartões azuis vê na liga: 2,0 por jogo desde 2023/24."
+tomar_1,1ª Divisão,Tomar,1,História,12 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2010/11).
+tomar_2,1ª Divisão,Tomar,2,Recorde,"Maior vitória: 20-2 em casa contra o CP Beja, a 03/10/2009."
+tomar_3,1ª Divisão,Tomar,3,Recorde,Maior série sem perder no campeonato: 19 jogos (até 14/05/2016).
+tomar_4,1ª Divisão,Tomar,4,Jogadores,"Melhor marcador do clube desde 2021/22: Guilherme Silva, com 53 golos em todas as competições."
+tomar_5,1ª Divisão,Tomar,5,Jogadores,"Mais golos num só jogo: 4, por Ivo Silva contra o Riba d'Ave (26/11/2025)."
+tomar_6,1ª Divisão,Tomar,6,Guarda-redes,António Marante defendeu 24 penáltis e 74 livres diretos desde 2021/22.
+turquel_1,2ª Divisão Sul,Turquel,1,História,12 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2012/13).
+turquel_2,2ª Divisão Sul,Turquel,2,Recorde,"Maior vitória: 16-2 fora contra o CD Santa Clara, a 13/11/2010."
+turquel_3,2ª Divisão Sul,Turquel,3,Recorde,Maior série sem perder no campeonato: 21 jogos (até 20/11/2010).
+turquel_4,2ª Divisão Sul,Turquel,4,Jogadores,"Melhor marcador do clube desde 2021/22: Tiago Mateus, com 80 golos em todas as competições."
+turquel_5,2ª Divisão Sul,Turquel,5,Jogadores,"Mais golos num só jogo: 5, por Tiago Mateus contra o Salesiana (08/02/2025)."
+turquel_6,2ª Divisão Sul,Turquel,6,Guarda-redes,Diogo Almeida defendeu 30 penáltis e 97 livres diretos desde 2021/22.
+valongo_1,1ª Divisão,Valongo,1,História,20 épocas na 1ª Divisão desde 2007/08 (a primeira nos nossos dados: 2007/08).
+valongo_2,1ª Divisão,Valongo,2,Recorde,"Maior vitória: 10-0 fora contra o Carvalhos, a 13/12/2008."
+valongo_3,1ª Divisão,Valongo,3,Recorde,Maior série sem perder no campeonato: 14 jogos (até 05/03/2014).
+valongo_4,1ª Divisão,Valongo,4,Jogadores,"Melhor marcador do clube desde 2021/22: Carlos Ramos “Carlitos”, com 57 golos em todas as competições."
+valongo_5,1ª Divisão,Valongo,5,Jogadores,"Mais golos num só jogo: 5, por Carlos Ramos “Carlitos” contra o Pacense (05/03/2025)."
+valongo_6,1ª Divisão,Valongo,6,Guarda-redes,Gonçalo “Guga” Bento defendeu 23 penáltis e 42 livres diretos desde 2021/22.
+valongo_7,1ª Divisão,Valongo,7,Estilo,Equipa das reviravoltas: 6 vitórias depois de estar a perder por 2 ou mais golos desde 2022/23 (2º na liga). A maior: recuperou de 3 golos de desvantagem e ganhou 6-5 ao Riba d'Ave.
+valongo_8,1ª Divisão,Valongo,8,Estilo,"Gosta de decidir no fim: 18% dos seus golos (desde 2022/23) são marcados nos últimos 5 minutos, a maior percentagem da liga."
+valongo-b_1,2ª Divisão Norte,Valongo B,1,História,Nunca jogou na 1ª Divisão desde 2007/08.
+valongo-b_2,2ª Divisão Norte,Valongo B,2,Recorde,"Maior vitória: 11-4 fora contra o OH Sports, a 22/03/2025."
+valongo-b_3,2ª Divisão Norte,Valongo B,3,Recorde,Maior série sem perder no campeonato: 8 jogos (até 07/03/2020).
+valongo-b_4,2ª Divisão Norte,Valongo B,4,Jogadores,"Melhor marcador do clube desde 2021/22: Rodrigo Fernandes, com 46 golos em todas as competições."
+valongo-b_5,2ª Divisão Norte,Valongo B,5,Jogadores,"Mais golos num só jogo: 6, por Miguel Moura contra o Carvalhos (05/11/2022)."
+valongo-b_6,2ª Divisão Norte,Valongo B,6,Guarda-redes,Afonso Venda defendeu 12 penáltis e 47 livres diretos desde 2021/22.
+vila-praia_1,2ª Divisão Norte,Vila Praia,1,História,Nunca jogou na 1ª Divisão desde 2007/08.
+vila-praia_2,2ª Divisão Norte,Vila Praia,2,Recorde,"Maior vitória: 12-5 em casa contra o Feira, a 10/11/2024."
+vila-praia_3,2ª Divisão Norte,Vila Praia,3,Jogadores,"Melhor marcador do clube desde 2021/22: Gustavo Lima, com 3 golos em todas as competições."
+vila-praia_4,2ª Divisão Norte,Vila Praia,4,Disciplina,"A mais disciplinada da liga: 0,33 cartões azuis por jogo desde 2023/24."

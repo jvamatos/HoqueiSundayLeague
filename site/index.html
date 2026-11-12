@@ -55,6 +55,10 @@
   .hp-list .mark-bad { color: var(--color-bad); font-weight: var(--cds-font-weight-medium); }
   .hp-list .sub { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
   .good { color: var(--color-ok); }
+  .hp-facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: var(--cds-gap-md); align-items: start; }
+  .hp-facts ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .hp-facts li { display: flex; flex-direction: column; gap: 3px; line-height: 1.45; }
+  .hp-chip { align-self: flex-start; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); border: 1px solid var(--color-border-line); border-radius: 999px; padding: 0 8px; }
   .bad { color: var(--color-bad); }
   .hp-names { white-space: normal !important; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); min-width: 14em; }
 </style>
@@ -77,6 +81,7 @@
       <button class="hp-tab" role="tab" data-tab="equipas" aria-selected="false">Equipas</button>
       <button class="hp-tab" role="tab" data-tab="jogadores" aria-selected="false">Jogadores</button>
       <button class="hp-tab" role="tab" data-tab="mercado" aria-selected="false">Mercado</button>
+      <button class="hp-tab" role="tab" data-tab="curiosidades" aria-selected="false">Curiosidades</button>
       <button class="hp-tab" role="tab" data-tab="powerplay" aria-selected="false">Power play</button>
       <button class="hp-tab" role="tab" data-tab="modelo" aria-selected="false">Modelo</button>
     </div>
@@ -182,6 +187,12 @@
     </div>
   </section>
 
+  <!-- CURIOSIDADES -->
+  <section class="hp-section" id="curiosidades" hidden>
+    <p class="hp-note">Factos calculados a partir dos nossos dados: resultados desde 2007/08, jogadores desde 2021/22 e jogada-a-jogada desde 2022/23. Escolha a liga no menu.</p>
+    <div class="hp-facts" data-draw="factos" data-source="factos"></div>
+  </section>
+
   <!-- MERCADO -->
   <section class="hp-section" id="mercado" hidden>
     <div class="hp-card" id="mercado-card">
@@ -257,7 +268,7 @@
   HP.num = (v, d = 1) => (v === null || v === '' || v === undefined) ? '—' : (+v).toFixed(d).replace('.', ',');
   HP.date = (s) => d3.utcFormat('%d/%m')(new Date(s + 'T00:00:00Z'));
   HP.rows = (id) => { const r = dash.data(id); return r.status === 'ok' ? r.data : null; };
-  HP.ALL = ['jogos', 'ultimos', 'classificacao', 'pontos-chart', 'equipas', 'equipas-chart', 'marcadores', 'guarda-redes', 'pp', 'mercado', 'impacto'];
+  HP.ALL = ['factos', 'jogos', 'ultimos', 'classificacao', 'pontos-chart', 'equipas', 'equipas-chart', 'marcadores', 'guarda-redes', 'pp', 'mercado', 'impacto'];
   HP.signed = (v) => (v === null || v === '' || v === undefined) ? '—' : `${+v > 0 ? '+' : ''}${Math.round(+v)}%`;
   // fill a <tbody> with one <tr> per row; cols: [field, cls, format]
   HP.fill = (tb, rows, key, cols, colspan) => {
@@ -476,6 +487,27 @@
       const sub = document.createElement('div'); sub.className = 'sub';
       sub.append(`${g.liga} · ${HP.date(g.data)} · previsão: ${favName} `, at('span', null, HP.pct(g[favField]), favField));
       body.append(line, sub); li.append(mark, body); ul.appendChild(li);
+    });
+  });
+
+  dash.draw('factos', (box) => {
+    const r = HP.rows('factos');
+    box.replaceChildren();
+    if (!r) { const p = document.createElement('p'); p.className = 'hp-note'; p.textContent = dash.data('factos').status === 'error' ? 'Falhou o carregamento.' : 'A carregar…'; box.appendChild(p); return; }
+    const teams = new Map();
+    r.filter((x) => x.liga === HP.liga).forEach((x) => { if (!teams.has(x.equipa)) teams.set(x.equipa, []); teams.get(x.equipa).push(x); });
+    [...teams.keys()].sort((a, b) => a.localeCompare(b, 'pt')).forEach((team) => {
+      const card = document.createElement('div'); card.className = 'hp-card';
+      const h = document.createElement('h2'); h.className = 'hp-h2'; h.textContent = team;
+      const ul = document.createElement('ul');
+      teams.get(team).sort((a, b) => +a.ordem - +b.ordem).forEach((f) => {
+        const li = document.createElement('li');
+        const chip = document.createElement('span'); chip.className = 'hp-chip'; chip.textContent = f.categoria;
+        const t = document.createElement('span'); t.textContent = f.facto;
+        t.dataset.source = 'factos'; t.dataset.field = 'facto'; t.dataset.where = `id=${encodeURIComponent(f.id)}`;
+        li.append(chip, t); ul.appendChild(li);
+      });
+      card.append(h, ul); box.appendChild(card);
     });
   });
 
