@@ -4,17 +4,25 @@
 """
 import pandas as pd
 
-from .backtest import evaluate, load_matches
+from .backtest import evaluate, load_matches as _load
+
+
+def load_matches():
+    return _load(("features_players.csv", "features_discipline.csv"))
 from .model import Params
 
 BASE = dict(half_life_days=240, l2=2.0, prior_half_life=1095)
 
+SQ_GK = (("sq_known", "own"), ("gk_known", "opp"))
 VARIANTS = {
     "baseline (no prior)": Params(240, 0.5, prior_half_life=None, features=()),
     "long-run prior": Params(**BASE, features=()),
     "+ squad (known)": Params(**BASE, features=(("sq_known", "own"),)),
     "+ squad + gk (known)": Params(**BASE, features=(("sq_known", "own"), ("gk_known", "opp"))),
     "+ squad + gk (expected)": Params(**BASE, features=(("sq_exp", "own"), ("gk_exp", "opp"))),
+    "+ squad + gk + power play": Params(**BASE, features=SQ_GK + (("ppx", "own"),)),
+    "+ squad + gk + referee": Params(**BASE, features=SQ_GK + (("ref", "own"),)),
+    "+ squad + gk + pp + referee": Params(**BASE, features=SQ_GK + (("ppx", "own"), ("ref", "own"))),
 }
 
 
@@ -35,4 +43,6 @@ def run(variants=VARIANTS, periods=None):
 
 
 if __name__ == "__main__":
-    run()
+    import sys
+    names = sys.argv[1:]
+    run({k: v for k, v in VARIANTS.items() if not names or k in names})

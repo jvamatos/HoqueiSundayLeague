@@ -1,77 +1,114 @@
 # HoqueiSundayLeague
 
 A prediction model for Portuguese rink hockey (hóquei em patins). It covers the men's
-**1ª Divisão**, **2ª Divisão Norte** and **2ª Divisão Sul**.
+**1ª Divisão**, **2ª Divisão Norte** and **2ª Divisão Sul**, using data from 2007/08 to today.
 
 ## Quick start
 
 ```bash
 pip install -r requirements.txt
-python -m hoquei.scrape_api --refresh   # new results from hoqueipatins.pt (current season)
-python -m hoquei.scrape_archive         # 2015/16-2020/21 from arquivo.hoqueipatins.pt (cached)
+python -m hoquei.scrape_api --refresh   # results, line-ups, player stats (2021/22 onwards)
+python -m hoquei.scrape_archive         # 2015/16-2020/21 (cached after the first run)
+python -m hoquei.scrape_archive_old     # 2007/08-2014/15 (cached after the first run)
 python -m hoquei.build_dataset          # -> data/matches.csv
-python -m hoquei.predict                # -> data/predictions/<today>/report.md
+python -m hoquei.players                # player ratings + squad/goalkeeper features
+python -m hoquei.scrape_events          # play-by-play: goals, cards, power plays, referees (slow first time)
+python -m hoquei.discipline             # power-play / card / referee stats + features
+python -m hoquei.pp_report              # -> data/analysis/power_play.md
+python -m hoquei.predict --absent "Benfica: Pau Bargallo; Porto: Malian"   # -> data/predictions/<today>/report.md
 python -m hoquei.backtest               # how good is the model?
+python -m hoquei.experiments            # compare model variants
 ```
 
 ## Data
 
 | Seasons | Source | What we get |
 |---|---|---|
-| 2015/16 – 2020/21 | `arquivo.hoqueipatins.pt` calendar pages (`hp/CAMN_*.HTM`), plus round pages for 2016/17 1ª Div. | Regular-season results and dates |
-| 2021/22 – now | `hoqueipatins.pt` SportsPress REST API (`/wp-json/sportspress/v2/events`) | Results incl. half-time, overtime and shootouts, play-offs, line-ups, starting five, goals by type (open play / penalty / direct free hit), blue cards, warnings, goalkeeper stats |
+| 2007/08 – 2012/13 | archive "all rounds" pages (`*_jornadas_<yy-yy>.htm`) | results and dates (rescheduled dates where noted) |
+| 2013/14 – 2014/15 | archive results matrices (`hp/_QRE_*.HTM`) + round pages for dates | results; part of 2013/14 has approximate dates because some round pages are gone |
+| 2015/16 – 2020/21 | archive calendar pages (`hp/CAMN_*.HTM`); round pages for 2016/17 1ª Div. | results and dates |
+| 2021/22 – now | `hoqueipatins.pt` SportsPress REST API | results incl. half-time, overtime and shootouts, play-offs, line-ups, goals by type, cards, goalkeeper stats |
+| 2021/22 – now | match pages (`/evento/<id>/`), "Jogada a jogada" | play-by-play with minutes (from 2022/23), power plays, referees |
 
-* `data/matches.csv`: about 6,700 games (6,049 played). One row per game, with team names
-  normalised across sources (see `ALIASES` in `hoquei/common.py`).
-* `data/api_player_stats.csv`: about 50,000 player-game rows (2021/22 onwards). Not used by
-  the model yet.
+* `data/matches.csv`: about 12,000 games (**11,341 played**), with team names normalised
+  across sources (see `ALIASES` in `hoquei/common.py`).
+* `data/api_player_stats.csv`: about 50,000 player-game rows. `data/players.csv` has the
+  names. 431 of 1,213 players appear at more than one club, and player IDs stay the same
+  when they move.
+* `data/events.csv`: about 79,000 play-by-play actions. `data/referees.csv` has the
+  officials of 2,900 games.
+* Checks: the 2007/08 and 2015/16 1ª Div. totals match the archive's own tables exactly.
+  2019/20 is incomplete because of COVID. Porto Santo withdrew in 2011/12.
 * `data/raw/` holds the downloaded pages. It is a cache and is not committed. Requests are
   rate-limited to be polite to the site.
 
-Checks: 2015/16 1ª Div. totals match the archive's own table (Benfica 187 scored, Porto 61
-conceded). 2019/20 is incomplete because of COVID. 2007/08–2014/15 use older, hand-made
-page layouts and are not included yet.
-
 ## Model (`hoquei/model.py`)
 
-This is a time-weighted Poisson team-strength model, the same family as the Dixon–Coles
-models used in football:
+This is a time-weighted Poisson team-strength model:
 
 ```
-log(home xG) = level[div] + home_adv[div] + attack[home] - defence[away]
-log(away xG) = level[div] +                 attack[away] - defence[home]
+log(home xG) = level[div] + home_adv[div] + attack[home] - defence[away] + β·features(home)
+log(away xG) = level[div] +                 attack[away] - defence[home] + β·features(away)
 ```
 
-* It is fitted on **regulation-time** scores. Overtime and shootout goals are removed,
-  because the API includes them in the final score.
-* Recent games count more: the half-life is 240 days. Ratings are shrunk toward average
-  (L2 = 0.5).
-* The 1ª and 2ª Divisão are on **one rating scale**. They are linked by teams that are
-  promoted or relegated, and by promotion games.
-* Outputs: home/draw/away probabilities, expected goals, the most likely score, and a
-  Monte-Carlo simulation of the regular season (title, play-off top 8, relegation).
+* It is fitted on **regulation-time** scores. Overtime and shootout goals are removed.
+* Recent games count more: the half-life is 240 days.
+* **Long-run prior:** ratings are shrunk toward each club's 3-year (half-life) rating,
+  not toward average. This is where the 2007+ history helps.
+* The 1ª and 2ª Divisão are on one rating scale, linked by promoted and relegated teams.
+* **Player features** (`hoquei/players.py`, computed without looking ahead):
+  * `sq_known`: the squad's scoring power vs. the team's usual squad. Each player's scoring
+    rate follows them across clubs, so transfers count. Learned effect: about 0.65, so a
+    squad 10% weaker scores about 6% fewer goals.
+  * `gk_known`: the starting goalkeeper's "goals prevented" vs. the team's usual
+    goalkeeper.
+  * For future games the squad isn't known, so these are 0 unless you pass absences with
+    `--absent` (applied to each team's next game).
 
-## Backtest (`hoquei/backtest.py`)
+## How good is it? (walk-forward backtest)
 
-The backtest is walk-forward. Every week the model is refitted using only earlier games,
-then it predicts that week's games. Parameters were tuned on 2021/22–2022/23. The test
-below uses the **unseen** seasons 2023/24 → Nov 2026 (1,762 games).
+Every week the model is refitted on earlier games only, then predicts that week's games.
+Parameters were tuned on 2021/22–2022/23; the test period 2023/24 → Nov 2026 was not used
+for tuning.
 
-| | log loss ↓ | RPS ↓ | correct outcome |
+| Variant | log loss, test 2023–26 ↓ | correct outcome, test | log loss, val 2021–23 |
 |---|---|---|---|
-| **Poisson model** | **0.819** | **0.180** | **65.4%** |
-| Elo (goal-diff) | 0.851 | 0.188 | 64.4% |
-| Base rates | 0.977 | 0.239 | 51.7% |
+| Base rates | 0.977 | 51.7% | – |
+| Elo (goal-diff) | 0.851 | 64.5% | – |
+| Poisson model (v1) | 0.819 | 65.4% | 0.798 |
+| + long-run prior | 0.816 | 65.4% | **0.795** |
+| **+ squad + goalkeeper (known squads)** | **0.814** | **65.9%** | 0.801 |
+| + squad + gk from the *previous* game's squad | 0.816 | 65.8% | 0.803 |
+| + power-play feature | 0.814 | 65.7% | 0.804 |
+| + referee feature | 0.815 | 65.8% | 0.801 |
 
-By league: 1ª Div. 70.0% correct, 2ª Norte 62.6%, 2ª Sul 63.3%. Calibration is good: when
-the model gives the home team 60–80%, the home team won 72% of the time. Predicted draws
-were 12.2%; actual draws were 13.2%.
+A longer test, 2012/13–2020/21 (4,937 games): model 0.794 log loss / 66.6% vs. Elo
+0.829 / 65.1%; adding the long-run prior gives 0.7937.
+
+What we learned:
+* **The long-run prior** (from the 2007+ history) helps a little in every period.
+* **Squads** help when we know who plays: missing scorers and goalkeepers move the odds.
+  Knowing only last week's line-up adds almost nothing beyond the team rating. Player
+  history starts in 2021, so the 2021–23 period has too little history and the feature
+  hurts there.
+* **Power play and discipline:** a team's blue cards per game and power-play success
+  barely carry over from one season to the next (correlation ≈ 0.2). They are mostly noise
+  and are already inside the team ratings, so they don't improve win/draw/loss
+  predictions.
+* **Referees:** stricter referee pairs mean more goals for *both* teams (effect ≈ +0.35 ×
+  log strictness). This slightly improves goal-total predictions (over/under 7.5 log loss
+  0.668 → 0.666) but not who wins, so it is not in the default model.
+
+Power-play statistics (goals per PP, penalty kill, short-handed goals, cards and referee
+tables) are in `data/analysis/power_play.md`. Key facts: about 1.1 power plays per team
+per game, 0.5–0.7 goals per power play (including the free hit that comes with a blue
+card), and goals come about 4× faster on the power play.
 
 ## Ideas / next steps
 
-* Use the player data: missing top scorers or goalkeepers, form, and set-piece specialists.
-* Blue cards → power-play / short-handed effects.
-* A play-off series simulator (best-of-3/5, with overtime and shootouts).
-* Add 2007/08–2014/15 from the older archive pages.
-* Compare with bookmaker odds, if available, as a tougher benchmark.
-* Later: format the output for X posts.
+* Play-off series simulator (best-of-3/5, overtime, shootouts).
+* Fetch the squad list (*convocatórias*) and the referee nominations before games, to use
+  the squad and referee features for real predictions.
+* Use the FPP suspension bulletins (`fpp.pt/docs-fpp/castigos-2026-27/`) automatically.
+* Compare with bookmaker odds, as a tougher benchmark.
+* Format the output for X posts.

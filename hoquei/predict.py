@@ -73,10 +73,13 @@ def apply_absences(up, spec):
         team, _, players = part.partition(":")
         sq, gk, found = absence_features(team.strip(), [p.strip() for p in players.split(",") if p.strip()])
         key = team_key(team)
-        for side in "ha":
-            mask = up["home" if side == "h" else "away"] == key
-            up.loc[mask, f"sq_known_{side}"] = sq
-            up.loc[mask, f"gk_known_{side}"] = gk
+        games = up[(up.home == key) | (up.away == key)].sort_values("date")
+        if games.empty:
+            continue
+        nxt = games.index[0]  # absences apply to the team's next game only
+        side = "h" if up.at[nxt, "home"] == key else "a"
+        up.loc[nxt, f"sq_known_{side}"] = sq
+        up.loc[nxt, f"gk_known_{side}"] = gk
         notes.append(f"{name(key)} without {', '.join(found)}: squad power {100 * (np.exp(sq) - 1):+.0f}%"
                      + (f", goalkeeper change {gk:+.2f} goals/game" if gk else ""))
         print(notes[-1])
@@ -93,7 +96,7 @@ def main():
     ap.add_argument("--days", type=int, default=8, help="predict games in the next N days")
     ap.add_argument("--sims", type=int, default=10000)
     ap.add_argument("--absent", default="",
-                    help='known absences, e.g. "Benfica: Pau Bargallo, Zé Miranda; Porto: Malian"')
+                    help='known absences for each team\'s NEXT game, e.g. "Benfica: Pau Bargallo, Zé Miranda; Porto: Malian"')
     args = ap.parse_args()
 
     m = pd.read_csv(DATA / "matches.csv")

@@ -118,8 +118,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--tune", action="store_true", help="grid-search params on 2021-23")
     args = ap.parse_args()
-    m = pd.read_csv(DATA / "matches.csv")
-    m = m[m.played].reset_index(drop=True)
+    m = load_matches()
     d = pd.to_datetime(m.date)
 
     if args.tune:

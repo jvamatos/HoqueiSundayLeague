@@ -2,7 +2,7 @@
 
 Model fitted on all games before 2026-11-12, recent games weighted more (half-life 240 days). Probabilities are for the regulation-time result (no overtime / penalties).
 
-**Ausências consideradas:** Benfica without Pau Bargalló: squad power -16%; Porto without Xavier Malián “Mali” ®: squad power +0%, goalkeeper change -0.92 goals/game
+**Ausências consideradas:** Benfica B without Miguel Matias: squad power -7% (red card on 7 Nov; suspension assumed, FPP decision still pending on 12 Nov)
 
 ## 1ª Divisão
 
@@ -10,19 +10,19 @@ Model fitted on all games before 2026-11-12, recent games weighted more (half-li
 
 | Data | Jogo | Casa | Empate | Fora | Golos esperados | Resultado + provável |
 |---|---|---|---|---|---|---|
-| 2026-11-14 | Benfica vs Riba d'Ave | 89% | 6% | 5% | 4.9 – 1.4 | 4-1 |
+| 2026-11-14 | Benfica vs Riba d'Ave | 92% | 5% | 3% | 5.5 – 1.4 | 5-1 |
 | 2026-11-14 | Candelária vs Oliveirense | 25% | 16% | 59% | 2.2 – 3.3 | 2-3 |
 | 2026-11-14 | Juventude de Viana vs Braga | 44% | 16% | 41% | 3.4 – 3.3 | 3-3 |
 | 2026-11-14 | Oeiras vs Barcelos | 10% | 8% | 82% | 2.9 – 6.1 | 2-6 |
 | 2026-11-14 | Sanjoanense vs Pacense | 50% | 15% | 36% | 3.9 – 3.4 | 3-3 |
 | 2026-11-14 | Valongo vs Sporting | 18% | 13% | 69% | 2.2 – 4.0 | 2-3 |
-| 2026-11-18 | Tomar vs Porto | 24% | 15% | 61% | 2.5 – 3.8 | 2-3 |
+| 2026-11-18 | Tomar vs Porto | 20% | 14% | 66% | 2.3 – 3.8 | 2-3 |
 | 2026-11-21 | Braga vs Barcelos | 24% | 13% | 62% | 3.0 – 4.4 | 3-4 |
 | 2026-11-21 | Juventude de Viana vs Sanjoanense | 47% | 15% | 38% | 3.9 – 3.6 | 3-3 |
 | 2026-11-21 | Oliveirense vs Valongo | 67% | 13% | 19% | 3.9 – 2.3 | 3-2 |
 | 2026-11-21 | Pacense vs Candelária | 63% | 15% | 23% | 3.7 – 2.4 | 3-2 |
 | 2026-11-21 | Riba d'Ave vs Tomar | 38% | 17% | 44% | 2.7 – 2.8 | 2-2 |
-| 2026-11-21 | Sporting vs Benfica | 50% | 18% | 33% | 2.8 – 2.3 | 2-2 |
+| 2026-11-21 | Sporting vs Benfica | 45% | 17% | 38% | 2.8 – 2.6 | 2-2 |
 
 **Simulação da fase regular** (10,000 simulações)
 
@@ -87,7 +87,7 @@ Model fitted on all games before 2026-11-12, recent games weighted more (half-li
 | Data | Jogo | Casa | Empate | Fora | Golos esperados | Resultado + provável |
 |---|---|---|---|---|---|---|
 | 2026-11-14 | Alcobacense vs CRIAR-T | 57% | 17% | 26% | 3.0 – 2.1 | 3-2 |
-| 2026-11-14 | Benfica B vs Paço de Arcos | 51% | 14% | 36% | 4.4 – 3.9 | 4-3 |
+| 2026-11-14 | Benfica B vs Paço de Arcos | 48% | 14% | 38% | 4.2 – 3.9 | 4-3 |
 | 2026-11-14 | Grândola vs Alenquer | 15% | 10% | 75% | 2.8 – 5.2 | 2-5 |
 | 2026-11-14 | Marinhense vs Turquel | 24% | 14% | 62% | 2.8 – 4.1 | 2-4 |
 | 2026-11-14 | Salesiana vs Física | 45% | 16% | 39% | 3.4 – 3.2 | 3-3 |
