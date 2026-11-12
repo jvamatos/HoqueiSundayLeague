@@ -110,6 +110,17 @@ What we learned:
   reflect team quality because regulars almost always play together. It is not in the
   default model; the ratings are in `data/player_impact.csv` as a statistic.
 
+* **Transfers (season over season, `hoquei/transfers.py`):** at each season start, player
+  ratings (impact and goals per game, earlier games only) are applied to last season's squad
+  and to the squad called up so far this season. The difference is the transfer effect,
+  which fades over the first ~8 games. The first games of a season are clearly the hardest
+  to predict (0.877 log loss vs 0.814 over the whole season), but the feature barely helps:
+  on the first 6 games per team in 2023–26, 0.8773 → 0.8761 and 61.1% → 62.0% correct,
+  which is within noise. On 2022/23 it is worse, because the model had no earlier seasons
+  to learn how much a transfer matters. Part of the effect is already in the squad feature,
+  which compares the squad with the team's last games (i.e. last season's at the start). Not
+  in the default model; the squad changes per team are in `data/transfers_summary.csv`.
+
 Power-play statistics (goals per PP, penalty kill, short-handed goals, cards and referee
 tables) are in `data/analysis/power_play.md`. Key facts: about 1.1 power plays per team
 per game, 0.5–0.7 goals per power play (including the free hit that comes with a blue
