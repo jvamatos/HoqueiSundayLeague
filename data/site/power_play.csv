@@ -1,0 +1,85 @@
+id,epoca,liga,equipa,jogos,azuis_por_jogo,power_plays,golos_pp,golos_por_pp,inferioridades,golos_sofridos_por_inferioridade,golos_em_inferioridade
+2025-26_1div_barcelos,2025-26,1ª Divisão,Barcelos,31,1.29,39,31,0.8,35,0.54,5
+2025-26_1div_benfica,2025-26,1ª Divisão,Benfica,34,1.09,39,25,0.64,31,0.32,6
+2025-26_1div_braga,2025-26,1ª Divisão,Braga,28,0.89,21,15,0.71,20,0.95,5
+2025-26_1div_carvalhos,2025-26,1ª Divisão,Carvalhos,26,1.38,28,12,0.43,30,0.83,5
+2025-26_1div_oliveirense,2025-26,1ª Divisão,Oliveirense,28,1.14,21,8,0.38,27,0.67,6
+2025-26_1div_pacense,2025-26,1ª Divisão,Pacense,26,1.04,42,14,0.33,21,0.48,4
+2025-26_1div_porto,2025-26,1ª Divisão,Porto,31,0.77,31,20,0.64,23,0.65,4
+2025-26_1div_povoa,2025-26,1ª Divisão,Póvoa,26,1.35,23,14,0.61,31,0.71,1
+2025-26_1div_riba-dave,2025-26,1ª Divisão,Riba d'Ave,26,1.77,32,14,0.44,33,0.3,3
+2025-26_1div_sanjoanense,2025-26,1ª Divisão,Sanjoanense,28,1.25,32,21,0.66,27,0.41,4
+2025-26_1div_sporting,2025-26,1ª Divisão,Sporting,34,1.5,37,31,0.84,43,0.37,9
+2025-26_1div_tomar,2025-26,1ª Divisão,Tomar,26,1.0,29,11,0.38,28,0.61,3
+2025-26_1div_turquel,2025-26,1ª Divisão,Turquel,26,1.62,25,11,0.44,39,0.62,5
+2025-26_1div_valongo,2025-26,1ª Divisão,Valongo,28,1.71,29,14,0.48,40,0.62,7
+2025-26_2div_norte_academica,2025-26,2ª Divisão Norte,Académica,26,1.42,32,15,0.47,26,0.54,6
+2025-26_2div_norte_barcelos-b,2025-26,2ª Divisão Norte,Barcelos B,26,1.35,26,3,0.12,30,0.47,5
+2025-26_2div_norte_cambra,2025-26,2ª Divisão Norte,Cambra,26,1.58,20,7,0.35,29,0.38,5
+2025-26_2div_norte_espinho,2025-26,2ª Divisão Norte,Espinho,26,1.12,33,14,0.42,27,0.41,2
+2025-26_2div_norte_famalicense,2025-26,2ª Divisão Norte,Famalicense,26,1.54,36,21,0.58,31,0.58,9
+2025-26_2div_norte_infante,2025-26,2ª Divisão Norte,Infante,26,1.27,26,11,0.42,26,0.42,2
+2025-26_2div_norte_juventude-viana,2025-26,2ª Divisão Norte,Juventude de Viana,26,0.88,26,19,0.73,20,0.55,5
+2025-26_2div_norte_marinhense,2025-26,2ª Divisão Norte,Marinhense,26,0.81,35,22,0.63,19,0.37,2
+2025-26_2div_norte_oh-sports,2025-26,2ª Divisão Norte,OH Sports,26,2.15,19,15,0.79,44,0.66,4
+2025-26_2div_norte_oliveirense-b,2025-26,2ª Divisão Norte,Oliveirense B,26,1.58,34,15,0.44,31,0.48,6
+2025-26_2div_norte_porto-b,2025-26,2ª Divisão Norte,Porto B,26,1.46,26,15,0.58,31,0.45,4
+2025-26_2div_norte_sobreira,2025-26,2ª Divisão Norte,Sobreira,26,0.88,30,19,0.63,23,0.56,4
+2025-26_2div_norte_termas,2025-26,2ª Divisão Norte,Termas,26,1.5,26,11,0.42,31,0.71,5
+2025-26_2div_norte_valongo-b,2025-26,2ª Divisão Norte,Valongo B,26,1.31,29,18,0.62,30,0.5,3
+2025-26_2div_sul_alcobacense,2025-26,2ª Divisão Sul,Alcobacense,26,1.46,28,12,0.43,35,0.23,3
+2025-26_2div_sul_alenquer,2025-26,2ª Divisão Sul,Alenquer,26,1.23,39,25,0.64,30,0.4,5
+2025-26_2div_sul_benfica-b,2025-26,2ª Divisão Sul,Benfica B,26,1.04,36,24,0.67,24,0.25,4
+2025-26_2div_sul_biblioteca,2025-26,2ª Divisão Sul,Biblioteca,26,1.27,28,10,0.36,32,0.84,6
+2025-26_2div_sul_candelaria,2025-26,2ª Divisão Sul,Candelária,26,1.15,35,22,0.63,26,0.23,3
+2025-26_2div_sul_criar-t,2025-26,2ª Divisão Sul,CRIAR-T,26,1.69,28,15,0.54,42,0.62,4
+2025-26_2div_sul_entroncamento,2025-26,2ª Divisão Sul,Entroncamento,26,1.12,21,7,0.33,26,0.69,0
+2025-26_2div_sul_fisica,2025-26,2ª Divisão Sul,Física,26,0.81,27,12,0.44,18,0.72,1
+2025-26_2div_sul_murches,2025-26,2ª Divisão Sul,Murches,26,1.19,29,13,0.45,28,0.39,4
+2025-26_2div_sul_oeiras,2025-26,2ª Divisão Sul,Oeiras,26,1.69,27,7,0.26,39,0.23,5
+2025-26_2div_sul_paco-arcos,2025-26,2ª Divisão Sul,Paço de Arcos,26,1.42,30,16,0.53,30,0.7,4
+2025-26_2div_sul_parede,2025-26,2ª Divisão Sul,Parede,26,0.88,31,15,0.48,21,0.57,4
+2025-26_2div_sul_sporting-b,2025-26,2ª Divisão Sul,Sporting B,26,1.38,23,7,0.3,33,0.61,2
+2025-26_2div_sul_tigres,2025-26,2ª Divisão Sul,Tigres,26,1.62,43,26,0.6,41,0.54,1
+2026-27_1div_barcelos,2026-27,1ª Divisão,Barcelos,1,0.0,1,0,0.0,0,,0
+2026-27_1div_benfica,2026-27,1ª Divisão,Benfica,1,3.0,0,0,,2,0.5,0
+2026-27_1div_braga,2026-27,1ª Divisão,Braga,1,1.0,1,0,0.0,1,0.0,0
+2026-27_1div_candelaria,2026-27,1ª Divisão,Candelária,1,0.0,0,0,,0,,0
+2026-27_1div_juventude-viana,2026-27,1ª Divisão,Juventude de Viana,1,2.0,2,0,0.0,2,1.0,0
+2026-27_1div_oeiras,2026-27,1ª Divisão,Oeiras,1,1.0,1,0,0.0,1,0.0,0
+2026-27_1div_oliveirense,2026-27,1ª Divisão,Oliveirense,1,0.0,0,0,,0,,0
+2026-27_1div_pacense,2026-27,1ª Divisão,Pacense,1,3.0,2,2,1.0,2,0.0,0
+2026-27_1div_porto,2026-27,1ª Divisão,Porto,1,0.0,2,1,0.5,0,,0
+2026-27_1div_riba-dave,2026-27,1ª Divisão,Riba d'Ave,1,0.0,0,0,,0,,0
+2026-27_1div_sanjoanense,2026-27,1ª Divisão,Sanjoanense,1,0.0,0,0,,0,,0
+2026-27_1div_sporting,2026-27,1ª Divisão,Sporting,1,0.0,0,0,,0,,0
+2026-27_1div_tomar,2026-27,1ª Divisão,Tomar,1,1.0,0,0,,1,0.0,0
+2026-27_1div_valongo,2026-27,1ª Divisão,Valongo,1,0.0,0,0,,0,,0
+2026-27_2div_norte_academica,2026-27,2ª Divisão Norte,Académica,3,1.0,4,2,0.5,2,1.0,0
+2026-27_2div_norte_barcelos-b,2026-27,2ª Divisão Norte,Barcelos B,3,0.67,2,0,0.0,2,0.0,0
+2026-27_2div_norte_cambra,2026-27,2ª Divisão Norte,Cambra,3,1.67,4,2,0.5,5,0.4,0
+2026-27_2div_norte_carvalhos,2026-27,2ª Divisão Norte,Carvalhos,3,0.67,5,3,0.6,1,0.0,0
+2026-27_2div_norte_espinho,2026-27,2ª Divisão Norte,Espinho,3,1.33,4,1,0.25,5,0.4,0
+2026-27_2div_norte_famalicense,2026-27,2ª Divisão Norte,Famalicense,3,1.33,3,1,0.33,3,0.0,0
+2026-27_2div_norte_lavra,2026-27,2ª Divisão Norte,Lavra,3,1.33,2,0,0.0,3,0.67,0
+2026-27_2div_norte_mealhada,2026-27,2ª Divisão Norte,Mealhada,3,1.33,3,0,0.0,3,0.33,3
+2026-27_2div_norte_oliveirense-b,2026-27,2ª Divisão Norte,Oliveirense B,3,1.67,1,0,0.0,3,0.33,0
+2026-27_2div_norte_porto-b,2026-27,2ª Divisão Norte,Porto B,3,1.33,4,2,0.5,5,0.4,0
+2026-27_2div_norte_povoa,2026-27,2ª Divisão Norte,Póvoa,3,1.33,4,2,0.5,4,0.25,1
+2026-27_2div_norte_termas,2026-27,2ª Divisão Norte,Termas,3,1.0,2,0,0.0,3,0.67,0
+2026-27_2div_norte_valongo-b,2026-27,2ª Divisão Norte,Valongo B,3,0.67,4,3,0.75,2,0.5,1
+2026-27_2div_norte_vila-praia,2026-27,2ª Divisão Norte,Vila Praia,3,0.33,0,0,,1,0.0,1
+2026-27_2div_sul_alcobacense,2026-27,2ª Divisão Sul,Alcobacense,3,3.0,3,0,0.0,8,0.62,0
+2026-27_2div_sul_alenquer,2026-27,2ª Divisão Sul,Alenquer,3,0.33,1,0,0.0,1,0.0,1
+2026-27_2div_sul_benfica-b,2026-27,2ª Divisão Sul,Benfica B,3,1.0,2,1,0.5,3,1.0,1
+2026-27_2div_sul_criar-t,2026-27,2ª Divisão Sul,CRIAR-T,3,2.0,4,1,0.25,6,0.17,1
+2026-27_2div_sul_fisica,2026-27,2ª Divisão Sul,Física,3,1.0,3,2,0.67,3,0.0,2
+2026-27_2div_sul_grandola,2026-27,2ª Divisão Sul,Grândola,3,2.0,4,3,0.75,5,0.4,0
+2026-27_2div_sul_marinhense,2026-27,2ª Divisão Sul,Marinhense,3,0.67,3,3,1.0,2,1.0,0
+2026-27_2div_sul_murches,2026-27,2ª Divisão Sul,Murches,3,0.33,3,1,0.33,1,1.0,0
+2026-27_2div_sul_paco-arcos,2026-27,2ª Divisão Sul,Paço de Arcos,3,0.33,6,3,0.5,1,0.0,0
+2026-27_2div_sul_parede,2026-27,2ª Divisão Sul,Parede,3,0.67,6,1,0.17,2,0.5,0
+2026-27_2div_sul_salesiana,2026-27,2ª Divisão Sul,Salesiana,3,1.33,0,0,,5,0.2,1
+2026-27_2div_sul_sporting-b,2026-27,2ª Divisão Sul,Sporting B,3,1.33,3,0,0.0,4,0.5,0
+2026-27_2div_sul_tojal,2026-27,2ª Divisão Sul,Tojal,3,2.0,4,3,0.75,5,0.4,0
+2026-27_2div_sul_turquel,2026-27,2ª Divisão Sul,Turquel,3,0.67,6,3,0.5,2,0.5,0

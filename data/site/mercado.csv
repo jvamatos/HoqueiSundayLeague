@@ -1,0 +1,37 @@
+id,liga,equipa,ataque_pct,defesa_pct,saldo,entradas,saidas,principais_entradas,principais_saidas
+riba-dave,1ª Divisão,Riba d'Ave,9,0,9,5,4,"Tiago Saraiva, Filipe Martins, Pedro Rocha","Álvaro Shehda, Gonçalo Santos “Totti”, Antoine Thébaud"
+valongo,1ª Divisão,Valongo,8,-1,9,2,3,"Henrique Magalhães, Marcos Blanqué","João Lima, Pedro Batista, Gabriel “Gabi” Azevedo"
+braga,1ª Divisão,Braga,3,-5,7,2,2,"Afonso Ribeiro, Santiago Honório","Guilherme Magalhães, Paulo Pereira"
+turquel,2ª Divisão Sul,Turquel,6,1,5,3,4,"Guilherme “Gui” Duro, Zé Costa, Diogo Neves","Martim Costa, Diogo Almeida, Ezequiel Funes"
+espinho,2ª Divisão Norte,Espinho,11,6,5,4,4,"Liloann Gélébart, Filipe Sousa, Alexandre Sousa","Xavier “Xavi” Pinho, Francisco “Kiko” Pereira, Lucas Bridge"
+sanjoanense,1ª Divisão,Sanjoanense,5,0,5,2,4,"Francisco Torres “Tombita”, Renato Clavel","João Ramalho, Miguel Henriques, Joel “Negro” Martín"
+barcelos-b,2ª Divisão Norte,Barcelos B,19,15,4,4,5,"Tiago Pereira, Simão Araújo, Rodrigo Rodrigues","João Duarte, João Chaves, Martim Oliveira"
+cambra,2ª Divisão Norte,Cambra,4,0,4,1,2,Xavier “Xavi” Pinho,"Pedro Rego, Ricardo Fallé"
+criar-t,2ª Divisão Sul,CRIAR-T,0,-3,3,1,1,Thomas Molina,Henrique Viçoso
+fisica,2ª Divisão Sul,Física,3,2,1,2,3,"Luís Francisco Oliveira, Francisco Ferreira “Chiquitita”","David Fonseca, Guilherme Maurício “Pico”, Diogo Miranda"
+carvalhos,2ª Divisão Norte,Carvalhos,0,0,0,0,0,,
+pacense,1ª Divisão,Pacense,11,11,0,3,1,"Franco “Tato” Ferruccio, Álvaro Shehda, Ezequiel Funes",Tomás Pereira
+povoa,2ª Divisão Norte,Póvoa,-3,-3,0,3,4,"João Pereira, Guilherme Leitão, Martim Oliveira","Luís Melo, Henrique “Kiko” Campos, Miguel Castro"
+tomar,1ª Divisão,Tomar,25,25,0,3,4,"Rodrigo Preciso, Diogo Duarte, Francisco “Xico” Veludo","António Marante, André Centeno, Julián Tamborindegui"
+murches,2ª Divisão Sul,Murches,0,0,0,1,2,André Lopes,"André Pimenta, Guilherme Martins"
+oeiras,1ª Divisão,Oeiras,0,1,-1,3,3,"Bruno Frade, Guilherme Caetano, David Fonseca","Manuel Coimbra, Filipe Martins, Matéo Avondo"
+alenquer,2ª Divisão Sul,Alenquer,-7,-5,-1,5,4,"Zé Diogo Macedo, Matéo Avondo, Eloi Matas","Miguel Fortunato, Guilherme “Gui” Duro, Paulo “Xavi” Duro"
+marinhense,2ª Divisão Sul,Marinhense,-1,-1,-1,1,1,Lucas Bridge,Rúben Henriques
+termas,2ª Divisão Norte,Termas,0,2,-2,1,1,Alexandre “Alex” Barreira,Octavio “Kochi” Zangheri
+alcobacense,2ª Divisão Sul,Alcobacense,3,4,-2,4,3,"Martim Vicente, Diogo Almeida, Matías Chirino","Thomas Molina, Miguel Fialho, Santino Facca"
+paco-arcos,2ª Divisão Sul,Paço de Arcos,-5,-2,-3,6,4,"Afonso Sousa, Tomás Martins, Mateus Marques","Bruno Frade, Pedro Vaz, Zé Costa"
+famalicense,2ª Divisão Norte,Famalicense,-2,2,-4,2,3,"Miguel Santos, Ricardo Fallé","Zé Pedro Pereira, Pedro Freitas, Guilherme Leitão"
+valongo-b,2ª Divisão Norte,Valongo B,-5,0,-6,3,3,"Vasco Sousa, João Monteiro, Daniel “Dani” Magalhães","Liloann Gélébart, Simão Dantas, João Pereira"
+benfica,1ª Divisão,Benfica,3,9,-6,1,2,Martim Costa,"Diogo Rafael “Chiquinho”, Lucas Ordoñez"
+barcelos,1ª Divisão,Barcelos,-10,-2,-7,1,1,Lucas Honório,Franco “Tato” Ferruccio
+academica,2ª Divisão Norte,Académica,-2,6,-8,3,2,"Bernardo Oliveira, Miguel Cunha, Pedro Beirante","Tiago Estarreja, Vasco Pereira"
+parede,2ª Divisão Sul,Parede,2,10,-8,2,2,"Nuno Emídio, Martim Silva","Francisco “Kiko” Fernandes, Diogo Alves “Pákito”"
+oliveirense,1ª Divisão,Oliveirense,-7,4,-10,5,3,"Francisco “Kiko” Fernandes, Pedro Batista, João Almeida","Lucas Martínez, Nuno Santos, Franco Platero"
+porto-b,2ª Divisão Norte,Porto B,-5,6,-11,4,4,"Duarte Ferreira, Afonso Oliveira “Carrais”, Martim “Tim” Oliveira","Tiago Saraiva, Filipe Sousa, Rodrigo Morais"
+benfica-b,2ª Divisão Sul,Benfica B,-18,-5,-12,1,4,Diogo Ataíde,"Rodrigo Preciso, Diogo Duarte, Nuno Emídio"
+sporting-b,2ª Divisão Sul,Sporting B,-12,1,-13,5,6,"João Maria Gatinho, Rafael Charraz, Sebastião Valadas","Lourenço Soares, Guilherme Caetano, Miguel Franco"
+porto,1ª Divisão,Porto,-6,9,-14,1,1,César Carballeira,Eduard “Edu” Lamas
+juventude-viana,1ª Divisão,Juventude de Viana,-7,7,-14,2,2,"Miguel Franco, Tomás Pereira","Andrés Castaño, Afonso Sousa"
+sporting,1ª Divisão,Sporting,-11,9,-19,3,2,"António Marante, João Pina, Nil Cervera","Alessandro Verona, Henrique Magalhães"
+oliveirense-b,2ª Divisão Norte,Oliveirense B,-2,16,-19,6,7,"Tomás Ferreira, Gonçalo Santos “Totti”, Gonçalo Lage","Diogo Lemos, Afonso Ribeiro, Bruno Torres"
+candelaria,1ª Divisão,Candelária,-4,20,-25,5,5,"Paulo “Xavi” Duro, Guilherme Magalhães, Joan Gangonells","Martim Vicente, Miguel Rocha, Francisco Abreu"

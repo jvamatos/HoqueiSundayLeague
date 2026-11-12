@@ -1,0 +1,593 @@
+<meta name="dash-one-writer">
+<style>
+  .hp { display: flex; flex-direction: column; gap: var(--cds-gap-lg); font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+  .hp-head { display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+  .hp-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+  .hp-lede { margin: 0; color: var(--color-fg); max-width: 70ch; line-height: 1.5; }
+  .hp-lede b { font-weight: var(--cds-font-weight-medium); }
+  .hp-meta { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .hp-bar { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; justify-content: space-between; }
+  .hp-tabs { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+  .hp-tab { font: inherit; font-size: var(--cds-font-size-body); padding: 6px 12px; border-radius: 999px; border: 1px solid var(--color-border-line); background: var(--color-bg); color: var(--color-fg-muted); cursor: pointer; }
+  .hp-tab[aria-selected="true"] { background: var(--color-fg); color: var(--color-bg); border-color: var(--color-fg); }
+  .hp-tab:focus-visible, .dash-select:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+  .hp-section { display: flex; flex-direction: column; gap: var(--cds-gap-md); }
+  .hp-h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+  .hp-note { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); max-width: 75ch; line-height: 1.5; }
+  .hp-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+  .hp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: var(--cds-gap-md); }
+  .hp-wrap { overflow-x: auto; }
+  .hp-table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; font-size: var(--cds-font-size-body); }
+  .hp-table th { text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); padding: 6px 8px; border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+  .hp-table td { padding: 7px 8px; border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+  .hp-table .num { text-align: right; }
+  .hp-table .dim { color: var(--color-fg-muted); }
+  .hp-table .fav { font-weight: var(--cds-font-weight-medium); }
+  .hp-p { position: relative; text-align: right; }
+  .hp-p span { position: relative; }
+  .hp-p i { position: absolute; inset: 3px 0 3px auto; background: var(--cds-chart-muted); opacity: .35; border-radius: 3px; }
+  .hp-pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: var(--cds-font-size-caption); border: 1px solid var(--color-border-line); }
+  .hp-pill.ok { color: var(--color-ok); border-color: var(--color-ok); }
+  .hp-pill.bad { color: var(--color-bad); border-color: var(--color-bad); }
+  .hp-chart { position: relative; min-height: 260px; }
+  .hp-chart svg text { fill: var(--cds-text-secondary); font-size: 11px; font-family: var(--font-anthropic-sans); }
+  .hp-chart .lbl { fill: var(--color-fg); font-size: 12px; }
+  .hp-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); box-shadow: var(--cds-shadow-popover); border-radius: var(--cds-radius); padding: 6px 8px; font-size: var(--cds-font-size-caption); color: var(--color-fg); white-space: nowrap; }
+  .hp-big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; }
+  .hp-kpis { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); }
+  [data-dash-source-state=refreshing] { opacity: .5; }
+  .hp-how { margin: 0; padding-left: 1.2em; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); line-height: 1.6; max-width: 75ch; }
+  .hp-games { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: var(--cds-gap-md); }
+  .hp-game { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+  .hp-game-when { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .hp-game-teams { display: flex; justify-content: space-between; gap: 8px; font-size: var(--cds-font-size-heading); }
+  .hp-game-teams span:last-child { text-align: right; }
+  .hp-game-teams .fav { font-weight: var(--cds-font-weight-medium); }
+  .hp-stack { display: flex; height: 10px; border-radius: 999px; overflow: hidden; background: var(--color-border-line); }
+  .hp-stack i { display: block; height: 100%; }
+  .hp-stack-lbl { display: flex; justify-content: space-between; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+  .hp-stack-lbl b { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+  .hp-verdict { margin: 0; font-size: var(--cds-font-size-body); }
+  .hp-small { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+  .hp-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+  .hp-list li { display: grid; grid-template-columns: 1.6em 1fr; gap: 6px; padding: 8px 0; border-bottom: 1px solid var(--color-border-line); }
+  .hp-list .mark-ok { color: var(--color-ok); font-weight: var(--cds-font-weight-medium); }
+  .hp-list .mark-bad { color: var(--color-bad); font-weight: var(--cds-font-weight-medium); }
+  .hp-list .sub { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .good { color: var(--color-ok); }
+  .hp-facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: var(--cds-gap-md); align-items: start; }
+  .hp-facts ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .hp-facts li { display: flex; flex-direction: column; gap: 3px; line-height: 1.45; }
+  .hp-chip { align-self: flex-start; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); border: 1px solid var(--color-border-line); border-radius: 999px; padding: 0 8px; }
+  .bad { color: var(--color-bad); }
+  .hp-names { white-space: normal !important; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); min-width: 14em; }
+</style>
+
+<div class="hp">
+  <header class="hp-head" id="topo">
+    <h1 class="hp-title">Hóquei Previsões</h1>
+    <p class="hp-lede" id="resumo">Na 1ª Divisão, <b data-draw="t1-nome">—</b> é o favorito ao título com <b data-draw="t1-p">—</b> de probabilidade, à frente de <b data-draw="t2-nome">—</b> (<b data-draw="t2-p">—</b>) e <b data-draw="t3-nome">—</b> (<b data-draw="t3-p">—</b>).</p>
+    <ul class="hp-how" id="como-ler">
+      <li><b>Esta semana</b>: quem é favorito em cada jogo. A barra mostra as hipóteses de vitória da casa, empate e vitória de fora.</li>
+      <li><b>Classificação</b>: como deve acabar a época, a partir de 10 000 simulações.</li>
+      <li>Escolha a liga no menu à direita. As percentagens são para os 50 minutos (sem prolongamento nem penáltis).</li>
+    </ul>
+  </header>
+
+  <div class="hp-bar">
+    <div class="hp-tabs" role="tablist" aria-label="Secções">
+      <button class="hp-tab" role="tab" data-tab="semana" aria-selected="true">Esta semana</button>
+      <button class="hp-tab" role="tab" data-tab="classificacao" aria-selected="false">Classificação</button>
+      <button class="hp-tab" role="tab" data-tab="equipas" aria-selected="false">Equipas</button>
+      <button class="hp-tab" role="tab" data-tab="jogadores" aria-selected="false">Jogadores</button>
+      <button class="hp-tab" role="tab" data-tab="mercado" aria-selected="false">Mercado</button>
+      <button class="hp-tab" role="tab" data-tab="curiosidades" aria-selected="false">Curiosidades</button>
+      <button class="hp-tab" role="tab" data-tab="powerplay" aria-selected="false">Power play</button>
+      <button class="hp-tab" role="tab" data-tab="modelo" aria-selected="false">Modelo</button>
+    </div>
+    <select class="dash-select" id="liga" aria-label="Liga">
+      <option value="1ª Divisão">1ª Divisão</option>
+      <option value="2ª Divisão Norte">2ª Divisão Norte</option>
+      <option value="2ª Divisão Sul">2ª Divisão Sul</option>
+    </select>
+  </div>
+
+  <!-- ESTA SEMANA -->
+  <section class="hp-section" id="semana">
+    <h2 class="hp-h2" id="proximos">Próximos jogos</h2>
+    <div class="hp-games" data-draw="jogos" data-source="jogos"></div>
+    <div class="hp-card" id="ultimos">
+      <h2 class="hp-h2">Como correu a última semana</h2>
+      <p class="hp-note">Em todas as ligas, o favorito do modelo ganhou <b data-draw="acertos" data-source="acerto_semana" data-field="acertos" data-row="0">—</b> de <b data-draw="total" data-source="acerto_semana" data-field="jogos" data-row="0">—</b> jogos. As percentagens foram calculadas antes de cada jogo.</p>
+      <ul class="hp-list" data-draw="ultimos" data-source="ultimos"></ul>
+    </div>
+  </section>
+
+  <!-- CLASSIFICAÇÃO -->
+  <section class="hp-section" id="classificacao" hidden>
+    <div class="hp-card" id="pontos">
+      <h2 class="hp-h2">Pontos esperados no fim da fase regular</h2>
+      <p class="hp-note">Média de 10 000 simulações do resto da época, jogo a jogo. A barra escura são os pontos já conquistados.</p>
+      <div class="hp-chart" data-draw="pontos-chart" data-source="classificacao"></div>
+    </div>
+    <div class="hp-card" id="odds">
+      <h2 class="hp-h2">Probabilidades da época</h2>
+      <p class="hp-note">Hipótese de cada equipa acabar a fase regular em 1º, na zona alta (top 8, que vai ao playoff, na 1ª Divisão; top 2 nas 2ª Divisões) ou nos 3 últimos lugares. Formato assumido a partir das épocas anteriores.</p>
+      <div class="hp-wrap">
+        <table class="hp-table" data-source="classificacao" data-row-key="id">
+          <thead><tr>
+            <th data-field="equipa">Equipa</th><th data-field="pontos" class="num">Pontos agora</th>
+            <th data-field="pontos_esperados" class="num">Pontos no fim (previsão)</th><th data-field="p_campeao" class="num">Acaba em 1º</th>
+            <th data-field="p_zona_alta" class="num">Zona alta</th><th data-field="p_descida" class="num">Desce</th>
+          </tr></thead>
+          <tbody data-draw="classificacao"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPAS -->
+  <section class="hp-section" id="equipas" hidden>
+    <div class="hp-card" id="mapa">
+      <h2 class="hp-h2">Ataque e defesa</h2>
+      <p class="hp-note">Golos que cada equipa marca e sofre por jogo contra uma equipa média da sua liga, segundo o modelo. Mais à direita, melhor ataque; mais acima, melhor defesa.</p>
+      <div class="hp-chart" data-draw="equipas-chart" data-source="equipas" style="min-height: 360px"></div>
+    </div>
+    <div class="hp-card" id="ranking">
+      <h2 class="hp-h2">Ranking de força</h2>
+      <div class="hp-wrap">
+        <table class="hp-table" data-source="equipas" data-row-key="id">
+          <thead><tr>
+            <th data-field="posicao" class="num">#</th><th data-field="equipa">Equipa</th>
+            <th data-field="golos_marcados" class="num">Marca/jogo</th><th data-field="golos_sofridos" class="num">Sofre/jogo</th><th data-field="saldo" class="num">Saldo</th>
+          </tr></thead>
+          <tbody data-draw="equipas"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOGADORES -->
+  <section class="hp-section" id="jogadores" hidden>
+    <div class="hp-grid">
+      <div class="hp-card" id="marcadores">
+        <h2 class="hp-h2">Marcadores</h2>
+        <p class="hp-note">Golos por jogo no último ano, com mais peso nos jogos recentes. Golos na 2ª Divisão valem 0,7. Segue o jogador entre clubes.</p>
+        <div class="hp-wrap">
+          <table class="hp-table" data-source="marcadores" data-row-key="id">
+            <thead><tr><th data-field="jogador">Jogador</th><th data-field="equipa">Equipa</th><th data-field="golos_por_jogo" class="num">Golos/jogo</th><th data-field="jogos_recentes" class="num">Jogos</th></tr></thead>
+            <tbody data-draw="marcadores"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="hp-card" id="guarda-redes">
+        <h2 class="hp-h2">Guarda-redes</h2>
+        <p class="hp-note">Golos evitados por jogo: quantos golos o adversário costuma marcar menos os que este guarda-redes sofreu.</p>
+        <div class="hp-wrap">
+          <table class="hp-table" data-source="guarda_redes" data-row-key="id">
+            <thead><tr><th data-field="jogador">Guarda-redes</th><th data-field="equipa">Equipa</th><th data-field="golos_evitados_por_jogo" class="num">Evitados/jogo</th><th data-field="jogos_recentes" class="num">Jogos</th></tr></thead>
+            <tbody data-draw="guarda-redes"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="hp-card" id="impacto">
+      <h2 class="hp-h2">Impacto na equipa</h2>
+      <p class="hp-note">Quanto a equipa muda quando o jogador joga um jogo inteiro: % de golos marcados e sofridos, já descontando colegas e adversários. Inclui guarda-redes. Como os titulares jogam quase sempre juntos, o valor reflete também a força da equipa. Desde 2021/22, mínimo 15 jogos.</p>
+      <div class="hp-wrap">
+        <table class="hp-table" data-source="impacto" data-row-key="id">
+          <thead><tr>
+            <th data-field="jogador">Jogador</th><th data-field="equipa">Equipa</th><th data-field="posicao">Posição</th>
+            <th data-field="ataque_pct" class="num">Golos marcados</th><th data-field="defesa_pct" class="num">Golos sofridos</th>
+            <th data-field="impacto" class="num">Impacto total</th><th data-field="jogos" class="num">Jogos</th>
+          </tr></thead>
+          <tbody data-draw="impacto"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURIOSIDADES -->
+  <section class="hp-section" id="curiosidades" hidden>
+    <p class="hp-note">Factos calculados a partir dos nossos dados: resultados desde 2007/08, jogadores desde 2021/22 e jogada-a-jogada desde 2022/23. Escolha a liga no menu.</p>
+    <div class="hp-facts" data-draw="factos" data-source="factos"></div>
+  </section>
+
+  <!-- MERCADO -->
+  <section class="hp-section" id="mercado" hidden>
+    <div class="hp-card" id="mercado-card">
+      <h2 class="hp-h2">Quem se reforçou?</h2>
+      <p class="hp-note">Plantel desta época (jogadores convocados até agora) comparado com o da época passada, usando o impacto de cada jogador. Golos marcados: quanto mais, melhor. Golos sofridos: quanto menos, melhor. Conta só jogadores habituais. É uma estimativa no papel: nas previsões o efeito das transferências quase não mudou o acerto, porque os resultados das primeiras jornadas depressa mostram o nível real.</p>
+      <div class="hp-wrap">
+        <table class="hp-table" data-source="mercado" data-row-key="id">
+          <thead><tr>
+            <th data-field="equipa">Equipa</th><th data-field="saldo" class="num">Saldo</th>
+            <th data-field="ataque_pct" class="num">Golos marcados</th><th data-field="defesa_pct" class="num">Golos sofridos</th>
+            <th data-field="entradas" class="num">Entradas</th><th data-field="saidas" class="num">Saídas</th>
+            <th data-field="principais_entradas">Principais entradas</th><th data-field="principais_saidas">Principais saídas</th>
+          </tr></thead>
+          <tbody data-draw="mercado"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- POWER PLAY -->
+  <section class="hp-section" id="powerplay" hidden>
+    <div class="hp-card" id="pp">
+      <div class="hp-bar">
+        <h2 class="hp-h2">Power play e inferioridade</h2>
+        <select class="dash-select" id="epoca" aria-label="Época">
+          <option value="2025-26">2025/26</option>
+          <option value="2026-27">2026/27</option>
+        </select>
+      </div>
+      <p class="hp-note">Um cartão azul dá 2 minutos de power play ao adversário (vermelho, 4). Golos por PP inclui o livre direto ou penálti que costuma acompanhar o azul, por isso pode passar de 1. Inclui playoffs.</p>
+      <div class="hp-wrap">
+        <table class="hp-table" data-source="power_play" data-row-key="id">
+          <thead><tr>
+            <th data-field="equipa">Equipa</th><th data-field="jogos" class="num">J</th><th data-field="azuis_por_jogo" class="num">Azuis/jogo</th>
+            <th data-field="power_plays" class="num">PP</th><th data-field="golos_pp" class="num">Golos PP</th><th data-field="golos_por_pp" class="num">Golos/PP</th>
+            <th data-field="inferioridades" class="num">Inferioridades</th><th data-field="golos_sofridos_por_inferioridade" class="num">Sofridos/inf.</th><th data-field="golos_em_inferioridade" class="num">Golos em inf.</th>
+          </tr></thead>
+          <tbody data-draw="pp"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODELO -->
+  <section class="hp-section" id="modelo" hidden>
+    <div class="hp-card" id="precisao-card">
+      <h2 class="hp-h2">Quão bom é o modelo?</h2>
+      <p class="hp-lede" id="historico-resumo" data-draw="historico-resumo" data-source="historico">—</p>
+      <p class="hp-note">Testado em 1 762 jogos de 2023/24 a novembro de 2026, como se fosse em direto: em cada semana o modelo só conhecia os jogos anteriores. "Acerta o resultado" é a percentagem de jogos em que o resultado mais provável (casa, empate ou fora) aconteceu. A última coluna é uma medida técnica de erro das probabilidades: quanto menor, melhor.</p>
+      <div class="hp-wrap">
+        <table class="hp-table" data-source="precisao" data-row-key="modelo">
+          <thead><tr><th data-field="modelo">Modelo</th><th data-field="acerto" class="num">Acerta o resultado (%)</th><th data-field="log_loss" class="num">Erro (log loss)</th></tr></thead>
+          <tbody data-draw="precisao"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="hp-card" id="historico">
+      <h2 class="hp-h2">Histórico em direto</h2>
+      <p class="hp-note">Cada previsão fica registada antes do jogo e é avaliada depois do resultado. Começou a 12/11/2026; não inclui testes ao passado. Todas as ligas.</p>
+      <ul class="hp-list" data-draw="historico" data-source="historico"></ul>
+    </div>
+    <div class="hp-card" id="como">
+      <h2 class="hp-h2">Como funciona</h2>
+      <p class="hp-note">Cada equipa tem uma força de ataque e de defesa, estimada com todos os resultados desde 2007/08 e, desde 2021/22, também com a Taça, a Elite Cup, as competições europeias e as ligas de Espanha, Itália e França (para medir os adversários europeus). Os jogos recentes contam mais (meia-vida de 240 dias) e cada clube parte da sua força dos últimos três anos. 1ª e 2ª Divisões estão na mesma escala, ligadas pelas equipas que sobem e descem. Quando se sabe que um jogador ou guarda-redes falha o jogo, a previsão é ajustada pelo seu peso na equipa. Os golos das duas equipas variam em conjunto (jogos abertos ou fechados), o que melhora a previsão do resultado exato. Dados: hoqueipatins.pt e arquivo.hoqueipatins.pt.</p>
+    </div>
+  </section>
+</div>
+
+<script>
+  // shared helpers and state (league / season selectors)
+  window.HP = { liga: '1ª Divisão', epoca: '2025-26' };
+  HP.pct = (v) => (v === null || v === '' || v === undefined) ? '—' : `${Math.round(+v)}%`;
+  HP.num = (v, d = 1) => (v === null || v === '' || v === undefined) ? '—' : (+v).toFixed(d).replace('.', ',');
+  HP.date = (s) => d3.utcFormat('%d/%m')(new Date(s + 'T00:00:00Z'));
+  HP.rows = (id) => { const r = dash.data(id); return r.status === 'ok' ? r.data : null; };
+  HP.ALL = ['factos', 'jogos', 'ultimos', 'classificacao', 'pontos-chart', 'equipas', 'equipas-chart', 'marcadores', 'guarda-redes', 'pp', 'mercado', 'impacto'];
+  HP.signed = (v) => (v === null || v === '' || v === undefined) ? '—' : `${+v > 0 ? '+' : ''}${Math.round(+v)}%`;
+  // fill a <tbody> with one <tr> per row; cols: [field, cls, format]
+  HP.fill = (tb, rows, key, cols, colspan) => {
+    tb.replaceChildren();
+    if (!rows) { const tr = tb.insertRow(); const td = tr.insertCell(); td.colSpan = colspan; td.className = 'dim'; td.textContent = 'A carregar…'; return; }
+    if (!rows.length) { const tr = tb.insertRow(); const td = tr.insertCell(); td.colSpan = colspan; td.className = 'dim'; td.textContent = 'Sem jogos nesta liga.'; return; }
+    rows.forEach((r) => {
+      const tr = tb.insertRow(); tr.dataset.key = r[key];
+      cols.forEach(([f, cls, fmt]) => { const td = tr.insertCell(); if (cls) td.className = typeof cls === 'function' ? cls(r) : cls; td.textContent = fmt ? fmt(r[f], r) : r[f]; });
+    });
+  };
+</script>
+
+<script>
+  // tabs and selectors: only listen and set hidden / aria / value
+  const tabs = Array.from(document.querySelectorAll('.hp-tab'));
+  const show = (id) => {
+    tabs.forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === id)));
+    tabs.forEach((t) => { const s = document.getElementById(t.dataset.tab); if (s) s.hidden = t.dataset.tab !== id; });
+  };
+  tabs.forEach((t) => t.addEventListener('click', () => { show(t.dataset.tab); dash.setLink(t.dataset.tab); }));
+  const start = (location.hash || '').slice(1);
+  if (tabs.some((t) => t.dataset.tab === start)) show(start);
+  document.querySelectorAll('#liga').forEach((s) => s.addEventListener('change', () => { HP.liga = s.value; HP.ALL.forEach((n) => dash.draw(n)); }));
+  document.querySelectorAll('#epoca').forEach((s) => s.addEventListener('change', () => { HP.epoca = s.value; dash.draw('pp'); }));
+</script>
+
+<script>
+  dash.calc('acerto_semana', {
+    inputs: ['ultimos'],
+    title: 'Acertos da última semana',
+    description: 'Jogos da última semana em que a equipa mais provável segundo o modelo ganhou (ou houve empate quando o empate era o mais provável).',
+    fn: (ultimos) => [{ acertos: ultimos.filter((j) => j.acertou === 'sim').length, jogos: ultimos.length }],
+  });
+
+  // summary sentence: top three title favourites in the 1st division
+  const top3 = () => {
+    const r = HP.rows('classificacao');
+    return r ? r.filter((x) => x.liga === '1ª Divisão').sort((a, b) => +b.p_campeao - +a.p_campeao).slice(0, 3) : null;
+  };
+  [1, 2, 3].forEach((i) => {
+    dash.draw(`t${i}-nome`, (el) => {
+      const t = top3(); const x = t && t[i - 1];
+      el.textContent = x ? x.equipa : '—';
+      if (x) { el.dataset.source = 'classificacao'; el.dataset.field = 'equipa'; el.dataset.where = `id=${encodeURIComponent(x.id)}`; }
+    });
+    dash.draw(`t${i}-p`, (el) => {
+      const t = top3(); const x = t && t[i - 1];
+      el.textContent = x ? HP.pct(x.p_campeao) : '—';
+      if (x) { el.dataset.source = 'classificacao'; el.dataset.field = 'p_campeao'; el.dataset.where = `id=${encodeURIComponent(x.id)}`; }
+    });
+  });
+
+  dash.draw('acertos', (el) => { const r = dash.data('acerto_semana'); el.textContent = r.status === 'ok' && r.data ? r.data[0].acertos : '—'; });
+  dash.draw('total', (el) => { const r = dash.data('acerto_semana'); el.textContent = r.status === 'ok' && r.data ? r.data[0].jogos : '—'; });
+
+  // plain-language verdict for one game
+  HP.verdict = (g) => {
+    const pc = +g.p_casa, pe = +g.p_empate, pf = +g.p_fora;
+    const fav = pc >= pf ? g.casa : g.fora, p = Math.max(pc, pf);
+    if (p >= 75) return `${fav} é grande favorito.`;
+    if (p >= 55) return `${fav} é favorito.`;
+    if (Math.abs(pc - pf) <= 8) return 'Jogo equilibrado, qualquer resultado é possível.';
+    return `${fav} é ligeiro favorito.`;
+  };
+  HP.weekday = (s) => ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'][new Date(s + 'T00:00:00Z').getUTCDay()];
+
+  dash.draw('jogos', (box) => {
+    const r = HP.rows('jogos');
+    box.replaceChildren();
+    const msg = (t) => { const p = document.createElement('p'); p.className = 'hp-note'; p.textContent = t; box.appendChild(p); };
+    if (!r) { msg(dash.data('jogos').status === 'error' ? 'Falhou o carregamento.' : 'A carregar…'); return; }
+    const rows = r.filter((x) => x.liga === HP.liga).sort((a, b) => a.data.localeCompare(b.data));
+    if (!rows.length) { msg('Sem jogos marcados nesta liga nos próximos dias.'); return; }
+    const mk = (tag, cls, text, field, g) => {
+      const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text;
+      if (field) { e.dataset.source = 'jogos'; e.dataset.field = field; e.dataset.where = `jogo=${encodeURIComponent(g.jogo)}`; }
+      return e;
+    };
+    rows.forEach((g) => {
+      const card = mk('article', 'hp-game');
+      card.id = `jogo-${g.jogo}`;
+      const when = mk('div', 'hp-game-when');
+      when.append(`${HP.weekday(g.data)} `, mk('span', null, HP.date(g.data), 'data', g), ` · jornada ${g.jornada || '—'}`);
+      const homeFav = +g.p_casa >= +g.p_fora;
+      const teams = mk('div', 'hp-game-teams');
+      teams.append(mk('span', homeFav ? 'fav' : '', g.casa, 'casa', g), mk('span', homeFav ? '' : 'fav', g.fora, 'fora', g));
+      const bar = mk('div', 'hp-stack');
+      bar.setAttribute('role', 'img');
+      bar.setAttribute('aria-label', `${g.casa} ${g.p_casa}%, empate ${g.p_empate}%, ${g.fora} ${g.p_fora}%`);
+      [['p_casa', dash.colors[0], 1], ['p_empate', 'var(--cds-chart-muted)', 1], ['p_fora', dash.colors[1] || dash.colors[0], 0.6]].forEach(([f, c, o]) => {
+        const i = document.createElement('i'); i.style.width = `${+g[f]}%`; i.style.background = c; i.style.opacity = o; bar.appendChild(i);
+      });
+      const lbl = mk('div', 'hp-stack-lbl');
+      const part = (txt, f) => { const s = document.createElement('span'); const b = mk('b', null, HP.pct(g[f]), f, g); s.append(b, ` ${txt}`); return s; };
+      lbl.append(part('casa', 'p_casa'), part('empate', 'p_empate'), part('fora', 'p_fora'));
+      const verdict = mk('p', 'hp-verdict', HP.verdict(g));
+      const small = mk('p', 'hp-small');
+      small.append('Resultado mais provável ', mk('span', null, g.resultado_provavel, 'resultado_provavel', g),
+        ' · golos esperados ', mk('span', null, HP.num(g.golos_casa), 'golos_casa', g), '–', mk('span', null, HP.num(g.golos_fora), 'golos_fora', g));
+      card.append(when, teams, bar, lbl, verdict, small);
+      box.appendChild(card);
+    });
+  });
+
+  dash.draw('ultimos', (ul) => {
+    const r = HP.rows('ultimos');
+    ul.replaceChildren();
+    const rows = r && r.filter((x) => x.liga === HP.liga);
+    if (!rows || !rows.length) { const li = document.createElement('li'); li.className = 'sub'; li.textContent = r ? 'Sem jogos nesta liga na última semana.' : 'A carregar…'; ul.appendChild(li); return; }
+    rows.forEach((g) => {
+      const at = (tag, cls, text, field) => { const e = document.createElement(tag); if (cls) e.className = cls; e.textContent = text;
+        if (field) { e.dataset.source = 'ultimos'; e.dataset.field = field; e.dataset.where = `jogo=${encodeURIComponent(g.jogo)}`; } return e; };
+      const ok = g.acertou === 'sim';
+      const li = document.createElement('li');
+      const mark = at('span', ok ? 'mark-ok' : 'mark-bad', ok ? '✓' : '✗', 'acertou');
+      mark.setAttribute('aria-label', ok ? 'O favorito ganhou' : 'O favorito não ganhou');
+      const body = document.createElement('div');
+      const line = document.createElement('div');
+      line.append(at('span', null, g.casa, 'casa'), ' ', at('b', null, g.resultado, 'resultado'), ' ', at('span', null, g.fora, 'fora'));
+      const favName = g.favorito === 'casa' ? g.casa : g.favorito === 'fora' ? g.fora : 'empate';
+      const favField = g.favorito === 'casa' ? 'p_casa' : g.favorito === 'fora' ? 'p_fora' : 'p_empate';
+      const sub = document.createElement('div'); sub.className = 'sub';
+      sub.append(`${HP.weekday(g.data)} ${HP.date(g.data)} · o modelo dava ${g.favorito === 'empate' ? 'o empate' : favName} com `, at('span', null, HP.pct(g[favField]), favField));
+      body.append(line, sub);
+      li.append(mark, body);
+      ul.appendChild(li);
+    });
+  });
+
+  dash.draw('classificacao', (tb) => {
+    const r = HP.rows('classificacao');
+    const rows = r && r.filter((x) => x.liga === HP.liga).sort((a, b) => +b.pontos_esperados - +a.pontos_esperados);
+    HP.fill(tb, rows, 'id', [
+      ['equipa'], ['pontos', 'num'], ['pontos_esperados', 'num', (v) => HP.num(v)],
+      ['p_campeao', 'num fav', HP.pct], ['p_zona_alta', 'num', HP.pct], ['p_descida', 'num', HP.pct],
+    ], 6);
+  });
+
+  dash.draw('equipas', (tb) => {
+    const r = HP.rows('equipas');
+    const rows = r && r.filter((x) => x.liga === HP.liga).sort((a, b) => +a.posicao - +b.posicao);
+    HP.fill(tb, rows, 'id', [
+      ['posicao', 'num dim'], ['equipa'], ['golos_marcados', 'num', (v) => HP.num(v, 2)],
+      ['golos_sofridos', 'num', (v) => HP.num(v, 2)], ['saldo', 'num fav', (v) => (+v > 0 ? '+' : '') + HP.num(v, 2)],
+    ], 5);
+  });
+
+  dash.draw('marcadores', (tb) => {
+    const r = HP.rows('marcadores');
+    const rows = r && r.filter((x) => x.liga === HP.liga).slice(0, 15);
+    HP.fill(tb, rows, 'id', [['jogador'], ['equipa', 'dim'], ['golos_por_jogo', 'num fav', (v) => HP.num(v, 2)], ['jogos_recentes', 'num dim']], 4);
+  });
+
+  dash.draw('guarda-redes', (tb) => {
+    const r = HP.rows('guarda_redes');
+    const rows = r && r.filter((x) => x.liga === HP.liga).slice(0, 10);
+    HP.fill(tb, rows, 'id', [['jogador'], ['equipa', 'dim'], ['golos_evitados_por_jogo', 'num fav', (v) => (+v > 0 ? '+' : '') + HP.num(v, 2)], ['jogos_recentes', 'num dim']], 4);
+  });
+
+  dash.draw('pp', (tb) => {
+    const r = HP.rows('power_play');
+    const rows = r && r.filter((x) => x.liga === HP.liga && x.epoca === HP.epoca).sort((a, b) => +b.golos_por_pp - +a.golos_por_pp);
+    HP.fill(tb, rows, 'id', [
+      ['equipa'], ['jogos', 'num dim'], ['azuis_por_jogo', 'num', (v) => HP.num(v, 2)], ['power_plays', 'num'], ['golos_pp', 'num'],
+      ['golos_por_pp', 'num fav', (v) => HP.num(v, 2)], ['inferioridades', 'num'], ['golos_sofridos_por_inferioridade', 'num', (v) => HP.num(v, 2)],
+      ['golos_em_inferioridade', 'num'],
+    ], 9);
+  });
+
+  // more goals scored is good, fewer conceded is good
+  const tone = (good) => (r, f) => (+r[f] === 0 ? 'num dim' : `num ${(+r[f] > 0) === good ? 'good' : 'bad'}`);
+  dash.draw('mercado', (tb) => {
+    const r = HP.rows('mercado');
+    const rows = r && r.filter((x) => x.liga === HP.liga).sort((a, b) => +b.saldo - +a.saldo);
+    HP.fill(tb, rows, 'id', [
+      ['equipa'], ['saldo', (x) => tone(true)(x, 'saldo') + ' fav', HP.signed],
+      ['ataque_pct', (x) => tone(true)(x, 'ataque_pct'), HP.signed], ['defesa_pct', (x) => tone(false)(x, 'defesa_pct'), HP.signed],
+      ['entradas', 'num'], ['saidas', 'num'], ['principais_entradas', 'hp-names'], ['principais_saidas', 'hp-names'],
+    ], 8);
+  });
+
+  dash.draw('impacto', (tb) => {
+    const r = HP.rows('impacto');
+    const rows = r && r.filter((x) => x.liga === HP.liga).slice(0, 20);
+    HP.fill(tb, rows, 'id', [
+      ['jogador'], ['equipa', 'dim'], ['posicao', 'dim'],
+      ['ataque_pct', (x) => tone(true)(x, 'ataque_pct'), HP.signed], ['defesa_pct', (x) => tone(false)(x, 'defesa_pct'), HP.signed],
+      ['impacto', 'num fav', (v) => (+v > 0 ? '+' : '') + v], ['jogos', 'num dim'],
+    ], 7);
+  });
+
+  dash.draw('historico-resumo', (el) => {
+    const r = HP.rows('historico');
+    if (!r) { el.textContent = '—'; return; }
+    el.textContent = r.length
+      ? `Desde 12/11/2026, o favorito do modelo ganhou ${r.filter((x) => x.acertou === 'sim').length} de ${r.length} jogos (${Math.round(100 * r.filter((x) => x.acertou === 'sim').length / r.length)}%).`
+      : 'O registo em direto começou a 12/11/2026. Os primeiros resultados aparecem depois da próxima jornada.';
+  });
+
+  dash.draw('historico', (ul) => {
+    const r = HP.rows('historico');
+    ul.replaceChildren();
+    if (!r || !r.length) { const li = document.createElement('li'); li.className = 'sub'; li.textContent = r ? 'Ainda sem jogos avaliados.' : 'A carregar…'; ul.appendChild(li); return; }
+    r.slice(0, 40).forEach((g) => {
+      const at = (tag, cls, text, field) => { const e = document.createElement(tag); if (cls) e.className = cls; e.textContent = text;
+        if (field) { e.dataset.source = 'historico'; e.dataset.field = field; e.dataset.where = `jogo=${encodeURIComponent(g.jogo)}`; } return e; };
+      const ok = g.acertou === 'sim';
+      const li = document.createElement('li');
+      const mark = at('span', ok ? 'mark-ok' : 'mark-bad', ok ? '✓' : '✗', 'acertou');
+      const body = document.createElement('div');
+      const line = document.createElement('div');
+      line.append(at('span', null, g.casa, 'casa'), ' ', at('b', null, g.resultado, 'resultado'), ' ', at('span', null, g.fora, 'fora'));
+      const favField = g.favorito === 'casa' ? 'p_casa' : g.favorito === 'fora' ? 'p_fora' : 'p_empate';
+      const favName = g.favorito === 'casa' ? g.casa : g.favorito === 'fora' ? g.fora : 'o empate';
+      const sub = document.createElement('div'); sub.className = 'sub';
+      sub.append(`${g.liga} · ${HP.date(g.data)} · previsão: ${favName} `, at('span', null, HP.pct(g[favField]), favField));
+      body.append(line, sub); li.append(mark, body); ul.appendChild(li);
+    });
+  });
+
+  dash.draw('factos', (box) => {
+    const r = HP.rows('factos');
+    box.replaceChildren();
+    if (!r) { const p = document.createElement('p'); p.className = 'hp-note'; p.textContent = dash.data('factos').status === 'error' ? 'Falhou o carregamento.' : 'A carregar…'; box.appendChild(p); return; }
+    const teams = new Map();
+    r.filter((x) => x.liga === HP.liga).forEach((x) => { if (!teams.has(x.equipa)) teams.set(x.equipa, []); teams.get(x.equipa).push(x); });
+    [...teams.keys()].sort((a, b) => a.localeCompare(b, 'pt')).forEach((team) => {
+      const card = document.createElement('div'); card.className = 'hp-card';
+      const h = document.createElement('h2'); h.className = 'hp-h2'; h.textContent = team;
+      const ul = document.createElement('ul');
+      teams.get(team).sort((a, b) => +a.ordem - +b.ordem).forEach((f) => {
+        const li = document.createElement('li');
+        const chip = document.createElement('span'); chip.className = 'hp-chip'; chip.textContent = f.categoria;
+        const t = document.createElement('span'); t.textContent = f.facto;
+        t.dataset.source = 'factos'; t.dataset.field = 'facto'; t.dataset.where = `id=${encodeURIComponent(f.id)}`;
+        li.append(chip, t); ul.appendChild(li);
+      });
+      card.append(h, ul); box.appendChild(card);
+    });
+  });
+
+  dash.draw('precisao', (tb) => {
+    HP.fill(tb, HP.rows('precisao'), 'modelo', [['modelo'], ['acerto', 'num', (v) => HP.num(v)], ['log_loss', 'num', (v) => HP.num(v, 3)]], 3);
+  });
+</script>
+
+<script>
+  // tooltip helper inside a chart box
+  HP.tip = (box) => {
+    let t = box.querySelector('.hp-tip');
+    if (!t) { t = document.createElement('div'); t.className = 'hp-tip'; t.hidden = true; box.appendChild(t); }
+    return {
+      show(ev, text) { t.textContent = text; t.hidden = false; const b = box.getBoundingClientRect(); const x = ev.clientX - b.left, y = ev.clientY - b.top;
+        t.style.left = `${Math.min(Math.max(0, x + 10), b.width - t.offsetWidth)}px`; t.style.top = `${Math.max(0, y - 34)}px`; },
+      hide() { t.hidden = true; },
+    };
+  };
+
+  // expected points: bar per team, with points already won
+  dash.draw('pontos-chart', (box) => {
+    const r = HP.rows('classificacao');
+    box.replaceChildren();
+    if (!r) { box.textContent = dash.data('classificacao').status === 'error' ? 'Falhou o carregamento' : '—'; return; }
+    const rows = r.filter((x) => x.liga === HP.liga).sort((a, b) => +b.pontos_esperados - +a.pontos_esperados);
+    const W = box.clientWidth || 600, rowH = 22, m = { t: 6, r: 44, b: 22, l: 10 };
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('role', 'img')
+      .attr('aria-label', `Pontos esperados por equipa na ${HP.liga}`);
+    const names = svg.append('g');
+    names.selectAll('text').data(rows).join('text').attr('class', 'lbl').text((d) => d.equipa);
+    const lw = d3.max(names.selectAll('text').nodes(), (n) => n.getComputedTextLength()) || 80;
+    m.l = lw + 12;
+    const H = m.t + m.b + rows.length * rowH;
+    svg.attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    const x = d3.scaleLinear().domain([0, d3.max(rows, (d) => +d.pontos_esperados) * 1.05 || 1]).range([m.l, W - m.r]);
+    const y = d3.scaleBand().domain(rows.map((d) => d.equipa)).range([m.t, H - m.b]).padding(0.25);
+    svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(Math.max(2, Math.floor((W - m.l) / 70))).tickSizeOuter(0))
+      .call((g) => g.select('.domain').style('stroke', 'var(--cds-chart-axis)')).call((g) => g.selectAll('line').style('stroke', 'var(--cds-chart-grid)'));
+    names.selectAll('text').attr('x', m.l - 6).attr('y', (d) => y(d.equipa) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end');
+    const tip = HP.tip(box);
+    const g = svg.append('g').selectAll('g').data(rows).join('g');
+    g.append('rect').attr('x', x(0)).attr('y', (d) => y(d.equipa)).attr('height', y.bandwidth()).attr('rx', 2)
+      .attr('width', (d) => x(+d.pontos_esperados) - x(0)).style('fill', dash.colors[0]).style('opacity', 0.45);
+    g.append('rect').attr('x', x(0)).attr('y', (d) => y(d.equipa)).attr('height', y.bandwidth()).attr('rx', 2)
+      .attr('width', (d) => x(+d.pontos) - x(0)).style('fill', dash.colors[0]);
+    g.append('text').attr('x', (d) => x(+d.pontos_esperados) + 4).attr('y', (d) => y(d.equipa) + y.bandwidth() / 2).attr('dy', '0.35em')
+      .text((d) => HP.num(d.pontos_esperados));
+    g.append('rect').attr('x', 0).attr('width', W).attr('y', (d) => y(d.equipa) - 2).attr('height', y.bandwidth() + 4).style('fill', 'transparent')
+      .on('pointermove', (ev, d) => tip.show(ev, `${d.equipa}: ${d.pontos} pts agora, ${HP.num(d.pontos_esperados)} esperados · 1º lugar ${HP.pct(d.p_campeao)}`))
+      .on('pointerleave', () => tip.hide());
+  });
+
+  // attack (x) vs defence (y, fewer conceded = higher)
+  dash.draw('equipas-chart', (box) => {
+    const r = HP.rows('equipas');
+    box.replaceChildren();
+    if (!r) { box.textContent = dash.data('equipas').status === 'error' ? 'Falhou o carregamento' : '—'; return; }
+    const rows = r.filter((x) => x.liga === HP.liga);
+    const W = box.clientWidth || 600, H = Math.max(320, Math.min(460, W * 0.7)), m = { t: 14, r: 16, b: 38, l: 44 };
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('height', H).attr('viewBox', `0 0 ${W} ${H}`)
+      .attr('role', 'img').attr('aria-label', `Golos marcados e sofridos por jogo, ${HP.liga}`);
+    const xe = d3.extent(rows, (d) => +d.golos_marcados), ye = d3.extent(rows, (d) => +d.golos_sofridos);
+    const x = d3.scaleLinear().domain([xe[0] - 0.3, xe[1] + 0.3]).range([m.l, W - m.r]);
+    const y = d3.scaleLinear().domain([ye[1] + 0.3, ye[0] - 0.3]).range([H - m.b, m.t]);
+    const ax = (g) => g.call((s) => s.select('.domain').style('stroke', 'var(--cds-chart-axis)')).call((s) => s.selectAll('line').style('stroke', 'var(--cds-chart-grid)'));
+    svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(Math.max(3, Math.floor(W / 90)))).call(ax);
+    svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(6)).call(ax);
+    svg.append('text').attr('x', W - m.r).attr('y', H - 6).attr('text-anchor', 'end').text('golos marcados por jogo →');
+    svg.append('text').attr('x', m.l + 4).attr('y', m.t + 4).attr('dy', '0.7em').text('↑ menos golos sofridos');
+    const mx = d3.mean(rows, (d) => +d.golos_marcados), my = d3.mean(rows, (d) => +d.golos_sofridos);
+    svg.append('line').attr('x1', x(mx)).attr('x2', x(mx)).attr('y1', m.t).attr('y2', H - m.b).style('stroke', 'var(--cds-chart-reference)').style('stroke-dasharray', '3 3');
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(my)).attr('y2', y(my)).style('stroke', 'var(--cds-chart-reference)').style('stroke-dasharray', '3 3');
+    const tip = HP.tip(box);
+    const pts = svg.append('g').selectAll('g').data(rows).join('g').attr('transform', (d) => `translate(${x(+d.golos_marcados)},${y(+d.golos_sofridos)})`);
+    pts.append('circle').attr('r', 5).style('fill', dash.colors[0]);
+    pts.append('text').attr('class', 'lbl').attr('x', 7).attr('dy', '0.35em').text((d) => d.equipa)
+      .attr('text-anchor', (d) => (x(+d.golos_marcados) > W - 110 ? 'end' : 'start')).attr('x', (d) => (x(+d.golos_marcados) > W - 110 ? -7 : 7));
+    pts.append('circle').attr('r', 12).style('fill', 'transparent')
+      .on('pointermove', (ev, d) => tip.show(ev, `${d.equipa}: marca ${HP.num(d.golos_marcados, 2)}, sofre ${HP.num(d.golos_sofridos, 2)} por jogo`))
+      .on('pointerleave', () => tip.hide());
+  });
+</script>

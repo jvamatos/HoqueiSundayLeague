@@ -18,6 +18,9 @@ from .common import DATA
 from .model import Params, TeamModel, division, regulation_scores
 
 
+EVAL_LEAGUES = ("1div", "2div_norte", "2div_sul")  # predictions are scored on these only
+
+
 def outcomes(m):
     hg, ag = regulation_scores(m)
     return np.select([hg > ag, hg == ag], [0, 1], 2), hg, ag
@@ -103,16 +106,26 @@ def evaluate(m, test_mask, params, label=None, verbose=True):
     return pd.DataFrame(res).T, pm
 
 
+def load_matches(feature_files=("features_players.csv",)):
+    """Played games, with per-game feature columns joined by event_id (0 when missing)."""
+    m = pd.read_csv(DATA / "matches.csv")
+    m = m[m.played].reset_index(drop=True)
+    for f in feature_files:
+        if (DATA / f).exists():
+            fe = pd.read_csv(DATA / f)
+            m = m.merge(fe, on="event_id", how="left")
+    return m
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--tune", action="store_true", help="grid-search params on 2021-23")
     args = ap.parse_args()
-    m = pd.read_csv(DATA / "matches.csv")
-    m = m[m.played].reset_index(drop=True)
+    m = load_matches()
     d = pd.to_datetime(m.date)
 
     if args.tune:
-        val = (d >= "2021-08-01") & (d < "2023-08-01")
+        val = (d >= "2021-08-01") & (d < "2023-08-01") & m.competition.isin(EVAL_LEAGUES)
         rows = []
         for hl, l2, db in itertools.product([120, 180, 240, 365, 540], [1, 3, 10], [0.0, 0.1, 0.2]):
             r, _ = evaluate(m, val, Params(hl, l2, db), verbose=False)
@@ -121,7 +134,7 @@ def main():
         print(pd.DataFrame(rows).sort_values("logloss").head(10).to_string())
         return
 
-    test = d >= "2023-08-01"  # 2023/24 onwards: never used for tuning
+    test = (d >= "2023-08-01") & m.competition.isin(EVAL_LEAGUES)  # 2023/24 on, never used for tuning
     params = Params()
     res, pm = evaluate(m, test, params)
     print(f"Backtest {m[test].date.min()} -> {m[test].date.max()}  ({test.sum()} games)  params={params}")

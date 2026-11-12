@@ -11,7 +11,9 @@ from datetime import date
 import numpy as np
 import pandas as pd
 
-from .common import DATA
+from .common import DATA, team_key
+from .players import absence_features
+from .track_record import log_prediction
 from .model import Params, TeamModel, division
 
 LEAGUES = {"1div": "1ª Divisão", "2div_norte": "2ª Divisão Norte", "2div_sul": "2ª Divisão Sul"}
@@ -30,7 +32,11 @@ def name(key):
     return _NAMES.get(key, str(key).title())
 
 
-def simulate_season(model, games, comp, sims, rng):
+def simulate_season(model, games, comp, sims, rng, squad=None):
+    """squad: {team: sq value} from the transfers pages (--preseason); it fades over each
+    team's first games (x exp(-games_played / 8)) as real results take over."""
+    squad = squad or {}
+    n_played = pd.concat([games[games.played].home, games[games.played].away]).value_counts().to_dict()
     played = games[games.played]
     todo = games[~games.played]
     teams = sorted(set(games.home) | set(games.away))
@@ -43,9 +49,16 @@ def simulate_season(model, games, comp, sims, rng):
         pts[a] += 3 if r.away_goals > r.home_goals else 1 if r.home_goals == r.away_goals else 0
         gd[h] += r.home_goals - r.away_goals; gd[a] += r.away_goals - r.home_goals
     P = np.tile(pts, (sims, 1)); G = np.tile(gd, (sims, 1))
-    for r in todo.itertuples():
-        lh, la = model.expected_goals(r.home, r.away, comp)
-        hg, ag = rng.poisson(lh, sims), rng.poisson(la, sims)
+    for r in todo.sort_values("date").itertuples():
+        feats = {}
+        for side, t in (("h", r.home), ("a", r.away)):
+            k = n_played.get(t, 0)
+            feats[f"sq_known_{side}"] = squad.get(t, 0.0) * np.exp(-k / 8)
+            n_played[t] = k + 1
+        lh, la = model.expected_goals(r.home, r.away, comp, feats=feats)
+        tk = model.params.tempo_k
+        tempo = rng.gamma(tk, 1 / tk, sims) if tk else 1.0
+        hg, ag = rng.poisson(lh * tempo), rng.poisson(la * tempo)
         h, a = idx[r.home], idx[r.away]
         P[:, h] += np.where(hg > ag, 3, np.where(hg == ag, 1, 0))
         P[:, a] += np.where(ag > hg, 3, np.where(hg == ag, 1, 0))
@@ -62,6 +75,29 @@ def simulate_season(model, games, comp, sims, rng):
     return out.sort_values(["exp_points", "p_champion"], ascending=False).reset_index(drop=True)
 
 
+FEATURE_FILES = ("features_players.csv", "features_discipline.csv")
+
+
+def apply_absences(up, spec):
+    """Set squad/goalkeeper features of upcoming games for teams with known absences."""
+    notes = []
+    for part in filter(None, (x.strip() for x in spec.split(";"))):
+        team, _, players = part.partition(":")
+        sq, gk, found = absence_features(team.strip(), [p.strip() for p in players.split(",") if p.strip()])
+        key = team_key(team)
+        games = up[(up.home == key) | (up.away == key)].sort_values("date")
+        if games.empty:
+            continue
+        nxt = games.index[0]  # absences apply to the team's next game only
+        side = "h" if up.at[nxt, "home"] == key else "a"
+        up.loc[nxt, f"sq_known_{side}"] = sq
+        up.loc[nxt, f"gk_known_{side}"] = gk
+        notes.append(f"{name(key)} without {', '.join(found)}: squad power {100 * (np.exp(sq) - 1):+.0f}%"
+                     + (f", goalkeeper change {gk:+.2f} goals/game" if gk else ""))
+        print(notes[-1])
+    return notes
+
+
 def pct(x):
     return f"{100 * x:.0f}%"
 
@@ -71,10 +107,18 @@ def main():
     ap.add_argument("--as-of", default=str(date.today()))
     ap.add_argument("--days", type=int, default=8, help="predict games in the next N days")
     ap.add_argument("--sims", type=int, default=10000)
+    ap.add_argument("--no-log", action="store_true", help="don't add this run to the prediction log")
+    ap.add_argument("--preseason", action="store_true",
+                    help="use the squads from the transfers pages (data/preseason_squads.csv)")
+    ap.add_argument("--absent", default="",
+                    help='known absences for each team\'s NEXT game, e.g. "Benfica: Pau Bargallo, Zé Miranda; Porto: Malian"')
     args = ap.parse_args()
 
     m = pd.read_csv(DATA / "matches.csv")
     m["played"] = m.played.astype(bool)
+    for f in FEATURE_FILES:  # per-game features (squad strength, goalkeeper, ...)
+        if (DATA / f).exists():
+            m = m.merge(pd.read_csv(DATA / f), on="event_id", how="left")
     as_of = pd.Timestamp(args.as_of)
     # Only use results known before the as_of date
     m.loc[pd.to_datetime(m.date) >= as_of, "played"] = False
@@ -89,9 +133,19 @@ def main():
     d = pd.to_datetime(m.date)
     up = m[~m.played & (d >= as_of) & (d < as_of + pd.Timedelta(days=args.days))
            & m.competition.isin(LEAGUES) & (m.phase == "regular")]
+    up = up.copy()
+    squad = {}
+    if args.preseason and (DATA / "preseason_squads.csv").exists():
+        ps = pd.read_csv(DATA / "preseason_squads.csv")
+        squad = ps[ps.season == season].set_index("team").sq_pre.to_dict()
+        for side in "ha":  # upcoming games: unless an absence is given below
+            up[f"sq_known_{side}"] = up["home" if side == "h" else "away"].map(squad).fillna(0.0)
+    notes = apply_absences(up, args.absent)
     preds = model.predict_df(up)
     up = up[["date", "competition", "round"]].join(preds)
     up.to_csv(out / "upcoming.csv", index=False)
+    if not args.no_log:  # permanent record of what was predicted, scored later by track_record.py
+        log_prediction(up, as_of)
 
     # ---- ratings (teams in this season's leagues)
     cur = m[(m.season == season) & m.competition.isin(LEAGUES)]
@@ -111,11 +165,13 @@ def main():
              f"Model fitted on all games before {as_of.date()}, recent games weighted more "
              f"(half-life {model.params.half_life_days:.0f} days). Probabilities are for the "
              f"regulation-time result (no overtime / penalties).", ""]
+    if notes:
+        lines += ["**Ausências consideradas:** " + "; ".join(notes), ""]
     for comp, label in LEAGUES.items():
         g = cur[(cur.competition == comp) & (cur.phase == "regular")]
         if g.empty:
             continue
-        sim = simulate_season(model, g, comp, args.sims, rng)
+        sim = simulate_season(model, g, comp, args.sims, rng, squad)
         sim.to_csv(out / f"season_{comp}.csv", index=False)
         lines += [f"## {label}", ""]
         u = up[up.competition == comp]

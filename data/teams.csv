@@ -1,15 +1,21 @@
 team,display
+acad amadora,A Acad. Amadora
 academica,Académica
+academico,Académico FC
 alcobacense,Alcobacense
 alenquer,Alenquer
 alverca,Alverca
+apdg penafiel,APDG Penafiel
 barcelos,Barcelos
 barcelos b,Barcelos B
+beja,CP Beja
 benfica,Benfica
 benfica b,Benfica B
 biblioteca,Biblioteca
 boliqueime,CD Boliqueime
+bom sucesso,FC Bom Sucesso
 braga,Braga
+c stella maris,C Stella Maris
 cambra,Cambra
 campo ourique,CA Campo Ourique
 candelaria,Candelária
@@ -21,17 +27,21 @@ cucujaes,CD Cucujães
 entroncamento,Entroncamento
 escola livre,Escola Livre
 espinho,Espinho
+estremoz,CF Estremoz
 famalicense,Famalicense
 fao,HC Fão
 feira,Feira
 fisica,Física
 gdc fanzeres,GDC Fânzeres
+gds cascais,GDS Cascais
 grandola,Grândola
 gulpilhares,ACD Gulpilhares
 infante,Infante
+juventude ouriense,Juventude Ouriense
 juventude viana,Juventude de Viana
 lavra,Lavra
 leiria marrazes,Leiria e Marrazes
+liga mr alges,Liga MR Algés
 limianos,Limianos
 maia,Maia
 marco,HC Marco
@@ -39,23 +49,32 @@ marinhense,Marinhense
 maritimo,Maritimo
 mealhada,Mealhada
 murches,Murches
+nortecoope,Fund. Nortecoope
 oeiras,Oeiras
 oh sports,OH Sports
 oliveirense,Oliveirense
 oliveirense b,Oliveirense B
+os lobinhos,"GDR ""Os Lobinhos"""
 pacense,Pacense
 paco arcos,Paço de Arcos
+paco rei,HC Paço de Rei
 parede,Parede
 paredes,Paredes
+pasteleira,ADR Pasteleira
 pdl,HC PDL
 pesseg vouga,ACR Pesseg. Vouga
 porto,Porto
 porto b,Porto B
+porto santo,Porto Santo SAD
 povoa,Póvoa
 riba dave,Riba d'Ave
 salesiana,Salesiana
 sanjoanense,Sanjoanense
 sanjoanense b,Sanjoanense B
+santa cita,ACR Santa Cita
+santa clara,CD Santa Clara
+sao roque,CD São Roque
+seixas,Seixas HC
 sesimbra,GD Sesimbra
 sintra,Sintra
 sobreira,Sobreira
@@ -72,5 +91,126 @@ valenca,Valença
 valongo,Valongo
 valongo b,Valongo B
 vasco gama,HC Vasco da Gama
+vialonga,GD Vialonga
 vila praia,Vila Praia
 vilafranquense,Vilafranquense
+x 10o grupo,10o do Grupo
+x 11o grupo,11o do Grupo
+x 12o grupo,12o do Grupo
+x 1o grupo,1o do Grupo
+x 2o grupo,2o do Grupo
+x 3o grupo,3o do Grupo
+x 4o grupo,4o do Grupo
+x 5o grupo,5o do Grupo
+x 6o grupo,6o do Grupo
+x 7o grupo,7o do Grupo
+x 8o grupo,8o do Grupo
+x 9o grupo,9o do Grupo
+x aberastain fem,Aberastain FEM
+x aix les bains,Aix Les Bains
+x alcobendas,Alcobendas
+x alcoi,Alcoi
+x alpicat,Alpicat
+x andes talleres fem,Andes Talleres FEM
+x arenys munt,Arenys de Munt
+x barca,Barça
+x bassano,Bassano
+x benfica fem,Benfica FEM
+x biasca,Biasca
+x breganze,Breganze
+x calafell,Calafell
+x caldes,Caldes
+x castiglione,Castiglione
+x cerdanyola,Cerdanyola
+x correggio,Correggio
+x coutras,Coutras
+x crehen,Crehen
+x cronenberg,Cronenberg
+x diessbach,Diessbach
+x dusseldorf,Dusseldorf
+x ergue gaberic,Ergue Gaberic
+x follonica,Follonica
+x forte,Forte
+x fraga fem,Fraga FEM
+x geneve,Geneve
+x giovinazzo,Giovinazzo
+x girona,Girona
+x grosseto,Grosseto
+x herringen,Herringen
+x igualada,Igualada
+x kings lynn,Kings Lynn
+x la vendeenne,La Vendeenne
+x liceo,Liceo
+x lleida,Lleida
+x lloret,Lloret
+x lodi,Lodi
+x lomas rivadavia,Lomas de Rivadavia
+x lyon,Lyon
+x manlleu,Manlleu
+x mataro,Mataro
+x matera,Matera
+x merignac,Merignac
+x montebello,Montebello
+x montecchio,Montecchio
+x monza,Monza
+x nantes,Nantes
+x noia,Noia
+x noisy,Noisy
+x novara azzurra,Novara Azzurra
+x palafrugell,Palafrugell
+x plegamans fem,Plegamans FEM
+x ploufragan,Ploufragan
+x poire,Poire
+x pully,Pully
+x pumas,Pumas
+x quevert,Quevert
+x quintin,Quintin
+x remscheid,Remscheid
+x reus,Reus
+x rivas,Rivas
+x roller matera,Roller Matera
+x roubaix,Roubaix
+x saint sebastien,Saint Sebastien
+x sandrigo,Sandrigo
+x sanjoanense fem,Sanjoanense FEM
+x sant cugat,Sant Cugat
+x sant just,Sant Just
+x sarzana,Sarzana
+x scra,SCRA
+x shum massanet,SHUM Massanet
+x telecable fem,Telecable FEM
+x thunerstern,Thunerstern
+x trissino,Trissino
+x uttigen,Uttigen
+x uvt,UVT
+x valdagno,Valdagno
+x vencedor semi final 1,Vencedor Semi-Final #1
+x vencedor semi final 2,Vencedor Semi-Final #2
+x vercelli,Vercelli
+x viareggio,Viareggio
+x vic,Vic
+x vilafranca,Vilafranca
+x villejuif,Villejuif
+x voltrega,Voltrega
+x voltrega fem,Voltrega FEM
+x walsum,Walsum
+x wimmis,Wimmis
+x winner 5o 12o grupo,Winner 5o-12o grupo
+x winner 6o 11o grupo,Winner 6o-11o grupo
+x winner 7o 10o grupo,Winner 7o-10o grupo
+x winner 8o 9o grupo,Winner 8o-9o grupo
+x winner oitavos 1,Winner Oitavos 1
+x winner oitavos 2,Winner Oitavos 2
+x winner oitavos 3,Winner Oitavos 3
+x winner oitavos 4,Winner Oitavos 4
+x winner oitavos 5,Winner Oitavos 5
+x winner oitavos 6,Winner Oitavos 6
+x winner oitavos 7,Winner Oitavos 7
+x winner oitavos 8,Winner Oitavos 8
+x winner quartos 1,Winner Quartos 1
+x winner quartos 2,Winner Quartos 2
+x winner quartos 3,Winner Quartos 3
+x winner quartos 4,Winner Quartos 4
+x winner semi 1,Winner Semi 1
+x winner semi 2,Winner Semi 2
+x wolfurt,Wolfurt

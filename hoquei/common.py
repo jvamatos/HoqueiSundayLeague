@@ -55,6 +55,11 @@ ALIASES = {
     "usc paredes": "paredes",
     "hcp grandola": "grandola",
     "valenca": "valenca",
+    # 2007-2015 archive names
+    "escola livre az": "escola livre",
+    "juv pacense": "pacense",
+    "uf entroncamento": "entroncamento",
+    "fund nortecoope": "nortecoope",
 }
 
 # Pretty display name for each canonical key (filled lazily: first name seen wins)
@@ -73,7 +78,9 @@ def team_key(name):
     s = re.sub(r"[^a-z0-9 ]+", " ", s)
     words = [w for w in s.split() if w not in _NOISE]
     key = " ".join(words) or s.strip()
-    return ALIASES.get(key, key)
+    for _ in range(3):  # aliases can chain (acad espinho -> academica espinho -> espinho)
+        key = ALIASES.get(key, key)
+    return key
 
 
 def canonical_team(name):

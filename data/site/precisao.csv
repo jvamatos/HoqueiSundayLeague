@@ -1,0 +1,4 @@
+modelo,acerto,log_loss
+Frequências base (sempre o mesmo palpite),51.7,0.976
+Elo,64.7,0.841
+Este modelo,66.2,0.811

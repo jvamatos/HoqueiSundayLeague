@@ -8,6 +8,7 @@ Output:
   data/api_player_stats.csv   one row per player per game (goals, cards, set pieces...)
 """
 import argparse
+import html
 import json
 import time
 from pathlib import Path
@@ -80,6 +81,17 @@ def fetch_team_names(team_ids, refresh=False):
     return names
 
 
+def fetch_player_names(player_ids, refresh=False):
+    names, ids = {}, sorted(i for i in player_ids if i)
+    for i in range(0, len(ids), 100):
+        chunk = ids[i:i + 100]
+        cache = RAW / "api" / f"players_{chunk[0]}_{chunk[-1]}_{len(chunk)}.json"
+        for t in get("players", {"include": ",".join(map(str, chunk)), "per_page": 100,
+                                 "_fields": "id,title"}, cache, refresh):
+            names[t["id"]] = html.unescape(t["title"]["rendered"])
+    return names
+
+
 def _int(x):
     try:
         return int(str(x).strip())
@@ -149,6 +161,8 @@ def main(refresh=False):
     m.to_csv(DATA / "api_matches.csv", index=False)
     p = pd.DataFrame(players)
     p.to_csv(DATA / "api_player_stats.csv", index=False)
+    pn = fetch_player_names(set(p.player_id.dropna().astype(int)))
+    pd.DataFrame({"player_id": list(pn), "name": list(pn.values())}).to_csv(DATA / "players.csv", index=False)
     print(f"saved {len(m)} games ({m.played.sum()} played), {len(p)} player-game rows")
 
 
