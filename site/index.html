@@ -36,13 +36,35 @@
   .hp-big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; }
   .hp-kpis { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); }
   [data-dash-source-state=refreshing] { opacity: .5; }
+  .hp-how { margin: 0; padding-left: 1.2em; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); line-height: 1.6; max-width: 75ch; }
+  .hp-games { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: var(--cds-gap-md); }
+  .hp-game { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+  .hp-game-when { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .hp-game-teams { display: flex; justify-content: space-between; gap: 8px; font-size: var(--cds-font-size-heading); }
+  .hp-game-teams span:last-child { text-align: right; }
+  .hp-game-teams .fav { font-weight: var(--cds-font-weight-medium); }
+  .hp-stack { display: flex; height: 10px; border-radius: 999px; overflow: hidden; background: var(--color-border-line); }
+  .hp-stack i { display: block; height: 100%; }
+  .hp-stack-lbl { display: flex; justify-content: space-between; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+  .hp-stack-lbl b { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+  .hp-verdict { margin: 0; font-size: var(--cds-font-size-body); }
+  .hp-small { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+  .hp-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+  .hp-list li { display: grid; grid-template-columns: 1.6em 1fr; gap: 6px; padding: 8px 0; border-bottom: 1px solid var(--color-border-line); }
+  .hp-list .mark-ok { color: var(--color-ok); font-weight: var(--cds-font-weight-medium); }
+  .hp-list .mark-bad { color: var(--color-bad); font-weight: var(--cds-font-weight-medium); }
+  .hp-list .sub { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
 </style>
 
 <div class="hp">
   <header class="hp-head" id="topo">
     <h1 class="hp-title">Hóquei Previsões</h1>
     <p class="hp-lede" id="resumo">Na 1ª Divisão, <b data-draw="t1-nome">—</b> é o favorito ao título com <b data-draw="t1-p">—</b> de probabilidade, à frente de <b data-draw="t2-nome">—</b> (<b data-draw="t2-p">—</b>) e <b data-draw="t3-nome">—</b> (<b data-draw="t3-p">—</b>).</p>
-    <p class="hp-meta">Modelo de força das equipas treinado com 11 341 jogos desde 2007/08. As probabilidades são para o resultado no tempo regulamentar (sem prolongamento nem penáltis).</p>
+    <ul class="hp-how" id="como-ler">
+      <li><b>Esta semana</b>: quem é favorito em cada jogo. A barra mostra as hipóteses de vitória da casa, empate e vitória de fora.</li>
+      <li><b>Classificação</b>: como deve acabar a época, a partir de 10 000 simulações.</li>
+      <li>Escolha a liga no menu à direita. As percentagens são para os 50 minutos (sem prolongamento nem penáltis).</li>
+    </ul>
   </header>
 
   <div class="hp-bar">
@@ -63,34 +85,12 @@
 
   <!-- ESTA SEMANA -->
   <section class="hp-section" id="semana">
-    <div class="hp-card" id="proximos">
-      <h2 class="hp-h2">Próximos jogos</h2>
-      <p class="hp-note">Probabilidade de vitória da casa, empate e vitória de fora, golos esperados e o resultado exato mais provável. O favorito está a negrito.</p>
-      <div class="hp-wrap">
-        <table class="hp-table" data-source="jogos" data-row-key="jogo">
-          <thead><tr>
-            <th data-field="data">Data</th><th data-field="casa">Casa</th><th data-field="fora">Fora</th>
-            <th data-field="p_casa" class="num">Casa</th><th data-field="p_empate" class="num">Empate</th><th data-field="p_fora" class="num">Fora</th>
-            <th data-field="golos_casa" class="num">Golos esp.</th><th data-field="golos_fora" class="num"></th>
-            <th data-field="resultado_provavel" class="num">Mais provável</th>
-          </tr></thead>
-          <tbody data-draw="jogos"></tbody>
-        </table>
-      </div>
-    </div>
+    <h2 class="hp-h2" id="proximos">Próximos jogos</h2>
+    <div class="hp-games" data-draw="jogos" data-source="jogos"></div>
     <div class="hp-card" id="ultimos">
-      <h2 class="hp-h2">Última semana: previsão vs. resultado</h2>
-      <p class="hp-note">Em todas as ligas, o favorito do modelo ganhou <b data-draw="acertos" data-source="acerto_semana" data-field="acertos" data-row="0">—</b> de <b data-draw="total" data-source="acerto_semana" data-field="jogos" data-row="0">—</b> jogos. Probabilidades calculadas antes de cada jogo.</p>
-      <div class="hp-wrap">
-        <table class="hp-table" data-source="ultimos" data-row-key="jogo">
-          <thead><tr>
-            <th data-field="data">Data</th><th data-field="casa">Casa</th><th data-field="resultado" class="num">Resultado</th><th data-field="fora">Fora</th>
-            <th data-field="p_casa" class="num">Casa</th><th data-field="p_empate" class="num">Empate</th><th data-field="p_fora" class="num">Fora</th>
-            <th data-field="acertou">Favorito ganhou?</th>
-          </tr></thead>
-          <tbody data-draw="ultimos"></tbody>
-        </table>
-      </div>
+      <h2 class="hp-h2">Como correu a última semana</h2>
+      <p class="hp-note">Em todas as ligas, o favorito do modelo ganhou <b data-draw="acertos" data-source="acerto_semana" data-field="acertos" data-row="0">—</b> de <b data-draw="total" data-source="acerto_semana" data-field="jogos" data-row="0">—</b> jogos. As percentagens foram calculadas antes de cada jogo.</p>
+      <ul class="hp-list" data-draw="ultimos" data-source="ultimos"></ul>
     </div>
   </section>
 
@@ -103,13 +103,13 @@
     </div>
     <div class="hp-card" id="odds">
       <h2 class="hp-h2">Probabilidades da época</h2>
-      <p class="hp-note">Zona alta: top 8 (playoff) na 1ª Divisão, top 2 nas 2ª Divisões. Descida: últimos 3. Formato assumido a partir das épocas anteriores.</p>
+      <p class="hp-note">Hipótese de cada equipa acabar a fase regular em 1º, na zona alta (top 8, que vai ao playoff, na 1ª Divisão; top 2 nas 2ª Divisões) ou nos 3 últimos lugares. Formato assumido a partir das épocas anteriores.</p>
       <div class="hp-wrap">
         <table class="hp-table" data-source="classificacao" data-row-key="id">
           <thead><tr>
-            <th data-field="equipa">Equipa</th><th data-field="jogos" class="num">J</th><th data-field="pontos" class="num">Pts</th>
-            <th data-field="pontos_esperados" class="num">Pts esperados</th><th data-field="p_campeao" class="num">1º lugar</th>
-            <th data-field="p_zona_alta" class="num">Zona alta</th><th data-field="p_descida" class="num">Descida</th><th data-field="posicao_media" class="num">Posição média</th>
+            <th data-field="equipa">Equipa</th><th data-field="pontos" class="num">Pontos agora</th>
+            <th data-field="pontos_esperados" class="num">Pontos no fim (previsão)</th><th data-field="p_campeao" class="num">Acaba em 1º</th>
+            <th data-field="p_zona_alta" class="num">Zona alta</th><th data-field="p_descida" class="num">Desce</th>
           </tr></thead>
           <tbody data-draw="classificacao"></tbody>
         </table>
@@ -192,10 +192,10 @@
   <section class="hp-section" id="modelo" hidden>
     <div class="hp-card" id="precisao-card">
       <h2 class="hp-h2">Quão bom é o modelo?</h2>
-      <p class="hp-note">Teste em 1 762 jogos de 2023/24 a novembro de 2026, nunca usados para afinar o modelo. Em cada semana o modelo só conhece os jogos anteriores. Log loss: quanto menor, melhor.</p>
+      <p class="hp-note">Testado em 1 762 jogos de 2023/24 a novembro de 2026, como se fosse em direto: em cada semana o modelo só conhecia os jogos anteriores. "Acerta o resultado" é a percentagem de jogos em que o resultado mais provável (casa, empate ou fora) aconteceu. A última coluna é uma medida técnica de erro das probabilidades: quanto menor, melhor.</p>
       <div class="hp-wrap">
         <table class="hp-table" data-source="precisao" data-row-key="modelo">
-          <thead><tr><th data-field="modelo">Modelo</th><th data-field="acerto" class="num">Acerta o resultado (%)</th><th data-field="log_loss" class="num">Log loss</th></tr></thead>
+          <thead><tr><th data-field="modelo">Modelo</th><th data-field="acerto" class="num">Acerta o resultado (%)</th><th data-field="log_loss" class="num">Erro (log loss)</th></tr></thead>
           <tbody data-draw="precisao"></tbody>
         </table>
       </div>
@@ -270,41 +270,77 @@
   dash.draw('acertos', (el) => { const r = dash.data('acerto_semana'); el.textContent = r.status === 'ok' && r.data ? r.data[0].acertos : '—'; });
   dash.draw('total', (el) => { const r = dash.data('acerto_semana'); el.textContent = r.status === 'ok' && r.data ? r.data[0].jogos : '—'; });
 
-  const probCell = (f) => [f, (r) => {
-    const m = Math.max(+r.p_casa, +r.p_empate, +r.p_fora);
-    return 'hp-p num' + (+r[f] === m ? ' fav' : '');
-  }, (v) => HP.pct(v)];
+  // plain-language verdict for one game
+  HP.verdict = (g) => {
+    const pc = +g.p_casa, pe = +g.p_empate, pf = +g.p_fora;
+    const fav = pc >= pf ? g.casa : g.fora, p = Math.max(pc, pf);
+    if (p >= 75) return `${fav} é grande favorito.`;
+    if (p >= 55) return `${fav} é favorito.`;
+    if (Math.abs(pc - pf) <= 8) return 'Jogo equilibrado, qualquer resultado é possível.';
+    return `${fav} é ligeiro favorito.`;
+  };
+  HP.weekday = (s) => ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'][new Date(s + 'T00:00:00Z').getUTCDay()];
 
-  dash.draw('jogos', (tb) => {
+  dash.draw('jogos', (box) => {
     const r = HP.rows('jogos');
-    const rows = r && r.filter((x) => x.liga === HP.liga);
-    HP.fill(tb, rows, 'jogo', [
-      ['data', 'dim', HP.date],
-      ['casa', (x) => (+x.p_casa >= +x.p_fora && +x.p_casa >= +x.p_empate ? 'fav' : '')],
-      ['fora', (x) => (+x.p_fora > +x.p_casa && +x.p_fora >= +x.p_empate ? 'fav' : '')],
-      probCell('p_casa'), probCell('p_empate'), probCell('p_fora'),
-      ['golos_casa', 'num', (v) => HP.num(v)], ['golos_fora', 'num dim', (v) => HP.num(v)],
-      ['resultado_provavel', 'num'],
-    ], 9);
-    // probability tint behind each percentage
-    tb.querySelectorAll('td.hp-p').forEach((td) => {
-      const v = parseFloat(td.textContent); const i = document.createElement('i'); i.style.width = `${Math.max(0, v)}%`;
-      const s = document.createElement('span'); s.textContent = td.textContent; td.replaceChildren(i, s);
+    box.replaceChildren();
+    const msg = (t) => { const p = document.createElement('p'); p.className = 'hp-note'; p.textContent = t; box.appendChild(p); };
+    if (!r) { msg(dash.data('jogos').status === 'error' ? 'Falhou o carregamento.' : 'A carregar…'); return; }
+    const rows = r.filter((x) => x.liga === HP.liga).sort((a, b) => a.data.localeCompare(b.data));
+    if (!rows.length) { msg('Sem jogos marcados nesta liga nos próximos dias.'); return; }
+    const mk = (tag, cls, text, field, g) => {
+      const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text;
+      if (field) { e.dataset.source = 'jogos'; e.dataset.field = field; e.dataset.where = `jogo=${encodeURIComponent(g.jogo)}`; }
+      return e;
+    };
+    rows.forEach((g) => {
+      const card = mk('article', 'hp-game');
+      card.id = `jogo-${g.jogo}`;
+      const when = mk('div', 'hp-game-when');
+      when.append(`${HP.weekday(g.data)} `, mk('span', null, HP.date(g.data), 'data', g), ` · jornada ${g.jornada || '—'}`);
+      const homeFav = +g.p_casa >= +g.p_fora;
+      const teams = mk('div', 'hp-game-teams');
+      teams.append(mk('span', homeFav ? 'fav' : '', g.casa, 'casa', g), mk('span', homeFav ? '' : 'fav', g.fora, 'fora', g));
+      const bar = mk('div', 'hp-stack');
+      bar.setAttribute('role', 'img');
+      bar.setAttribute('aria-label', `${g.casa} ${g.p_casa}%, empate ${g.p_empate}%, ${g.fora} ${g.p_fora}%`);
+      [['p_casa', dash.colors[0], 1], ['p_empate', 'var(--cds-chart-muted)', 1], ['p_fora', dash.colors[1] || dash.colors[0], 0.6]].forEach(([f, c, o]) => {
+        const i = document.createElement('i'); i.style.width = `${+g[f]}%`; i.style.background = c; i.style.opacity = o; bar.appendChild(i);
+      });
+      const lbl = mk('div', 'hp-stack-lbl');
+      const part = (txt, f) => { const s = document.createElement('span'); const b = mk('b', null, HP.pct(g[f]), f, g); s.append(b, ` ${txt}`); return s; };
+      lbl.append(part('casa', 'p_casa'), part('empate', 'p_empate'), part('fora', 'p_fora'));
+      const verdict = mk('p', 'hp-verdict', HP.verdict(g));
+      const small = mk('p', 'hp-small');
+      small.append('Resultado mais provável ', mk('span', null, g.resultado_provavel, 'resultado_provavel', g),
+        ' · golos esperados ', mk('span', null, HP.num(g.golos_casa), 'golos_casa', g), '–', mk('span', null, HP.num(g.golos_fora), 'golos_fora', g));
+      card.append(when, teams, bar, lbl, verdict, small);
+      box.appendChild(card);
     });
   });
 
-  dash.draw('ultimos', (tb) => {
+  dash.draw('ultimos', (ul) => {
     const r = HP.rows('ultimos');
+    ul.replaceChildren();
     const rows = r && r.filter((x) => x.liga === HP.liga);
-    HP.fill(tb, rows, 'jogo', [
-      ['data', 'dim', HP.date], ['casa'], ['resultado', 'num'], ['fora'],
-      ['p_casa', 'num', HP.pct], ['p_empate', 'num', HP.pct], ['p_fora', 'num', HP.pct],
-      ['acertou', null, (v) => v],
-    ], 8);
-    tb.querySelectorAll('tr').forEach((tr) => {
-      const td = tr.cells[7]; if (!td) return;
-      const v = td.textContent; const s = document.createElement('span');
-      s.className = 'hp-pill ' + (v === 'sim' ? 'ok' : 'bad'); s.textContent = v; td.replaceChildren(s);
+    if (!rows || !rows.length) { const li = document.createElement('li'); li.className = 'sub'; li.textContent = r ? 'Sem jogos nesta liga na última semana.' : 'A carregar…'; ul.appendChild(li); return; }
+    rows.forEach((g) => {
+      const at = (tag, cls, text, field) => { const e = document.createElement(tag); if (cls) e.className = cls; e.textContent = text;
+        if (field) { e.dataset.source = 'ultimos'; e.dataset.field = field; e.dataset.where = `jogo=${encodeURIComponent(g.jogo)}`; } return e; };
+      const ok = g.acertou === 'sim';
+      const li = document.createElement('li');
+      const mark = at('span', ok ? 'mark-ok' : 'mark-bad', ok ? '✓' : '✗', 'acertou');
+      mark.setAttribute('aria-label', ok ? 'O favorito ganhou' : 'O favorito não ganhou');
+      const body = document.createElement('div');
+      const line = document.createElement('div');
+      line.append(at('span', null, g.casa, 'casa'), ' ', at('b', null, g.resultado, 'resultado'), ' ', at('span', null, g.fora, 'fora'));
+      const favName = g.favorito === 'casa' ? g.casa : g.favorito === 'fora' ? g.fora : 'empate';
+      const favField = g.favorito === 'casa' ? 'p_casa' : g.favorito === 'fora' ? 'p_fora' : 'p_empate';
+      const sub = document.createElement('div'); sub.className = 'sub';
+      sub.append(`${HP.weekday(g.data)} ${HP.date(g.data)} · o modelo dava ${g.favorito === 'empate' ? 'o empate' : favName} com `, at('span', null, HP.pct(g[favField]), favField));
+      body.append(line, sub);
+      li.append(mark, body);
+      ul.appendChild(li);
     });
   });
 
@@ -312,10 +348,9 @@
     const r = HP.rows('classificacao');
     const rows = r && r.filter((x) => x.liga === HP.liga).sort((a, b) => +b.pontos_esperados - +a.pontos_esperados);
     HP.fill(tb, rows, 'id', [
-      ['equipa'], ['jogos', 'num dim'], ['pontos', 'num'], ['pontos_esperados', 'num', (v) => HP.num(v)],
+      ['equipa'], ['pontos', 'num'], ['pontos_esperados', 'num', (v) => HP.num(v)],
       ['p_campeao', 'num fav', HP.pct], ['p_zona_alta', 'num', HP.pct], ['p_descida', 'num', HP.pct],
-      ['posicao_media', 'num dim', (v) => HP.num(v)],
-    ], 8);
+    ], 6);
   });
 
   dash.draw('equipas', (tb) => {
