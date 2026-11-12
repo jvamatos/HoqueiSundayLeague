@@ -65,6 +65,17 @@
   .hp-table th[data-sort] { cursor: pointer; user-select: none; }
   .hp-table th[aria-sort="descending"]::after { content: " ↓"; }
   .hp-table th[aria-sort="ascending"]::after { content: " ↑"; }
+  .hp-fichas { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 460px), 1fr)); gap: var(--cds-gap-md); align-items: start; }
+  .hp-ficha-head { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+  .hp-ficha-teams { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: var(--cds-font-size-heading); }
+  .hp-ficha-teams div:last-child { text-align: right; }
+  .hp-ficha-teams small { display: block; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .hp-ficha-rows { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 12px; font-size: var(--cds-font-size-caption); line-height: 1.45; }
+  .hp-ficha-rows .k { grid-column: 1 / -1; color: var(--color-fg-muted); text-transform: uppercase; letter-spacing: .04em; font-size: 11px; margin-top: 6px; }
+  .hp-ficha-rows .r { text-align: right; }
+  .hp-ficha-rows .full { grid-column: 1 / -1; }
+  .hp-ficha details { border-top: 1px solid var(--color-border-line); padding-top: 8px; }
+  .hp-ficha summary { cursor: pointer; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
   .hp-facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: var(--cds-gap-md); align-items: start; }
   .hp-facts ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
   .hp-facts li { display: flex; flex-direction: column; gap: 3px; line-height: 1.45; }
@@ -87,6 +98,7 @@
   <div class="hp-bar">
     <div class="hp-tabs" role="tablist" aria-label="Secções">
       <button class="hp-tab" role="tab" data-tab="semana" aria-selected="true">Esta semana</button>
+      <button class="hp-tab" role="tab" data-tab="fichas" aria-selected="false">Fichas 2ª Sul</button>
       <button class="hp-tab" role="tab" data-tab="classificacao" aria-selected="false">Classificação</button>
       <button class="hp-tab" role="tab" data-tab="equipas" aria-selected="false">Equipas</button>
       <button class="hp-tab" role="tab" data-tab="estatisticas" aria-selected="false">Estatísticas</button>
@@ -112,6 +124,12 @@
       <p class="hp-note">Em todas as ligas, o favorito do modelo ganhou <b data-draw="acertos" data-source="acerto_semana" data-field="acertos" data-row="0">—</b> de <b data-draw="total" data-source="acerto_semana" data-field="jogos" data-row="0">—</b> jogos. As percentagens foram calculadas antes de cada jogo.</p>
       <ul class="hp-list" data-draw="ultimos" data-source="ultimos"></ul>
     </div>
+  </section>
+
+  <!-- FICHAS 2ª SUL -->
+  <section class="hp-section" id="fichas" hidden>
+    <p class="hp-note">Contexto para os vossos palpites da 2ª Divisão Sul, jogo a jogo. Fator casa: diferença de golos por jogo em casa menos fora, nos últimos 3 anos (mais alto = muito mais forte em casa; nas contas do modelo, esta diferença entre equipas não se repete de época para época, mas fica aqui para cada um julgar). A previsão do modelo está fechada no fim de cada ficha, para não influenciar.</p>
+    <div class="hp-fichas" data-draw="fichas" data-source="fichas"></div>
   </section>
 
   <!-- CLASSIFICAÇÃO -->
@@ -390,7 +408,7 @@
   HP.periodo = '2025/26';
   HP.psPeriodo = '2025/26'; HP.psEquipa = ''; HP.psSort = 'golos'; HP.psDir = 'desc';
   HP.EST = ['est-equipa', 'est-contexto', 'est', 'est-rank', 'est-tempos', 'est-tipos'];
-  HP.ALL = ['ps-equipa', 'pstats', 'gkstats', 'est-equipa', 'est-contexto', 'est', 'est-rank', 'est-tempos', 'est-tipos', 'factos', 'jogos', 'ultimos', 'classificacao', 'pontos-chart', 'equipas', 'equipas-chart', 'marcadores', 'guarda-redes', 'pp', 'mercado', 'impacto'];
+  HP.ALL = ['fichas', 'ps-equipa', 'pstats', 'gkstats', 'est-equipa', 'est-contexto', 'est', 'est-rank', 'est-tempos', 'est-tipos', 'factos', 'jogos', 'ultimos', 'classificacao', 'pontos-chart', 'equipas', 'equipas-chart', 'marcadores', 'guarda-redes', 'pp', 'mercado', 'impacto'];
   HP.signed = (v) => (v === null || v === '' || v === undefined) ? '—' : `${+v > 0 ? '+' : ''}${Math.round(+v)}%`;
   // fill a <tbody> with one <tr> per row; cols: [field, cls, format]
   HP.fill = (tb, rows, key, cols, colspan) => {
@@ -767,6 +785,44 @@
       ['jogador'], ['equipa', 'dim'], ['jogos', 'num dim'], ['sofridos_por_jogo', 'num', (v) => HP.num(v, 2)],
       ['penaltis_defendidos', 'num'], ['pct_penaltis_defendidos', 'num fav', p0], ['livres_defendidos', 'num'], ['pct_livres_defendidos', 'num fav', p0],
     ], 8);
+  });
+
+  // ---- game cards for the 2ª Divisão Sul
+  dash.draw('fichas', (box) => {
+    const r = HP.rows('fichas');
+    box.replaceChildren();
+    const note = (t) => { const p = document.createElement('p'); p.className = 'hp-note'; p.textContent = t; box.appendChild(p); };
+    if (!r) { note(dash.data('fichas').status === 'error' ? 'Falhou o carregamento.' : 'A carregar…'); return; }
+    if (!r.length) { note('Sem jogos da 2ª Divisão Sul nos próximos dias.'); return; }
+    r.slice().sort((a, b) => a.data.localeCompare(b.data)).forEach((g) => {
+      const el = (tag, cls, text, field) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text;
+        if (field) { e.dataset.source = 'fichas'; e.dataset.field = field; e.dataset.where = `jogo=${encodeURIComponent(g.jogo)}`; } return e; };
+      const card = el('article', 'hp-card hp-ficha'); card.id = `ficha-${g.jogo}`;
+      const head = el('div', 'hp-ficha-head');
+      head.append(el('span', 'hp-game-when', `${HP.weekday(g.data)} ${HP.date(g.data)} · jornada ${g.jornada || '—'}`));
+      const teams = el('div', 'hp-ficha-teams');
+      const side = (name, pos, pts, j, fp) => { const d = el('div'); d.append(el('b', null, name, fp === 'casa' ? 'casa' : 'fora'));
+        const sm = el('small'); sm.append(el('span', null, pos ? `${pos}º` : '—', `pos_${fp}`), ', ', el('span', null, `${pts}`, `pts_${fp}`), ` pts em ${j} jogos`); d.append(sm); return d; };
+      teams.append(side(g.casa, g.pos_casa, g.pts_casa, g.j_casa, 'casa'), side(g.fora, g.pos_fora, g.pts_fora, g.j_fora, 'fora'));
+      const rows = el('div', 'hp-ficha-rows');
+      const pair = (label, fh, fa, fmt) => { rows.append(el('div', 'k', label), el('div', null, fmt ? fmt(g[fh]) : (g[fh] || '—'), fh), el('div', 'r', fmt ? fmt(g[fa]) : (g[fa] || '—'), fa)); };
+      const full = (label, f) => { rows.append(el('div', 'k', label), el('div', 'full', g[f] || '—', f)); };
+      pair('Últimos 5 jogos', 'forma_casa', 'forma_fora');
+      pair('Em casa / fora, desde 2025/26', 'casa_em_casa', 'fora_fora');
+      pair('Fator casa (3 anos)', 'fator_casa_casa', 'fator_casa_fora', (v) => (v === '' || v === undefined || v === null ? 'poucos jogos' : `${+v > 0 ? '+' : ''}${HP.num(v, 2)}`));
+      pair('Marcadores 2026/27', 'marcadores_casa', 'marcadores_fora');
+      pair('Marcadores 2025/26', 'marcadores_casa_ant', 'marcadores_fora_ant');
+      pair('Guarda-redes', 'gr_casa', 'gr_fora');
+      pair('Ausências', 'ausencias_casa', 'ausencias_fora');
+      full('Últimos confrontos', 'h2h');
+      const det = el('details'); const sum = el('summary', null, 'Ver a previsão do modelo');
+      const pv = el('p', 'hp-small');
+      pv.append(`${g.casa} `, el('b', null, HP.pct(g.p_casa), 'p_casa'), ' · empate ', el('b', null, HP.pct(g.p_empate), 'p_empate'), ` · ${g.fora} `, el('b', null, HP.pct(g.p_fora), 'p_fora'),
+        ' · golos esperados ', el('span', null, HP.num(g.golos_esp_casa), 'golos_esp_casa'), '–', el('span', null, HP.num(g.golos_esp_fora), 'golos_esp_fora'));
+      det.append(sum, pv);
+      card.append(head, teams, rows, det);
+      box.appendChild(card);
+    });
   });
 
   dash.draw('precisao', (tb) => {

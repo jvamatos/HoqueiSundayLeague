@@ -60,6 +60,9 @@ class Params:
     tempo_k: float = 40.0
     prior_half_life: float = 1095.0  # shrink toward each club's long-run (3-year half-life) rating
     prior_weight: float = 1.0        # how much of the long-run rating is used as prior mean
+    # home advantage per team on top of its division's (rink, travel, crowd), shrunk toward 0
+    # with this L2 strength; None = same home advantage for every team of a division
+    team_home_l2: float = None
     # per-game features ((name, "own"|"opp"), ...); see players.py
     features: tuple = (("sq_known", "own"), ("gk_known", "opp"))
 
@@ -72,6 +75,7 @@ class TeamModel:
     defence: np.ndarray = None
     level: dict = None
     home_adv: dict = None
+    team_home: np.ndarray = None
     beta: dict = None
     as_of: pd.Timestamp = None
     n_games: dict = None
@@ -114,30 +118,35 @@ class TeamModel:
             fa = m.get(f"{f}_a", pd.Series(0.0, index=m.index)).fillna(0).values
             Xh[:, k], Xa[:, k] = (fh, fa) if kind == "own" else (fa, fh)
 
+        TH = T if p.team_home_l2 else 0
+
         def unpack(x):
-            return x[0:K], x[K:2 * K], x[2 * K:2 * K + T], x[2 * K + T:2 * K + 2 * T], x[2 * K + 2 * T:]
+            o = 2 * K + 2 * T
+            return (x[0:K], x[K:2 * K], x[2 * K:2 * K + T], x[2 * K + T:o], x[o:o + F], x[o + F:o + F + TH])
 
         def nll(x):
-            lev, ha, att, dfn, b = unpack(x)
-            eta_h = lev[g] + ha[g] * hv + att[hi] - dfn[ai] + Xh @ b
+            lev, ha, att, dfn, b, th = unpack(x)
+            eta_h = lev[g] + ha[g] * hv + att[hi] - dfn[ai] + Xh @ b + (th[hi] * hv if TH else 0)
             eta_a = lev[g] + att[ai] - dfn[hi] + Xa @ b
             lam_h, lam_a = np.exp(eta_h), np.exp(eta_a)
             da, dd = att - prior_att, dfn - prior_def
             f = np.sum(w * (lam_h - y_h * eta_h + lam_a - y_a * eta_a))
-            f += p.l2 * (da @ da + dd @ dd) + 1e-3 * (b @ b)
+            f += p.l2 * (da @ da + dd @ dd) + 1e-3 * (b @ b) + (p.team_home_l2 * (th @ th) if TH else 0)
             r_h, r_a = w * (lam_h - y_h), w * (lam_a - y_a)
             g_lev = np.bincount(g, r_h + r_a, K)
             g_ha = np.bincount(g, r_h * hv, K)
             g_att = np.bincount(hi, r_h, T) + np.bincount(ai, r_a, T) + 2 * p.l2 * da
             g_dfn = -np.bincount(ai, r_h, T) - np.bincount(hi, r_a, T) + 2 * p.l2 * dd
             g_b = Xh.T @ r_h + Xa.T @ r_a + 2e-3 * b
-            return f, np.concatenate([g_lev, g_ha, g_att, g_dfn, g_b])
+            g_th = np.bincount(hi, r_h * hv, T) + 2 * p.team_home_l2 * th if TH else np.zeros(0)
+            return f, np.concatenate([g_lev, g_ha, g_att, g_dfn, g_b, g_th])
 
-        x0 = np.zeros(2 * K + 2 * T + F)
+        x0 = np.zeros(2 * K + 2 * T + F + TH)
         x0[0:K] = np.log(np.average((y_h + y_a) / 2, weights=w))
         x0[2 * K:2 * K + T], x0[2 * K + T:2 * K + 2 * T] = prior_att, prior_def
         res = minimize(nll, x0, jac=True, method="L-BFGS-B")
-        lev, ha, att, dfn, b = unpack(res.x)
+        lev, ha, att, dfn, b, th = unpack(res.x)
+        self.team_home = th if TH else np.zeros(T)
         self.level = dict(zip(GROUPS, lev))
         self.home_adv = dict(zip(GROUPS, ha))
         self.attack, self.defence = att, dfn
@@ -157,7 +166,8 @@ class TeamModel:
         d = division(competition)
         ah, dh = self._team(home)
         aa, da = self._team(away)
-        eh = self.level[d] + (0 if neutral else self.home_adv[d]) + ah - da
+        th = self.team_home[self.teams.index(home)] if self.team_home is not None and home in self.teams else 0.0
+        eh = self.level[d] + (0 if neutral else self.home_adv[d] + th) + ah - da
         ea = self.level[d] + aa - dh
         for f, kind in self.params.features:
             fh = _num((feats or {}).get(f"{f}_h"))
