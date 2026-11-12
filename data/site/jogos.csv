@@ -1,0 +1,39 @@
+jogo,data,liga,jornada,casa,fora,p_casa,p_empate,p_fora,golos_casa,golos_fora,resultado_provavel
+2026-11-14_benfica_riba-dave,2026-11-14,1ª Divisão,2,Benfica,Riba d'Ave,92,5,3,5.5,1.4,5-1
+2026-11-14_candelaria_oliveirense,2026-11-14,1ª Divisão,2,Candelária,Oliveirense,25,16,59,2.2,3.3,2-3
+2026-11-14_juventude-viana_braga,2026-11-14,1ª Divisão,2,Juventude de Viana,Braga,44,16,41,3.4,3.3,3-3
+2026-11-14_oeiras_barcelos,2026-11-14,1ª Divisão,2,Oeiras,Barcelos,10,8,82,2.9,6.1,2-6
+2026-11-14_sanjoanense_pacense,2026-11-14,1ª Divisão,2,Sanjoanense,Pacense,50,15,36,3.9,3.4,3-3
+2026-11-14_valongo_sporting,2026-11-14,1ª Divisão,2,Valongo,Sporting,18,13,69,2.2,4.0,2-3
+2026-11-14_cambra_termas,2026-11-14,2ª Divisão Norte,4,Cambra,Termas,68,12,19,4.5,2.7,4-2
+2026-11-14_carvalhos_barcelos-b,2026-11-14,2ª Divisão Norte,4,Carvalhos,Barcelos B,83,9,8,4.1,1.4,4-1
+2026-11-14_famalicense_espinho,2026-11-14,2ª Divisão Norte,4,Famalicense,Espinho,62,14,24,4.0,2.7,3-2
+2026-11-14_lavra_mealhada,2026-11-14,2ª Divisão Norte,4,Lavra,Mealhada,19,17,64,1.5,2.7,1-2
+2026-11-14_vila-praia_porto-b,2026-11-14,2ª Divisão Norte,4,Vila Praia,Porto B,31,14,55,3.5,4.4,3-4
+2026-11-14_alcobacense_criar-t,2026-11-14,2ª Divisão Sul,4,Alcobacense,CRIAR-T,57,17,26,3.0,2.1,3-2
+2026-11-14_benfica-b_paco-arcos,2026-11-14,2ª Divisão Sul,4,Benfica B,Paço de Arcos,48,14,38,4.2,3.9,4-3
+2026-11-14_grandola_alenquer,2026-11-14,2ª Divisão Sul,4,Grândola,Alenquer,15,10,75,2.8,5.2,2-5
+2026-11-14_marinhense_turquel,2026-11-14,2ª Divisão Sul,4,Marinhense,Turquel,24,14,62,2.8,4.1,2-4
+2026-11-14_salesiana_fisica,2026-11-14,2ª Divisão Sul,4,Salesiana,Física,45,16,39,3.4,3.2,3-3
+2026-11-14_tojal_parede,2026-11-14,2ª Divisão Sul,4,Tojal,Parede,14,12,74,2.0,4.1,1-4
+2026-11-15_povoa_valongo-b,2026-11-15,2ª Divisão Norte,4,Póvoa,Valongo B,64,13,24,4.7,3.2,4-3
+2026-11-17_oliveirense-b_academica,2026-11-17,2ª Divisão Norte,4,Oliveirense B,Académica,67,13,20,4.4,2.7,4-2
+2026-11-17_sporting-b_murches,2026-11-17,2ª Divisão Sul,4,Sporting B,Murches,51,14,36,4.4,3.9,4-3
+2026-11-18_tomar_porto,2026-11-18,1ª Divisão,2,Tomar,Porto,20,14,66,2.3,3.8,2-3
+2026-11-21_braga_barcelos,2026-11-21,1ª Divisão,3,Braga,Barcelos,24,13,62,3.0,4.4,3-4
+2026-11-21_juventude-viana_sanjoanense,2026-11-21,1ª Divisão,3,Juventude de Viana,Sanjoanense,47,15,38,3.9,3.6,3-3
+2026-11-21_oliveirense_valongo,2026-11-21,1ª Divisão,3,Oliveirense,Valongo,67,13,19,3.9,2.3,3-2
+2026-11-21_pacense_candelaria,2026-11-21,1ª Divisão,3,Pacense,Candelária,63,15,23,3.7,2.4,3-2
+2026-11-21_riba-dave_tomar,2026-11-21,1ª Divisão,3,Riba d'Ave,Tomar,38,17,44,2.7,2.8,2-2
+2026-11-21_sporting_benfica,2026-11-21,1ª Divisão,3,Sporting,Benfica,45,17,38,2.8,2.6,2-2
+2026-11-21_espinho_cambra,2026-11-21,2ª Divisão Norte,5,Espinho,Cambra,50,16,34,3.4,2.9,3-2
+2026-11-21_lavra_vila-praia,2026-11-21,2ª Divisão Norte,5,Lavra,Vila Praia,26,16,58,2.3,3.4,2-3
+2026-11-21_povoa_famalicense,2026-11-21,2ª Divisão Norte,5,Póvoa,Famalicense,57,14,29,4.0,3.0,4-3
+2026-11-21_termas_carvalhos,2026-11-21,2ª Divisão Norte,5,Termas,Carvalhos,19,12,69,2.9,4.8,2-4
+2026-11-21_alenquer_parede,2026-11-21,2ª Divisão Sul,5,Alenquer,Parede,43,15,42,3.9,3.9,3-3
+2026-11-21_criar-t_marinhense,2026-11-21,2ª Divisão Sul,5,CRIAR-T,Marinhense,36,16,48,2.9,3.3,2-3
+2026-11-21_fisica_benfica-b,2026-11-21,2ª Divisão Sul,5,Física,Benfica B,31,15,54,3.1,3.9,3-3
+2026-11-21_murches_paco-arcos,2026-11-21,2ª Divisão Sul,5,Murches,Paço de Arcos,35,14,51,3.6,4.2,3-4
+2026-11-21_sporting-b_grandola,2026-11-21,2ª Divisão Sul,5,Sporting B,Grândola,75,10,15,5.1,2.7,5-2
+2026-11-21_tojal_alcobacense,2026-11-21,2ª Divisão Sul,5,Tojal,Alcobacense,30,18,51,2.1,2.7,2-2
+2026-11-21_turquel_salesiana,2026-11-21,2ª Divisão Sul,5,Turquel,Salesiana,86,7,7,5.7,2.2,5-2
