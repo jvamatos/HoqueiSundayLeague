@@ -752,6 +752,31 @@
     pts.append('circle').attr('r', 5).style('fill', dash.colors[0]);
     pts.append('text').attr('class', 'lbl').attr('x', 7).attr('dy', '0.35em').text((d) => d.equipa)
       .attr('text-anchor', (d) => (x(+d.golos_marcados) > W - 110 ? 'end' : 'start')).attr('x', (d) => (x(+d.golos_marcados) > W - 110 ? -7 : 7));
+    // keep labels from overlapping: push close labels apart vertically
+    const labels = pts.selectAll('text.lbl').nodes().map((n) => {
+      const d = d3.select(n.parentNode).datum();
+      const w = n.getComputedTextLength() || 60;
+      const right = n.getAttribute('text-anchor') !== 'end';
+      const x0 = x(+d.golos_marcados) + (right ? 7 : -7 - w);
+      return { n, x0, x1: x0 + w, y: y(+d.golos_sofridos), dy: 0 };
+    });
+    for (let it = 0; it < 60; it += 1) {
+      let moved = false;
+      for (let i = 0; i < labels.length; i += 1) {
+        for (let j = i + 1; j < labels.length; j += 1) {
+          const a = labels[i], b = labels[j];
+          if (a.x1 < b.x0 || b.x1 < a.x0) continue;
+          const gap = (b.y + b.dy) - (a.y + a.dy);
+          if (Math.abs(gap) < 13) {
+            const push = (13 - Math.abs(gap)) / 2 + 0.5;
+            if (gap >= 0) { a.dy -= push; b.dy += push; } else { a.dy += push; b.dy -= push; }
+            moved = true;
+          }
+        }
+      }
+      if (!moved) break;
+    }
+    labels.forEach((l) => d3.select(l.n).attr('y', Math.max(m.t - l.y + 6, Math.min(H - m.b - l.y - 4, l.dy))));
     pts.append('circle').attr('r', 12).style('fill', 'transparent')
       .on('pointermove', (ev, d) => tip.show(ev, `${d.equipa}: marca ${HP.num(d.golos_marcados, 2)}, sofre ${HP.num(d.golos_sofridos, 2)} por jogo`))
       .on('pointerleave', () => tip.hide());
