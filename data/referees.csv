@@ -6993,6 +6993,30 @@ event_id,role,name
 104032,Principal,Fábio Leitão Classificação Ver competição Campeonato Nacional da 2ª Divisão - CAMPEÃO Equipa PTS JOG VIT EMP DER GM GS DG MÉD.GM MÉD.GS QUOC % PTS MÉD.PTS ÚLTIMOS 5 PRÓX 1 Ass. Juv. Viana 4 2 1 1 0 4 3 +1 2.0 1.5 1.33 67 % 2.00 V E 2 Candelária SC 1 2 0 1 1 3 4 -1 1.5 2.0 0.75 17 % 0.50 D
 104029,Principal,Filipe Oliveira
 104029,Principal,Joaquim Pinto Classificação Ver competição Campeonato Nacional da 2ª Divisão - CAMPEÃO Equipa PTS JOG VIT EMP DER GM GS DG MÉD.GM MÉD.GS QUOC % PTS MÉD.PTS ÚLTIMOS 5 PRÓX 1 Ass. Juv. Viana 4 2 1 1 0 4 3 +1 2.0 1.5 1.33 67 % 2.00 V E 2 Candelária SC 1 2 0 1 1 3 4 -1 1.5 2.0 0.75 17 % 0.50 D <s
+110378,Principal,Miguel Guilherme
+110378,Principal,João Martins
+110378,Mesa,João Guilherme
+110378,Mesa,José Dias
+110376,Principal,Fernando Vasconcelos
+110376,Principal,Marcelo Cardoso
+110376,Mesa,Victor Gachineiro
+110376,Mesa,Rui Miguel Torres
+110380,Principal,Francisco Freire
+110380,Principal,Teófilo Casimiro
+110380,Mesa,Beatriz Rodrigues
+110380,Mesa,Nuno Rico
+110379,Principal,Pedro Figueiredo
+110379,Principal,Tiago Bessa
+110379,Mesa,Pedro Miguel Pereira
+110379,Mesa,Afonso Soares
+110377,Principal,Manuel Oliveira
+110377,Principal,Pedro Miguel Sousa
+110377,Mesa,André Paiva
+110377,Mesa,Alexandre Pinto
+110382,Principal,Gonçalo Ramos
+110382,Principal,Bruno Henriques
+110382,Mesa,Tiago Alves
+110382,Mesa,Pedro Crujo
 110373,Principal,Pedro Figueiredo
 110373,Principal,Marcelo Cardoso
 110373,Mesa,Manuel Santos
@@ -7001,6 +7025,10 @@ event_id,role,name
 110370,Principal,Francisco Freire
 110370,Mesa,Bruno Esteves
 110370,Mesa,Nuno Rico
+110371,Principal,Miguel Matos
+110371,Principal,José Manuel Pereira
+110371,Mesa,Manuel Santos
+110371,Mesa,Afonso Soares
 110374,Principal,Fernando Vasconcelos
 110374,Principal,Bruno Malheiro
 110374,Mesa,Luís Torres
@@ -7009,10 +7037,6 @@ event_id,role,name
 110375,Principal,João Paulo Silva
 110375,Mesa,Victor Gachineiro
 110375,Mesa,Pedro Miguel Pereira
-110371,Principal,Miguel Matos
-110371,Principal,José Manuel Pereira
-110371,Mesa,Manuel Santos
-110371,Mesa,Afonso Soares
 110368,Principal,Carlos Correia
 110368,Principal,Sílvia Coelho
 110368,Mesa,Hélder Sá Pereira
@@ -7021,6 +7045,16 @@ event_id,role,name
 110369,Principal,Filipe Oliveira
 110369,Mesa,José Mendes
 110369,Mesa,André Portal
+110578,Principal,Manuel Fernandes
+110578,Principal,José Manuel Pereira
+110579,Principal,Hélder Sá Pereira
+110579,Principal,João Paulo Silva
+110575,Principal,Filipe Oliveira
+110575,Principal,Jorge Machado
+110576,Principal,Miguel Matos
+110576,Principal,Alexandre Magalhães
+110577,Principal,Sérgio Paulo Silva
+110577,Principal,José Mendes
 110572,Principal,Sérgio Paulo Silva
 110572,Principal,Manuel Oliveira
 110569,Principal,Rui Miguel Torres
@@ -7035,20 +7069,20 @@ event_id,role,name
 110570,Principal,Victor Gachineiro
 110568,Principal,José Manuel Pereira
 110568,Principal,Manuel Fernandes
-110566,Principal,Pedro Figueiredo
-110566,Principal,Pedro Miguel Pereira
 110563,Principal,Sérgio Paulo Silva
 110563,Principal,Vítor Pinheiro
-110564,Principal,Miguel Matos
-110564,Principal,Manuel Fernandes
+110566,Principal,Pedro Figueiredo
+110566,Principal,Pedro Miguel Pereira
 110561,Principal,Victor Gachineiro
 110561,Principal,Luís Torres
-110565,Principal,Porfírio Fernandes
-110565,Principal,Alexandre Magalhães
+110564,Principal,Miguel Matos
+110564,Principal,Manuel Fernandes
 110560,Principal,Hélder Sá Pereira
 110560,Principal,Bruno Malheiro
 110562,Principal,Carlos Correia
 110562,Principal,João Paulo Silva
+110565,Principal,Porfírio Fernandes
+110565,Principal,Alexandre Magalhães
 110554,Principal,Bruno Malheiro
 110554,Principal,Hélder Sá Pereira
 110557,Principal,Vítor Pinheiro
@@ -7063,6 +7097,18 @@ event_id,role,name
 110553,Principal,Sérgio Paulo Silva
 110558,Principal,Filipe Oliveira
 110558,Principal,Vítor Pinheiro
+110759,Principal,Carlos Almeida
+110759,Principal,Alexandre Araújo
+110763,Principal,Luís Rodrigues
+110763,Principal,David Barros
+110758,Principal,Bruno Esteves
+110758,Principal,José Martins
+110760,Principal,Marco Gomes
+110760,Principal,Rúben Pinheiro
+110761,Principal,Porfírio Fernandes
+110761,Principal,Vítor Pinheiro
+110762,Principal,Pedro Mota
+110762,Principal,André Fragoso
 110751,Principal,Gonçalo Ramos
 110751,Principal,Pedro Mota
 110753,Principal,Filipe Oliveira
@@ -7081,6 +7127,8 @@ event_id,role,name
 110744,Principal,Bruno Esteves
 110746,Principal,Miguel Guilherme
 110746,Principal,João Ventura
+110743,Principal,Carlos Almeida
+110743,Principal,André Pagaime
 110745,Principal,João Martins
 110745,Principal,António Felizardo
 110747,Principal,Teófilo Casimiro
@@ -7089,8 +7137,6 @@ event_id,role,name
 110748,Principal,Marco Gomes
 110749,Principal,José Martins
 110749,Principal,Cláudio Reis
-110743,Principal,Carlos Almeida
-110743,Principal,André Pagaime
 110736,Principal,Miguel Guilherme
 110736,Principal,João Guilherme
 110738,Principal,Teófilo Casimiro
@@ -7099,9 +7145,9 @@ event_id,role,name
 110739,Principal,Carlos Almeida
 110741,Principal,Pedro Mota
 110741,Principal,André Fragoso
-110737,Principal,Gonçalo Ramos
-110737,Principal,Pedro Crujo
 110740,Principal,António Felizardo
 110740,Principal,Bruno Esteves
+110737,Principal,Gonçalo Ramos
+110737,Principal,Pedro Crujo
 110742,Principal,Bruno Henriques
 110742,Principal,Rodrigo Andrade

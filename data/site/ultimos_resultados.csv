@@ -20,3 +20,20 @@ jogo,data,liga,casa,fora,resultado,p_casa,p_empate,p_fora,favorito,acertou
 2026-11-10_porto-b_mealhada,2026-11-10,2ª Divisão Norte,Porto B,Mealhada,3-1,48,16,35,casa,sim
 2026-11-10_valongo-b_academica,2026-11-10,2ª Divisão Norte,Valongo B,Académica,7-2,64,13,23,casa,sim
 2026-11-11_porto_benfica,2026-11-11,1ª Divisão,Porto,Benfica,3-2,42,16,41,casa,sim
+2026-11-14_benfica_riba-dave,2026-11-14,1ª Divisão,Benfica,Riba d'Ave,4-0,89,6,5,casa,sim
+2026-11-14_candelaria_oliveirense,2026-11-14,1ª Divisão,Candelária,Oliveirense,0-2,20,15,65,fora,sim
+2026-11-14_juventude-viana_braga,2026-11-14,1ª Divisão,Juventude de Viana,Braga,1-4,41,16,43,fora,sim
+2026-11-14_oeiras_barcelos,2026-11-14,1ª Divisão,Oeiras,Barcelos,3-8,13,9,79,fora,sim
+2026-11-14_sanjoanense_pacense,2026-11-14,1ª Divisão,Sanjoanense,Pacense,5-5,46,15,39,casa,não
+2026-11-14_valongo_sporting,2026-11-14,1ª Divisão,Valongo,Sporting,1-3,21,14,66,fora,sim
+2026-11-14_cambra_termas,2026-11-14,2ª Divisão Norte,Cambra,Termas,2-5,68,13,19,casa,não
+2026-11-14_carvalhos_barcelos-b,2026-11-14,2ª Divisão Norte,Carvalhos,Barcelos B,8-2,85,8,7,casa,sim
+2026-11-14_famalicense_espinho,2026-11-14,2ª Divisão Norte,Famalicense,Espinho,6-3,59,15,26,casa,sim
+2026-11-14_lavra_mealhada,2026-11-14,2ª Divisão Norte,Lavra,Mealhada,2-3,21,16,63,fora,sim
+2026-11-14_vila-praia_porto-b,2026-11-14,2ª Divisão Norte,Vila Praia,Porto B,2-3,38,15,47,fora,sim
+2026-11-14_alcobacense_criar-t,2026-11-14,2ª Divisão Sul,Alcobacense,CRIAR-T,5-1,51,18,31,casa,sim
+2026-11-14_benfica-b_paco-arcos,2026-11-14,2ª Divisão Sul,Benfica B,Paço de Arcos,1-5,49,15,36,casa,não
+2026-11-14_grandola_alenquer,2026-11-14,2ª Divisão Sul,Grândola,Alenquer,2-2,13,9,78,fora,não
+2026-11-14_marinhense_turquel,2026-11-14,2ª Divisão Sul,Marinhense,Turquel,4-5,27,14,59,fora,sim
+2026-11-14_salesiana_fisica,2026-11-14,2ª Divisão Sul,Salesiana,Física,2-5,48,16,36,casa,não
+2026-11-14_tojal_parede,2026-11-14,2ª Divisão Sul,Tojal,Parede,2-3,13,11,76,fora,sim

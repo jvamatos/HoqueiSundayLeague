@@ -2863,8 +2863,8 @@ api,110540,2026-27,1div,regular,25,0025-Jornada 25,2027-05-16,19:00,3576,3584,,,
 api,110542,2026-27,1div,regular,25,0025-Jornada 25,2027-05-15,21:30,3592,3860,,,,,,,,,False,24,Juventude de Viana,Sporting,juventude viana,sporting
 api,110543,2026-27,1div,regular,25,0025-Jornada 25,2027-05-15,19:00,3652,3590,,,,,,,,,False,57,Pacense,Oliveirense,pacense,oliveirense
 api,110539,2026-27,1div,regular,25,0025-Jornada 25,2027-05-15,18:30,3608,3594,,,,,,,,,False,22,Valongo,Barcelos,valongo,barcelos
-api,110537,2026-27,1div,regular,25,0025-Jornada 25,2027-05-15,18:00,3620,3598,,,,,,,,,False,25,Tomar,Braga,tomar,braga
 api,110541,2026-27,1div,regular,25,0025-Jornada 25,2027-05-15,18:00,3632,3640,,,,,,,,,False,59,Sanjoanense,Riba dAve,sanjoanense,riba dave
+api,110537,2026-27,1div,regular,25,0025-Jornada 25,2027-05-15,18:00,3620,3598,,,,,,,,,False,25,Tomar,Braga,tomar,braga
 api,110538,2026-27,1div,regular,25,0025-Jornada 25,2027-05-15,15:00,3580,3606,,,,,,,,,False,20,Benfica,Oeiras,benfica,oeiras
 api,110530,2026-27,1div,regular,24,0024-Jornada 24,2027-05-12,21:00,3620,3580,,,,,,,,,False,25,Tomar,Benfica,tomar,benfica
 api,110531,2026-27,1div,regular,24,0024-Jornada 24,2027-05-12,21:00,3606,3608,,,,,,,,,False,69,Oeiras,Valongo,oeiras,valongo
@@ -2876,8 +2876,8 @@ api,110533,2026-27,1div,regular,24,0024-Jornada 24,2027-05-12,20:00,3584,3632,,,
 api,110525,2026-27,1div,regular,23,0023-Jornada 23,2027-05-08,22:00,3576,3606,,,,,,,,,False,79,Candelaria,Oeiras,candelaria,oeiras
 api,110527,2026-27,1div,regular,23,0023-Jornada 23,2027-05-08,21:30,3592,3584,,,,,,,,,False,24,Juventude de Viana,Porto,juventude viana,porto
 api,110524,2026-27,1div,regular,23,0023-Jornada 23,2027-05-08,18:30,3608,3620,,,,,,,,,False,22,Valongo,Tomar,valongo,tomar
-api,110523,2026-27,1div,regular,23,0023-Jornada 23,2027-05-08,18:00,3598,3580,,,,,,,,,False,414,Braga,Benfica,braga,benfica
 api,110526,2026-27,1div,regular,23,0023-Jornada 23,2027-05-08,18:00,3632,3594,,,,,,,,,False,59,Sanjoanense,Barcelos,sanjoanense,barcelos
+api,110523,2026-27,1div,regular,23,0023-Jornada 23,2027-05-08,18:00,3598,3580,,,,,,,,,False,414,Braga,Benfica,braga,benfica
 api,110528,2026-27,1div,regular,23,0023-Jornada 23,2027-05-08,17:00,3652,3640,,,,,,,,,False,57,Pacense,Riba dAve,pacense,riba dave
 api,110529,2026-27,1div,regular,23,0023-Jornada 23,2027-05-08,15:30,3590,3860,,,,,,,,,False,21,Oliveirense,Sporting,oliveirense,sporting
 api,110517,2026-27,1div,regular,22,0022-Jornada 22,2027-04-28,21:00,3620,3576,,,,,,,,,False,25,Tomar,Candelaria,tomar,candelaria
@@ -2896,25 +2896,25 @@ api,110513,2026-27,1div,regular,21,0021-Jornada 21,2027-04-24,17:00,3652,3594,,,
 api,110515,2026-27,1div,regular,21,0021-Jornada 21,2027-04-24,15:00,3860,3640,,,,,,,,,False,18,Sporting,Riba dAve,sporting,riba dave
 api,110506,2026-27,1div,regular,20,0020-Jornada 20,2027-04-17,21:30,3594,3590,,,,,,,,,False,23,Barcelos,Oliveirense,barcelos,oliveirense
 api,110507,2026-27,1div,regular,20,0020-Jornada 20,2027-04-17,19:00,3584,3860,,,,,,,,,False,19,Porto,Sporting,porto,sporting
-api,110502,2026-27,1div,regular,20,0020-Jornada 20,2027-04-17,18:30,3608,3576,,,,,,,,,False,22,Valongo,Candelaria,valongo,candelaria
 api,110508,2026-27,1div,regular,20,0020-Jornada 20,2027-04-17,18:30,3640,3598,,,,,,,,,False,66,Riba dAve,Braga,riba dave,braga
+api,110502,2026-27,1div,regular,20,0020-Jornada 20,2027-04-17,18:30,3608,3576,,,,,,,,,False,22,Valongo,Candelaria,valongo,candelaria
 api,110504,2026-27,1div,regular,20,0020-Jornada 20,2027-04-17,18:00,3620,3592,,,,,,,,,False,25,Tomar,Juventude de Viana,tomar,juventude viana
 api,110505,2026-27,1div,regular,20,0020-Jornada 20,2027-04-17,18:00,3606,3652,,,,,,,,,False,69,Oeiras,Pacense,oeiras,pacense
 api,110503,2026-27,1div,regular,20,0020-Jornada 20,2027-04-17,15:00,3580,3632,,,,,,,,,False,20,Benfica,Sanjoanense,benfica,sanjoanense
 api,110497,2026-27,1div,regular,19,0019-Jornada 19,2027-04-10,21:30,3592,3580,,,,,,,,,False,24,Juventude de Viana,Benfica,juventude viana,benfica
+api,110495,2026-27,1div,regular,19,0019-Jornada 19,2027-04-10,18:00,3598,3576,,,,,,,,,False,414,Braga,Candelaria,braga,candelaria
 api,110496,2026-27,1div,regular,19,0019-Jornada 19,2027-04-10,18:00,3632,3608,,,,,,,,,False,59,Sanjoanense,Valongo,sanjoanense,valongo
 api,110499,2026-27,1div,regular,19,0019-Jornada 19,2027-04-10,18:00,3590,3606,,,,,,,,,False,21,Oliveirense,Oeiras,oliveirense,oeiras
-api,110495,2026-27,1div,regular,19,0019-Jornada 19,2027-04-10,18:00,3598,3576,,,,,,,,,False,414,Braga,Candelaria,braga,candelaria
 api,110498,2026-27,1div,regular,19,0019-Jornada 19,2027-04-10,17:00,3652,3620,,,,,,,,,False,57,Pacense,Tomar,pacense,tomar
 api,110501,2026-27,1div,regular,19,0019-Jornada 19,2027-04-10,15:30,3640,3584,,,,,,,,,False,66,Riba dAve,Porto,riba dave,porto
 api,110500,2026-27,1div,regular,19,0019-Jornada 19,2027-04-10,15:00,3860,3594,,,,,,,,,False,18,Sporting,Barcelos,sporting,barcelos
 api,110488,2026-27,1div,regular,18,0018-Jornada 18,2027-04-03,22:00,3576,3632,,,,,,,,,False,79,Candelaria,Sanjoanense,candelaria,sanjoanense
 api,110493,2026-27,1div,regular,18,0018-Jornada 18,2027-04-03,21:30,3594,3640,,,,,,,,,False,23,Barcelos,Riba dAve,barcelos,riba dave
-api,110490,2026-27,1div,regular,18,0018-Jornada 18,2027-04-03,19:00,3580,3652,,,,,,,,,False,20,Benfica,Pacense,benfica,pacense
 api,110494,2026-27,1div,regular,18,0018-Jornada 18,2027-04-03,19:00,3584,3598,,,,,,,,,False,19,Porto,Braga,porto,braga
+api,110490,2026-27,1div,regular,18,0018-Jornada 18,2027-04-03,19:00,3580,3652,,,,,,,,,False,20,Benfica,Pacense,benfica,pacense
 api,110489,2026-27,1div,regular,18,0018-Jornada 18,2027-04-03,18:30,3608,3592,,,,,,,,,False,22,Valongo,Juventude de Viana,valongo,juventude viana
-api,110491,2026-27,1div,regular,18,0018-Jornada 18,2027-04-03,18:00,3620,3590,,,,,,,,,False,25,Tomar,Oliveirense,tomar,oliveirense
 api,110492,2026-27,1div,regular,18,0018-Jornada 18,2027-04-03,18:00,3606,3860,,,,,,,,,False,69,Oeiras,Sporting,oeiras,sporting
+api,110491,2026-27,1div,regular,18,0018-Jornada 18,2027-04-03,18:00,3620,3590,,,,,,,,,False,25,Tomar,Oliveirense,tomar,oliveirense
 api,110482,2026-27,1div,regular,17,0017-Jornada 17,2027-03-20,21:30,3592,3576,,,,,,,,,False,24,Juventude de Viana,Candelaria,juventude viana,candelaria
 api,110486,2026-27,1div,regular,17,0017-Jornada 17,2027-03-20,18:30,3640,3606,,,,,,,,,False,66,Riba dAve,Oeiras,riba dave,oeiras
 api,110481,2026-27,1div,regular,17,0017-Jornada 17,2027-03-20,18:00,3598,3632,,,,,,,,,False,414,Braga,Sanjoanense,braga,sanjoanense
@@ -2927,8 +2927,8 @@ api,110477,2026-27,1div,regular,16,0016-Jornada 16,2027-03-07,19:00,3580,3860,,,
 api,110475,2026-27,1div,regular,16,0016-Jornada 16,2027-03-06,22:00,3576,3652,,,,,,,,,False,79,Candelaria,Pacense,candelaria,pacense
 api,110480,2026-27,1div,regular,16,0016-Jornada 16,2027-03-06,21:30,3594,3598,,,,,,,,,False,23,Barcelos,Braga,barcelos,braga
 api,110476,2026-27,1div,regular,16,0016-Jornada 16,2027-03-06,18:30,3608,3590,,,,,,,,,False,22,Valongo,Oliveirense,valongo,oliveirense
-api,110474,2026-27,1div,regular,16,0016-Jornada 16,2027-03-06,18:00,3632,3592,,,,,,,,,False,59,Sanjoanense,Juventude de Viana,sanjoanense,juventude viana
 api,110479,2026-27,1div,regular,16,0016-Jornada 16,2027-03-06,18:00,3606,3584,,,,,,,,,False,69,Oeiras,Porto,oeiras,porto
+api,110474,2026-27,1div,regular,16,0016-Jornada 16,2027-03-06,18:00,3632,3592,,,,,,,,,False,59,Sanjoanense,Juventude de Viana,sanjoanense,juventude viana
 api,110467,2026-27,1div,regular,15,0015-Jornada 15,2027-03-03,21:00,3598,3592,,,,,,,,,False,414,Braga,Juventude de Viana,braga,juventude viana
 api,110468,2026-27,1div,regular,15,0015-Jornada 15,2027-03-03,21:00,3652,3632,,,,,,,,,False,57,Pacense,Sanjoanense,pacense,sanjoanense
 api,110469,2026-27,1div,regular,15,0015-Jornada 15,2027-03-03,21:00,3590,3576,,,,,,,,,False,21,Oliveirense,Candelaria,oliveirense,candelaria
@@ -2969,14 +2969,14 @@ api,110432,2026-27,1div,regular,10,0010-Jornada 10,2027-01-30,19:00,3580,3598,,,
 api,110437,2026-27,1div,regular,10,0010-Jornada 10,2027-01-30,18:30,3640,3652,,,,,,,,,False,66,Riba dAve,Pacense,riba dave,pacense
 api,110433,2026-27,1div,regular,10,0010-Jornada 10,2027-01-30,18:00,3620,3608,,,,,,,,,False,25,Tomar,Valongo,tomar,valongo
 api,110434,2026-27,1div,regular,10,0010-Jornada 10,2027-01-30,18:00,3606,3576,,,,,,,,,False,69,Oeiras,Candelaria,oeiras,candelaria
-api,110438,2026-27,1div,regular,10,0010-Jornada 10,2027-01-30,15:00,3860,3590,,,,,,,,,False,18,Sporting,Oliveirense,sporting,oliveirense
 api,110436,2026-27,1div,regular,10,0010-Jornada 10,2027-01-30,15:00,3584,3592,,,,,,,,,False,19,Porto,Juventude de Viana,porto,juventude viana
+api,110438,2026-27,1div,regular,10,0010-Jornada 10,2027-01-30,15:00,3860,3590,,,,,,,,,False,18,Sporting,Oliveirense,sporting,oliveirense
 api,110425,2026-27,1div,regular,9,0009-Jornada 9,2027-01-27,21:30,3608,3580,,,,,,,,,False,22,Valongo,Benfica,valongo,benfica
 api,110429,2026-27,1div,regular,9,0009-Jornada 9,2027-01-27,21:00,3652,3584,,,,,,,,,False,57,Pacense,Porto,pacense,porto
 api,110430,2026-27,1div,regular,9,0009-Jornada 9,2027-01-27,21:00,3590,3640,,,,,,,,,False,21,Oliveirense,Riba dAve,oliveirense,riba dave
 api,110427,2026-27,1div,regular,9,0009-Jornada 9,2027-01-27,20:45,3632,3606,,,,,,,,,False,59,Sanjoanense,Oeiras,sanjoanense,oeiras
-api,110428,2026-27,1div,regular,9,0009-Jornada 9,2027-01-24,18:00,3592,3594,,,,,,,,,False,24,Juventude de Viana,Barcelos,juventude viana,barcelos
 api,110431,2026-27,1div,regular,9,0009-Jornada 9,2027-01-24,18:00,3598,3860,,,,,,,,,False,414,Braga,Sporting,braga,sporting
+api,110428,2026-27,1div,regular,9,0009-Jornada 9,2027-01-24,18:00,3592,3594,,,,,,,,,False,24,Juventude de Viana,Barcelos,juventude viana,barcelos
 api,110426,2026-27,1div,regular,9,0009-Jornada 9,2027-01-23,22:00,3576,3620,,,,,,,,,False,79,Candelaria,Tomar,candelaria,tomar
 api,110423,2026-27,1div,regular,8,0008-Jornada 8,2027-01-10,18:30,3584,3590,,,,,,,,,False,19,Porto,Oliveirense,porto,oliveirense
 api,110418,2026-27,1div,regular,8,0008-Jornada 8,2027-01-10,18:00,3608,3598,,,,,,,,,False,22,Valongo,Braga,valongo,braga
@@ -2987,8 +2987,8 @@ api,110421,2026-27,1div,regular,8,0008-Jornada 8,2027-01-09,18:00,3606,3592,,,,,
 api,110419,2026-27,1div,regular,8,0008-Jornada 8,2027-01-09,15:00,3580,3576,,,,,,,,,False,20,Benfica,Candelaria,benfica,candelaria
 api,110394,2026-27,1div,regular,4,0004-Jornada 4,2027-01-02,18:00,3620,3860,,,,,,,,,False,25,Tomar,Sporting,tomar,sporting
 api,110411,2026-27,1div,regular,7,0007-Jornada 7,2026-12-16,22:00,3576,3608,,,,,,,,,False,79,Candelaria,Valongo,candelaria,valongo
-api,110414,2026-27,1div,regular,7,0007-Jornada 7,2026-12-16,21:00,3652,3606,,,,,,,,,False,57,Pacense,Oeiras,pacense,oeiras
 api,110415,2026-27,1div,regular,7,0007-Jornada 7,2026-12-16,21:00,3590,3594,,,,,,,,,False,21,Oliveirense,Barcelos,oliveirense,barcelos
+api,110414,2026-27,1div,regular,7,0007-Jornada 7,2026-12-16,21:00,3652,3606,,,,,,,,,False,57,Pacense,Oeiras,pacense,oeiras
 api,110412,2026-27,1div,regular,7,0007-Jornada 7,2026-12-16,20:45,3632,3580,,,,,,,,,False,59,Sanjoanense,Benfica,sanjoanense,benfica
 api,110416,2026-27,1div,regular,7,0007-Jornada 7,2026-12-13,19:30,3860,3584,,,,,,,,,False,18,Sporting,Porto,sporting,porto
 api,110417,2026-27,1div,regular,7,0007-Jornada 7,2026-12-13,18:00,3598,3640,,,,,,,,,False,414,Braga,Riba dAve,braga,riba dave
@@ -3001,11 +3001,11 @@ api,110407,2026-27,1div,regular,6,0006-Jornada 6,2026-12-05,18:00,3620,3652,,,,,
 api,110408,2026-27,1div,regular,6,0006-Jornada 6,2026-12-05,18:00,3606,3590,,,,,,,,,False,69,Oeiras,Oliveirense,oeiras,oliveirense
 api,110410,2026-27,1div,regular,6,0006-Jornada 6,2026-12-05,18:00,3584,3640,,,,,,,,,False,19,Porto,Riba dAve,porto,riba dave
 api,110406,2026-27,1div,regular,6,0006-Jornada 6,2026-12-05,17:00,3580,3592,,,,,,,,,False,20,Benfica,Juventude de Viana,benfica,juventude viana
-api,110398,2026-27,1div,regular,5,0005-Jornada 5,2026-12-02,21:00,3592,3608,,,,,,,,,False,24,Juventude de Viana,Valongo,juventude viana,valongo
 api,110399,2026-27,1div,regular,5,0005-Jornada 5,2026-12-02,21:00,3652,3580,,,,,,,,,False,57,Pacense,Benfica,pacense,benfica
 api,110400,2026-27,1div,regular,5,0005-Jornada 5,2026-12-02,21:00,3590,3620,,,,,,,,,False,21,Oliveirense,Tomar,oliveirense,tomar
 api,110402,2026-27,1div,regular,5,0005-Jornada 5,2026-12-02,21:00,3640,3594,,,,,,,,,False,66,Riba dAve,Barcelos,riba dave,barcelos
 api,110403,2026-27,1div,regular,5,0005-Jornada 5,2026-12-02,21:00,3598,3584,,,,,,,,,False,414,Braga,Porto,braga,porto
+api,110398,2026-27,1div,regular,5,0005-Jornada 5,2026-12-02,21:00,3592,3608,,,,,,,,,False,24,Juventude de Viana,Valongo,juventude viana,valongo
 api,110401,2026-27,1div,regular,5,0005-Jornada 5,2026-12-01,14:30,3860,3606,,,,,,,,,False,18,Sporting,Oeiras,sporting,oeiras
 api,110393,2026-27,1div,regular,4,0004-Jornada 4,2026-11-29,19:00,3580,3590,,,,,,,,,False,20,Benfica,Oliveirense,benfica,oliveirense
 api,110390,2026-27,1div,regular,4,0004-Jornada 4,2026-11-29,18:30,3632,3598,,,,,,,,,False,59,Sanjoanense,Braga,sanjoanense,braga
@@ -3021,17 +3021,17 @@ api,110389,2026-27,1div,regular,3,0003-Jornada 3,2026-11-21,18:00,3598,3594,,,,,
 api,110384,2026-27,1div,regular,3,0003-Jornada 3,2026-11-21,17:00,3652,3576,,,,,,,,,False,57,Pacense,Candelaria,pacense,candelaria
 api,110385,2026-27,1div,regular,3,0003-Jornada 3,2026-11-21,15:30,3590,3608,,,,,,,,,False,21,Oliveirense,Valongo,oliveirense,valongo
 api,110381,2026-27,1div,regular,2,0002-Jornada 2,2026-11-18,21:00,3620,3584,,,,,,,,,False,25,Tomar,Porto,tomar,porto
-api,110378,2026-27,1div,regular,2,0002-Jornada 2,2026-11-14,22:00,3576,3590,,,,,,,,,False,79,Candelaria,Oliveirense,candelaria,oliveirense
-api,110376,2026-27,1div,regular,2,0002-Jornada 2,2026-11-14,21:30,3592,3598,,,,,,,,,False,24,Juventude de Viana,Braga,juventude viana,braga
-api,110380,2026-27,1div,regular,2,0002-Jornada 2,2026-11-14,20:00,3580,3640,,,,,,,,,False,20,Benfica,Riba dAve,benfica,riba dave
-api,110379,2026-27,1div,regular,2,0002-Jornada 2,2026-11-14,18:30,3608,3860,,,,,,,,,False,22,Valongo,Sporting,valongo,sporting
-api,110377,2026-27,1div,regular,2,0002-Jornada 2,2026-11-14,18:00,3632,3652,,,,,,,,,False,59,Sanjoanense,Pacense,sanjoanense,pacense
-api,110382,2026-27,1div,regular,2,0002-Jornada 2,2026-11-14,18:00,3606,3594,,,,,,,,,False,69,Oeiras,Barcelos,oeiras,barcelos
+api,110378,2026-27,1div,regular,2,0002-Jornada 2,2026-11-14,22:00,3576,3590,0.0,2.0,0.0,1.0,0.0,0.0,0.0,0.0,True,79,Candelaria,Oliveirense,candelaria,oliveirense
+api,110376,2026-27,1div,regular,2,0002-Jornada 2,2026-11-14,21:30,3592,3598,1.0,4.0,0.0,2.0,0.0,0.0,0.0,0.0,True,24,Juventude de Viana,Braga,juventude viana,braga
+api,110380,2026-27,1div,regular,2,0002-Jornada 2,2026-11-14,20:00,3580,3640,4.0,0.0,3.0,0.0,0.0,0.0,0.0,0.0,True,20,Benfica,Riba dAve,benfica,riba dave
+api,110379,2026-27,1div,regular,2,0002-Jornada 2,2026-11-14,18:30,3608,3860,1.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,True,22,Valongo,Sporting,valongo,sporting
+api,110377,2026-27,1div,regular,2,0002-Jornada 2,2026-11-14,18:00,3632,3652,5.0,5.0,2.0,3.0,0.0,0.0,0.0,0.0,True,59,Sanjoanense,Pacense,sanjoanense,pacense
+api,110382,2026-27,1div,regular,2,0002-Jornada 2,2026-11-14,18:00,3606,3594,3.0,8.0,2.0,2.0,0.0,0.0,0.0,0.0,True,69,Oeiras,Barcelos,oeiras,barcelos
 api,110373,2026-27,1div,regular,1,0001-Jornada 1,2026-11-11,20:00,3584,3580,3.0,2.0,1.0,1.0,0.0,0.0,0.0,0.0,True,19,Porto,Benfica,porto,benfica
 api,110370,2026-27,1div,regular,1,0001-Jornada 1,2026-11-10,20:30,3860,3576,5.0,0.0,3.0,0.0,0.0,0.0,0.0,0.0,True,18,Sporting,Candelaria,sporting,candelaria
+api,110371,2026-27,1div,regular,1,0001-Jornada 1,2026-11-08,17:00,3640,3608,3.0,3.0,1.0,2.0,0.0,0.0,0.0,0.0,True,66,Riba dAve,Valongo,riba dave,valongo
 api,110374,2026-27,1div,regular,1,0001-Jornada 1,2026-11-08,17:00,3594,3620,7.0,3.0,6.0,1.0,0.0,0.0,0.0,0.0,True,23,Barcelos,Tomar,barcelos,tomar
 api,110375,2026-27,1div,regular,1,0001-Jornada 1,2026-11-08,17:00,3598,3606,5.0,2.0,2.0,1.0,0.0,0.0,0.0,0.0,True,414,Braga,Oeiras,braga,oeiras
-api,110371,2026-27,1div,regular,1,0001-Jornada 1,2026-11-08,17:00,3640,3608,3.0,3.0,1.0,2.0,0.0,0.0,0.0,0.0,True,66,Riba dAve,Valongo,riba dave,valongo
 api,110368,2026-27,1div,regular,1,0001-Jornada 1,2026-11-08,16:00,3652,3592,5.0,3.0,2.0,2.0,0.0,0.0,0.0,0.0,True,57,Pacense,Juventude de Viana,pacense,juventude viana
 api,110369,2026-27,1div,regular,1,0001-Jornada 1,2026-11-08,15:30,3590,3632,7.0,2.0,4.0,1.0,0.0,0.0,0.0,0.0,True,21,Oliveirense,Sanjoanense,oliveirense,sanjoanense
 api,110730,2026-27,2div_norte,regular,26,0026-Jornada 26,2027-05-25,21:30,7319,3602,,,,,,,,,False,21,Oliveirense B,Cambra,oliveirense b,cambra
@@ -3043,34 +3043,34 @@ api,110729,2026-27,2div_norte,regular,26,0026-Jornada 26,2027-05-22,18:00,3736,3
 api,110732,2026-27,2div_norte,regular,26,0026-Jornada 26,2027-05-22,18:00,3618,3728,,,,,,,,,False,33,Lavra,Povoa,lavra,povoa
 api,110721,2026-27,2div_norte,regular,25,0025-Jornada 25,2027-05-15,18:30,3648,3610,,,,,,,,,False,219,Mealhada,Valongo B,mealhada,valongo b
 api,110725,2026-27,2div_norte,regular,25,0025-Jornada 25,2027-05-15,18:30,3728,3588,,,,,,,,,False,56,Povoa,Porto B,povoa,porto b
-api,110726,2026-27,2div_norte,regular,25,0025-Jornada 25,2027-05-15,18:00,3616,3618,,,,,,,,,False,60,Espinho,Lavra,espinho,lavra
-api,110727,2026-27,2div_norte,regular,25,0025-Jornada 25,2027-05-15,18:00,3662,3596,,,,,,,,,False,109,Termas,Barcelos B,termas,barcelos b
 api,110722,2026-27,2div_norte,regular,25,0025-Jornada 25,2027-05-15,18:00,3612,31532,,,,,,,,,False,58,Carvalhos,Vila Praia,carvalhos,vila praia
 api,110723,2026-27,2div_norte,regular,25,0025-Jornada 25,2027-05-15,18:00,3602,3736,,,,,,,,,False,65,Cambra,Academica,cambra,academica
 api,110724,2026-27,2div_norte,regular,25,0025-Jornada 25,2027-05-15,18:00,3622,7319,,,,,,,,,False,54,Famalicense,Oliveirense B,famalicense,oliveirense b
+api,110726,2026-27,2div_norte,regular,25,0025-Jornada 25,2027-05-15,18:00,3616,3618,,,,,,,,,False,60,Espinho,Lavra,espinho,lavra
+api,110727,2026-27,2div_norte,regular,25,0025-Jornada 25,2027-05-15,18:00,3662,3596,,,,,,,,,False,109,Termas,Barcelos B,termas,barcelos b
+api,110720,2026-27,2div_norte,regular,24,0024-Jornada 24,2027-05-11,21:30,3596,3610,,,,,,,,,False,23,Barcelos B,Valongo B,barcelos b,valongo b
 api,110717,2026-27,2div_norte,regular,24,0024-Jornada 24,2027-05-11,21:30,7319,3728,,,,,,,,,False,21,Oliveirense B,Povoa,oliveirense b,povoa
 api,110718,2026-27,2div_norte,regular,24,0024-Jornada 24,2027-05-11,21:30,3588,3616,,,,,,,,,False,441,Porto B,Espinho,porto b,espinho
-api,110720,2026-27,2div_norte,regular,24,0024-Jornada 24,2027-05-11,21:30,3596,3610,,,,,,,,,False,23,Barcelos B,Valongo B,barcelos b,valongo b
 api,110715,2026-27,2div_norte,regular,24,0024-Jornada 24,2027-05-08,20:00,31532,3602,,,,,,,,,False,61,Vila Praia,Cambra,vila praia,cambra
 api,110714,2026-27,2div_norte,regular,24,0024-Jornada 24,2027-05-08,18:30,3648,3612,,,,,,,,,False,219,Mealhada,Carvalhos,mealhada,carvalhos
-api,110716,2026-27,2div_norte,regular,24,0024-Jornada 24,2027-05-08,18:00,3736,3622,,,,,,,,,False,62,Academica,Famalicense,academica,famalicense
 api,110719,2026-27,2div_norte,regular,24,0024-Jornada 24,2027-05-08,18:00,3618,3662,,,,,,,,,False,33,Lavra,Termas,lavra,termas
-api,110713,2026-27,2div_norte,regular,23,0023-Jornada 23,2027-04-27,21:30,3596,3618,,,,,,,,,False,23,Barcelos B,Lavra,barcelos b,lavra
+api,110716,2026-27,2div_norte,regular,24,0024-Jornada 24,2027-05-08,18:00,3736,3622,,,,,,,,,False,62,Academica,Famalicense,academica,famalicense
 api,110707,2026-27,2div_norte,regular,23,0023-Jornada 23,2027-04-27,21:30,3610,3612,,,,,,,,,False,22,Valongo B,Carvalhos,valongo b,carvalhos
+api,110713,2026-27,2div_norte,regular,23,0023-Jornada 23,2027-04-27,21:30,3596,3618,,,,,,,,,False,23,Barcelos B,Lavra,barcelos b,lavra
 api,110710,2026-27,2div_norte,regular,23,0023-Jornada 23,2027-04-24,18:30,3728,3736,,,,,,,,,False,56,Povoa,Academica,povoa,academica
-api,110711,2026-27,2div_norte,regular,23,0023-Jornada 23,2027-04-24,18:00,3616,7319,,,,,,,,,False,60,Espinho,Oliveirense B,espinho,oliveirense b
-api,110712,2026-27,2div_norte,regular,23,0023-Jornada 23,2027-04-24,18:00,3662,3588,,,,,,,,,False,109,Termas,Porto B,termas,porto b
 api,110708,2026-27,2div_norte,regular,23,0023-Jornada 23,2027-04-24,18:00,3602,3648,,,,,,,,,False,65,Cambra,Mealhada,cambra,mealhada
 api,110709,2026-27,2div_norte,regular,23,0023-Jornada 23,2027-04-24,18:00,3622,31532,,,,,,,,,False,54,Famalicense,Vila Praia,famalicense,vila praia
+api,110711,2026-27,2div_norte,regular,23,0023-Jornada 23,2027-04-24,18:00,3616,7319,,,,,,,,,False,60,Espinho,Oliveirense B,espinho,oliveirense b
+api,110712,2026-27,2div_norte,regular,23,0023-Jornada 23,2027-04-24,18:00,3662,3588,,,,,,,,,False,109,Termas,Porto B,termas,porto b
 api,110704,2026-27,2div_norte,regular,22,0022-Jornada 22,2027-04-20,21:30,7319,3662,,,,,,,,,False,21,Oliveirense B,Termas,oliveirense b,termas
 api,110705,2026-27,2div_norte,regular,22,0022-Jornada 22,2027-04-20,21:30,3588,3596,,,,,,,,,False,441,Porto B,Barcelos B,porto b,barcelos b
 api,110702,2026-27,2div_norte,regular,22,0022-Jornada 22,2027-04-17,20:00,31532,3728,,,,,,,,,False,61,Vila Praia,Povoa,vila praia,povoa
 api,110701,2026-27,2div_norte,regular,22,0022-Jornada 22,2027-04-17,18:30,3648,3622,,,,,,,,,False,219,Mealhada,Famalicense,mealhada,famalicense
-api,110700,2026-27,2div_norte,regular,22,0022-Jornada 22,2027-04-17,18:00,3612,3602,,,,,,,,,False,58,Carvalhos,Cambra,carvalhos,cambra
 api,110703,2026-27,2div_norte,regular,22,0022-Jornada 22,2027-04-17,18:00,3736,3616,,,,,,,,,False,62,Academica,Espinho,academica,espinho
 api,110706,2026-27,2div_norte,regular,22,0022-Jornada 22,2027-04-17,18:00,3618,3610,,,,,,,,,False,33,Lavra,Valongo B,lavra,valongo b
-api,110698,2026-27,2div_norte,regular,21,0021-Jornada 21,2027-04-13,21:30,3596,7319,,,,,,,,,False,23,Barcelos B,Oliveirense B,barcelos b,oliveirense b
+api,110700,2026-27,2div_norte,regular,22,0022-Jornada 22,2027-04-17,18:00,3612,3602,,,,,,,,,False,58,Carvalhos,Cambra,carvalhos,cambra
 api,110693,2026-27,2div_norte,regular,21,0021-Jornada 21,2027-04-13,21:30,3610,3602,,,,,,,,,False,22,Valongo B,Cambra,valongo b,cambra
+api,110698,2026-27,2div_norte,regular,21,0021-Jornada 21,2027-04-13,21:30,3596,7319,,,,,,,,,False,23,Barcelos B,Oliveirense B,barcelos b,oliveirense b
 api,110695,2026-27,2div_norte,regular,21,0021-Jornada 21,2027-04-10,18:30,3728,3648,,,,,,,,,False,56,Povoa,Mealhada,povoa,mealhada
 api,110694,2026-27,2div_norte,regular,21,0021-Jornada 21,2027-04-10,18:00,3622,3612,,,,,,,,,False,54,Famalicense,Carvalhos,famalicense,carvalhos
 api,110696,2026-27,2div_norte,regular,21,0021-Jornada 21,2027-04-10,18:00,3616,31532,,,,,,,,,False,60,Espinho,Vila Praia,espinho,vila praia
@@ -3080,9 +3080,9 @@ api,110691,2026-27,2div_norte,regular,20,0020-Jornada 20,2027-04-06,21:30,7319,3
 api,110692,2026-27,2div_norte,regular,20,0020-Jornada 20,2027-04-06,21:30,3588,3610,,,,,,,,,False,441,Porto B,Valongo B,porto b,valongo b
 api,110689,2026-27,2div_norte,regular,20,0020-Jornada 20,2027-04-03,20:00,31532,3662,,,,,,,,,False,61,Vila Praia,Termas,vila praia,termas
 api,110688,2026-27,2div_norte,regular,20,0020-Jornada 20,2027-04-03,18:30,3648,3616,,,,,,,,,False,219,Mealhada,Espinho,mealhada,espinho
-api,110686,2026-27,2div_norte,regular,20,0020-Jornada 20,2027-04-03,18:00,3602,3622,,,,,,,,,False,65,Cambra,Famalicense,cambra,famalicense
 api,110687,2026-27,2div_norte,regular,20,0020-Jornada 20,2027-04-03,18:00,3612,3728,,,,,,,,,False,58,Carvalhos,Povoa,carvalhos,povoa
 api,110690,2026-27,2div_norte,regular,20,0020-Jornada 20,2027-04-03,18:00,3736,3596,,,,,,,,,False,62,Academica,Barcelos B,academica,barcelos b
+api,110686,2026-27,2div_norte,regular,20,0020-Jornada 20,2027-04-03,18:00,3602,3622,,,,,,,,,False,65,Cambra,Famalicense,cambra,famalicense
 api,110679,2026-27,2div_norte,regular,19,0019-Jornada 19,2027-03-29,21:30,3610,3622,,,,,,,,,False,22,Valongo B,Famalicense,valongo b,famalicense
 api,110683,2026-27,2div_norte,regular,19,0019-Jornada 19,2027-03-29,21:30,3596,31532,,,,,,,,,False,23,Barcelos B,Vila Praia,barcelos b,vila praia
 api,110685,2026-27,2div_norte,regular,19,0019-Jornada 19,2027-03-29,21:30,3588,7319,,,,,,,,,False,441,Porto B,Oliveirense B,porto b,oliveirense b
@@ -3097,55 +3097,54 @@ api,110672,2026-27,2div_norte,regular,18,0018-Jornada 18,2027-03-20,18:00,3622,3
 api,110673,2026-27,2div_norte,regular,18,0018-Jornada 18,2027-03-20,18:00,3602,3616,,,,,,,,,False,65,Cambra,Espinho,cambra,espinho
 api,110674,2026-27,2div_norte,regular,18,0018-Jornada 18,2027-03-20,18:00,3612,3662,,,,,,,,,False,58,Carvalhos,Termas,carvalhos,termas
 api,110677,2026-27,2div_norte,regular,18,0018-Jornada 18,2027-03-20,18:00,3736,3588,,,,,,,,,False,62,Academica,Porto B,academica,porto b
+api,110671,2026-27,2div_norte,regular,17,0017-Jornada 17,2027-03-09,21:30,3736,7319,,,,,,,,,False,62,Academica,Oliveirense B,academica,oliveirense b
 api,110665,2026-27,2div_norte,regular,17,0017-Jornada 17,2027-03-09,21:30,3610,3728,,,,,,,,,False,22,Valongo B,Povoa,valongo b,povoa
 api,110668,2026-27,2div_norte,regular,17,0017-Jornada 17,2027-03-09,21:30,3596,3612,,,,,,,,,False,23,Barcelos B,Carvalhos,barcelos b,carvalhos
 api,110670,2026-27,2div_norte,regular,17,0017-Jornada 17,2027-03-09,21:30,3588,31532,,,,,,,,,False,441,Porto B,Vila Praia,porto b,vila praia
-api,110671,2026-27,2div_norte,regular,17,0017-Jornada 17,2027-03-09,21:30,3736,7319,,,,,,,,,False,62,Academica,Oliveirense B,academica,oliveirense b
 api,110666,2026-27,2div_norte,regular,17,0017-Jornada 17,2027-03-06,18:00,3616,3622,,,,,,,,,False,60,Espinho,Famalicense,espinho,famalicense
 api,110667,2026-27,2div_norte,regular,17,0017-Jornada 17,2027-03-06,18:00,3662,3602,,,,,,,,,False,109,Termas,Cambra,termas,cambra
 api,110669,2026-27,2div_norte,regular,17,0017-Jornada 17,2027-03-06,18:00,3648,3618,,,,,,,,,False,219,Mealhada,Lavra,mealhada,lavra
 api,110663,2026-27,2div_norte,regular,16,0016-Jornada 16,2027-02-27,20:00,31532,7319,,,,,,,,,False,61,Vila Praia,Oliveirense B,vila praia,oliveirense b
-api,110662,2026-27,2div_norte,regular,16,0016-Jornada 16,2027-02-27,18:30,3648,3588,,,,,,,,,False,219,Mealhada,Porto B,mealhada,porto b
 api,110658,2026-27,2div_norte,regular,16,0016-Jornada 16,2027-02-27,18:30,3728,3616,,,,,,,,,False,56,Povoa,Espinho,povoa,espinho
-api,110664,2026-27,2div_norte,regular,16,0016-Jornada 16,2027-02-27,18:00,3736,3610,,,,,,,,,False,62,Academica,Valongo B,academica,valongo b
+api,110662,2026-27,2div_norte,regular,16,0016-Jornada 16,2027-02-27,18:30,3648,3588,,,,,,,,,False,219,Mealhada,Porto B,mealhada,porto b
 api,110659,2026-27,2div_norte,regular,16,0016-Jornada 16,2027-02-27,18:00,3622,3662,,,,,,,,,False,54,Famalicense,Termas,famalicense,termas
 api,110660,2026-27,2div_norte,regular,16,0016-Jornada 16,2027-02-27,18:00,3602,3596,,,,,,,,,False,65,Cambra,Barcelos B,cambra,barcelos b
 api,110661,2026-27,2div_norte,regular,16,0016-Jornada 16,2027-02-27,18:00,3612,3618,,,,,,,,,False,58,Carvalhos,Lavra,carvalhos,lavra
-api,110651,2026-27,2div_norte,regular,15,0015-Jornada 15,2027-02-23,21:30,3610,3616,,,,,,,,,False,22,Valongo B,Espinho,valongo b,espinho
-api,110653,2026-27,2div_norte,regular,15,0015-Jornada 15,2027-02-23,21:30,3596,3622,,,,,,,,,False,23,Barcelos B,Famalicense,barcelos b,famalicense
+api,110664,2026-27,2div_norte,regular,16,0016-Jornada 16,2027-02-27,18:00,3736,3610,,,,,,,,,False,62,Academica,Valongo B,academica,valongo b
 api,110655,2026-27,2div_norte,regular,15,0015-Jornada 15,2027-02-23,21:30,3588,3612,,,,,,,,,False,441,Porto B,Carvalhos,porto b,carvalhos
 api,110656,2026-27,2div_norte,regular,15,0015-Jornada 15,2027-02-23,21:30,7319,3648,,,,,,,,,False,21,Oliveirense B,Mealhada,oliveirense b,mealhada
+api,110651,2026-27,2div_norte,regular,15,0015-Jornada 15,2027-02-23,21:30,3610,3616,,,,,,,,,False,22,Valongo B,Espinho,valongo b,espinho
+api,110653,2026-27,2div_norte,regular,15,0015-Jornada 15,2027-02-23,21:30,3596,3622,,,,,,,,,False,23,Barcelos B,Famalicense,barcelos b,famalicense
+api,110657,2026-27,2div_norte,regular,15,0015-Jornada 15,2027-02-20,18:00,3736,31532,,,,,,,,,False,62,Academica,Vila Praia,academica,vila praia
 api,110652,2026-27,2div_norte,regular,15,0015-Jornada 15,2027-02-20,18:00,3662,3728,,,,,,,,,False,109,Termas,Povoa,termas,povoa
 api,110654,2026-27,2div_norte,regular,15,0015-Jornada 15,2027-02-20,18:00,3618,3602,,,,,,,,,False,33,Lavra,Cambra,lavra,cambra
-api,110657,2026-27,2div_norte,regular,15,0015-Jornada 15,2027-02-20,18:00,3736,31532,,,,,,,,,False,62,Academica,Vila Praia,academica,vila praia
 api,110650,2026-27,2div_norte,regular,14,0014-Jornada 14,2027-02-09,20:00,31532,3610,,,,,,,,,False,61,Vila Praia,Valongo B,vila praia,valongo b
-api,110649,2026-27,2div_norte,regular,14,0014-Jornada 14,2027-02-09,18:30,3648,3736,,,,,,,,,False,219,Mealhada,Academica,mealhada,academica
 api,110645,2026-27,2div_norte,regular,14,0014-Jornada 14,2027-02-09,18:30,3728,3596,,,,,,,,,False,56,Povoa,Barcelos B,povoa,barcelos b
+api,110649,2026-27,2div_norte,regular,14,0014-Jornada 14,2027-02-09,18:30,3648,3736,,,,,,,,,False,219,Mealhada,Academica,mealhada,academica
+api,110644,2026-27,2div_norte,regular,14,0014-Jornada 14,2027-02-09,18:00,3616,3662,,,,,,,,,False,60,Espinho,Termas,espinho,termas
 api,110646,2026-27,2div_norte,regular,14,0014-Jornada 14,2027-02-09,18:00,3622,3618,,,,,,,,,False,54,Famalicense,Lavra,famalicense,lavra
 api,110647,2026-27,2div_norte,regular,14,0014-Jornada 14,2027-02-09,18:00,3602,3588,,,,,,,,,False,65,Cambra,Porto B,cambra,porto b
 api,110648,2026-27,2div_norte,regular,14,0014-Jornada 14,2027-02-09,18:00,3612,7319,,,,,,,,,False,58,Carvalhos,Oliveirense B,carvalhos,oliveirense b
-api,110644,2026-27,2div_norte,regular,14,0014-Jornada 14,2027-02-09,18:00,3616,3662,,,,,,,,,False,60,Espinho,Termas,espinho,termas
-api,110637,2026-27,2div_norte,regular,13,0013-Jornada 13,2027-02-06,18:30,3648,31532,,,,,,,,,False,219,Mealhada,Vila Praia,mealhada,vila praia
 api,110641,2026-27,2div_norte,regular,13,0013-Jornada 13,2027-02-06,18:30,3728,3618,,,,,,,,,False,56,Povoa,Lavra,povoa,lavra
-api,110638,2026-27,2div_norte,regular,13,0013-Jornada 13,2027-02-06,18:00,3612,3736,,,,,,,,,False,58,Carvalhos,Academica,carvalhos,academica
+api,110637,2026-27,2div_norte,regular,13,0013-Jornada 13,2027-02-06,18:30,3648,31532,,,,,,,,,False,219,Mealhada,Vila Praia,mealhada,vila praia
 api,110639,2026-27,2div_norte,regular,13,0013-Jornada 13,2027-02-06,18:00,3602,7319,,,,,,,,,False,65,Cambra,Oliveirense B,cambra,oliveirense b
 api,110640,2026-27,2div_norte,regular,13,0013-Jornada 13,2027-02-06,18:00,3622,3588,,,,,,,,,False,54,Famalicense,Porto B,famalicense,porto b
 api,110642,2026-27,2div_norte,regular,13,0013-Jornada 13,2027-02-06,18:00,3616,3596,,,,,,,,,False,60,Espinho,Barcelos B,espinho,barcelos b
 api,110643,2026-27,2div_norte,regular,13,0013-Jornada 13,2027-02-06,18:00,3662,3610,,,,,,,,,False,109,Termas,Valongo B,termas,valongo b
+api,110638,2026-27,2div_norte,regular,13,0013-Jornada 13,2027-02-06,18:00,3612,3736,,,,,,,,,False,58,Carvalhos,Academica,carvalhos,academica
 api,110630,2026-27,2div_norte,regular,12,0012-Jornada 12,2027-02-02,21:30,3610,3648,,,,,,,,,False,22,Valongo B,Mealhada,valongo b,mealhada
 api,110633,2026-27,2div_norte,regular,12,0012-Jornada 12,2027-02-02,21:30,7319,3622,,,,,,,,,False,21,Oliveirense B,Famalicense,oliveirense b,famalicense
-api,110634,2026-27,2div_norte,regular,12,0012-Jornada 12,2027-02-02,21:30,3588,3728,,,,,,,,,False,441,Porto B,Povoa,porto b,povoa
 api,110636,2026-27,2div_norte,regular,12,0012-Jornada 12,2027-02-02,21:30,3596,3662,,,,,,,,,False,23,Barcelos B,Termas,barcelos b,termas
 api,110631,2026-27,2div_norte,regular,12,0012-Jornada 12,2027-01-30,20:00,31532,3612,,,,,,,,,False,61,Vila Praia,Carvalhos,vila praia,carvalhos
 api,110632,2026-27,2div_norte,regular,12,0012-Jornada 12,2027-01-30,18:00,3736,3602,,,,,,,,,False,62,Academica,Cambra,academica,cambra
 api,110635,2026-27,2div_norte,regular,12,0012-Jornada 12,2027-01-30,18:00,3618,3616,,,,,,,,,False,33,Lavra,Espinho,lavra,espinho
 api,110629,2026-27,2div_norte,regular,11,0011-Jornada 11,2027-01-26,21:30,3610,3596,,,,,,,,,False,22,Valongo B,Barcelos B,valongo b,barcelos b
 api,110626,2026-27,2div_norte,regular,11,0011-Jornada 11,2027-01-23,18:30,3728,7319,,,,,,,,,False,56,Povoa,Oliveirense B,povoa,oliveirense b
-api,110628,2026-27,2div_norte,regular,11,0011-Jornada 11,2027-01-23,18:00,3662,3618,,,,,,,,,False,109,Termas,Lavra,termas,lavra
 api,110623,2026-27,2div_norte,regular,11,0011-Jornada 11,2027-01-23,18:00,3612,3648,,,,,,,,,False,58,Carvalhos,Mealhada,carvalhos,mealhada
 api,110624,2026-27,2div_norte,regular,11,0011-Jornada 11,2027-01-23,18:00,3602,31532,,,,,,,,,False,65,Cambra,Vila Praia,cambra,vila praia
 api,110625,2026-27,2div_norte,regular,11,0011-Jornada 11,2027-01-23,18:00,3622,3736,,,,,,,,,False,54,Famalicense,Academica,famalicense,academica
 api,110627,2026-27,2div_norte,regular,11,0011-Jornada 11,2027-01-23,18:00,3616,3588,,,,,,,,,False,60,Espinho,Porto B,espinho,porto b
+api,110628,2026-27,2div_norte,regular,11,0011-Jornada 11,2027-01-23,18:00,3662,3618,,,,,,,,,False,109,Termas,Lavra,termas,lavra
 api,110620,2026-27,2div_norte,regular,10,0010-Jornada 10,2027-01-12,22:00,7319,3616,,,,,,,,,False,21,Oliveirense B,Espinho,oliveirense b,espinho
 api,110621,2026-27,2div_norte,regular,10,0010-Jornada 10,2027-01-12,21:30,3588,3662,,,,,,,,,False,441,Porto B,Termas,porto b,termas
 api,110618,2026-27,2div_norte,regular,10,0010-Jornada 10,2027-01-09,19:00,31532,3622,,,,,,,,,False,61,Vila Praia,Famalicense,vila praia,famalicense
@@ -3154,14 +3153,14 @@ api,110616,2026-27,2div_norte,regular,10,0010-Jornada 10,2027-01-09,18:00,3612,3
 api,110617,2026-27,2div_norte,regular,10,0010-Jornada 10,2027-01-09,18:00,3648,3602,,,,,,,,,False,219,Mealhada,Cambra,mealhada,cambra
 api,110619,2026-27,2div_norte,regular,10,0010-Jornada 10,2027-01-09,18:00,3736,3728,,,,,,,,,False,62,Academica,Povoa,academica,povoa
 api,110601,2026-27,2div_norte,regular,7,0007-Jornada 7,2026-12-19,18:30,3610,3588,,,,,,,,,False,22,Valongo B,Porto B,valongo b,porto b
-api,110614,2026-27,2div_norte,regular,9,0009-Jornada 9,2026-12-15,21:30,3596,3588,,,,,,,,,False,23,Barcelos B,Porto B,barcelos b,porto b
 api,110615,2026-27,2div_norte,regular,9,0009-Jornada 9,2026-12-15,21:30,3610,3618,,,,,,,,,False,22,Valongo B,Lavra,valongo b,lavra
+api,110614,2026-27,2div_norte,regular,9,0009-Jornada 9,2026-12-15,21:30,3596,3588,,,,,,,,,False,23,Barcelos B,Porto B,barcelos b,porto b
 api,110608,2026-27,2div_norte,regular,8,0008-Jornada 8,2026-12-12,19:00,3588,3618,,,,,,,,,False,441,Porto B,Lavra,porto b,lavra
 api,110611,2026-27,2div_norte,regular,9,0009-Jornada 9,2026-12-12,18:30,3728,31532,,,,,,,,,False,56,Povoa,Vila Praia,povoa,vila praia
-api,110612,2026-27,2div_norte,regular,9,0009-Jornada 9,2026-12-12,18:00,3616,3736,,,,,,,,,False,60,Espinho,Academica,espinho,academica
-api,110613,2026-27,2div_norte,regular,9,0009-Jornada 9,2026-12-12,18:00,3662,7319,,,,,,,,,False,109,Termas,Oliveirense B,termas,oliveirense b
 api,110609,2026-27,2div_norte,regular,9,0009-Jornada 9,2026-12-12,18:00,3602,3612,,,,,,,,,False,65,Cambra,Carvalhos,cambra,carvalhos
 api,110610,2026-27,2div_norte,regular,9,0009-Jornada 9,2026-12-12,18:00,3622,3648,,,,,,,,,False,54,Famalicense,Mealhada,famalicense,mealhada
+api,110612,2026-27,2div_norte,regular,9,0009-Jornada 9,2026-12-12,18:00,3616,3736,,,,,,,,,False,60,Espinho,Academica,espinho,academica
+api,110613,2026-27,2div_norte,regular,9,0009-Jornada 9,2026-12-12,18:00,3662,7319,,,,,,,,,False,109,Termas,Oliveirense B,termas,oliveirense b
 api,110607,2026-27,2div_norte,regular,8,0008-Jornada 8,2026-12-08,22:00,7319,3596,,,,,,,,,False,21,Oliveirense B,Barcelos B,oliveirense b,barcelos b
 api,110605,2026-27,2div_norte,regular,8,0008-Jornada 8,2026-12-08,19:00,31532,3616,,,,,,,,,False,61,Vila Praia,Espinho,vila praia,espinho
 api,110602,2026-27,2div_norte,regular,8,0008-Jornada 8,2026-12-08,18:00,3602,3610,,,,,,,,,False,65,Cambra,Valongo B,cambra,valongo b
@@ -3170,8 +3169,8 @@ api,110604,2026-27,2div_norte,regular,8,0008-Jornada 8,2026-12-08,18:00,3648,372
 api,110606,2026-27,2div_norte,regular,8,0008-Jornada 8,2026-12-08,18:00,3736,3662,,,,,,,,,False,62,Academica,Termas,academica,termas
 api,110600,2026-27,2div_norte,regular,7,0007-Jornada 7,2026-12-05,19:30,3618,7319,,,,,,,,,False,33,Lavra,Oliveirense B,lavra,oliveirense b
 api,110597,2026-27,2div_norte,regular,7,0007-Jornada 7,2026-12-05,18:30,3616,3648,,,,,,,,,False,60,Espinho,Mealhada,espinho,mealhada
-api,110598,2026-27,2div_norte,regular,7,0007-Jornada 7,2026-12-05,18:00,3662,31532,,,,,,,,,False,109,Termas,Vila Praia,termas,vila praia
 api,110595,2026-27,2div_norte,regular,7,0007-Jornada 7,2026-12-05,18:00,3622,3602,,,,,,,,,False,54,Famalicense,Cambra,famalicense,cambra
+api,110598,2026-27,2div_norte,regular,7,0007-Jornada 7,2026-12-05,18:00,3662,31532,,,,,,,,,False,109,Termas,Vila Praia,termas,vila praia
 api,110599,2026-27,2div_norte,regular,7,0007-Jornada 7,2026-12-05,17:30,3596,3736,,,,,,,,,False,23,Barcelos B,Academica,barcelos b,academica
 api,110596,2026-27,2div_norte,regular,7,0007-Jornada 7,2026-12-05,17:00,3728,3612,,,,,,,,,False,56,Povoa,Carvalhos,povoa,carvalhos
 api,110594,2026-27,2div_norte,regular,6,0006-Jornada 6,2026-12-01,22:00,7319,3588,,,,,,,,,False,21,Oliveirense B,Porto B,oliveirense b,porto b
@@ -3186,15 +3185,15 @@ api,110586,2026-27,2div_norte,regular,5,0005-Jornada 5,2026-11-24,21:30,3588,373
 api,110587,2026-27,2div_norte,regular,5,0005-Jornada 5,2026-11-24,21:30,3610,7319,,,,,,,,,False,22,Valongo B,Oliveirense B,valongo b,oliveirense b
 api,110585,2026-27,2div_norte,regular,5,0005-Jornada 5,2026-11-21,19:30,3618,31532,,,,,,,,,False,33,Lavra,Vila Praia,lavra,vila praia
 api,110581,2026-27,2div_norte,regular,5,0005-Jornada 5,2026-11-21,18:30,3728,3622,,,,,,,,,False,56,Povoa,Famalicense,povoa,famalicense
-api,110582,2026-27,2div_norte,regular,5,0005-Jornada 5,2026-11-21,18:00,3616,3602,,,,,,,,,False,60,Espinho,Cambra,espinho,cambra
 api,110583,2026-27,2div_norte,regular,5,0005-Jornada 5,2026-11-21,18:00,3662,3612,,,,,,,,,False,109,Termas,Carvalhos,termas,carvalhos
+api,110582,2026-27,2div_norte,regular,5,0005-Jornada 5,2026-11-21,18:00,3616,3602,,,,,,,,,False,60,Espinho,Cambra,espinho,cambra
 api,110580,2026-27,2div_norte,regular,4,0004-Jornada 4,2026-11-17,22:00,7319,3736,,,,,,,,,False,21,Oliveirense B,Academica,oliveirense b,academica
 api,110574,2026-27,2div_norte,regular,4,0004-Jornada 4,2026-11-15,16:30,3728,3610,,,,,,,,,False,56,Povoa,Valongo B,povoa,valongo b
-api,110578,2026-27,2div_norte,regular,4,0004-Jornada 4,2026-11-14,19:00,3618,3648,,,,,,,,,False,33,Lavra,Mealhada,lavra,mealhada
-api,110579,2026-27,2div_norte,regular,4,0004-Jornada 4,2026-11-14,19:00,31532,3588,,,,,,,,,False,61,Vila Praia,Porto B,vila praia,porto b
-api,110575,2026-27,2div_norte,regular,4,0004-Jornada 4,2026-11-14,18:00,3622,3616,,,,,,,,,False,54,Famalicense,Espinho,famalicense,espinho
-api,110576,2026-27,2div_norte,regular,4,0004-Jornada 4,2026-11-14,18:00,3602,3662,,,,,,,,,False,65,Cambra,Termas,cambra,termas
-api,110577,2026-27,2div_norte,regular,4,0004-Jornada 4,2026-11-14,18:00,3612,3596,,,,,,,,,False,58,Carvalhos,Barcelos B,carvalhos,barcelos b
+api,110578,2026-27,2div_norte,regular,4,0004-Jornada 4,2026-11-14,19:00,3618,3648,2.0,3.0,1.0,0.0,0.0,0.0,0.0,0.0,True,33,Lavra,Mealhada,lavra,mealhada
+api,110579,2026-27,2div_norte,regular,4,0004-Jornada 4,2026-11-14,19:00,31532,3588,2.0,3.0,2.0,1.0,0.0,0.0,0.0,0.0,True,61,Vila Praia,Porto B,vila praia,porto b
+api,110575,2026-27,2div_norte,regular,4,0004-Jornada 4,2026-11-14,18:00,3622,3616,6.0,3.0,2.0,2.0,0.0,0.0,0.0,0.0,True,54,Famalicense,Espinho,famalicense,espinho
+api,110576,2026-27,2div_norte,regular,4,0004-Jornada 4,2026-11-14,18:00,3602,3662,2.0,5.0,2.0,1.0,0.0,0.0,0.0,0.0,True,65,Cambra,Termas,cambra,termas
+api,110577,2026-27,2div_norte,regular,4,0004-Jornada 4,2026-11-14,18:00,3612,3596,8.0,2.0,1.0,2.0,0.0,0.0,0.0,0.0,True,58,Carvalhos,Barcelos B,carvalhos,barcelos b
 api,110572,2026-27,2div_norte,regular,3,0003-Jornada 3,2026-11-10,22:00,7319,31532,6.0,3.0,3.0,1.0,0.0,0.0,0.0,0.0,True,21,Oliveirense B,Vila Praia,oliveirense b,vila praia
 api,110569,2026-27,2div_norte,regular,3,0003-Jornada 3,2026-11-10,21:30,3596,3602,1.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,True,23,Barcelos B,Cambra,barcelos b,cambra
 api,110573,2026-27,2div_norte,regular,3,0003-Jornada 3,2026-11-10,21:30,3610,3736,7.0,2.0,2.0,0.0,0.0,0.0,0.0,0.0,True,22,Valongo B,Academica,valongo b,academica
@@ -3202,13 +3201,13 @@ api,110571,2026-27,2div_norte,regular,3,0003-Jornada 3,2026-11-10,21:00,3588,364
 api,110567,2026-27,2div_norte,regular,3,0003-Jornada 3,2026-11-07,21:00,3616,3728,4.0,3.0,3.0,0.0,0.0,0.0,0.0,0.0,True,60,Espinho,Povoa,espinho,povoa
 api,110570,2026-27,2div_norte,regular,3,0003-Jornada 3,2026-11-07,19:00,3618,3612,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,True,33,Lavra,Carvalhos,lavra,carvalhos
 api,110568,2026-27,2div_norte,regular,3,0003-Jornada 3,2026-11-07,18:00,3662,3622,1.0,6.0,1.0,3.0,0.0,0.0,0.0,0.0,True,109,Termas,Famalicense,termas,famalicense
-api,110566,2026-27,2div_norte,regular,2,0002-Jornada 2,2026-10-31,19:00,31532,3736,5.0,1.0,3.0,1.0,0.0,0.0,0.0,0.0,True,61,Vila Praia,Academica,vila praia,academica
 api,110563,2026-27,2div_norte,regular,2,0002-Jornada 2,2026-10-31,19:00,3602,3618,7.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,True,65,Cambra,Lavra,cambra,lavra
-api,110564,2026-27,2div_norte,regular,2,0002-Jornada 2,2026-10-31,18:30,3612,3588,4.0,2.0,3.0,2.0,0.0,0.0,0.0,0.0,True,58,Carvalhos,Porto B,carvalhos,porto b
+api,110566,2026-27,2div_norte,regular,2,0002-Jornada 2,2026-10-31,19:00,31532,3736,5.0,1.0,3.0,1.0,0.0,0.0,0.0,0.0,True,61,Vila Praia,Academica,vila praia,academica
 api,110561,2026-27,2div_norte,regular,2,0002-Jornada 2,2026-10-31,18:30,3728,3662,8.0,1.0,4.0,0.0,0.0,0.0,0.0,0.0,True,56,Povoa,Termas,povoa,termas
-api,110565,2026-27,2div_norte,regular,2,0002-Jornada 2,2026-10-31,18:00,3648,7319,4.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,True,219,Mealhada,Oliveirense B,mealhada,oliveirense b
+api,110564,2026-27,2div_norte,regular,2,0002-Jornada 2,2026-10-31,18:30,3612,3588,4.0,2.0,3.0,2.0,0.0,0.0,0.0,0.0,True,58,Carvalhos,Porto B,carvalhos,porto b
 api,110560,2026-27,2div_norte,regular,2,0002-Jornada 2,2026-10-31,18:00,3616,3610,1.0,3.0,1.0,3.0,0.0,0.0,0.0,0.0,True,60,Espinho,Valongo B,espinho,valongo b
 api,110562,2026-27,2div_norte,regular,2,0002-Jornada 2,2026-10-31,18:00,3622,3596,7.0,0.0,3.0,0.0,0.0,0.0,0.0,0.0,True,54,Famalicense,Barcelos B,famalicense,barcelos b
+api,110565,2026-27,2div_norte,regular,2,0002-Jornada 2,2026-10-31,18:00,3648,7319,4.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,True,219,Mealhada,Oliveirense B,mealhada,oliveirense b
 api,110554,2026-27,2div_norte,regular,1,0001-Jornada 1,2026-10-27,22:00,3596,3728,0.0,5.0,0.0,2.0,0.0,0.0,0.0,0.0,True,23,Barcelos B,Povoa,barcelos b,povoa
 api,110557,2026-27,2div_norte,regular,1,0001-Jornada 1,2026-10-27,22:00,7319,3612,1.0,5.0,0.0,1.0,0.0,0.0,0.0,0.0,True,21,Oliveirense B,Carvalhos,oliveirense b,carvalhos
 api,110556,2026-27,2div_norte,regular,1,0001-Jornada 1,2026-10-27,21:30,3588,3602,5.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,True,40,Porto B,Cambra,porto b,cambra
@@ -3219,54 +3218,54 @@ api,110558,2026-27,2div_norte,regular,1,0001-Jornada 1,2026-10-24,18:00,3736,364
 api,110912,2026-27,2div_sul,regular,26,0026-Jornada 26,2027-05-22,21:00,3582,3912,,,,,,,,,False,20,Benfica B,Alcobacense,benfica b,alcobacense
 api,110915,2026-27,2div_sul,regular,26,0026-Jornada 26,2027-05-22,21:00,3642,3862,,,,,,,,,False,26,Turquel,Sporting B,turquel,sporting b
 api,110914,2026-27,2div_sul,regular,26,0026-Jornada 26,2027-05-22,18:30,3682,3942,,,,,,,,,False,72,Fisica,Grandola,fisica,grandola
-api,110911,2026-27,2div_sul,regular,26,0026-Jornada 26,2027-05-22,18:00,4010,3752,,,,,,,,,False,70,Salesiana,Marinhense,salesiana,marinhense
 api,110913,2026-27,2div_sul,regular,26,0026-Jornada 26,2027-05-22,18:00,3676,3686,,,,,,,,,False,27,Paço de Arcos,Parede,paco arcos,parede
 api,110916,2026-27,2div_sul,regular,26,0026-Jornada 26,2027-05-22,18:00,3740,3692,,,,,,,,,False,211,CRIAR-T,Alenquer,criar t,alenquer
+api,110911,2026-27,2div_sul,regular,26,0026-Jornada 26,2027-05-22,18:00,4010,3752,,,,,,,,,False,70,Salesiana,Marinhense,salesiana,marinhense
 api,110917,2026-27,2div_sul,regular,26,0026-Jornada 26,2027-05-22,16:00,4206,3800,,,,,,,,,False,80,Murches,Tojal,murches,tojal
 api,110908,2026-27,2div_sul,regular,25,0025-Jornada 25,2027-05-15,21:00,3862,3682,,,,,,,,,False,409,Sporting B,Fisica,sporting b,fisica
 api,110906,2026-27,2div_sul,regular,25,0025-Jornada 25,2027-05-15,18:30,3686,3582,,,,,,,,,False,71,Parede,Benfica B,parede,benfica b
+api,110904,2026-27,2div_sul,regular,25,0025-Jornada 25,2027-05-15,18:00,3752,4206,,,,,,,,,False,336,Marinhense,Murches,marinhense,murches
+api,110905,2026-27,2div_sul,regular,25,0025-Jornada 25,2027-05-15,18:00,3912,4010,,,,,,,,,False,558,Alcobacense,Salesiana,alcobacense,salesiana
 api,110907,2026-27,2div_sul,regular,25,0025-Jornada 25,2027-05-15,18:00,3942,3676,,,,,,,,,False,31,Grandola,Paço de Arcos,grandola,paco arcos
 api,110909,2026-27,2div_sul,regular,25,0025-Jornada 25,2027-05-15,18:00,3692,3642,,,,,,,,,False,77,Alenquer,Turquel,alenquer,turquel
 api,110910,2026-27,2div_sul,regular,25,0025-Jornada 25,2027-05-15,18:00,3800,3740,,,,,,,,,False,82,Tojal,CRIAR-T,tojal,criar t
-api,110904,2026-27,2div_sul,regular,25,0025-Jornada 25,2027-05-15,18:00,3752,4206,,,,,,,,,False,68,Marinhense,Murches,marinhense,murches
-api,110905,2026-27,2div_sul,regular,25,0025-Jornada 25,2027-05-15,18:00,3912,4010,,,,,,,,,False,558,Alcobacense,Salesiana,alcobacense,salesiana
 api,110899,2026-27,2div_sul,regular,24,0024-Jornada 24,2027-05-08,21:00,3582,3942,,,,,,,,,False,20,Benfica B,Grandola,benfica b,grandola
 api,110902,2026-27,2div_sul,regular,24,0024-Jornada 24,2027-05-08,21:00,3642,3800,,,,,,,,,False,26,Turquel,Tojal,turquel,tojal
 api,110901,2026-27,2div_sul,regular,24,0024-Jornada 24,2027-05-08,18:30,3682,3692,,,,,,,,,False,72,Fisica,Alenquer,fisica,alenquer
-api,110897,2026-27,2div_sul,regular,24,0024-Jornada 24,2027-05-08,18:00,3752,3912,,,,,,,,,False,68,Marinhense,Alcobacense,marinhense,alcobacense
+api,110897,2026-27,2div_sul,regular,24,0024-Jornada 24,2027-05-08,18:00,3752,3912,,,,,,,,,False,336,Marinhense,Alcobacense,marinhense,alcobacense
 api,110898,2026-27,2div_sul,regular,24,0024-Jornada 24,2027-05-08,18:00,4010,3686,,,,,,,,,False,70,Salesiana,Parede,salesiana,parede
 api,110900,2026-27,2div_sul,regular,24,0024-Jornada 24,2027-05-08,18:00,3676,3862,,,,,,,,,False,27,Paço de Arcos,Sporting B,paco arcos,sporting b
 api,110903,2026-27,2div_sul,regular,24,0024-Jornada 24,2027-05-08,18:00,3740,4206,,,,,,,,,False,211,CRIAR-T,Murches,criar t,murches
 api,110893,2026-27,2div_sul,regular,23,0023-Jornada 23,2027-04-24,21:00,3862,3582,,,,,,,,,False,409,Sporting B,Benfica B,sporting b,benfica b
 api,110891,2026-27,2div_sul,regular,23,0023-Jornada 23,2027-04-24,18:30,3686,3752,,,,,,,,,False,71,Parede,Marinhense,parede,marinhense
+api,110896,2026-27,2div_sul,regular,23,0023-Jornada 23,2027-04-24,18:00,3740,3642,,,,,,,,,False,211,CRIAR-T,Turquel,criar t,turquel
 api,110892,2026-27,2div_sul,regular,23,0023-Jornada 23,2027-04-24,18:00,3942,4010,,,,,,,,,False,31,Grandola,Salesiana,grandola,salesiana
 api,110894,2026-27,2div_sul,regular,23,0023-Jornada 23,2027-04-24,18:00,3692,3676,,,,,,,,,False,77,Alenquer,Paço de Arcos,alenquer,paco arcos
 api,110895,2026-27,2div_sul,regular,23,0023-Jornada 23,2027-04-24,18:00,3800,3682,,,,,,,,,False,82,Tojal,Fisica,tojal,fisica
-api,110896,2026-27,2div_sul,regular,23,0023-Jornada 23,2027-04-24,18:00,3740,3642,,,,,,,,,False,211,CRIAR-T,Turquel,criar t,turquel
 api,110890,2026-27,2div_sul,regular,23,0023-Jornada 23,2027-04-24,16:00,4206,3912,,,,,,,,,False,80,Murches,Alcobacense,murches,alcobacense
 api,110886,2026-27,2div_sul,regular,22,0022-Jornada 22,2027-04-17,21:00,3582,3692,,,,,,,,,False,20,Benfica B,Alenquer,benfica b,alenquer
 api,110889,2026-27,2div_sul,regular,22,0022-Jornada 22,2027-04-17,21:00,3642,4206,,,,,,,,,False,26,Turquel,Murches,turquel,murches
 api,110888,2026-27,2div_sul,regular,22,0022-Jornada 22,2027-04-17,18:30,3682,3740,,,,,,,,,False,72,Fisica,CRIAR-T,fisica,criar t
 api,110883,2026-27,2div_sul,regular,22,0022-Jornada 22,2027-04-17,18:00,3912,3686,,,,,,,,,False,558,Alcobacense,Parede,alcobacense,parede
-api,110884,2026-27,2div_sul,regular,22,0022-Jornada 22,2027-04-17,18:00,3752,3942,,,,,,,,,False,68,Marinhense,Grandola,marinhense,grandola
+api,110884,2026-27,2div_sul,regular,22,0022-Jornada 22,2027-04-17,18:00,3752,3942,,,,,,,,,False,336,Marinhense,Grandola,marinhense,grandola
 api,110885,2026-27,2div_sul,regular,22,0022-Jornada 22,2027-04-17,18:00,4010,3862,,,,,,,,,False,70,Salesiana,Sporting B,salesiana,sporting b
 api,110887,2026-27,2div_sul,regular,22,0022-Jornada 22,2027-04-17,18:00,3676,3800,,,,,,,,,False,27,Paço de Arcos,Tojal,paco arcos,tojal
-api,110878,2026-27,2div_sul,regular,21,0021-Jornada 21,2027-04-10,21:00,3862,3752,,,,,,,,,False,409,Sporting B,Marinhense,sporting b,marinhense
 api,110882,2026-27,2div_sul,regular,21,0021-Jornada 21,2027-04-10,21:00,3642,3682,,,,,,,,,False,26,Turquel,Fisica,turquel,fisica
-api,110877,2026-27,2div_sul,regular,21,0021-Jornada 21,2027-04-10,18:00,3942,3912,,,,,,,,,False,31,Grandola,Alcobacense,grandola,alcobacense
-api,110879,2026-27,2div_sul,regular,21,0021-Jornada 21,2027-04-10,18:00,3692,4010,,,,,,,,,False,77,Alenquer,Salesiana,alenquer,salesiana
+api,110878,2026-27,2div_sul,regular,21,0021-Jornada 21,2027-04-10,21:00,3862,3752,,,,,,,,,False,409,Sporting B,Marinhense,sporting b,marinhense
 api,110880,2026-27,2div_sul,regular,21,0021-Jornada 21,2027-04-10,18:00,3800,3582,,,,,,,,,False,82,Tojal,Benfica B,tojal,benfica b
 api,110881,2026-27,2div_sul,regular,21,0021-Jornada 21,2027-04-10,18:00,3740,3676,,,,,,,,,False,211,CRIAR-T,Paço de Arcos,criar t,paco arcos
+api,110877,2026-27,2div_sul,regular,21,0021-Jornada 21,2027-04-10,18:00,3942,3912,,,,,,,,,False,31,Grandola,Alcobacense,grandola,alcobacense
+api,110879,2026-27,2div_sul,regular,21,0021-Jornada 21,2027-04-10,18:00,3692,4010,,,,,,,,,False,77,Alenquer,Salesiana,alenquer,salesiana
 api,110876,2026-27,2div_sul,regular,21,0021-Jornada 21,2027-04-10,16:00,4206,3686,,,,,,,,,False,80,Murches,Parede,murches,parede
 api,110873,2026-27,2div_sul,regular,20,0020-Jornada 20,2027-04-03,21:00,3582,3740,,,,,,,,,False,20,Benfica B,CRIAR-T,benfica b,criar t
-api,110875,2026-27,2div_sul,regular,20,0020-Jornada 20,2027-04-03,18:30,3682,4206,,,,,,,,,False,72,Fisica,Murches,fisica,murches
 api,110869,2026-27,2div_sul,regular,20,0020-Jornada 20,2027-04-03,18:30,3686,3942,,,,,,,,,False,71,Parede,Grandola,parede,grandola
-api,110874,2026-27,2div_sul,regular,20,0020-Jornada 20,2027-04-03,18:00,3676,3642,,,,,,,,,False,27,Paço de Arcos,Turquel,paco arcos,turquel
+api,110875,2026-27,2div_sul,regular,20,0020-Jornada 20,2027-04-03,18:30,3682,4206,,,,,,,,,False,72,Fisica,Murches,fisica,murches
 api,110870,2026-27,2div_sul,regular,20,0020-Jornada 20,2027-04-03,18:00,3912,3862,,,,,,,,,False,558,Alcobacense,Sporting B,alcobacense,sporting b
-api,110871,2026-27,2div_sul,regular,20,0020-Jornada 20,2027-04-03,18:00,3752,3692,,,,,,,,,False,68,Marinhense,Alenquer,marinhense,alenquer
+api,110871,2026-27,2div_sul,regular,20,0020-Jornada 20,2027-04-03,18:00,3752,3692,,,,,,,,,False,336,Marinhense,Alenquer,marinhense,alenquer
 api,110872,2026-27,2div_sul,regular,20,0020-Jornada 20,2027-04-03,18:00,4010,3800,,,,,,,,,False,70,Salesiana,Tojal,salesiana,tojal
-api,110863,2026-27,2div_sul,regular,19,0019-Jornada 19,2027-03-26,21:00,3862,3686,,,,,,,,,False,409,Sporting B,Parede,sporting b,parede
+api,110874,2026-27,2div_sul,regular,20,0020-Jornada 20,2027-04-03,18:00,3676,3642,,,,,,,,,False,27,Paço de Arcos,Turquel,paco arcos,turquel
 api,110867,2026-27,2div_sul,regular,19,0019-Jornada 19,2027-03-26,21:00,3642,3582,,,,,,,,,False,26,Turquel,Benfica B,turquel,benfica b
+api,110863,2026-27,2div_sul,regular,19,0019-Jornada 19,2027-03-26,21:00,3862,3686,,,,,,,,,False,409,Sporting B,Parede,sporting b,parede
 api,110868,2026-27,2div_sul,regular,19,0019-Jornada 19,2027-03-26,18:30,3682,3676,,,,,,,,,False,72,Fisica,Paço de Arcos,fisica,paco arcos
 api,110864,2026-27,2div_sul,regular,19,0019-Jornada 19,2027-03-26,18:00,3692,3912,,,,,,,,,False,77,Alenquer,Alcobacense,alenquer,alcobacense
 api,110865,2026-27,2div_sul,regular,19,0019-Jornada 19,2027-03-26,18:00,3800,3752,,,,,,,,,False,82,Tojal,Marinhense,tojal,marinhense
@@ -3274,11 +3273,11 @@ api,110866,2026-27,2div_sul,regular,19,0019-Jornada 19,2027-03-26,18:00,3740,401
 api,110862,2026-27,2div_sul,regular,19,0019-Jornada 19,2027-03-26,16:00,4206,3942,,,,,,,,,False,80,Murches,Grandola,murches,grandola
 api,110860,2026-27,2div_sul,regular,18,0018-Jornada 18,2027-03-20,21:00,3582,3682,,,,,,,,,False,20,Benfica B,Fisica,benfica b,fisica
 api,110856,2026-27,2div_sul,regular,18,0018-Jornada 18,2027-03-20,18:30,3686,3692,,,,,,,,,False,71,Parede,Alenquer,parede,alenquer
-api,110858,2026-27,2div_sul,regular,18,0018-Jornada 18,2027-03-20,18:00,3752,3740,,,,,,,,,False,68,Marinhense,CRIAR-T,marinhense,criar t
-api,110859,2026-27,2div_sul,regular,18,0018-Jornada 18,2027-03-20,18:00,4010,3642,,,,,,,,,False,70,Salesiana,Turquel,salesiana,turquel
-api,110861,2026-27,2div_sul,regular,18,0018-Jornada 18,2027-03-20,18:00,3676,4206,,,,,,,,,False,27,Paço de Arcos,Murches,paco arcos,murches
 api,110855,2026-27,2div_sul,regular,18,0018-Jornada 18,2027-03-20,18:00,3942,3862,,,,,,,,,False,31,Grandola,Sporting B,grandola,sporting b
 api,110857,2026-27,2div_sul,regular,18,0018-Jornada 18,2027-03-20,18:00,3912,3800,,,,,,,,,False,558,Alcobacense,Tojal,alcobacense,tojal
+api,110858,2026-27,2div_sul,regular,18,0018-Jornada 18,2027-03-20,18:00,3752,3740,,,,,,,,,False,336,Marinhense,CRIAR-T,marinhense,criar t
+api,110859,2026-27,2div_sul,regular,18,0018-Jornada 18,2027-03-20,18:00,4010,3642,,,,,,,,,False,70,Salesiana,Turquel,salesiana,turquel
+api,110861,2026-27,2div_sul,regular,18,0018-Jornada 18,2027-03-20,18:00,3676,4206,,,,,,,,,False,27,Paço de Arcos,Murches,paco arcos,murches
 api,110852,2026-27,2div_sul,regular,17,0017-Jornada 17,2027-03-06,21:00,3642,3752,,,,,,,,,False,26,Turquel,Marinhense,turquel,marinhense
 api,110853,2026-27,2div_sul,regular,17,0017-Jornada 17,2027-03-06,18:30,3682,4010,,,,,,,,,False,72,Fisica,Salesiana,fisica,salesiana
 api,110849,2026-27,2div_sul,regular,17,0017-Jornada 17,2027-03-06,18:00,3692,3942,,,,,,,,,False,77,Alenquer,Grandola,alenquer,grandola
@@ -3286,12 +3285,12 @@ api,110850,2026-27,2div_sul,regular,17,0017-Jornada 17,2027-03-06,18:00,3686,380
 api,110851,2026-27,2div_sul,regular,17,0017-Jornada 17,2027-03-06,18:00,3740,3912,,,,,,,,,False,211,CRIAR-T,Alcobacense,criar t,alcobacense
 api,110854,2026-27,2div_sul,regular,17,0017-Jornada 17,2027-03-06,18:00,3676,3582,,,,,,,,,False,27,Paço de Arcos,Benfica B,paco arcos,benfica b
 api,110848,2026-27,2div_sul,regular,17,0017-Jornada 17,2027-03-06,16:00,4206,3862,,,,,,,,,False,80,Murches,Sporting B,murches,sporting b
-api,110847,2026-27,2div_sul,regular,16,0016-Jornada 16,2027-02-27,21:00,3582,4206,,,,,,,,,False,20,Benfica B,Murches,benfica b,murches
 api,110841,2026-27,2div_sul,regular,16,0016-Jornada 16,2027-02-27,21:00,3862,3692,,,,,,,,,False,409,Sporting B,Alenquer,sporting b,alenquer
+api,110847,2026-27,2div_sul,regular,16,0016-Jornada 16,2027-02-27,21:00,3582,4206,,,,,,,,,False,20,Benfica B,Murches,benfica b,murches
 api,110843,2026-27,2div_sul,regular,16,0016-Jornada 16,2027-02-27,18:30,3686,3740,,,,,,,,,False,71,Parede,CRIAR-T,parede,criar t
 api,110842,2026-27,2div_sul,regular,16,0016-Jornada 16,2027-02-27,18:00,3942,3800,,,,,,,,,False,31,Grandola,Tojal,grandola,tojal
 api,110844,2026-27,2div_sul,regular,16,0016-Jornada 16,2027-02-27,18:00,3912,3642,,,,,,,,,False,558,Alcobacense,Turquel,alcobacense,turquel
-api,110845,2026-27,2div_sul,regular,16,0016-Jornada 16,2027-02-27,18:00,3752,3682,,,,,,,,,False,68,Marinhense,Fisica,marinhense,fisica
+api,110845,2026-27,2div_sul,regular,16,0016-Jornada 16,2027-02-27,18:00,3752,3682,,,,,,,,,False,336,Marinhense,Fisica,marinhense,fisica
 api,110846,2026-27,2div_sul,regular,16,0016-Jornada 16,2027-02-27,18:00,4010,3676,,,,,,,,,False,70,Salesiana,Paço de Arcos,salesiana,paco arcos
 api,110837,2026-27,2div_sul,regular,15,0015-Jornada 15,2027-02-20,21:00,3642,3686,,,,,,,,,False,26,Turquel,Parede,turquel,parede
 api,110840,2026-27,2div_sul,regular,15,0015-Jornada 15,2027-02-20,21:00,3582,4010,,,,,,,,,False,20,Benfica B,Salesiana,benfica b,salesiana
@@ -3302,20 +3301,20 @@ api,110839,2026-27,2div_sul,regular,15,0015-Jornada 15,2027-02-20,18:00,3676,375
 api,110834,2026-27,2div_sul,regular,15,0015-Jornada 15,2027-02-20,16:00,4206,3692,,,,,,,,,False,80,Murches,Alenquer,murches,alenquer
 api,110828,2026-27,2div_sul,regular,14,0014-Jornada 14,2027-02-09,21:00,3862,3740,,,,,,,,,False,409,Sporting B,CRIAR-T,sporting b,criar t
 api,110830,2026-27,2div_sul,regular,14,0014-Jornada 14,2027-02-09,18:30,3686,3682,,,,,,,,,False,71,Parede,Fisica,parede,fisica
+api,110832,2026-27,2div_sul,regular,14,0014-Jornada 14,2027-02-09,18:00,3752,3582,,,,,,,,,False,336,Marinhense,Benfica B,marinhense,benfica b
+api,110833,2026-27,2div_sul,regular,14,0014-Jornada 14,2027-02-09,18:00,4010,4206,,,,,,,,,False,70,Salesiana,Murches,salesiana,murches
 api,110827,2026-27,2div_sul,regular,14,0014-Jornada 14,2027-02-09,18:00,3692,3800,,,,,,,,,False,77,Alenquer,Tojal,alenquer,tojal
 api,110829,2026-27,2div_sul,regular,14,0014-Jornada 14,2027-02-09,18:00,3942,3642,,,,,,,,,False,31,Grandola,Turquel,grandola,turquel
 api,110831,2026-27,2div_sul,regular,14,0014-Jornada 14,2027-02-09,18:00,3912,3676,,,,,,,,,False,558,Alcobacense,Paço de Arcos,alcobacense,paco arcos
-api,110832,2026-27,2div_sul,regular,14,0014-Jornada 14,2027-02-09,18:00,3752,3582,,,,,,,,,False,68,Marinhense,Benfica B,marinhense,benfica b
-api,110833,2026-27,2div_sul,regular,14,0014-Jornada 14,2027-02-09,18:00,4010,4206,,,,,,,,,False,70,Salesiana,Murches,salesiana,murches
 api,110824,2026-27,2div_sul,regular,13,0013-Jornada 13,2027-02-06,21:00,3862,3642,,,,,,,,,False,409,Sporting B,Turquel,sporting b,turquel
 api,110822,2026-27,2div_sul,regular,13,0013-Jornada 13,2027-02-06,18:30,3686,3676,,,,,,,,,False,71,Parede,Paço de Arcos,parede,paco arcos
-api,110826,2026-27,2div_sul,regular,13,0013-Jornada 13,2027-02-06,18:00,3800,4206,,,,,,,,,False,82,Tojal,Murches,tojal,murches
-api,110820,2026-27,2div_sul,regular,13,0013-Jornada 13,2027-02-06,18:00,3752,4010,,,,,,,,,False,68,Marinhense,Salesiana,marinhense,salesiana
+api,110820,2026-27,2div_sul,regular,13,0013-Jornada 13,2027-02-06,18:00,3752,4010,,,,,,,,,False,336,Marinhense,Salesiana,marinhense,salesiana
 api,110821,2026-27,2div_sul,regular,13,0013-Jornada 13,2027-02-06,18:00,3912,3582,,,,,,,,,False,558,Alcobacense,Benfica B,alcobacense,benfica b
 api,110823,2026-27,2div_sul,regular,13,0013-Jornada 13,2027-02-06,18:00,3942,3682,,,,,,,,,False,31,Grandola,Fisica,grandola,fisica
 api,110825,2026-27,2div_sul,regular,13,0013-Jornada 13,2027-02-06,18:00,3692,3740,,,,,,,,,False,77,Alenquer,CRIAR-T,alenquer,criar t
-api,110815,2026-27,2div_sul,regular,12,0012-Jornada 12,2027-01-30,21:00,3582,3686,,,,,,,,,False,20,Benfica B,Parede,benfica b,parede
+api,110826,2026-27,2div_sul,regular,13,0013-Jornada 13,2027-02-06,18:00,3800,4206,,,,,,,,,False,82,Tojal,Murches,tojal,murches
 api,110818,2026-27,2div_sul,regular,12,0012-Jornada 12,2027-01-30,21:00,3642,3692,,,,,,,,,False,26,Turquel,Alenquer,turquel,alenquer
+api,110815,2026-27,2div_sul,regular,12,0012-Jornada 12,2027-01-30,21:00,3582,3686,,,,,,,,,False,20,Benfica B,Parede,benfica b,parede
 api,110817,2026-27,2div_sul,regular,12,0012-Jornada 12,2027-01-30,18:30,3682,3862,,,,,,,,,False,72,Fisica,Sporting B,fisica,sporting b
 api,110814,2026-27,2div_sul,regular,12,0012-Jornada 12,2027-01-30,18:00,4010,3912,,,,,,,,,False,70,Salesiana,Alcobacense,salesiana,alcobacense
 api,110816,2026-27,2div_sul,regular,12,0012-Jornada 12,2027-01-30,18:00,3676,3942,,,,,,,,,False,27,Paço de Arcos,Grandola,paco arcos,grandola
@@ -3323,16 +3322,16 @@ api,110819,2026-27,2div_sul,regular,12,0012-Jornada 12,2027-01-30,18:00,3740,380
 api,110813,2026-27,2div_sul,regular,12,0012-Jornada 12,2027-01-30,16:00,4206,3752,,,,,,,,,False,80,Murches,Marinhense,murches,marinhense
 api,110809,2026-27,2div_sul,regular,11,0011-Jornada 11,2027-01-23,21:00,3862,3676,,,,,,,,,False,409,Sporting B,Paço de Arcos,sporting b,paco arcos
 api,110807,2026-27,2div_sul,regular,11,0011-Jornada 11,2027-01-23,18:30,3686,4010,,,,,,,,,False,71,Parede,Salesiana,parede,salesiana
+api,110806,2026-27,2div_sul,regular,11,0011-Jornada 11,2027-01-23,18:00,3912,3752,,,,,,,,,False,558,Alcobacense,Marinhense,alcobacense,marinhense
 api,110808,2026-27,2div_sul,regular,11,0011-Jornada 11,2027-01-23,18:00,3942,3582,,,,,,,,,False,31,Grandola,Benfica B,grandola,benfica b
 api,110810,2026-27,2div_sul,regular,11,0011-Jornada 11,2027-01-23,18:00,3692,3682,,,,,,,,,False,77,Alenquer,Fisica,alenquer,fisica
 api,110811,2026-27,2div_sul,regular,11,0011-Jornada 11,2027-01-23,18:00,3800,3642,,,,,,,,,False,82,Tojal,Turquel,tojal,turquel
-api,110806,2026-27,2div_sul,regular,11,0011-Jornada 11,2027-01-23,18:00,3912,3752,,,,,,,,,False,558,Alcobacense,Marinhense,alcobacense,marinhense
 api,110812,2026-27,2div_sul,regular,11,0011-Jornada 11,2027-01-23,16:00,4206,3740,,,,,,,,,False,80,Murches,CRIAR-T,murches,criar t
-api,110802,2026-27,2div_sul,regular,10,0010-Jornada 10,2027-01-09,21:00,3582,3862,,,,,,,,,False,20,Benfica B,Sporting B,benfica b,sporting b
 api,110805,2026-27,2div_sul,regular,10,0010-Jornada 10,2027-01-09,21:00,3642,3740,,,,,,,,,False,26,Turquel,CRIAR-T,turquel,criar t
+api,110802,2026-27,2div_sul,regular,10,0010-Jornada 10,2027-01-09,21:00,3582,3862,,,,,,,,,False,20,Benfica B,Sporting B,benfica b,sporting b
 api,110804,2026-27,2div_sul,regular,10,0010-Jornada 10,2027-01-09,18:30,3682,3800,,,,,,,,,False,72,Fisica,Tojal,fisica,tojal
 api,110799,2026-27,2div_sul,regular,10,0010-Jornada 10,2027-01-09,18:00,3912,4206,,,,,,,,,False,558,Alcobacense,Murches,alcobacense,murches
-api,110800,2026-27,2div_sul,regular,10,0010-Jornada 10,2027-01-09,18:00,3752,3686,,,,,,,,,False,68,Marinhense,Parede,marinhense,parede
+api,110800,2026-27,2div_sul,regular,10,0010-Jornada 10,2027-01-09,18:00,3752,3686,,,,,,,,,False,336,Marinhense,Parede,marinhense,parede
 api,110801,2026-27,2div_sul,regular,10,0010-Jornada 10,2027-01-09,18:00,4010,3942,,,,,,,,,False,70,Salesiana,Grandola,salesiana,grandola
 api,110803,2026-27,2div_sul,regular,10,0010-Jornada 10,2027-01-09,18:00,3676,3692,,,,,,,,,False,27,Paço de Arcos,Alenquer,paco arcos,alenquer
 api,110792,2026-27,2div_sul,regular,9,0009-Jornada 9,2026-12-12,21:00,3686,3912,,,,,,,,,False,71,Parede,Alcobacense,parede,alcobacense
@@ -3342,13 +3341,13 @@ api,110795,2026-27,2div_sul,regular,9,0009-Jornada 9,2026-12-12,18:00,3692,3582,
 api,110796,2026-27,2div_sul,regular,9,0009-Jornada 9,2026-12-12,18:00,3800,3676,,,,,,,,,False,82,Tojal,Paço de Arcos,tojal,paco arcos
 api,110797,2026-27,2div_sul,regular,9,0009-Jornada 9,2026-12-12,18:00,3740,3682,,,,,,,,,False,211,CRIAR-T,Fisica,criar t,fisica
 api,110798,2026-27,2div_sul,regular,9,0009-Jornada 9,2026-12-12,16:00,4206,3642,,,,,,,,,False,80,Murches,Turquel,murches,turquel
-api,110785,2026-27,2div_sul,regular,8,0008-Jornada 8,2026-12-08,21:00,3686,4206,,,,,,,,,False,71,Parede,Murches,parede,murches
 api,110789,2026-27,2div_sul,regular,8,0008-Jornada 8,2026-12-08,21:00,3582,3800,,,,,,,,,False,20,Benfica B,Tojal,benfica b,tojal
 api,110791,2026-27,2div_sul,regular,8,0008-Jornada 8,2026-12-08,21:00,3682,3642,,,,,,,,,False,72,Fisica,Turquel,fisica,turquel
-api,110786,2026-27,2div_sul,regular,8,0008-Jornada 8,2026-12-08,18:00,3912,3942,,,,,,,,,False,558,Alcobacense,Grandola,alcobacense,grandola
-api,110787,2026-27,2div_sul,regular,8,0008-Jornada 8,2026-12-08,18:00,3752,3862,,,,,,,,,False,68,Marinhense,Sporting B,marinhense,sporting b
+api,110785,2026-27,2div_sul,regular,8,0008-Jornada 8,2026-12-08,21:00,3686,4206,,,,,,,,,False,71,Parede,Murches,parede,murches
 api,110788,2026-27,2div_sul,regular,8,0008-Jornada 8,2026-12-08,18:00,4010,3692,,,,,,,,,False,70,Salesiana,Alenquer,salesiana,alenquer
 api,110790,2026-27,2div_sul,regular,8,0008-Jornada 8,2026-12-08,18:00,3676,3740,,,,,,,,,False,27,Paço de Arcos,CRIAR-T,paco arcos,criar t
+api,110786,2026-27,2div_sul,regular,8,0008-Jornada 8,2026-12-08,18:00,3912,3942,,,,,,,,,False,558,Alcobacense,Grandola,alcobacense,grandola
+api,110787,2026-27,2div_sul,regular,8,0008-Jornada 8,2026-12-08,18:00,3752,3862,,,,,,,,,False,336,Marinhense,Sporting B,marinhense,sporting b
 api,110779,2026-27,2div_sul,regular,7,0007-Jornada 7,2026-12-05,21:00,3862,3912,,,,,,,,,False,409,Sporting B,Alcobacense,sporting b,alcobacense
 api,110783,2026-27,2div_sul,regular,7,0007-Jornada 7,2026-12-05,21:00,3642,3676,,,,,,,,,False,26,Turquel,Paço de Arcos,turquel,paco arcos
 api,110778,2026-27,2div_sul,regular,7,0007-Jornada 7,2026-12-05,18:00,3942,3686,,,,,,,,,False,31,Grandola,Parede,grandola,parede
@@ -3356,13 +3355,13 @@ api,110780,2026-27,2div_sul,regular,7,0007-Jornada 7,2026-12-05,18:00,3692,3752,
 api,110781,2026-27,2div_sul,regular,7,0007-Jornada 7,2026-12-05,18:00,3800,4010,,,,,,,,,False,82,Tojal,Salesiana,tojal,salesiana
 api,110782,2026-27,2div_sul,regular,7,0007-Jornada 7,2026-12-05,18:00,3740,3582,,,,,,,,,False,211,CRIAR-T,Benfica B,criar t,benfica b
 api,110784,2026-27,2div_sul,regular,7,0007-Jornada 7,2026-12-05,16:00,4206,3682,,,,,,,,,False,80,Murches,Fisica,murches,fisica
-api,110776,2026-27,2div_sul,regular,6,0006-Jornada 6,2026-11-28,21:00,3582,3642,,,,,,,,,False,20,Benfica B,Turquel,benfica b,turquel
 api,110772,2026-27,2div_sul,regular,6,0006-Jornada 6,2026-11-28,21:00,3686,3862,,,,,,,,,False,71,Parede,Sporting B,parede,sporting b
-api,110777,2026-27,2div_sul,regular,6,0006-Jornada 6,2026-11-28,18:00,3676,3682,,,,,,,,,False,27,Paço de Arcos,Fisica,paco arcos,fisica
-api,110771,2026-27,2div_sul,regular,6,0006-Jornada 6,2026-11-28,18:00,3942,4206,,,,,,,,,False,31,Grandola,Murches,grandola,murches
+api,110776,2026-27,2div_sul,regular,6,0006-Jornada 6,2026-11-28,21:00,3582,3642,,,,,,,,,False,20,Benfica B,Turquel,benfica b,turquel
 api,110773,2026-27,2div_sul,regular,6,0006-Jornada 6,2026-11-28,18:00,3912,3692,,,,,,,,,False,558,Alcobacense,Alenquer,alcobacense,alenquer
 api,110774,2026-27,2div_sul,regular,6,0006-Jornada 6,2026-11-28,18:00,3752,3800,,,,,,,,,False,68,Marinhense,Tojal,marinhense,tojal
 api,110775,2026-27,2div_sul,regular,6,0006-Jornada 6,2026-11-28,18:00,4010,3740,,,,,,,,,False,70,Salesiana,CRIAR-T,salesiana,criar t
+api,110777,2026-27,2div_sul,regular,6,0006-Jornada 6,2026-11-28,18:00,3676,3682,,,,,,,,,False,27,Paço de Arcos,Fisica,paco arcos,fisica
+api,110771,2026-27,2div_sul,regular,6,0006-Jornada 6,2026-11-28,18:00,3942,4206,,,,,,,,,False,31,Grandola,Murches,grandola,murches
 api,110764,2026-27,2div_sul,regular,5,0005-Jornada 5,2026-11-21,21:00,3862,3942,,,,,,,,,False,409,Sporting B,Grandola,sporting b,grandola
 api,110768,2026-27,2div_sul,regular,5,0005-Jornada 5,2026-11-21,21:00,3642,4010,,,,,,,,,False,26,Turquel,Salesiana,turquel,salesiana
 api,110769,2026-27,2div_sul,regular,5,0005-Jornada 5,2026-11-21,21:00,3682,3582,,,,,,,,,False,72,Fisica,Benfica B,fisica,benfica b
@@ -3371,12 +3370,12 @@ api,110766,2026-27,2div_sul,regular,5,0005-Jornada 5,2026-11-21,18:00,3800,3912,
 api,110767,2026-27,2div_sul,regular,5,0005-Jornada 5,2026-11-21,18:00,3740,3752,,,,,,,,,False,211,CRIAR-T,Marinhense,criar t,marinhense
 api,110770,2026-27,2div_sul,regular,5,0005-Jornada 5,2026-11-21,16:00,4206,3676,,,,,,,,,False,80,Murches,Paço de Arcos,murches,paco arcos
 api,110757,2026-27,2div_sul,regular,4,0004-Jornada 4,2026-11-17,21:30,3862,4206,,,,,,,,,False,409,Sporting B,Murches,sporting b,murches
-api,110763,2026-27,2div_sul,regular,4,0004-Jornada 4,2026-11-14,21:00,3582,3676,,,,,,,,,False,20,Benfica B,Paço de Arcos,benfica b,paco arcos
-api,110759,2026-27,2div_sul,regular,4,0004-Jornada 4,2026-11-14,21:00,3800,3686,,,,,,,,,False,82,Tojal,Parede,tojal,parede
-api,110760,2026-27,2div_sul,regular,4,0004-Jornada 4,2026-11-14,18:00,3912,3740,,,,,,,,,False,558,Alcobacense,CRIAR-T,alcobacense,criar t
-api,110761,2026-27,2div_sul,regular,4,0004-Jornada 4,2026-11-14,18:00,3752,3642,,,,,,,,,False,68,Marinhense,Turquel,marinhense,turquel
-api,110762,2026-27,2div_sul,regular,4,0004-Jornada 4,2026-11-14,18:00,4010,3682,,,,,,,,,False,70,Salesiana,Fisica,salesiana,fisica
-api,110758,2026-27,2div_sul,regular,4,0004-Jornada 4,2026-11-14,18:00,3942,3692,,,,,,,,,False,31,Grandola,Alenquer,grandola,alenquer
+api,110759,2026-27,2div_sul,regular,4,0004-Jornada 4,2026-11-14,21:00,3800,3686,2.0,3.0,0.0,1.0,0.0,0.0,0.0,0.0,True,82,Tojal,Parede,tojal,parede
+api,110763,2026-27,2div_sul,regular,4,0004-Jornada 4,2026-11-14,21:00,3582,3676,1.0,5.0,1.0,1.0,0.0,0.0,0.0,0.0,True,80,Benfica B,Paço de Arcos,benfica b,paco arcos
+api,110758,2026-27,2div_sul,regular,4,0004-Jornada 4,2026-11-14,18:00,3942,3692,2.0,2.0,2.0,2.0,0.0,0.0,0.0,0.0,True,31,Grandola,Alenquer,grandola,alenquer
+api,110760,2026-27,2div_sul,regular,4,0004-Jornada 4,2026-11-14,18:00,3912,3740,5.0,1.0,3.0,1.0,0.0,0.0,0.0,0.0,True,558,Alcobacense,CRIAR-T,alcobacense,criar t
+api,110761,2026-27,2div_sul,regular,4,0004-Jornada 4,2026-11-14,18:00,3752,3642,4.0,5.0,0.0,3.0,0.0,0.0,0.0,0.0,True,336,Marinhense,Turquel,marinhense,turquel
+api,110762,2026-27,2div_sul,regular,4,0004-Jornada 4,2026-11-14,18:00,4010,3682,2.0,5.0,2.0,2.0,0.0,0.0,0.0,0.0,True,70,Salesiana,Fisica,salesiana,fisica
 api,110751,2026-27,2div_sul,regular,3,0003-Jornada 3,2026-11-07,21:00,3800,3942,3.0,4.0,1.0,1.0,0.0,0.0,0.0,0.0,True,82,Tojal,Grandola,tojal,grandola
 api,110753,2026-27,2div_sul,regular,3,0003-Jornada 3,2026-11-07,21:00,3642,3912,9.0,0.0,4.0,0.0,0.0,0.0,0.0,0.0,True,26,Turquel,Alcobacense,turquel,alcobacense
 api,110754,2026-27,2div_sul,regular,3,0003-Jornada 3,2026-11-07,21:00,3682,3752,1.0,3.0,1.0,0.0,0.0,0.0,0.0,0.0,True,72,Fisica,Marinhense,fisica,marinhense
@@ -3386,15 +3385,15 @@ api,110755,2026-27,2div_sul,regular,3,0003-Jornada 3,2026-11-07,18:00,3676,4010,
 api,110756,2026-27,2div_sul,regular,3,0003-Jornada 3,2026-11-07,16:00,4206,3582,3.0,4.0,2.0,2.0,0.0,0.0,0.0,0.0,True,80,Murches,Benfica B,murches,benfica b
 api,110744,2026-27,2div_sul,regular,2,0002-Jornada 2,2026-11-03,21:30,3862,3800,3.0,4.0,1.0,1.0,0.0,0.0,0.0,0.0,True,409,Sporting B,Tojal,sporting b,tojal
 api,110746,2026-27,2div_sul,regular,2,0002-Jornada 2,2026-10-31,21:00,3686,3642,2.0,2.0,1.0,2.0,0.0,0.0,0.0,0.0,True,71,Parede,Turquel,parede,turquel
+api,110743,2026-27,2div_sul,regular,2,0002-Jornada 2,2026-10-31,18:00,3692,4206,6.0,1.0,3.0,0.0,0.0,0.0,0.0,0.0,True,77,Alenquer,Murches,alenquer,murches
 api,110745,2026-27,2div_sul,regular,2,0002-Jornada 2,2026-10-31,18:00,3942,3740,2.0,1.0,2.0,0.0,0.0,0.0,0.0,0.0,True,31,Grandola,CRIAR-T,grandola,criar t
 api,110747,2026-27,2div_sul,regular,2,0002-Jornada 2,2026-10-31,18:00,3912,3682,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,True,558,Alcobacense,Fisica,alcobacense,fisica
 api,110748,2026-27,2div_sul,regular,2,0002-Jornada 2,2026-10-31,18:00,3752,3676,3.0,6.0,2.0,2.0,0.0,0.0,0.0,0.0,True,336,Marinhense,Paço de Arcos,marinhense,paco arcos
 api,110749,2026-27,2div_sul,regular,2,0002-Jornada 2,2026-10-31,18:00,4010,3582,1.0,3.0,1.0,2.0,0.0,0.0,0.0,0.0,True,70,Salesiana,Benfica B,salesiana,benfica b
-api,110743,2026-27,2div_sul,regular,2,0002-Jornada 2,2026-10-31,18:00,3692,4206,6.0,1.0,3.0,0.0,0.0,0.0,0.0,0.0,True,77,Alenquer,Murches,alenquer,murches
 api,110736,2026-27,2div_sul,regular,1,0001-Jornada 1,2026-10-24,21:00,3800,3692,1.0,4.0,1.0,2.0,0.0,0.0,0.0,0.0,True,82,Tojal,Alenquer,tojal,alenquer
 api,110738,2026-27,2div_sul,regular,1,0001-Jornada 1,2026-10-24,21:00,3642,3942,8.0,1.0,4.0,0.0,0.0,0.0,0.0,0.0,True,26,Turquel,Grandola,turquel,grandola
 api,110739,2026-27,2div_sul,regular,1,0001-Jornada 1,2026-10-24,21:00,3682,3686,4.0,4.0,1.0,4.0,0.0,0.0,0.0,0.0,True,72,Fisica,Parede,fisica,parede
 api,110741,2026-27,2div_sul,regular,1,0001-Jornada 1,2026-10-24,19:00,3582,3752,3.0,3.0,2.0,3.0,0.0,0.0,0.0,0.0,True,80,Benfica B,Marinhense,benfica b,marinhense
-api,110737,2026-27,2div_sul,regular,1,0001-Jornada 1,2026-10-24,18:00,3740,3862,2.0,2.0,2.0,1.0,0.0,0.0,0.0,0.0,True,211,CRIAR-T,Sporting B,criar t,sporting b
 api,110740,2026-27,2div_sul,regular,1,0001-Jornada 1,2026-10-24,18:00,3676,3912,2.0,3.0,0.0,2.0,0.0,0.0,0.0,0.0,True,27,Paço de Arcos,Alcobacense,paco arcos,alcobacense
+api,110737,2026-27,2div_sul,regular,1,0001-Jornada 1,2026-10-24,18:00,3740,3862,2.0,2.0,2.0,1.0,0.0,0.0,0.0,0.0,True,211,CRIAR-T,Sporting B,criar t,sporting b
 api,110742,2026-27,2div_sul,regular,1,0001-Jornada 1,2026-10-24,16:00,4206,4010,4.0,2.0,2.0,1.0,0.0,0.0,0.0,0.0,True,80,Murches,Salesiana,murches,salesiana

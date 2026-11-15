@@ -14918,50 +14918,50 @@ season,competition,phase,round,date,home,away,home_goals,away_goals,home_ot,away
 2026-27,ita,regular,,2026-11-11,x monza,x sarzana,3.0,1.0,0.0,0.0,0.0,0.0,True,api_extra,109973.0,0003-Jornada 3,Monza,Sarzana,False,3.0,1.0,11.0,0.0
 2026-27,ita,regular,,2026-11-11,x pumas,x trissino,1.0,8.0,0.0,0.0,0.0,0.0,True,api_extra,109970.0,0003-Jornada 3,Pumas,Trissino,False,4.0,0.0,3.0,1.0
 2026-27,ita,regular,,2026-11-11,x roller matera,x lodi,1.0,7.0,0.0,0.0,0.0,0.0,True,api_extra,109972.0,0003-Jornada 3,Roller Matera,Lodi,False,4.0,0.0,4.0,0.0
-2026-27,1div,regular,2.0,2026-11-14,benfica,riba dave,,,,,,,False,api,110380.0,0002-Jornada 2,Benfica,Riba dAve,False,3.0,1.0,6.0,0.0
-2026-27,1div,regular,2.0,2026-11-14,candelaria,oliveirense,,,,,,,False,api,110378.0,0002-Jornada 2,Candelaria,Oliveirense,False,4.0,0.0,6.0,0.0
-2026-27,1div,regular,2.0,2026-11-14,juventude viana,braga,,,,,,,False,api,110376.0,0002-Jornada 2,Juventude de Viana,Braga,False,6.0,0.0,6.0,0.0
-2026-27,1div,regular,2.0,2026-11-14,oeiras,barcelos,,,,,,,False,api,110382.0,0002-Jornada 2,Oeiras,Barcelos,False,6.0,0.0,6.0,0.0
-2026-27,1div,regular,2.0,2026-11-14,sanjoanense,pacense,,,,,,,False,api,110377.0,0002-Jornada 2,Sanjoanense,Pacense,False,6.0,0.0,6.0,0.0
-2026-27,1div,regular,2.0,2026-11-14,valongo,sporting,,,,,,,False,api,110379.0,0002-Jornada 2,Valongo,Sporting,False,6.0,0.0,4.0,0.0
-2026-27,2div_norte,regular,4.0,2026-11-14,cambra,termas,,,,,,,False,api,110576.0,0004-Jornada 4,Cambra,Termas,False,4.0,0.0,7.0,0.0
-2026-27,2div_norte,regular,4.0,2026-11-14,carvalhos,barcelos b,,,,,,,False,api,110577.0,0004-Jornada 4,Carvalhos,Barcelos B,False,7.0,0.0,4.0,0.0
-2026-27,2div_norte,regular,4.0,2026-11-14,famalicense,espinho,,,,,,,False,api,110575.0,0004-Jornada 4,Famalicense,Espinho,False,7.0,0.0,7.0,0.0
-2026-27,2div_norte,regular,4.0,2026-11-14,lavra,mealhada,,,,,,,False,api,110578.0,0004-Jornada 4,Lavra,Mealhada,False,7.0,0.0,4.0,0.0
-2026-27,2div_norte,regular,4.0,2026-11-14,vila praia,porto b,,,,,,,False,api,110579.0,0004-Jornada 4,Vila Praia,Porto B,False,4.0,0.0,4.0,0.0
-2026-27,2div_sul,regular,4.0,2026-11-14,alcobacense,criar t,,,,,,,False,api,110760.0,0004-Jornada 4,Alcobacense,CRIAR-T,False,7.0,0.0,7.0,0.0
-2026-27,2div_sul,regular,4.0,2026-11-14,benfica b,paco arcos,,,,,,,False,api,110763.0,0004-Jornada 4,Benfica B,Paço de Arcos,False,7.0,0.0,7.0,0.0
-2026-27,2div_sul,regular,4.0,2026-11-14,grandola,alenquer,,,,,,,False,api,110758.0,0004-Jornada 4,Grandola,Alenquer,False,7.0,0.0,7.0,0.0
-2026-27,2div_sul,regular,4.0,2026-11-14,marinhense,turquel,,,,,,,False,api,110761.0,0004-Jornada 4,Marinhense,Turquel,False,7.0,0.0,7.0,0.0
-2026-27,2div_sul,regular,4.0,2026-11-14,salesiana,fisica,,,,,,,False,api,110762.0,0004-Jornada 4,Salesiana,Fisica,False,7.0,0.0,7.0,0.0
-2026-27,2div_sul,regular,4.0,2026-11-14,tojal,parede,,,,,,,False,api,110759.0,0004-Jornada 4,Tojal,Parede,False,7.0,0.0,7.0,0.0
-2026-27,esp,regular,,2026-11-14,x caldes,x alcoi,,,,,,,False,api_extra,112256.0,0003-Jornada 3,Caldes,Alcoi,False,7.0,0.0,7.0,0.0
-2026-27,esp,regular,,2026-11-14,x reus,x noia,,,,,,,False,api_extra,112259.0,0003-Jornada 3,Reus,Noia,False,7.0,0.0,7.0,0.0
-2026-27,esp,regular,,2026-11-14,x rivas,x igualada,,,,,,,False,api_extra,112253.0,0003-Jornada 3,Rivas,Igualada,False,7.0,0.0,6.0,0.0
-2026-27,esp,regular,,2026-11-14,x shum massanet,x liceo,,,,,,,False,api_extra,112254.0,0003-Jornada 3,SHUM Massanet,Liceo,False,6.0,0.0,6.0,0.0
-2026-27,europe,cup,,2026-11-14,porto,x calafell,,,,,,,False,api_extra,111122.0,0102-Semi-Final Men,Porto,Calafell,True,3.0,1.0,7.0,0.0
-2026-27,europe,cup,,2026-11-14,x fraga fem,x voltrega fem,,,,,,,False,api_extra,111118.0,0202-Semi-Final Women,Fraga FEM,Voltrega FEM,True,14.0,0.0,14.0,0.0
-2026-27,europe,cup,,2026-11-14,x lleida,x barca,,,,,,,False,api_extra,111123.0,0102-Semi-Final Men,Lleida,Barça,True,7.0,0.0,6.0,0.0
-2026-27,europe,cup,,2026-11-14,x sanjoanense fem,x benfica fem,,,,,,,False,api_extra,111120.0,0202-Semi-Final Women,Sanjoanense FEM,Benfica FEM,True,14.0,0.0,14.0,0.0
-2026-27,fra,regular,,2026-11-14,x crehen,x la vendeenne,,,,,,,False,api_extra,112875.0,0005-Jornada 5,Crehen,La Vendeenne,False,3.0,1.0,3.0,1.0
-2026-27,fra,regular,,2026-11-14,x merignac,x noisy,,,,,,,False,api_extra,112870.0,0005-Jornada 5,Merignac,Noisy,False,3.0,1.0,3.0,1.0
-2026-27,fra,regular,,2026-11-14,x nantes,x ploufragan,,,,,,,False,api_extra,112873.0,0005-Jornada 5,Nantes,Ploufragan,False,3.0,1.0,3.0,1.0
-2026-27,fra,regular,,2026-11-14,x poire,x roubaix,,,,,,,False,api_extra,112872.0,0005-Jornada 5,Poire,Roubaix,False,3.0,1.0,3.0,1.0
-2026-27,fra,regular,,2026-11-14,x quevert,x villejuif,,,,,,,False,api_extra,112871.0,0005-Jornada 5,Quevert,Villejuif,False,3.0,1.0,3.0,1.0
-2026-27,fra,regular,,2026-11-14,x scra,x coutras,,,,,,,False,api_extra,112874.0,0005-Jornada 5,SCRA,Coutras,False,3.0,1.0,3.0,1.0
-2026-27,ita,regular,,2026-11-14,x follonica,x monza,,,,,,,False,api_extra,109980.0,0004-Jornada 4,Follonica,Monza,False,7.0,0.0,3.0,1.0
-2026-27,ita,regular,,2026-11-14,x lodi,x bassano,,,,,,,False,api_extra,109978.0,0004-Jornada 4,Lodi,Bassano,False,3.0,1.0,3.0,1.0
-2026-27,ita,regular,,2026-11-14,x sarzana,x pumas,,,,,,,False,api_extra,109979.0,0004-Jornada 4,Sarzana,Pumas,False,3.0,1.0,3.0,1.0
-2026-27,ita,regular,,2026-11-14,x valdagno,x forte,,,,,,,False,api_extra,109976.0,0004-Jornada 4,Valdagno,Forte,False,3.0,1.0,3.0,1.0
-2026-27,ita,regular,,2026-11-14,x viareggio,x castiglione,,,,,,,False,api_extra,109981.0,0004-Jornada 4,Viareggio,Castiglione,False,3.0,1.0,3.0,1.0
+2026-27,1div,regular,2.0,2026-11-14,benfica,riba dave,4.0,0.0,0.0,0.0,0.0,0.0,True,api,110380.0,0002-Jornada 2,Benfica,Riba dAve,False,3.0,1.0,6.0,0.0
+2026-27,1div,regular,2.0,2026-11-14,candelaria,oliveirense,0.0,2.0,0.0,0.0,0.0,0.0,True,api,110378.0,0002-Jornada 2,Candelaria,Oliveirense,False,4.0,0.0,6.0,0.0
+2026-27,1div,regular,2.0,2026-11-14,juventude viana,braga,1.0,4.0,0.0,0.0,0.0,0.0,True,api,110376.0,0002-Jornada 2,Juventude de Viana,Braga,False,6.0,0.0,6.0,0.0
+2026-27,1div,regular,2.0,2026-11-14,oeiras,barcelos,3.0,8.0,0.0,0.0,0.0,0.0,True,api,110382.0,0002-Jornada 2,Oeiras,Barcelos,False,6.0,0.0,6.0,0.0
+2026-27,1div,regular,2.0,2026-11-14,sanjoanense,pacense,5.0,5.0,0.0,0.0,0.0,0.0,True,api,110377.0,0002-Jornada 2,Sanjoanense,Pacense,False,6.0,0.0,6.0,0.0
+2026-27,1div,regular,2.0,2026-11-14,valongo,sporting,1.0,3.0,0.0,0.0,0.0,0.0,True,api,110379.0,0002-Jornada 2,Valongo,Sporting,False,6.0,0.0,4.0,0.0
+2026-27,2div_norte,regular,4.0,2026-11-14,cambra,termas,2.0,5.0,0.0,0.0,0.0,0.0,True,api,110576.0,0004-Jornada 4,Cambra,Termas,False,4.0,0.0,7.0,0.0
+2026-27,2div_norte,regular,4.0,2026-11-14,carvalhos,barcelos b,8.0,2.0,0.0,0.0,0.0,0.0,True,api,110577.0,0004-Jornada 4,Carvalhos,Barcelos B,False,7.0,0.0,4.0,0.0
+2026-27,2div_norte,regular,4.0,2026-11-14,famalicense,espinho,6.0,3.0,0.0,0.0,0.0,0.0,True,api,110575.0,0004-Jornada 4,Famalicense,Espinho,False,7.0,0.0,7.0,0.0
+2026-27,2div_norte,regular,4.0,2026-11-14,lavra,mealhada,2.0,3.0,0.0,0.0,0.0,0.0,True,api,110578.0,0004-Jornada 4,Lavra,Mealhada,False,7.0,0.0,4.0,0.0
+2026-27,2div_norte,regular,4.0,2026-11-14,vila praia,porto b,2.0,3.0,0.0,0.0,0.0,0.0,True,api,110579.0,0004-Jornada 4,Vila Praia,Porto B,False,4.0,0.0,4.0,0.0
+2026-27,2div_sul,regular,4.0,2026-11-14,alcobacense,criar t,5.0,1.0,0.0,0.0,0.0,0.0,True,api,110760.0,0004-Jornada 4,Alcobacense,CRIAR-T,False,7.0,0.0,7.0,0.0
+2026-27,2div_sul,regular,4.0,2026-11-14,benfica b,paco arcos,1.0,5.0,0.0,0.0,0.0,0.0,True,api,110763.0,0004-Jornada 4,Benfica B,Paço de Arcos,False,7.0,0.0,7.0,0.0
+2026-27,2div_sul,regular,4.0,2026-11-14,grandola,alenquer,2.0,2.0,0.0,0.0,0.0,0.0,True,api,110758.0,0004-Jornada 4,Grandola,Alenquer,False,7.0,0.0,7.0,0.0
+2026-27,2div_sul,regular,4.0,2026-11-14,marinhense,turquel,4.0,5.0,0.0,0.0,0.0,0.0,True,api,110761.0,0004-Jornada 4,Marinhense,Turquel,False,7.0,0.0,7.0,0.0
+2026-27,2div_sul,regular,4.0,2026-11-14,salesiana,fisica,2.0,5.0,0.0,0.0,0.0,0.0,True,api,110762.0,0004-Jornada 4,Salesiana,Fisica,False,7.0,0.0,7.0,0.0
+2026-27,2div_sul,regular,4.0,2026-11-14,tojal,parede,2.0,3.0,0.0,0.0,0.0,0.0,True,api,110759.0,0004-Jornada 4,Tojal,Parede,False,7.0,0.0,7.0,0.0
+2026-27,esp,regular,,2026-11-14,x caldes,x alcoi,2.0,5.0,0.0,0.0,0.0,0.0,True,api_extra,112256.0,0003-Jornada 3,Caldes,Alcoi,False,7.0,0.0,7.0,0.0
+2026-27,esp,regular,,2026-11-14,x reus,x noia,5.0,1.0,0.0,0.0,0.0,0.0,True,api_extra,112259.0,0003-Jornada 3,Reus,Noia,False,7.0,0.0,7.0,0.0
+2026-27,esp,regular,,2026-11-14,x rivas,x igualada,1.0,1.0,0.0,0.0,0.0,0.0,True,api_extra,112253.0,0003-Jornada 3,Rivas,Igualada,False,7.0,0.0,6.0,0.0
+2026-27,esp,regular,,2026-11-14,x shum massanet,x liceo,2.0,3.0,0.0,0.0,0.0,0.0,True,api_extra,112254.0,0003-Jornada 3,SHUM Massanet,Liceo,False,6.0,0.0,6.0,0.0
+2026-27,europe,cup,,2026-11-14,porto,x calafell,4.0,2.0,0.0,0.0,2.0,0.0,True,api_extra,111122.0,0102-Semi-Final Men,Porto,Calafell,True,3.0,1.0,7.0,0.0
+2026-27,europe,cup,,2026-11-14,x fraga fem,x voltrega fem,4.0,0.0,0.0,0.0,0.0,0.0,True,api_extra,111118.0,0202-Semi-Final Women,Fraga FEM,Voltrega FEM,True,14.0,0.0,14.0,0.0
+2026-27,europe,cup,,2026-11-14,x lleida,x barca,6.0,5.0,0.0,0.0,0.0,0.0,True,api_extra,111123.0,0102-Semi-Final Men,Lleida,Barça,True,7.0,0.0,6.0,0.0
+2026-27,europe,cup,,2026-11-14,x sanjoanense fem,x benfica fem,2.0,4.0,0.0,0.0,0.0,0.0,True,api_extra,111120.0,0202-Semi-Final Women,Sanjoanense FEM,Benfica FEM,True,14.0,0.0,14.0,0.0
+2026-27,fra,regular,,2026-11-14,x crehen,x la vendeenne,2.0,5.0,0.0,0.0,0.0,0.0,True,api_extra,112875.0,0005-Jornada 5,Crehen,La Vendeenne,False,3.0,1.0,3.0,1.0
+2026-27,fra,regular,,2026-11-14,x merignac,x noisy,7.0,5.0,0.0,0.0,0.0,0.0,True,api_extra,112870.0,0005-Jornada 5,Merignac,Noisy,False,3.0,1.0,3.0,1.0
+2026-27,fra,regular,,2026-11-14,x nantes,x ploufragan,4.0,2.0,0.0,0.0,0.0,0.0,True,api_extra,112873.0,0005-Jornada 5,Nantes,Ploufragan,False,3.0,1.0,3.0,1.0
+2026-27,fra,regular,,2026-11-14,x poire,x roubaix,0.0,3.0,0.0,0.0,0.0,0.0,True,api_extra,112872.0,0005-Jornada 5,Poire,Roubaix,False,3.0,1.0,3.0,1.0
+2026-27,fra,regular,,2026-11-14,x quevert,x villejuif,15.0,1.0,0.0,0.0,0.0,0.0,True,api_extra,112871.0,0005-Jornada 5,Quevert,Villejuif,False,3.0,1.0,3.0,1.0
+2026-27,fra,regular,,2026-11-14,x scra,x coutras,6.0,3.0,0.0,0.0,0.0,0.0,True,api_extra,112874.0,0005-Jornada 5,SCRA,Coutras,False,3.0,1.0,3.0,1.0
+2026-27,ita,regular,,2026-11-14,x follonica,x monza,2.0,3.0,0.0,0.0,0.0,0.0,True,api_extra,109980.0,0004-Jornada 4,Follonica,Monza,False,7.0,0.0,3.0,1.0
+2026-27,ita,regular,,2026-11-14,x lodi,x bassano,3.0,4.0,0.0,0.0,0.0,0.0,True,api_extra,109978.0,0004-Jornada 4,Lodi,Bassano,False,3.0,1.0,3.0,1.0
+2026-27,ita,regular,,2026-11-14,x sarzana,x pumas,7.0,3.0,0.0,0.0,0.0,0.0,True,api_extra,109979.0,0004-Jornada 4,Sarzana,Pumas,False,3.0,1.0,3.0,1.0
+2026-27,ita,regular,,2026-11-14,x valdagno,x forte,4.0,1.0,0.0,0.0,0.0,0.0,True,api_extra,109976.0,0004-Jornada 4,Valdagno,Forte,False,3.0,1.0,3.0,1.0
+2026-27,ita,regular,,2026-11-14,x viareggio,x castiglione,8.0,1.0,0.0,0.0,0.0,0.0,True,api_extra,109981.0,0004-Jornada 4,Viareggio,Castiglione,False,3.0,1.0,3.0,1.0
 2026-27,2div_norte,regular,4.0,2026-11-15,povoa,valongo b,,,,,,,False,api,110574.0,0004-Jornada 4,Povoa,Valongo B,False,8.0,0.0,5.0,0.0
-2026-27,europe,cup,,2026-11-15,x vencedor semi final 1,x vencedor semi final 2,,,,,,,False,api_extra,111124.0,0101-FINAL Men,Vencedor Semi-Final #1,Vencedor Semi-Final #2,True,14.0,0.0,14.0,0.0
-2026-27,europe,cup,,2026-11-15,x vencedor semi final 1,x vencedor semi final 2,,,,,,,False,api_extra,111121.0,0201-FINAL Women,Vencedor Semi-Final #1,Vencedor Semi-Final #2,True,0.0,1.0,0.0,1.0
+2026-27,europe,cup,,2026-11-15,x fraga fem,x benfica fem,,,,,,,False,api_extra,111121.0,0201-FINAL Women,Fraga FEM,Benfica FEM,True,1.0,1.0,1.0,1.0
+2026-27,europe,cup,,2026-11-15,x lleida,porto,,,,,,,False,api_extra,111124.0,0101-FINAL Men,Lleida,Porto,True,1.0,1.0,1.0,1.0
 2026-27,ita,regular,,2026-11-15,x trissino,x roller matera,,,,,,,False,api_extra,109982.0,0004-Jornada 4,Trissino,Roller Matera,False,4.0,0.0,4.0,0.0
 2026-27,2div_norte,regular,4.0,2026-11-17,oliveirense b,academica,,,,,,,False,api,110580.0,0004-Jornada 4,Oliveirense B,Academica,False,7.0,0.0,7.0,0.0
 2026-27,2div_sul,regular,4.0,2026-11-17,sporting b,murches,,,,,,,False,api,110757.0,0004-Jornada 4,Sporting B,Murches,False,10.0,0.0,10.0,0.0
-2026-27,1div,regular,2.0,2026-11-18,tomar,porto,,,,,,,False,api,110381.0,0002-Jornada 2,Tomar,Porto,False,10.0,0.0,4.0,0.0
-2026-27,esp,regular,,2026-11-18,x lleida,x lloret,,,,,,,False,api_extra,112257.0,0003-Jornada 3,Lleida,Lloret,False,4.0,0.0,11.0,0.0
+2026-27,1div,regular,2.0,2026-11-18,tomar,porto,,,,,,,False,api,110381.0,0002-Jornada 2,Tomar,Porto,False,10.0,0.0,3.0,1.0
+2026-27,esp,regular,,2026-11-18,x lleida,x lloret,,,,,,,False,api_extra,112257.0,0003-Jornada 3,Lleida,Lloret,False,3.0,1.0,11.0,0.0
 2026-27,esp,regular,,2026-11-18,x voltrega,x calafell,,,,,,,False,api_extra,112258.0,0003-Jornada 3,Voltrega,Calafell,False,11.0,0.0,4.0,0.0
 2026-27,ita,regular,,2026-11-18,x castiglione,x valdagno,,,,,,,False,api_extra,109983.0,0005-Jornada 5,Castiglione,Valdagno,False,4.0,0.0,4.0,0.0
 2026-27,ita,regular,,2026-11-18,x forte,x bassano,,,,,,,False,api_extra,109989.0,0005-Jornada 5,Forte,Bassano,False,4.0,0.0,4.0,0.0
@@ -15087,9 +15087,7 @@ season,competition,phase,round,date,home,away,home_goals,away_goals,home_ot,away
 2026-27,fra,regular,,2026-12-05,x coutras,x quevert,,,,,,,False,api_extra,112877.0,0006-Jornada 6,Coutras,Quevert,False,14.0,0.0,14.0,0.0
 2026-27,fra,regular,,2026-12-05,x la vendeenne,x scra,,,,,,,False,api_extra,112876.0,0006-Jornada 6,La Vendeenne,SCRA,False,14.0,0.0,9.0,0.0
 2026-27,fra,regular,,2026-12-05,x noisy,x nantes,,,,,,,False,api_extra,112881.0,0006-Jornada 6,Noisy,Nantes,False,14.0,0.0,14.0,0.0
-2026-27,fra,regular,,2026-12-05,x ploufragan,x crehen,,,,,,,False,api_extra,112878.0,0006-Jornada 6,Ploufragan,Crehen,False,14.0,0.0,14.0,0.0
 2026-27,fra,regular,,2026-12-05,x poire,x merignac,,,,,,,False,api_extra,112880.0,0006-Jornada 6,Poire,Merignac,False,7.0,0.0,14.0,0.0
-2026-27,fra,regular,,2026-12-05,x villejuif,x roubaix,,,,,,,False,api_extra,112879.0,0006-Jornada 6,Villejuif,Roubaix,False,14.0,0.0,7.0,0.0
 2026-27,ita,regular,,2026-12-05,x follonica,x sarzana,,,,,,,False,api_extra,110007.0,0008-Jornada 8,Follonica,Sarzana,False,6.0,0.0,7.0,0.0
 2026-27,ita,regular,,2026-12-05,x lodi,x castiglione,,,,,,,False,api_extra,110005.0,0008-Jornada 8,Lodi,Castiglione,False,7.0,0.0,7.0,0.0
 2026-27,ita,regular,,2026-12-05,x novara azzurra,x trissino,,,,,,,False,api_extra,110006.0,0008-Jornada 8,Novara Azzurra,Trissino,False,7.0,0.0,6.0,0.0
@@ -15145,16 +15143,17 @@ season,competition,phase,round,date,home,away,home_goals,away_goals,home_ot,away
 2026-27,europe,cup,,2026-12-12,x la vendeenne,x noia,,,,,,,False,api_extra,109851.0,0402-Oitavos de Final - Jogo 1,La Vendeenne,Noia,False,7.0,0.0,7.0,0.0
 2026-27,europe,cup,,2026-12-12,x monza,x voltrega,,,,,,,False,api_extra,109850.0,0402-Oitavos de Final - Jogo 1,Monza,Voltrega,False,4.0,0.0,7.0,0.0
 2026-27,europe,cup,,2026-12-12,x quevert,x lodi,,,,,,,False,api_extra,109854.0,0402-Oitavos de Final - Jogo 1,Quevert,Lodi,False,7.0,0.0,4.0,0.0
-2026-27,fra,regular,,2026-12-12,x crehen,x scra,,,,,,,False,api_extra,112887.0,0007-Jornada 7,Crehen,SCRA,False,7.0,0.0,2.0,1.0
-2026-27,fra,regular,,2026-12-12,x merignac,x villejuif,,,,,,,False,api_extra,112882.0,0007-Jornada 7,Merignac,Villejuif,False,7.0,0.0,7.0,0.0
+2026-27,fra,regular,,2026-12-12,x crehen,x scra,,,,,,,False,api_extra,112887.0,0007-Jornada 7,Crehen,SCRA,False,14.0,0.0,2.0,1.0
+2026-27,fra,regular,,2026-12-12,x merignac,x villejuif,,,,,,,False,api_extra,112882.0,0007-Jornada 7,Merignac,Villejuif,False,7.0,0.0,14.0,0.0
 2026-27,fra,regular,,2026-12-12,x nantes,x poire,,,,,,,False,api_extra,112883.0,0007-Jornada 7,Nantes,Poire,False,7.0,0.0,7.0,0.0
-2026-27,fra,regular,,2026-12-12,x ploufragan,x noisy,,,,,,,False,api_extra,112886.0,0007-Jornada 7,Ploufragan,Noisy,False,7.0,0.0,7.0,0.0
+2026-27,fra,regular,,2026-12-12,x ploufragan,x noisy,,,,,,,False,api_extra,112886.0,0007-Jornada 7,Ploufragan,Noisy,False,14.0,0.0,7.0,0.0
 2026-27,fra,regular,,2026-12-12,x quevert,x la vendeenne,,,,,,,False,api_extra,112884.0,0007-Jornada 7,Quevert,La Vendeenne,False,0.0,1.0,0.0,1.0
-2026-27,fra,regular,,2026-12-12,x roubaix,x coutras,,,,,,,False,api_extra,112885.0,0007-Jornada 7,Roubaix,Coutras,False,7.0,0.0,7.0,0.0
+2026-27,fra,regular,,2026-12-12,x roubaix,x coutras,,,,,,,False,api_extra,112885.0,0007-Jornada 7,Roubaix,Coutras,False,14.0,0.0,7.0,0.0
 2026-27,ita,regular,,2026-12-12,x bassano,x roller matera,,,,,,,False,api_extra,110019.0,0010-Jornada 10,Bassano,Roller Matera,False,2.0,1.0,4.0,0.0
 2026-27,ita,regular,,2026-12-12,x castiglione,x monza,,,,,,,False,api_extra,110020.0,0010-Jornada 10,Castiglione,Monza,False,7.0,0.0,0.0,1.0
 2026-27,ita,regular,,2026-12-12,x forte,x pumas,,,,,,,False,api_extra,110018.0,0010-Jornada 10,Forte,Pumas,False,4.0,0.0,4.0,0.0
 2026-27,ita,regular,,2026-12-12,x novara azzurra,x follonica,,,,,,,False,api_extra,110022.0,0010-Jornada 10,Novara Azzurra,Follonica,False,4.0,0.0,4.0,0.0
+2026-27,ita,regular,,2026-12-12,x valdagno,x sarzana,,,,,,,False,api_extra,110024.0,0010-Jornada 10,Valdagno,Sarzana,False,4.0,0.0,0.0,1.0
 2026-27,ita,regular,,2026-12-12,x viareggio,x trissino,,,,,,,False,api_extra,110023.0,0010-Jornada 10,Viareggio,Trissino,False,4.0,0.0,2.0,1.0
 2026-27,1div,regular,7.0,2026-12-13,braga,riba dave,,,,,,,False,api,110417.0,0007-Jornada 7,Braga,Riba dAve,False,3.0,1.0,8.0,0.0
 2026-27,1div,regular,7.0,2026-12-13,sporting,porto,,,,,,,False,api,110416.0,0007-Jornada 7,Sporting,Porto,False,3.0,1.0,3.0,1.0
@@ -15188,7 +15187,7 @@ season,competition,phase,round,date,home,away,home_goals,away_goals,home_ot,away
 2026-27,ita,regular,,2026-12-19,x follonica,x viareggio,,,,,,,False,api_extra,110028.0,0011-Jornada 11,Follonica,Viareggio,False,7.0,0.0,7.0,0.0
 2026-27,ita,regular,,2026-12-19,x novara azzurra,x lodi,,,,,,,False,api_extra,110027.0,0011-Jornada 11,Novara Azzurra,Lodi,False,7.0,0.0,7.0,0.0
 2026-27,ita,regular,,2026-12-19,x roller matera,x forte,,,,,,,False,api_extra,110025.0,0011-Jornada 11,Roller Matera,Forte,False,7.0,0.0,7.0,0.0
-2026-27,ita,regular,,2026-12-19,x sarzana,x valdagno,,,,,,,False,api_extra,110029.0,0011-Jornada 11,Sarzana,Valdagno,False,7.0,0.0,11.0,0.0
+2026-27,ita,regular,,2026-12-19,x sarzana,x valdagno,,,,,,,False,api_extra,110029.0,0011-Jornada 11,Sarzana,Valdagno,False,7.0,0.0,7.0,0.0
 2026-27,esp,regular,,2026-12-20,x igualada,x calafell,,,,,,,False,api_extra,112297.0,0009-Jornada 9,Igualada,Calafell,False,7.0,0.0,7.0,0.0
 2026-27,ita,regular,,2026-12-20,x pumas,x castiglione,,,,,,,False,api_extra,110031.0,0011-Jornada 11,Pumas,Castiglione,False,8.0,0.0,8.0,0.0
 2026-27,ita,regular,,2026-12-20,x trissino,x bassano,,,,,,,False,api_extra,110030.0,0011-Jornada 11,Trissino,Bassano,False,8.0,0.0,8.0,0.0
@@ -15362,7 +15361,6 @@ season,competition,phase,round,date,home,away,home_goals,away_goals,home_ot,away
 2026-27,1div,regular,12.0,2027-02-02,sporting,juventude viana,,,,,,,False,api,110451.0,0012-Jornada 12,Sporting,Juventude de Viana,False,3.0,1.0,3.0,1.0
 2026-27,2div_norte,regular,12.0,2027-02-02,barcelos b,termas,,,,,,,False,api,110636.0,0012-Jornada 12,Barcelos B,Termas,False,7.0,0.0,10.0,0.0
 2026-27,2div_norte,regular,12.0,2027-02-02,oliveirense b,famalicense,,,,,,,False,api,110633.0,0012-Jornada 12,Oliveirense B,Famalicense,False,10.0,0.0,10.0,0.0
-2026-27,2div_norte,regular,12.0,2027-02-02,porto b,povoa,,,,,,,False,api,110634.0,0012-Jornada 12,Porto B,Povoa,False,10.0,0.0,10.0,0.0
 2026-27,2div_norte,regular,12.0,2027-02-02,valongo b,mealhada,,,,,,,False,api,110630.0,0012-Jornada 12,Valongo B,Mealhada,False,7.0,0.0,10.0,0.0
 2026-27,1div,regular,12.0,2027-02-03,braga,tomar,,,,,,,False,api,110446.0,0012-Jornada 12,Braga,Tomar,False,4.0,0.0,4.0,0.0
 2026-27,1div,regular,12.0,2027-02-03,oeiras,benfica,,,,,,,False,api,110447.0,0012-Jornada 12,Oeiras,Benfica,False,4.0,0.0,4.0,0.0
@@ -15376,9 +15374,9 @@ season,competition,phase,round,date,home,away,home_goals,away_goals,home_ot,away
 2026-27,2div_norte,regular,13.0,2027-02-06,cambra,oliveirense b,,,,,,,False,api,110639.0,0013-Jornada 13,Cambra,Oliveirense B,False,7.0,0.0,4.0,0.0
 2026-27,2div_norte,regular,13.0,2027-02-06,carvalhos,academica,,,,,,,False,api,110638.0,0013-Jornada 13,Carvalhos,Academica,False,7.0,0.0,7.0,0.0
 2026-27,2div_norte,regular,13.0,2027-02-06,espinho,barcelos b,,,,,,,False,api,110642.0,0013-Jornada 13,Espinho,Barcelos B,False,7.0,0.0,4.0,0.0
-2026-27,2div_norte,regular,13.0,2027-02-06,famalicense,porto b,,,,,,,False,api,110640.0,0013-Jornada 13,Famalicense,Porto B,False,4.0,0.0,4.0,0.0
+2026-27,2div_norte,regular,13.0,2027-02-06,famalicense,porto b,,,,,,,False,api,110640.0,0013-Jornada 13,Famalicense,Porto B,False,4.0,0.0,14.0,0.0
 2026-27,2div_norte,regular,13.0,2027-02-06,mealhada,vila praia,,,,,,,False,api,110637.0,0013-Jornada 13,Mealhada,Vila Praia,False,4.0,0.0,7.0,0.0
-2026-27,2div_norte,regular,13.0,2027-02-06,povoa,lavra,,,,,,,False,api,110641.0,0013-Jornada 13,Povoa,Lavra,False,4.0,0.0,7.0,0.0
+2026-27,2div_norte,regular,13.0,2027-02-06,povoa,lavra,,,,,,,False,api,110641.0,0013-Jornada 13,Povoa,Lavra,False,14.0,0.0,7.0,0.0
 2026-27,2div_norte,regular,13.0,2027-02-06,termas,valongo b,,,,,,,False,api,110643.0,0013-Jornada 13,Termas,Valongo B,False,4.0,0.0,4.0,0.0
 2026-27,2div_sul,regular,13.0,2027-02-06,alcobacense,benfica b,,,,,,,False,api,110821.0,0013-Jornada 13,Alcobacense,Benfica B,False,7.0,0.0,7.0,0.0
 2026-27,2div_sul,regular,13.0,2027-02-06,alenquer,criar t,,,,,,,False,api,110825.0,0013-Jornada 13,Alenquer,CRIAR-T,False,7.0,0.0,7.0,0.0

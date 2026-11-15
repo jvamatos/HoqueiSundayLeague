@@ -3748,18 +3748,18 @@ api_extra,114282,2026-27,elite_cup,cup,0300-Quartos de Final,2026-10-30,3584,363
 api_extra,114280,2026-27,elite_cup,cup,0300-Quartos de Final,2026-10-29,3860,3590,3.0,5.0,0.0,0.0,0.0,0.0,True,True,Sporting,sporting,Oliveirense,oliveirense
 api_extra,114283,2026-27,elite_cup,cup,0300-Quartos de Final,2026-10-29,3580,3608,6.0,1.0,0.0,0.0,0.0,0.0,True,True,Benfica,benfica,Valongo,valongo
 api_extra,112841,2026-27,supertaca,cup,0100-FINAL,2026-11-07,3580,3860,3.0,2.0,0.0,0.0,0.0,0.0,True,True,Benfica,benfica,Sporting,sporting
+api_extra,109760,2026-27,europe,group,0006-Jornada 6,2027-02-25,3884,3818,,,,,,,False,False,Trissino,x:trissino,Barça,x:barca
+api_extra,109761,2026-27,europe,group,0006-Jornada 6,2027-02-25,3594,4098,,,,,,,False,False,Barcelos,barcelos,Calafell,x:calafell
 api_extra,109756,2026-27,europe,group,0006-Jornada 6,2027-02-25,3598,3980,,,,,,,False,False,Braga,braga,SCRA,x:scra
 api_extra,109757,2026-27,europe,group,0006-Jornada 6,2027-02-25,3584,3874,,,,,,,False,False,Porto,porto,Bassano,x:bassano
 api_extra,109758,2026-27,europe,group,0006-Jornada 6,2027-02-25,3828,3826,,,,,,,False,False,Liceo,x:liceo,Igualada,x:igualada
 api_extra,109759,2026-27,europe,group,0006-Jornada 6,2027-02-25,3580,3860,,,,,,,False,False,Benfica,benfica,Sporting,sporting
-api_extra,109760,2026-27,europe,group,0006-Jornada 6,2027-02-25,3884,3818,,,,,,,False,False,Trissino,x:trissino,Barça,x:barca
-api_extra,109761,2026-27,europe,group,0006-Jornada 6,2027-02-25,3594,4098,,,,,,,False,False,Barcelos,barcelos,Calafell,x:calafell
-api_extra,109753,2026-27,europe,group,0005-Jornada 5,2027-02-11,3826,3580,,,,,,,False,False,Igualada,x:igualada,Benfica,benfica
-api_extra,109754,2026-27,europe,group,0005-Jornada 5,2027-02-11,3818,3594,,,,,,,False,False,Barça,x:barca,Barcelos,barcelos
-api_extra,109755,2026-27,europe,group,0005-Jornada 5,2027-02-11,3874,4098,,,,,,,False,False,Bassano,x:bassano,Calafell,x:calafell
 api_extra,109750,2026-27,europe,group,0005-Jornada 5,2027-02-11,3860,3828,,,,,,,False,False,Sporting,sporting,Liceo,x:liceo
 api_extra,109751,2026-27,europe,group,0005-Jornada 5,2027-02-11,3980,3584,,,,,,,False,False,SCRA,x:scra,Porto,porto
 api_extra,109752,2026-27,europe,group,0005-Jornada 5,2027-02-11,3884,3598,,,,,,,False,False,Trissino,x:trissino,Braga,braga
+api_extra,109753,2026-27,europe,group,0005-Jornada 5,2027-02-11,3826,3580,,,,,,,False,False,Igualada,x:igualada,Benfica,benfica
+api_extra,109754,2026-27,europe,group,0005-Jornada 5,2027-02-11,3818,3594,,,,,,,False,False,Barça,x:barca,Barcelos,barcelos
+api_extra,109755,2026-27,europe,group,0005-Jornada 5,2027-02-11,3874,4098,,,,,,,False,False,Bassano,x:bassano,Calafell,x:calafell
 api_extra,109744,2026-27,europe,group,0004-Jornada 4,2027-01-21,3860,3826,,,,,,,False,False,Sporting,sporting,Igualada,x:igualada
 api_extra,109745,2026-27,europe,group,0004-Jornada 4,2027-01-21,3828,3584,,,,,,,False,False,Liceo,x:liceo,Porto,porto
 api_extra,109746,2026-27,europe,group,0004-Jornada 4,2027-01-21,3818,3598,,,,,,,False,False,Barça,x:barca,Braga,braga
@@ -3772,18 +3772,18 @@ api_extra,109740,2026-27,europe,group,0003-Jornada 3,2027-01-07,3580,3818,,,,,,,
 api_extra,109741,2026-27,europe,group,0003-Jornada 3,2027-01-07,4098,3884,,,,,,,False,False,Calafell,x:calafell,Trissino,x:trissino
 api_extra,109742,2026-27,europe,group,0003-Jornada 3,2027-01-07,3594,3980,,,,,,,False,False,Barcelos,barcelos,SCRA,x:scra
 api_extra,109743,2026-27,europe,group,0003-Jornada 3,2027-01-07,3826,3874,,,,,,,False,False,Igualada,x:igualada,Bassano,x:bassano
-api_extra,109737,2026-27,europe,group,0002-Jornada 2,2026-12-10,3980,3826,,,,,,,False,False,SCRA,x:scra,Igualada,x:igualada
 api_extra,109732,2026-27,europe,group,0002-Jornada 2,2026-12-10,3598,3860,,,,,,,False,False,Braga,braga,Sporting,sporting
 api_extra,109733,2026-27,europe,group,0002-Jornada 2,2026-12-10,3884,3584,,,,,,,False,False,Trissino,x:trissino,Porto,porto
 api_extra,109734,2026-27,europe,group,0002-Jornada 2,2026-12-10,3828,3580,,,,,,,False,False,Liceo,x:liceo,Benfica,benfica
 api_extra,109735,2026-27,europe,group,0002-Jornada 2,2026-12-10,3818,4098,,,,,,,False,False,Barça,x:barca,Calafell,x:calafell
 api_extra,109736,2026-27,europe,group,0002-Jornada 2,2026-12-10,3874,3594,,,,,,,False,False,Bassano,x:bassano,Barcelos,barcelos
-api_extra,109726,2026-27,europe,group,0001-Jornada 1,2026-11-26,4098,3828,,,,,,,False,False,Calafell,x:calafell,Liceo,x:liceo
-api_extra,109727,2026-27,europe,group,0001-Jornada 1,2026-11-26,3584,3580,,,,,,,False,False,Porto,porto,Benfica,benfica
+api_extra,109737,2026-27,europe,group,0002-Jornada 2,2026-12-10,3980,3826,,,,,,,False,False,SCRA,x:scra,Igualada,x:igualada
 api_extra,109728,2026-27,europe,group,0001-Jornada 1,2026-11-26,3860,3594,,,,,,,False,False,Sporting,sporting,Barcelos,barcelos
 api_extra,109729,2026-27,europe,group,0001-Jornada 1,2026-11-26,3826,3884,,,,,,,False,False,Igualada,x:igualada,Trissino,x:trissino
 api_extra,109730,2026-27,europe,group,0001-Jornada 1,2026-11-26,3980,3818,,,,,,,False,False,SCRA,x:scra,Barça,x:barca
 api_extra,109731,2026-27,europe,group,0001-Jornada 1,2026-11-26,3874,3598,,,,,,,False,False,Bassano,x:bassano,Braga,braga
+api_extra,109726,2026-27,europe,group,0001-Jornada 1,2026-11-26,4098,3828,,,,,,,False,False,Calafell,x:calafell,Liceo,x:liceo
+api_extra,109727,2026-27,europe,group,0001-Jornada 1,2026-11-26,3584,3580,,,,,,,False,False,Porto,porto,Benfica,benfica
 api_extra,109821,2026-27,europe,final8,0100-FINAL,2027-05-30,72460,72461,,,,,,,False,True,Winner Semi 1,x:winner semi 1,Winner Semi 2,x:winner semi 2
 api_extra,109820,2026-27,europe,final8,0200-Semi-Final,2027-05-29,72454,72457,,,,,,,False,True,Winner Quartos 2,x:winner quartos 2,Winner Quartos 3,x:winner quartos 3
 api_extra,109819,2026-27,europe,final8,0200-Semi-Final,2027-05-29,72455,72458,,,,,,,False,True,Winner Quartos 1,x:winner quartos 1,Winner Quartos 4,x:winner quartos 4
@@ -3795,16 +3795,16 @@ api_extra,109811,2026-27,europe,final8,0401-Play-In Jogo 2,2027-04-22,66199,1098
 api_extra,109812,2026-27,europe,final8,0401-Play-In Jogo 2,2027-04-22,66201,109799,,,,,,,False,True,6o do Grupo,x:6o grupo,11o do Grupo,x:11o grupo
 api_extra,109813,2026-27,europe,final8,0401-Play-In Jogo 2,2027-04-22,109792,109798,,,,,,,False,True,7o do Grupo,x:7o grupo,10o do Grupo,x:10o grupo
 api_extra,109814,2026-27,europe,final8,0401-Play-In Jogo 2,2027-04-22,109793,109794,,,,,,,False,True,8o do Grupo,x:8o grupo,9o do Grupo,x:9o grupo
-api_extra,109804,2026-27,europe,final8,0402-Play-In Jogo 1,2027-04-08,109800,66199,,,,,,,False,True,12o do Grupo,x:12o grupo,5o do Grupo,x:5o grupo
 api_extra,109807,2026-27,europe,final8,0402-Play-In Jogo 1,2027-04-08,109799,66201,,,,,,,False,True,11o do Grupo,x:11o grupo,6o do Grupo,x:6o grupo
 api_extra,109809,2026-27,europe,final8,0402-Play-In Jogo 1,2027-04-08,109798,109792,,,,,,,False,True,10o do Grupo,x:10o grupo,7o do Grupo,x:7o grupo
 api_extra,109810,2026-27,europe,final8,0402-Play-In Jogo 1,2027-04-08,109794,109793,,,,,,,False,True,9o do Grupo,x:9o grupo,8o do Grupo,x:8o grupo
-api_extra,111124,2026-27,europe,cup,0101-FINAL Men,2026-11-15,57663,57664,,,,,,,False,True,Vencedor Semi-Final #1,x:vencedor semi final 1,Vencedor Semi-Final #2,x:vencedor semi final 2
-api_extra,111121,2026-27,europe,cup,0201-FINAL Women,2026-11-15,57663,57664,,,,,,,False,True,Vencedor Semi-Final #1,x:vencedor semi final 1,Vencedor Semi-Final #2,x:vencedor semi final 2
-api_extra,111122,2026-27,europe,cup,0102-Semi-Final Men,2026-11-14,3584,4098,,,,,,,False,True,Porto,porto,Calafell,x:calafell
-api_extra,111123,2026-27,europe,cup,0102-Semi-Final Men,2026-11-14,3832,3818,,,,,,,False,True,Lleida,x:lleida,Barça,x:barca
-api_extra,111120,2026-27,europe,cup,0202-Semi-Final Women,2026-11-14,10014,10003,,,,,,,False,True,Sanjoanense FEM,x:sanjoanense fem,Benfica FEM,x:benfica fem
-api_extra,111118,2026-27,europe,cup,0202-Semi-Final Women,2026-11-14,29612,9831,,,,,,,False,True,Fraga FEM,x:fraga fem,Voltrega FEM,x:voltrega fem
+api_extra,109804,2026-27,europe,final8,0402-Play-In Jogo 1,2027-04-08,109800,66199,,,,,,,False,True,12o do Grupo,x:12o grupo,5o do Grupo,x:5o grupo
+api_extra,111124,2026-27,europe,cup,0101-FINAL Men,2026-11-15,3832,3584,,,,,,,False,True,Lleida,x:lleida,Porto,porto
+api_extra,111121,2026-27,europe,cup,0201-FINAL Women,2026-11-15,29612,10003,,,,,,,False,True,Fraga FEM,x:fraga fem,Benfica FEM,x:benfica fem
+api_extra,111122,2026-27,europe,cup,0102-Semi-Final Men,2026-11-14,3584,4098,4.0,2.0,0.0,0.0,2.0,0.0,True,True,Porto,porto,Calafell,x:calafell
+api_extra,111123,2026-27,europe,cup,0102-Semi-Final Men,2026-11-14,3832,3818,6.0,5.0,0.0,0.0,0.0,0.0,True,True,Lleida,x:lleida,Barça,x:barca
+api_extra,111120,2026-27,europe,cup,0202-Semi-Final Women,2026-11-14,10014,10003,2.0,4.0,0.0,0.0,0.0,0.0,True,True,Sanjoanense FEM,x:sanjoanense fem,Benfica FEM,x:benfica fem
+api_extra,111118,2026-27,europe,cup,0202-Semi-Final Women,2026-11-14,29612,9831,4.0,0.0,0.0,0.0,0.0,0.0,True,True,Fraga FEM,x:fraga fem,Voltrega FEM,x:voltrega fem
 api_extra,109874,2026-27,europe,cup,0100-FINAL,2027-05-09,72460,72461,,,,,,,False,False,Winner Semi 1,x:winner semi 1,Winner Semi 2,x:winner semi 2
 api_extra,109873,2026-27,europe,cup,0200-Semi-Final,2027-05-08,72454,72457,,,,,,,False,False,Winner Quartos 2,x:winner quartos 2,Winner Quartos 3,x:winner quartos 3
 api_extra,109872,2026-27,europe,cup,0200-Semi-Final,2027-05-08,72455,72458,,,,,,,False,False,Winner Quartos 1,x:winner quartos 1,Winner Quartos 4,x:winner quartos 4
@@ -3835,10 +3835,10 @@ api_extra,109855,2026-27,europe,cup,0402-Oitavos de Final - Jogo 1,2026-12-12,36
 api_extra,109919,2026-27,europe,cup,0100-FINAL,2027-04-04,72460,72461,,,,,,,False,False,Winner Semi 1,x:winner semi 1,Winner Semi 2,x:winner semi 2
 api_extra,109918,2026-27,europe,cup,0200-Semi-Final,2027-04-03,72454,72457,,,,,,,False,False,Winner Quartos 2,x:winner quartos 2,Winner Quartos 3,x:winner quartos 3
 api_extra,109917,2026-27,europe,cup,0200-Semi-Final,2027-04-03,72455,72458,,,,,,,False,False,Winner Quartos 1,x:winner quartos 1,Winner Quartos 4,x:winner quartos 4
-api_extra,109915,2026-27,europe,cup,0301-Quartos de Final - Jogo 2,2027-03-06,3952,72444,,,,,,,False,False,Noisy,x:noisy,Winner Oitavos 2,x:winner oitavos 2
-api_extra,109916,2026-27,europe,cup,0301-Quartos de Final - Jogo 2,2027-03-06,4082,72447,,,,,,,False,False,Uttigen,x:uttigen,Winner Oitavos 3,x:winner oitavos 3
 api_extra,109913,2026-27,europe,cup,0301-Quartos de Final - Jogo 2,2027-03-06,3982,3620,,,,,,,False,False,Coutras,x:coutras,Tomar,tomar
 api_extra,109914,2026-27,europe,cup,0301-Quartos de Final - Jogo 2,2027-03-06,4070,72448,,,,,,,False,False,Diessbach,x:diessbach,Winner Oitavos 1,x:winner oitavos 1
+api_extra,109915,2026-27,europe,cup,0301-Quartos de Final - Jogo 2,2027-03-06,3952,72444,,,,,,,False,False,Noisy,x:noisy,Winner Oitavos 2,x:winner oitavos 2
+api_extra,109916,2026-27,europe,cup,0301-Quartos de Final - Jogo 2,2027-03-06,4082,72447,,,,,,,False,False,Uttigen,x:uttigen,Winner Oitavos 3,x:winner oitavos 3
 api_extra,109909,2026-27,europe,cup,0302-Quartos de Final - Jogo 1,2027-02-13,72447,4082,,,,,,,False,False,Winner Oitavos 3,x:winner oitavos 3,Uttigen,x:uttigen
 api_extra,109910,2026-27,europe,cup,0302-Quartos de Final - Jogo 1,2027-02-13,3620,3982,,,,,,,False,False,Tomar,tomar,Coutras,x:coutras
 api_extra,109911,2026-27,europe,cup,0302-Quartos de Final - Jogo 1,2027-02-13,72448,4070,,,,,,,False,False,Winner Oitavos 1,x:winner oitavos 1,Diessbach,x:diessbach
@@ -3878,8 +3878,8 @@ api_extra,112397,2026-27,esp,regular,0023-Jornada 23,2027-04-17,4176,3856,,,,,,,
 api_extra,112399,2026-27,esp,regular,0023-Jornada 23,2027-04-17,3818,3840,,,,,,,False,False,Barça,x:barca,Caldes,x:caldes
 api_extra,112391,2026-27,esp,regular,0022-Jornada 22,2027-04-11,3832,3818,,,,,,,False,False,Lleida,x:lleida,Barça,x:barca
 api_extra,112387,2026-27,esp,regular,0022-Jornada 22,2027-04-10,3836,3828,,,,,,,False,False,Lloret,x:lloret,Liceo,x:liceo
-api_extra,112392,2026-27,esp,regular,0022-Jornada 22,2027-04-10,3840,3842,,,,,,,False,False,Caldes,x:caldes,Reus,x:reus
 api_extra,112390,2026-27,esp,regular,0022-Jornada 22,2027-04-10,3856,54304,,,,,,,False,False,Voltrega,x:voltrega,SHUM Massanet,x:shum massanet
+api_extra,112392,2026-27,esp,regular,0022-Jornada 22,2027-04-10,3840,3842,,,,,,,False,False,Caldes,x:caldes,Reus,x:reus
 api_extra,112386,2026-27,esp,regular,0022-Jornada 22,2027-04-10,3820,3934,,,,,,,False,False,Alcoi,x:alcoi,Vilafranca,x:vilafranca
 api_extra,112388,2026-27,esp,regular,0022-Jornada 22,2027-04-10,4098,3826,,,,,,,False,False,Calafell,x:calafell,Igualada,x:igualada
 api_extra,112389,2026-27,esp,regular,0022-Jornada 22,2027-04-10,3816,4176,,,,,,,False,False,Noia,x:noia,Rivas,x:rivas
@@ -3927,9 +3927,9 @@ api_extra,112350,2026-27,esp,regular,0016-Jornada 16,2027-02-06,3816,3842,,,,,,,
 api_extra,112345,2026-27,esp,regular,0016-Jornada 16,2027-02-06,3828,54304,,,,,,,False,False,Liceo,x:liceo,SHUM Massanet,x:shum massanet
 api_extra,112341,2026-27,esp,regular,0015-Jornada 15,2027-01-31,3832,3820,,,,,,,False,False,Lleida,x:lleida,Alcoi,x:alcoi
 api_extra,112337,2026-27,esp,regular,0015-Jornada 15,2027-01-30,3842,4176,,,,,,,False,False,Reus,x:reus,Rivas,x:rivas
+api_extra,112342,2026-27,esp,regular,0015-Jornada 15,2027-01-30,3856,3836,,,,,,,False,False,Voltrega,x:voltrega,Lloret,x:lloret
 api_extra,112338,2026-27,esp,regular,0015-Jornada 15,2027-01-30,54304,3826,,,,,,,False,False,SHUM Massanet,x:shum massanet,Igualada,x:igualada
 api_extra,112340,2026-27,esp,regular,0015-Jornada 15,2027-01-30,3840,3934,,,,,,,False,False,Caldes,x:caldes,Vilafranca,x:vilafranca
-api_extra,112342,2026-27,esp,regular,0015-Jornada 15,2027-01-30,3856,3836,,,,,,,False,False,Voltrega,x:voltrega,Lloret,x:lloret
 api_extra,112343,2026-27,esp,regular,0015-Jornada 15,2027-01-30,3816,4098,,,,,,,False,False,Noia,x:noia,Calafell,x:calafell
 api_extra,112339,2026-27,esp,regular,0015-Jornada 15,2027-01-30,3818,3828,,,,,,,False,False,Barça,x:barca,Liceo,x:liceo
 api_extra,112335,2026-27,esp,regular,0014-Jornada 14,2027-01-27,3836,3816,,,,,,,False,False,Lloret,x:lloret,Noia,x:noia
@@ -3944,8 +3944,8 @@ api_extra,112323,2026-27,esp,regular,0013-Jornada 13,2027-01-16,3836,4098,,,,,,,
 api_extra,112329,2026-27,esp,regular,0013-Jornada 13,2027-01-16,54304,3842,,,,,,,False,False,SHUM Massanet,x:shum massanet,Reus,x:reus
 api_extra,112325,2026-27,esp,regular,0013-Jornada 13,2027-01-16,3934,3856,,,,,,,False,False,Vilafranca,x:vilafranca,Voltrega,x:voltrega
 api_extra,112324,2026-27,esp,regular,0013-Jornada 13,2027-01-16,3820,3816,,,,,,,False,False,Alcoi,x:alcoi,Noia,x:noia
-api_extra,112328,2026-27,esp,regular,0013-Jornada 13,2027-01-16,4176,3818,,,,,,,False,False,Rivas,x:rivas,Barça,x:barca
 api_extra,112326,2026-27,esp,regular,0013-Jornada 13,2027-01-16,3828,3832,,,,,,,False,False,Liceo,x:liceo,Lleida,x:lleida
+api_extra,112328,2026-27,esp,regular,0013-Jornada 13,2027-01-16,4176,3818,,,,,,,False,False,Rivas,x:rivas,Barça,x:barca
 api_extra,112319,2026-27,esp,regular,0012-Jornada 12,2027-01-10,3856,3828,,,,,,,False,False,Voltrega,x:voltrega,Liceo,x:liceo
 api_extra,112317,2026-27,esp,regular,0012-Jornada 12,2027-01-10,4098,3820,,,,,,,False,False,Calafell,x:calafell,Alcoi,x:alcoi
 api_extra,112322,2026-27,esp,regular,0012-Jornada 12,2027-01-10,3818,54304,,,,,,,False,False,Barça,x:barca,SHUM Massanet,x:shum massanet
@@ -4012,10 +4012,10 @@ api_extra,112266,2026-27,esp,regular,0004-Jornada 4,2026-11-21,3816,3856,,,,,,,F
 api_extra,112261,2026-27,esp,regular,0004-Jornada 4,2026-11-21,3828,4176,,,,,,,False,False,Liceo,x:liceo,Rivas,x:rivas
 api_extra,112258,2026-27,esp,regular,0003-Jornada 3,2026-11-18,3856,4098,,,,,,,False,False,Voltrega,x:voltrega,Calafell,x:calafell
 api_extra,112257,2026-27,esp,regular,0003-Jornada 3,2026-11-18,3832,3836,,,,,,,False,False,Lleida,x:lleida,Lloret,x:lloret
-api_extra,112256,2026-27,esp,regular,0003-Jornada 3,2026-11-14,3840,3820,,,,,,,False,False,Caldes,x:caldes,Alcoi,x:alcoi
-api_extra,112254,2026-27,esp,regular,0003-Jornada 3,2026-11-14,54304,3828,,,,,,,False,False,SHUM Massanet,x:shum massanet,Liceo,x:liceo
-api_extra,112253,2026-27,esp,regular,0003-Jornada 3,2026-11-14,4176,3826,,,,,,,False,False,Rivas,x:rivas,Igualada,x:igualada
-api_extra,112259,2026-27,esp,regular,0003-Jornada 3,2026-11-14,3842,3816,,,,,,,False,False,Reus,x:reus,Noia,x:noia
+api_extra,112256,2026-27,esp,regular,0003-Jornada 3,2026-11-14,3840,3820,2.0,5.0,0.0,0.0,0.0,0.0,True,False,Caldes,x:caldes,Alcoi,x:alcoi
+api_extra,112254,2026-27,esp,regular,0003-Jornada 3,2026-11-14,54304,3828,2.0,3.0,0.0,0.0,0.0,0.0,True,False,SHUM Massanet,x:shum massanet,Liceo,x:liceo
+api_extra,112253,2026-27,esp,regular,0003-Jornada 3,2026-11-14,4176,3826,1.0,1.0,0.0,0.0,0.0,0.0,True,False,Rivas,x:rivas,Igualada,x:igualada
+api_extra,112259,2026-27,esp,regular,0003-Jornada 3,2026-11-14,3842,3816,5.0,1.0,0.0,0.0,0.0,0.0,True,False,Reus,x:reus,Noia,x:noia
 api_extra,112247,2026-27,esp,regular,0002-Jornada 2,2026-11-08,3826,54304,2.0,0.0,0.0,0.0,0.0,0.0,True,False,Igualada,x:igualada,SHUM Massanet,x:shum massanet
 api_extra,112248,2026-27,esp,regular,0002-Jornada 2,2026-11-08,3828,3818,0.0,1.0,0.0,0.0,0.0,0.0,True,False,Liceo,x:liceo,Barça,x:barca
 api_extra,112251,2026-27,esp,regular,0002-Jornada 2,2026-11-07,3836,3856,4.0,9.0,0.0,0.0,0.0,0.0,True,False,Lloret,x:lloret,Voltrega,x:voltrega
@@ -4037,10 +4037,10 @@ api_extra,110133,2026-27,ita,regular,0026-Jornada 26,2027-04-17,3890,3932,,,,,,,
 api_extra,110135,2026-27,ita,regular,0026-Jornada 26,2027-04-17,4306,3884,,,,,,,False,False,Castiglione,x:castiglione,Trissino,x:trissino
 api_extra,110136,2026-27,ita,regular,0026-Jornada 26,2027-04-17,4196,55766,,,,,,,False,False,Monza,x:monza,Pumas,x:pumas
 api_extra,110127,2026-27,ita,regular,0025-Jornada 25,2027-04-11,3884,3890,,,,,,,False,False,Trissino,x:trissino,Forte,x:forte
-api_extra,110123,2026-27,ita,regular,0025-Jornada 25,2027-04-10,3868,3878,,,,,,,False,False,Follonica,x:follonica,Valdagno,x:valdagno
 api_extra,110124,2026-27,ita,regular,0025-Jornada 25,2027-04-10,3932,3874,,,,,,,False,False,Sarzana,x:sarzana,Bassano,x:bassano
 api_extra,110126,2026-27,ita,regular,0025-Jornada 25,2027-04-10,3898,4196,,,,,,,False,False,Lodi,x:lodi,Monza,x:monza
 api_extra,110129,2026-27,ita,regular,0025-Jornada 25,2027-04-10,70896,3864,,,,,,,False,False,Novara Azzurra,x:novara azzurra,Viareggio,x:viareggio
+api_extra,110123,2026-27,ita,regular,0025-Jornada 25,2027-04-10,3868,3878,,,,,,,False,False,Follonica,x:follonica,Valdagno,x:valdagno
 api_extra,110128,2026-27,ita,regular,0025-Jornada 25,2027-04-10,55882,4306,,,,,,,False,False,Roller Matera,x:roller matera,Castiglione,x:castiglione
 api_extra,110121,2026-27,ita,regular,0024-Jornada 24,2027-04-04,3874,3884,,,,,,,False,False,Bassano,x:bassano,Trissino,x:trissino
 api_extra,110119,2026-27,ita,regular,0024-Jornada 24,2027-04-03,3864,3868,,,,,,,False,False,Viareggio,x:viareggio,Follonica,x:follonica
@@ -4056,10 +4056,10 @@ api_extra,110115,2026-27,ita,regular,0023-Jornada 23,2027-03-20,3932,3878,,,,,,,
 api_extra,110110,2026-27,ita,regular,0023-Jornada 23,2027-03-20,55882,3874,,,,,,,False,False,Roller Matera,x:roller matera,Bassano,x:bassano
 api_extra,110104,2026-27,ita,regular,0022-Jornada 22,2027-03-14,3874,55766,,,,,,,False,False,Bassano,x:bassano,Pumas,x:pumas
 api_extra,110108,2026-27,ita,regular,0022-Jornada 22,2027-03-13,3864,3884,,,,,,,False,False,Viareggio,x:viareggio,Trissino,x:trissino
-api_extra,110102,2026-27,ita,regular,0022-Jornada 22,2027-03-13,3878,55882,,,,,,,False,False,Valdagno,x:valdagno,Roller Matera,x:roller matera
-api_extra,110105,2026-27,ita,regular,0022-Jornada 22,2027-03-13,70896,3932,,,,,,,False,False,Novara Azzurra,x:novara azzurra,Sarzana,x:sarzana
 api_extra,110106,2026-27,ita,regular,0022-Jornada 22,2027-03-13,3898,3868,,,,,,,False,False,Lodi,x:lodi,Follonica,x:follonica
 api_extra,110107,2026-27,ita,regular,0022-Jornada 22,2027-03-13,3890,4196,,,,,,,False,False,Forte,x:forte,Monza,x:monza
+api_extra,110102,2026-27,ita,regular,0022-Jornada 22,2027-03-13,3878,55882,,,,,,,False,False,Valdagno,x:valdagno,Roller Matera,x:roller matera
+api_extra,110105,2026-27,ita,regular,0022-Jornada 22,2027-03-13,70896,3932,,,,,,,False,False,Novara Azzurra,x:novara azzurra,Sarzana,x:sarzana
 api_extra,110097,2026-27,ita,regular,0021-Jornada 21,2027-02-28,3884,70896,,,,,,,False,False,Trissino,x:trissino,Novara Azzurra,x:novara azzurra
 api_extra,110099,2026-27,ita,regular,0021-Jornada 21,2027-02-28,55766,3878,,,,,,,False,False,Pumas,x:pumas,Valdagno,x:valdagno
 api_extra,110098,2026-27,ita,regular,0021-Jornada 21,2027-02-27,3932,3868,,,,,,,False,False,Sarzana,x:sarzana,Follonica,x:follonica
@@ -4072,8 +4072,8 @@ api_extra,110089,2026-27,ita,regular,0020-Jornada 20,2027-02-20,3890,4306,,,,,,,
 api_extra,110091,2026-27,ita,regular,0020-Jornada 20,2027-02-20,3878,4196,,,,,,,False,False,Valdagno,x:valdagno,Monza,x:monza
 api_extra,110092,2026-27,ita,regular,0020-Jornada 20,2027-02-20,3898,3932,,,,,,,False,False,Lodi,x:lodi,Sarzana,x:sarzana
 api_extra,110094,2026-27,ita,regular,0020-Jornada 20,2027-02-20,3868,3884,,,,,,,False,False,Follonica,x:follonica,Trissino,x:trissino
-api_extra,110085,2026-27,ita,regular,0019-Jornada 19,2027-02-14,3884,3932,,,,,,,False,False,Trissino,x:trissino,Sarzana,x:sarzana
 api_extra,110083,2026-27,ita,regular,0019-Jornada 19,2027-02-14,55766,70896,,,,,,,False,False,Pumas,x:pumas,Novara Azzurra,x:novara azzurra
+api_extra,110085,2026-27,ita,regular,0019-Jornada 19,2027-02-14,3884,3932,,,,,,,False,False,Trissino,x:trissino,Sarzana,x:sarzana
 api_extra,110084,2026-27,ita,regular,0019-Jornada 19,2027-02-13,3890,3898,,,,,,,False,False,Forte,x:forte,Lodi,x:lodi
 api_extra,110086,2026-27,ita,regular,0019-Jornada 19,2027-02-13,4196,3864,,,,,,,False,False,Monza,x:monza,Viareggio,x:viareggio
 api_extra,110087,2026-27,ita,regular,0019-Jornada 19,2027-02-13,4306,3874,,,,,,,False,False,Castiglione,x:castiglione,Bassano,x:bassano
@@ -4086,16 +4086,16 @@ api_extra,110077,2026-27,ita,regular,0018-Jornada 18,2027-02-06,3898,3884,,,,,,,
 api_extra,110079,2026-27,ita,regular,0018-Jornada 18,2027-02-06,3868,55766,,,,,,,False,False,Follonica,x:follonica,Pumas,x:pumas
 api_extra,110069,2026-27,ita,regular,0017-Jornada 17,2027-01-31,3874,3898,,,,,,,False,False,Bassano,x:bassano,Lodi,x:lodi
 api_extra,110070,2026-27,ita,regular,0017-Jornada 17,2027-01-31,55766,3932,,,,,,,False,False,Pumas,x:pumas,Sarzana,x:sarzana
-api_extra,110067,2026-27,ita,regular,0017-Jornada 17,2027-01-30,3890,3878,,,,,,,False,False,Forte,x:forte,Valdagno,x:valdagno
 api_extra,110071,2026-27,ita,regular,0017-Jornada 17,2027-01-30,4196,3868,,,,,,,False,False,Monza,x:monza,Follonica,x:follonica
+api_extra,110067,2026-27,ita,regular,0017-Jornada 17,2027-01-30,3890,3878,,,,,,,False,False,Forte,x:forte,Valdagno,x:valdagno
 api_extra,110072,2026-27,ita,regular,0017-Jornada 17,2027-01-30,4306,3864,,,,,,,False,False,Castiglione,x:castiglione,Viareggio,x:viareggio
 api_extra,110073,2026-27,ita,regular,0017-Jornada 17,2027-01-30,55882,3884,,,,,,,False,False,Roller Matera,x:roller matera,Trissino,x:trissino
 api_extra,110061,2026-27,ita,regular,0016-Jornada 16,2027-01-24,3884,55766,,,,,,,False,False,Trissino,x:trissino,Pumas,x:pumas
 api_extra,110065,2026-27,ita,regular,0016-Jornada 16,2027-01-23,3864,3890,,,,,,,False,False,Viareggio,x:viareggio,Forte,x:forte
-api_extra,110066,2026-27,ita,regular,0016-Jornada 16,2027-01-23,70896,4306,,,,,,,False,False,Novara Azzurra,x:novara azzurra,Castiglione,x:castiglione
 api_extra,110062,2026-27,ita,regular,0016-Jornada 16,2027-01-23,3878,3874,,,,,,,False,False,Valdagno,x:valdagno,Bassano,x:bassano
 api_extra,110063,2026-27,ita,regular,0016-Jornada 16,2027-01-23,3898,55882,,,,,,,False,False,Lodi,x:lodi,Roller Matera,x:roller matera
 api_extra,110064,2026-27,ita,regular,0016-Jornada 16,2027-01-23,3932,4196,,,,,,,False,False,Sarzana,x:sarzana,Monza,x:monza
+api_extra,110066,2026-27,ita,regular,0016-Jornada 16,2027-01-23,70896,4306,,,,,,,False,False,Novara Azzurra,x:novara azzurra,Castiglione,x:castiglione
 api_extra,110053,2026-27,ita,regular,0015-Jornada 15,2027-01-17,55766,55882,,,,,,,False,False,Pumas,x:pumas,Roller Matera,x:roller matera
 api_extra,110058,2026-27,ita,regular,0015-Jornada 15,2027-01-17,3874,3864,,,,,,,False,False,Bassano,x:bassano,Viareggio,x:viareggio
 api_extra,110054,2026-27,ita,regular,0015-Jornada 15,2027-01-16,3878,3898,,,,,,,False,False,Valdagno,x:valdagno,Lodi,x:lodi
@@ -4103,10 +4103,10 @@ api_extra,110055,2026-27,ita,regular,0015-Jornada 15,2027-01-16,3890,70896,,,,,,
 api_extra,110059,2026-27,ita,regular,0015-Jornada 15,2027-01-16,4196,3884,,,,,,,False,False,Monza,x:monza,Trissino,x:trissino
 api_extra,110056,2026-27,ita,regular,0015-Jornada 15,2027-01-16,4306,3868,,,,,,,False,False,Castiglione,x:castiglione,Follonica,x:follonica
 api_extra,110050,2026-27,ita,regular,0014-Jornada 14,2027-01-09,3864,3878,,,,,,,False,False,Viareggio,x:viareggio,Valdagno,x:valdagno
-api_extra,110046,2026-27,ita,regular,0014-Jornada 14,2027-01-09,3932,4306,,,,,,,False,False,Sarzana,x:sarzana,Castiglione,x:castiglione
-api_extra,110049,2026-27,ita,regular,0014-Jornada 14,2027-01-09,3868,3890,,,,,,,False,False,Follonica,x:follonica,Forte,x:forte
 api_extra,110051,2026-27,ita,regular,0014-Jornada 14,2027-01-09,3898,55766,,,,,,,False,False,Lodi,x:lodi,Pumas,x:pumas
 api_extra,110052,2026-27,ita,regular,0014-Jornada 14,2027-01-09,70896,3874,,,,,,,False,False,Novara Azzurra,x:novara azzurra,Bassano,x:bassano
+api_extra,110046,2026-27,ita,regular,0014-Jornada 14,2027-01-09,3932,4306,,,,,,,False,False,Sarzana,x:sarzana,Castiglione,x:castiglione
+api_extra,110049,2026-27,ita,regular,0014-Jornada 14,2027-01-09,3868,3890,,,,,,,False,False,Follonica,x:follonica,Forte,x:forte
 api_extra,110048,2026-27,ita,regular,0014-Jornada 14,2027-01-09,55882,4196,,,,,,,False,False,Roller Matera,x:roller matera,Monza,x:monza
 api_extra,110044,2026-27,ita,regular,0013-Jornada 13,2027-01-06,3884,4306,,,,,,,False,False,Trissino,x:trissino,Castiglione,x:castiglione
 api_extra,110045,2026-27,ita,regular,0013-Jornada 13,2027-01-06,55766,4196,,,,,,,False,False,Pumas,x:pumas,Monza,x:monza
@@ -4120,16 +4120,17 @@ api_extra,110035,2026-27,ita,regular,0012-Jornada 12,2026-12-23,4196,3898,,,,,,,
 api_extra,110036,2026-27,ita,regular,0012-Jornada 12,2026-12-23,3890,3884,,,,,,,False,False,Forte,x:forte,Trissino,x:trissino
 api_extra,110037,2026-27,ita,regular,0012-Jornada 12,2026-12-23,4306,55882,,,,,,,False,False,Castiglione,x:castiglione,Roller Matera,x:roller matera
 api_extra,110038,2026-27,ita,regular,0012-Jornada 12,2026-12-23,3864,70896,,,,,,,False,False,Viareggio,x:viareggio,Novara Azzurra,x:novara azzurra
-api_extra,110030,2026-27,ita,regular,0011-Jornada 11,2026-12-20,3884,3874,,,,,,,False,False,Trissino,x:trissino,Bassano,x:bassano
 api_extra,110031,2026-27,ita,regular,0011-Jornada 11,2026-12-20,55766,4306,,,,,,,False,False,Pumas,x:pumas,Castiglione,x:castiglione
+api_extra,110030,2026-27,ita,regular,0011-Jornada 11,2026-12-20,3884,3874,,,,,,,False,False,Trissino,x:trissino,Bassano,x:bassano
+api_extra,110027,2026-27,ita,regular,0011-Jornada 11,2026-12-19,70896,3898,,,,,,,False,False,Novara Azzurra,x:novara azzurra,Lodi,x:lodi
 api_extra,110028,2026-27,ita,regular,0011-Jornada 11,2026-12-19,3868,3864,,,,,,,False,False,Follonica,x:follonica,Viareggio,x:viareggio
 api_extra,110029,2026-27,ita,regular,0011-Jornada 11,2026-12-19,3932,3878,,,,,,,False,False,Sarzana,x:sarzana,Valdagno,x:valdagno
-api_extra,110027,2026-27,ita,regular,0011-Jornada 11,2026-12-19,70896,3898,,,,,,,False,False,Novara Azzurra,x:novara azzurra,Lodi,x:lodi
 api_extra,110025,2026-27,ita,regular,0011-Jornada 11,2026-12-19,55882,3890,,,,,,,False,False,Roller Matera,x:roller matera,Forte,x:forte
 api_extra,110018,2026-27,ita,regular,0010-Jornada 10,2026-12-12,3890,55766,,,,,,,False,False,Forte,x:forte,Pumas,x:pumas
 api_extra,110020,2026-27,ita,regular,0010-Jornada 10,2026-12-12,4306,4196,,,,,,,False,False,Castiglione,x:castiglione,Monza,x:monza
 api_extra,110022,2026-27,ita,regular,0010-Jornada 10,2026-12-12,70896,3868,,,,,,,False,False,Novara Azzurra,x:novara azzurra,Follonica,x:follonica
 api_extra,110023,2026-27,ita,regular,0010-Jornada 10,2026-12-12,3864,3884,,,,,,,False,False,Viareggio,x:viareggio,Trissino,x:trissino
+api_extra,110024,2026-27,ita,regular,0010-Jornada 10,2026-12-12,3878,3932,,,,,,,False,False,Valdagno,x:valdagno,Sarzana,x:sarzana
 api_extra,110019,2026-27,ita,regular,0010-Jornada 10,2026-12-12,3874,55882,,,,,,,False,False,Bassano,x:bassano,Roller Matera,x:roller matera
 api_extra,110011,2026-27,ita,regular,0009-Jornada 9,2026-12-08,55882,3878,,,,,,,False,False,Roller Matera,x:roller matera,Valdagno,x:valdagno
 api_extra,110013,2026-27,ita,regular,0009-Jornada 9,2026-12-08,55766,3874,,,,,,,False,False,Pumas,x:pumas,Bassano,x:bassano
@@ -4143,8 +4144,8 @@ api_extra,110005,2026-27,ita,regular,0008-Jornada 8,2026-12-05,3898,4306,,,,,,,F
 api_extra,110006,2026-27,ita,regular,0008-Jornada 8,2026-12-05,70896,3884,,,,,,,False,False,Novara Azzurra,x:novara azzurra,Trissino,x:trissino
 api_extra,110007,2026-27,ita,regular,0008-Jornada 8,2026-12-05,3868,3932,,,,,,,False,False,Follonica,x:follonica,Sarzana,x:sarzana
 api_extra,110008,2026-27,ita,regular,0008-Jornada 8,2026-12-05,3878,55766,,,,,,,False,False,Valdagno,x:valdagno,Pumas,x:pumas
-api_extra,110003,2026-27,ita,regular,0007-Jornada 7,2026-11-29,3884,3868,,,,,,,False,False,Trissino,x:trissino,Follonica,x:follonica
 api_extra,110002,2026-27,ita,regular,0007-Jornada 7,2026-11-29,55766,3864,,,,,,,False,False,Pumas,x:pumas,Viareggio,x:viareggio
+api_extra,110003,2026-27,ita,regular,0007-Jornada 7,2026-11-29,3884,3868,,,,,,,False,False,Trissino,x:trissino,Follonica,x:follonica
 api_extra,110000,2026-27,ita,regular,0007-Jornada 7,2026-11-28,4196,3878,,,,,,,False,False,Monza,x:monza,Valdagno,x:valdagno
 api_extra,110001,2026-27,ita,regular,0007-Jornada 7,2026-11-28,3932,3898,,,,,,,False,False,Sarzana,x:sarzana,Lodi,x:lodi
 api_extra,109997,2026-27,ita,regular,0007-Jornada 7,2026-11-28,55882,70896,,,,,,,False,False,Roller Matera,x:roller matera,Novara Azzurra,x:novara azzurra
@@ -4152,32 +4153,32 @@ api_extra,109998,2026-27,ita,regular,0007-Jornada 7,2026-11-28,4306,3890,,,,,,,F
 api_extra,109996,2026-27,ita,regular,0006-Jornada 6,2026-11-22,3874,4306,,,,,,,False,False,Bassano,x:bassano,Castiglione,x:castiglione
 api_extra,109995,2026-27,ita,regular,0006-Jornada 6,2026-11-21,3864,4196,,,,,,,False,False,Viareggio,x:viareggio,Monza,x:monza
 api_extra,109990,2026-27,ita,regular,0006-Jornada 6,2026-11-21,3868,55882,,,,,,,False,False,Follonica,x:follonica,Roller Matera,x:roller matera
-api_extra,109992,2026-27,ita,regular,0006-Jornada 6,2026-11-21,70896,55766,,,,,,,False,False,Novara Azzurra,x:novara azzurra,Pumas,x:pumas
 api_extra,109993,2026-27,ita,regular,0006-Jornada 6,2026-11-21,3898,3890,,,,,,,False,False,Lodi,x:lodi,Forte,x:forte
 api_extra,109994,2026-27,ita,regular,0006-Jornada 6,2026-11-21,3932,3884,,,,,,,False,False,Sarzana,x:sarzana,Trissino,x:trissino
-api_extra,109984,2026-27,ita,regular,0005-Jornada 5,2026-11-18,55882,3932,,,,,,,False,False,Roller Matera,x:roller matera,Sarzana,x:sarzana
+api_extra,109992,2026-27,ita,regular,0006-Jornada 6,2026-11-21,70896,55766,,,,,,,False,False,Novara Azzurra,x:novara azzurra,Pumas,x:pumas
+api_extra,109983,2026-27,ita,regular,0005-Jornada 5,2026-11-18,4306,3878,,,,,,,False,False,Castiglione,x:castiglione,Valdagno,x:valdagno
 api_extra,109985,2026-27,ita,regular,0005-Jornada 5,2026-11-18,4196,70896,,,,,,,False,False,Monza,x:monza,Novara Azzurra,x:novara azzurra
 api_extra,109986,2026-27,ita,regular,0005-Jornada 5,2026-11-18,3884,3898,,,,,,,False,False,Trissino,x:trissino,Lodi,x:lodi
 api_extra,109988,2026-27,ita,regular,0005-Jornada 5,2026-11-18,55766,3868,,,,,,,False,False,Pumas,x:pumas,Follonica,x:follonica
 api_extra,109989,2026-27,ita,regular,0005-Jornada 5,2026-11-18,3890,3874,,,,,,,False,False,Forte,x:forte,Bassano,x:bassano
-api_extra,109983,2026-27,ita,regular,0005-Jornada 5,2026-11-18,4306,3878,,,,,,,False,False,Castiglione,x:castiglione,Valdagno,x:valdagno
+api_extra,109984,2026-27,ita,regular,0005-Jornada 5,2026-11-18,55882,3932,,,,,,,False,False,Roller Matera,x:roller matera,Sarzana,x:sarzana
 api_extra,109982,2026-27,ita,regular,0004-Jornada 4,2026-11-15,3884,55882,,,,,,,False,False,Trissino,x:trissino,Roller Matera,x:roller matera
-api_extra,109981,2026-27,ita,regular,0004-Jornada 4,2026-11-14,3864,4306,,,,,,,False,False,Viareggio,x:viareggio,Castiglione,x:castiglione
-api_extra,109976,2026-27,ita,regular,0004-Jornada 4,2026-11-14,3878,3890,,,,,,,False,False,Valdagno,x:valdagno,Forte,x:forte
-api_extra,109978,2026-27,ita,regular,0004-Jornada 4,2026-11-14,3898,3874,,,,,,,False,False,Lodi,x:lodi,Bassano,x:bassano
-api_extra,109979,2026-27,ita,regular,0004-Jornada 4,2026-11-14,3932,55766,,,,,,,False,False,Sarzana,x:sarzana,Pumas,x:pumas
-api_extra,109980,2026-27,ita,regular,0004-Jornada 4,2026-11-14,3868,4196,,,,,,,False,False,Follonica,x:follonica,Monza,x:monza
+api_extra,109981,2026-27,ita,regular,0004-Jornada 4,2026-11-14,3864,4306,8.0,1.0,0.0,0.0,0.0,0.0,True,False,Viareggio,x:viareggio,Castiglione,x:castiglione
+api_extra,109976,2026-27,ita,regular,0004-Jornada 4,2026-11-14,3878,3890,4.0,1.0,0.0,0.0,0.0,0.0,True,False,Valdagno,x:valdagno,Forte,x:forte
+api_extra,109978,2026-27,ita,regular,0004-Jornada 4,2026-11-14,3898,3874,3.0,4.0,0.0,0.0,0.0,0.0,True,False,Lodi,x:lodi,Bassano,x:bassano
+api_extra,109979,2026-27,ita,regular,0004-Jornada 4,2026-11-14,3932,55766,7.0,3.0,0.0,0.0,0.0,0.0,True,False,Sarzana,x:sarzana,Pumas,x:pumas
+api_extra,109980,2026-27,ita,regular,0004-Jornada 4,2026-11-14,3868,4196,2.0,3.0,0.0,0.0,0.0,0.0,True,False,Follonica,x:follonica,Monza,x:monza
 api_extra,109970,2026-27,ita,regular,0003-Jornada 3,2026-11-11,55766,3884,1.0,8.0,0.0,0.0,0.0,0.0,True,False,Pumas,x:pumas,Trissino,x:trissino
-api_extra,109971,2026-27,ita,regular,0003-Jornada 3,2026-11-11,3874,3878,5.0,2.0,0.0,0.0,0.0,0.0,True,False,Bassano,x:bassano,Valdagno,x:valdagno
 api_extra,109972,2026-27,ita,regular,0003-Jornada 3,2026-11-11,55882,3898,1.0,7.0,0.0,0.0,0.0,0.0,True,False,Roller Matera,x:roller matera,Lodi,x:lodi
 api_extra,109973,2026-27,ita,regular,0003-Jornada 3,2026-11-11,4196,3932,3.0,1.0,0.0,0.0,0.0,0.0,True,False,Monza,x:monza,Sarzana,x:sarzana
 api_extra,109974,2026-27,ita,regular,0003-Jornada 3,2026-11-11,3890,3864,1.0,2.0,0.0,0.0,0.0,0.0,True,False,Forte,x:forte,Viareggio,x:viareggio
 api_extra,109975,2026-27,ita,regular,0003-Jornada 3,2026-11-11,4306,70896,1.0,9.0,0.0,0.0,0.0,0.0,True,False,Castiglione,x:castiglione,Novara Azzurra,x:novara azzurra
+api_extra,109971,2026-27,ita,regular,0003-Jornada 3,2026-11-11,3874,3878,5.0,2.0,0.0,0.0,0.0,0.0,True,False,Bassano,x:bassano,Valdagno,x:valdagno
 api_extra,109968,2026-27,ita,regular,0002-Jornada 2,2026-11-08,3884,4196,3.0,2.0,0.0,0.0,0.0,0.0,True,False,Trissino,x:trissino,Monza,x:monza
 api_extra,109967,2026-27,ita,regular,0002-Jornada 2,2026-11-07,3864,3874,0.0,2.0,0.0,0.0,0.0,0.0,True,False,Viareggio,x:viareggio,Bassano,x:bassano
-api_extra,109965,2026-27,ita,regular,0002-Jornada 2,2026-11-07,3868,4306,4.0,4.0,0.0,0.0,0.0,0.0,True,False,Follonica,x:follonica,Castiglione,x:castiglione
 api_extra,109963,2026-27,ita,regular,0002-Jornada 2,2026-11-07,3898,3878,3.0,6.0,0.0,0.0,0.0,0.0,True,False,Lodi,x:lodi,Valdagno,x:valdagno
 api_extra,109964,2026-27,ita,regular,0002-Jornada 2,2026-11-07,70896,3890,4.0,3.0,0.0,0.0,0.0,0.0,True,False,Novara Azzurra,x:novara azzurra,Forte,x:forte
+api_extra,109965,2026-27,ita,regular,0002-Jornada 2,2026-11-07,3868,4306,4.0,4.0,0.0,0.0,0.0,0.0,True,False,Follonica,x:follonica,Castiglione,x:castiglione
 api_extra,109962,2026-27,ita,regular,0002-Jornada 2,2026-11-07,55882,55766,3.0,3.0,0.0,0.0,0.0,0.0,True,False,Roller Matera,x:roller matera,Pumas,x:pumas
 api_extra,109960,2026-27,ita,regular,0001-Jornada 1,2026-11-01,55766,3898,1.0,10.0,0.0,0.0,0.0,0.0,True,False,Pumas,x:pumas,Lodi,x:lodi
 api_extra,109961,2026-27,ita,regular,0001-Jornada 1,2026-11-01,3874,70896,4.0,1.0,0.0,0.0,0.0,0.0,True,False,Bassano,x:bassano,Novara Azzurra,x:novara azzurra
@@ -4185,12 +4186,12 @@ api_extra,109957,2026-27,ita,regular,0001-Jornada 1,2026-10-31,4196,55882,9.0,3.
 api_extra,109958,2026-27,ita,regular,0001-Jornada 1,2026-10-31,3890,3868,4.0,7.0,0.0,0.0,0.0,0.0,True,False,Forte,x:forte,Follonica,x:follonica
 api_extra,109959,2026-27,ita,regular,0001-Jornada 1,2026-10-31,3878,3864,3.0,3.0,0.0,0.0,0.0,0.0,True,False,Valdagno,x:valdagno,Viareggio,x:viareggio
 api_extra,109955,2026-27,ita,regular,0001-Jornada 1,2026-10-31,4306,3932,3.0,5.0,0.0,0.0,0.0,0.0,True,False,Castiglione,x:castiglione,Sarzana,x:sarzana
+api_extra,112976,2026-27,fra,regular,0022-Jornada 22,2027-06-12,4104,4188,,,,,,,False,False,Villejuif,x:villejuif,Poire,x:poire
+api_extra,112977,2026-27,fra,regular,0022-Jornada 22,2027-06-12,35321,3990,,,,,,,False,False,Crehen,x:crehen,Roubaix,x:roubaix
 api_extra,112972,2026-27,fra,regular,0022-Jornada 22,2027-06-12,3984,3964,,,,,,,False,False,Quevert,x:quevert,Merignac,x:merignac
 api_extra,112973,2026-27,fra,regular,0022-Jornada 22,2027-06-12,3980,3956,,,,,,,False,False,SCRA,x:scra,Nantes,x:nantes
 api_extra,112974,2026-27,fra,regular,0022-Jornada 22,2027-06-12,3974,3950,,,,,,,False,False,La Vendeenne,x:la vendeenne,Ploufragan,x:ploufragan
 api_extra,112975,2026-27,fra,regular,0022-Jornada 22,2027-06-12,3982,3952,,,,,,,False,False,Coutras,x:coutras,Noisy,x:noisy
-api_extra,112976,2026-27,fra,regular,0022-Jornada 22,2027-06-12,4104,4188,,,,,,,False,False,Villejuif,x:villejuif,Poire,x:poire
-api_extra,112977,2026-27,fra,regular,0022-Jornada 22,2027-06-12,35321,3990,,,,,,,False,False,Crehen,x:crehen,Roubaix,x:roubaix
 api_extra,112966,2026-27,fra,regular,0021-Jornada 21,2027-06-05,4188,35321,,,,,,,False,False,Poire,x:poire,Crehen,x:crehen
 api_extra,112967,2026-27,fra,regular,0021-Jornada 21,2027-06-05,3956,3974,,,,,,,False,False,Nantes,x:nantes,La Vendeenne,x:la vendeenne
 api_extra,112968,2026-27,fra,regular,0021-Jornada 21,2027-06-05,3990,3984,,,,,,,False,False,Roubaix,x:roubaix,Quevert,x:quevert
@@ -4203,42 +4204,42 @@ api_extra,112962,2026-27,fra,regular,0020-Jornada 20,2027-05-29,4188,3952,,,,,,,
 api_extra,112963,2026-27,fra,regular,0020-Jornada 20,2027-05-29,3980,3990,,,,,,,False,False,SCRA,x:scra,Roubaix,x:roubaix
 api_extra,112964,2026-27,fra,regular,0020-Jornada 20,2027-05-29,3974,3964,,,,,,,False,False,La Vendeenne,x:la vendeenne,Merignac,x:merignac
 api_extra,112965,2026-27,fra,regular,0020-Jornada 20,2027-05-29,3982,3956,,,,,,,False,False,Coutras,x:coutras,Nantes,x:nantes
+api_extra,112954,2026-27,fra,regular,0019-Jornada 19,2027-05-22,3984,3980,,,,,,,False,False,Quevert,x:quevert,SCRA,x:scra
+api_extra,112955,2026-27,fra,regular,0019-Jornada 19,2027-05-22,3990,3974,,,,,,,False,False,Roubaix,x:roubaix,La Vendeenne,x:la vendeenne
 api_extra,112956,2026-27,fra,regular,0019-Jornada 19,2027-05-22,3964,3982,,,,,,,False,False,Merignac,x:merignac,Coutras,x:coutras
 api_extra,112957,2026-27,fra,regular,0019-Jornada 19,2027-05-22,35321,3952,,,,,,,False,False,Crehen,x:crehen,Noisy,x:noisy
 api_extra,112958,2026-27,fra,regular,0019-Jornada 19,2027-05-22,3956,4104,,,,,,,False,False,Nantes,x:nantes,Villejuif,x:villejuif
 api_extra,112959,2026-27,fra,regular,0019-Jornada 19,2027-05-22,3950,4188,,,,,,,False,False,Ploufragan,x:ploufragan,Poire,x:poire
-api_extra,112954,2026-27,fra,regular,0019-Jornada 19,2027-05-22,3984,3980,,,,,,,False,False,Quevert,x:quevert,SCRA,x:scra
-api_extra,112955,2026-27,fra,regular,0019-Jornada 19,2027-05-22,3990,3974,,,,,,,False,False,Roubaix,x:roubaix,La Vendeenne,x:la vendeenne
 api_extra,112948,2026-27,fra,regular,0018-Jornada 18,2027-05-08,4104,3964,,,,,,,False,False,Villejuif,x:villejuif,Merignac,x:merignac
 api_extra,112949,2026-27,fra,regular,0018-Jornada 18,2027-05-08,4188,3956,,,,,,,False,False,Poire,x:poire,Nantes,x:nantes
 api_extra,112950,2026-27,fra,regular,0018-Jornada 18,2027-05-08,3974,3984,,,,,,,False,False,La Vendeenne,x:la vendeenne,Quevert,x:quevert
 api_extra,112951,2026-27,fra,regular,0018-Jornada 18,2027-05-08,3982,3990,,,,,,,False,False,Coutras,x:coutras,Roubaix,x:roubaix
 api_extra,112952,2026-27,fra,regular,0018-Jornada 18,2027-05-08,3952,3950,,,,,,,False,False,Noisy,x:noisy,Ploufragan,x:ploufragan
 api_extra,112953,2026-27,fra,regular,0018-Jornada 18,2027-05-08,3980,35321,,,,,,,False,False,SCRA,x:scra,Crehen,x:crehen
-api_extra,112942,2026-27,fra,regular,0017-Jornada 17,2027-05-01,3980,3974,,,,,,,False,False,SCRA,x:scra,La Vendeenne,x:la vendeenne
-api_extra,112943,2026-27,fra,regular,0017-Jornada 17,2027-05-01,3984,3982,,,,,,,False,False,Quevert,x:quevert,Coutras,x:coutras
 api_extra,112944,2026-27,fra,regular,0017-Jornada 17,2027-05-01,35321,3950,,,,,,,False,False,Crehen,x:crehen,Ploufragan,x:ploufragan
 api_extra,112945,2026-27,fra,regular,0017-Jornada 17,2027-05-01,3990,4104,,,,,,,False,False,Roubaix,x:roubaix,Villejuif,x:villejuif
 api_extra,112946,2026-27,fra,regular,0017-Jornada 17,2027-05-01,3964,4188,,,,,,,False,False,Merignac,x:merignac,Poire,x:poire
 api_extra,112947,2026-27,fra,regular,0017-Jornada 17,2027-05-01,3956,3952,,,,,,,False,False,Nantes,x:nantes,Noisy,x:noisy
-api_extra,112940,2026-27,fra,regular,0016-Jornada 16,2027-04-17,3982,3980,,,,,,,False,False,Coutras,x:coutras,SCRA,x:scra
-api_extra,112941,2026-27,fra,regular,0016-Jornada 16,2027-04-17,3974,35321,,,,,,,False,False,La Vendeenne,x:la vendeenne,Crehen,x:crehen
+api_extra,112942,2026-27,fra,regular,0017-Jornada 17,2027-05-01,3980,3974,,,,,,,False,False,SCRA,x:scra,La Vendeenne,x:la vendeenne
+api_extra,112943,2026-27,fra,regular,0017-Jornada 17,2027-05-01,3984,3982,,,,,,,False,False,Quevert,x:quevert,Coutras,x:coutras
 api_extra,112936,2026-27,fra,regular,0016-Jornada 16,2027-04-17,3952,3964,,,,,,,False,False,Noisy,x:noisy,Merignac,x:merignac
 api_extra,112937,2026-27,fra,regular,0016-Jornada 16,2027-04-17,4104,3984,,,,,,,False,False,Villejuif,x:villejuif,Quevert,x:quevert
 api_extra,112938,2026-27,fra,regular,0016-Jornada 16,2027-04-17,3990,4188,,,,,,,False,False,Roubaix,x:roubaix,Poire,x:poire
 api_extra,112939,2026-27,fra,regular,0016-Jornada 16,2027-04-17,3950,3956,,,,,,,False,False,Ploufragan,x:ploufragan,Nantes,x:nantes
+api_extra,112940,2026-27,fra,regular,0016-Jornada 16,2027-04-17,3982,3980,,,,,,,False,False,Coutras,x:coutras,SCRA,x:scra
+api_extra,112941,2026-27,fra,regular,0016-Jornada 16,2027-04-17,3974,35321,,,,,,,False,False,La Vendeenne,x:la vendeenne,Crehen,x:crehen
 api_extra,112930,2026-27,fra,regular,0015-Jornada 15,2027-04-10,3974,3982,,,,,,,False,False,La Vendeenne,x:la vendeenne,Coutras,x:coutras
 api_extra,112931,2026-27,fra,regular,0015-Jornada 15,2027-04-10,35321,3956,,,,,,,False,False,Crehen,x:crehen,Nantes,x:nantes
 api_extra,112932,2026-27,fra,regular,0015-Jornada 15,2027-04-10,3980,4104,,,,,,,False,False,SCRA,x:scra,Villejuif,x:villejuif
 api_extra,112933,2026-27,fra,regular,0015-Jornada 15,2027-04-10,4188,3984,,,,,,,False,False,Poire,x:poire,Quevert,x:quevert
 api_extra,112934,2026-27,fra,regular,0015-Jornada 15,2027-04-10,3952,3990,,,,,,,False,False,Noisy,x:noisy,Roubaix,x:roubaix
 api_extra,112935,2026-27,fra,regular,0015-Jornada 15,2027-04-10,3964,3950,,,,,,,False,False,Merignac,x:merignac,Ploufragan,x:ploufragan
+api_extra,112928,2026-27,fra,regular,0014-Jornada 14,2027-04-03,4104,3974,,,,,,,False,False,Villejuif,x:villejuif,La Vendeenne,x:la vendeenne
+api_extra,112929,2026-27,fra,regular,0014-Jornada 14,2027-04-03,35321,3982,,,,,,,False,False,Crehen,x:crehen,Coutras,x:coutras
 api_extra,112924,2026-27,fra,regular,0014-Jornada 14,2027-04-03,3956,3964,,,,,,,False,False,Nantes,x:nantes,Merignac,x:merignac
 api_extra,112925,2026-27,fra,regular,0014-Jornada 14,2027-04-03,3950,3990,,,,,,,False,False,Ploufragan,x:ploufragan,Roubaix,x:roubaix
 api_extra,112926,2026-27,fra,regular,0014-Jornada 14,2027-04-03,3984,3952,,,,,,,False,False,Quevert,x:quevert,Noisy,x:noisy
 api_extra,112927,2026-27,fra,regular,0014-Jornada 14,2027-04-03,4188,3980,,,,,,,False,False,Poire,x:poire,SCRA,x:scra
-api_extra,112928,2026-27,fra,regular,0014-Jornada 14,2027-04-03,4104,3974,,,,,,,False,False,Villejuif,x:villejuif,La Vendeenne,x:la vendeenne
-api_extra,112929,2026-27,fra,regular,0014-Jornada 14,2027-04-03,35321,3982,,,,,,,False,False,Crehen,x:crehen,Coutras,x:coutras
 api_extra,112918,2026-27,fra,regular,0013-Jornada 13,2027-03-20,35321,3964,,,,,,,False,False,Crehen,x:crehen,Merignac,x:merignac
 api_extra,112919,2026-27,fra,regular,0013-Jornada 13,2027-03-20,3982,4104,,,,,,,False,False,Coutras,x:coutras,Villejuif,x:villejuif
 api_extra,112920,2026-27,fra,regular,0013-Jornada 13,2027-03-20,3974,4188,,,,,,,False,False,La Vendeenne,x:la vendeenne,Poire,x:poire
@@ -4251,54 +4252,52 @@ api_extra,112914,2026-27,fra,regular,0012-Jornada 12,2027-03-06,3950,3980,,,,,,,
 api_extra,112915,2026-27,fra,regular,0012-Jornada 12,2027-03-06,3952,3974,,,,,,,False,False,Noisy,x:noisy,La Vendeenne,x:la vendeenne
 api_extra,112916,2026-27,fra,regular,0012-Jornada 12,2027-03-06,4188,3982,,,,,,,False,False,Poire,x:poire,Coutras,x:coutras
 api_extra,112917,2026-27,fra,regular,0012-Jornada 12,2027-03-06,4104,35321,,,,,,,False,False,Villejuif,x:villejuif,Crehen,x:crehen
+api_extra,112906,2026-27,fra,regular,0011-Jornada 11,2027-02-27,3964,3984,,,,,,,False,False,Merignac,x:merignac,Quevert,x:quevert
+api_extra,112907,2026-27,fra,regular,0011-Jornada 11,2027-02-27,3956,3980,,,,,,,False,False,Nantes,x:nantes,SCRA,x:scra
 api_extra,112908,2026-27,fra,regular,0011-Jornada 11,2027-02-27,3950,3974,,,,,,,False,False,Ploufragan,x:ploufragan,La Vendeenne,x:la vendeenne
 api_extra,112909,2026-27,fra,regular,0011-Jornada 11,2027-02-27,3952,3982,,,,,,,False,False,Noisy,x:noisy,Coutras,x:coutras
 api_extra,112910,2026-27,fra,regular,0011-Jornada 11,2027-02-27,4188,4104,,,,,,,False,False,Poire,x:poire,Villejuif,x:villejuif
 api_extra,112911,2026-27,fra,regular,0011-Jornada 11,2027-02-27,3990,35321,,,,,,,False,False,Roubaix,x:roubaix,Crehen,x:crehen
-api_extra,112906,2026-27,fra,regular,0011-Jornada 11,2027-02-27,3964,3984,,,,,,,False,False,Merignac,x:merignac,Quevert,x:quevert
-api_extra,112907,2026-27,fra,regular,0011-Jornada 11,2027-02-27,3956,3980,,,,,,,False,False,Nantes,x:nantes,SCRA,x:scra
 api_extra,112900,2026-27,fra,regular,0010-Jornada 10,2027-02-06,35321,4188,,,,,,,False,False,Crehen,x:crehen,Poire,x:poire
 api_extra,112901,2026-27,fra,regular,0010-Jornada 10,2027-02-06,3974,3956,,,,,,,False,False,La Vendeenne,x:la vendeenne,Nantes,x:nantes
 api_extra,112902,2026-27,fra,regular,0010-Jornada 10,2027-02-06,3984,3990,,,,,,,False,False,Quevert,x:quevert,Roubaix,x:roubaix
 api_extra,112903,2026-27,fra,regular,0010-Jornada 10,2027-02-06,4104,3952,,,,,,,False,False,Villejuif,x:villejuif,Noisy,x:noisy
 api_extra,112904,2026-27,fra,regular,0010-Jornada 10,2027-02-06,3982,3950,,,,,,,False,False,Coutras,x:coutras,Ploufragan,x:ploufragan
 api_extra,112905,2026-27,fra,regular,0010-Jornada 10,2027-02-06,3980,3964,,,,,,,False,False,SCRA,x:scra,Merignac,x:merignac
-api_extra,112894,2026-27,fra,regular,0009-Jornada 9,2027-01-23,35321,3984,,,,,,,False,False,Crehen,x:crehen,Quevert,x:quevert
-api_extra,112895,2026-27,fra,regular,0009-Jornada 9,2027-01-23,3950,4104,,,,,,,False,False,Ploufragan,x:ploufragan,Villejuif,x:villejuif
 api_extra,112896,2026-27,fra,regular,0009-Jornada 9,2027-01-23,3952,4188,,,,,,,False,False,Noisy,x:noisy,Poire,x:poire
 api_extra,112897,2026-27,fra,regular,0009-Jornada 9,2027-01-23,3990,3980,,,,,,,False,False,Roubaix,x:roubaix,SCRA,x:scra
 api_extra,112898,2026-27,fra,regular,0009-Jornada 9,2027-01-23,3964,3974,,,,,,,False,False,Merignac,x:merignac,La Vendeenne,x:la vendeenne
 api_extra,112899,2026-27,fra,regular,0009-Jornada 9,2027-01-23,3956,3982,,,,,,,False,False,Nantes,x:nantes,Coutras,x:coutras
-api_extra,112892,2026-27,fra,regular,0008-Jornada 8,2026-12-19,4104,3956,,,,,,,False,False,Villejuif,x:villejuif,Nantes,x:nantes
-api_extra,112893,2026-27,fra,regular,0008-Jornada 8,2026-12-19,4188,3950,,,,,,,False,False,Poire,x:poire,Ploufragan,x:ploufragan
+api_extra,112894,2026-27,fra,regular,0009-Jornada 9,2027-01-23,35321,3984,,,,,,,False,False,Crehen,x:crehen,Quevert,x:quevert
+api_extra,112895,2026-27,fra,regular,0009-Jornada 9,2027-01-23,3950,4104,,,,,,,False,False,Ploufragan,x:ploufragan,Villejuif,x:villejuif
 api_extra,112888,2026-27,fra,regular,0008-Jornada 8,2026-12-19,3980,3984,,,,,,,False,False,SCRA,x:scra,Quevert,x:quevert
 api_extra,112889,2026-27,fra,regular,0008-Jornada 8,2026-12-19,3974,3990,,,,,,,False,False,La Vendeenne,x:la vendeenne,Roubaix,x:roubaix
 api_extra,112890,2026-27,fra,regular,0008-Jornada 8,2026-12-19,3982,3964,,,,,,,False,False,Coutras,x:coutras,Merignac,x:merignac
 api_extra,112891,2026-27,fra,regular,0008-Jornada 8,2026-12-19,3952,35321,,,,,,,False,False,Noisy,x:noisy,Crehen,x:crehen
+api_extra,112892,2026-27,fra,regular,0008-Jornada 8,2026-12-19,4104,3956,,,,,,,False,False,Villejuif,x:villejuif,Nantes,x:nantes
+api_extra,112893,2026-27,fra,regular,0008-Jornada 8,2026-12-19,4188,3950,,,,,,,False,False,Poire,x:poire,Ploufragan,x:ploufragan
 api_extra,112882,2026-27,fra,regular,0007-Jornada 7,2026-12-12,3964,4104,,,,,,,False,False,Merignac,x:merignac,Villejuif,x:villejuif
 api_extra,112883,2026-27,fra,regular,0007-Jornada 7,2026-12-12,3956,4188,,,,,,,False,False,Nantes,x:nantes,Poire,x:poire
 api_extra,112884,2026-27,fra,regular,0007-Jornada 7,2026-12-12,3984,3974,,,,,,,False,False,Quevert,x:quevert,La Vendeenne,x:la vendeenne
 api_extra,112885,2026-27,fra,regular,0007-Jornada 7,2026-12-12,3990,3982,,,,,,,False,False,Roubaix,x:roubaix,Coutras,x:coutras
 api_extra,112886,2026-27,fra,regular,0007-Jornada 7,2026-12-12,3950,3952,,,,,,,False,False,Ploufragan,x:ploufragan,Noisy,x:noisy
 api_extra,112887,2026-27,fra,regular,0007-Jornada 7,2026-12-12,35321,3980,,,,,,,False,False,Crehen,x:crehen,SCRA,x:scra
-api_extra,112876,2026-27,fra,regular,0006-Jornada 6,2026-12-05,3974,3980,,,,,,,False,False,La Vendeenne,x:la vendeenne,SCRA,x:scra
-api_extra,112877,2026-27,fra,regular,0006-Jornada 6,2026-12-05,3982,3984,,,,,,,False,False,Coutras,x:coutras,Quevert,x:quevert
-api_extra,112878,2026-27,fra,regular,0006-Jornada 6,2026-12-05,3950,35321,,,,,,,False,False,Ploufragan,x:ploufragan,Crehen,x:crehen
-api_extra,112879,2026-27,fra,regular,0006-Jornada 6,2026-12-05,4104,3990,,,,,,,False,False,Villejuif,x:villejuif,Roubaix,x:roubaix
 api_extra,112880,2026-27,fra,regular,0006-Jornada 6,2026-12-05,4188,3964,,,,,,,False,False,Poire,x:poire,Merignac,x:merignac
 api_extra,112881,2026-27,fra,regular,0006-Jornada 6,2026-12-05,3952,3956,,,,,,,False,False,Noisy,x:noisy,Nantes,x:nantes
-api_extra,112871,2026-27,fra,regular,0005-Jornada 5,2026-11-14,3984,4104,,,,,,,False,False,Quevert,x:quevert,Villejuif,x:villejuif
-api_extra,112872,2026-27,fra,regular,0005-Jornada 5,2026-11-14,4188,3990,,,,,,,False,False,Poire,x:poire,Roubaix,x:roubaix
-api_extra,112873,2026-27,fra,regular,0005-Jornada 5,2026-11-14,3956,3950,,,,,,,False,False,Nantes,x:nantes,Ploufragan,x:ploufragan
-api_extra,112874,2026-27,fra,regular,0005-Jornada 5,2026-11-14,3980,3982,,,,,,,False,False,SCRA,x:scra,Coutras,x:coutras
-api_extra,112875,2026-27,fra,regular,0005-Jornada 5,2026-11-14,35321,3974,,,,,,,False,False,Crehen,x:crehen,La Vendeenne,x:la vendeenne
-api_extra,112870,2026-27,fra,regular,0005-Jornada 5,2026-11-14,3964,3952,,,,,,,False,False,Merignac,x:merignac,Noisy,x:noisy
-api_extra,112866,2026-27,fra,regular,0004-Jornada 4,2026-11-11,4104,3980,0.0,7.0,0.0,0.0,0.0,0.0,True,False,Villejuif,x:villejuif,SCRA,x:scra
+api_extra,112876,2026-27,fra,regular,0006-Jornada 6,2026-12-05,3974,3980,,,,,,,False,False,La Vendeenne,x:la vendeenne,SCRA,x:scra
+api_extra,112877,2026-27,fra,regular,0006-Jornada 6,2026-12-05,3982,3984,,,,,,,False,False,Coutras,x:coutras,Quevert,x:quevert
+api_extra,112875,2026-27,fra,regular,0005-Jornada 5,2026-11-14,35321,3974,2.0,5.0,0.0,0.0,0.0,0.0,True,False,Crehen,x:crehen,La Vendeenne,x:la vendeenne
+api_extra,112871,2026-27,fra,regular,0005-Jornada 5,2026-11-14,3984,4104,15.0,1.0,0.0,0.0,0.0,0.0,True,False,Quevert,x:quevert,Villejuif,x:villejuif
+api_extra,112872,2026-27,fra,regular,0005-Jornada 5,2026-11-14,4188,3990,0.0,3.0,0.0,0.0,0.0,0.0,True,False,Poire,x:poire,Roubaix,x:roubaix
+api_extra,112873,2026-27,fra,regular,0005-Jornada 5,2026-11-14,3956,3950,4.0,2.0,0.0,0.0,0.0,0.0,True,False,Nantes,x:nantes,Ploufragan,x:ploufragan
+api_extra,112874,2026-27,fra,regular,0005-Jornada 5,2026-11-14,3980,3982,6.0,3.0,0.0,0.0,0.0,0.0,True,False,SCRA,x:scra,Coutras,x:coutras
+api_extra,112870,2026-27,fra,regular,0005-Jornada 5,2026-11-14,3964,3952,7.0,5.0,0.0,0.0,0.0,0.0,True,False,Merignac,x:merignac,Noisy,x:noisy
 api_extra,112865,2026-27,fra,regular,0004-Jornada 4,2026-11-11,3956,35321,2.0,9.0,0.0,0.0,0.0,0.0,True,False,Nantes,x:nantes,Crehen,x:crehen
+api_extra,112866,2026-27,fra,regular,0004-Jornada 4,2026-11-11,4104,3980,0.0,7.0,0.0,0.0,0.0,0.0,True,False,Villejuif,x:villejuif,SCRA,x:scra
+api_extra,112864,2026-27,fra,regular,0004-Jornada 4,2026-11-11,3982,3974,1.0,4.0,0.0,0.0,0.0,0.0,True,False,Coutras,x:coutras,La Vendeenne,x:la vendeenne
 api_extra,112867,2026-27,fra,regular,0004-Jornada 4,2026-11-11,3984,4188,5.0,1.0,0.0,0.0,0.0,0.0,True,False,Quevert,x:quevert,Poire,x:poire
 api_extra,112868,2026-27,fra,regular,0004-Jornada 4,2026-11-11,3990,3952,3.0,7.0,0.0,0.0,0.0,0.0,True,False,Roubaix,x:roubaix,Noisy,x:noisy
 api_extra,112869,2026-27,fra,regular,0004-Jornada 4,2026-11-11,3950,3964,5.0,2.0,0.0,0.0,0.0,0.0,True,False,Ploufragan,x:ploufragan,Merignac,x:merignac
-api_extra,112864,2026-27,fra,regular,0004-Jornada 4,2026-11-11,3982,3974,1.0,4.0,0.0,0.0,0.0,0.0,True,False,Coutras,x:coutras,La Vendeenne,x:la vendeenne
 api_extra,112860,2026-27,fra,regular,0003-Jornada 3,2026-11-07,3952,3984,0.0,3.0,0.0,0.0,0.0,0.0,True,False,Noisy,x:noisy,Quevert,x:quevert
 api_extra,112859,2026-27,fra,regular,0003-Jornada 3,2026-11-07,3990,3950,7.0,3.0,0.0,0.0,0.0,0.0,True,False,Roubaix,x:roubaix,Ploufragan,x:ploufragan
 api_extra,112861,2026-27,fra,regular,0003-Jornada 3,2026-11-07,3980,4188,4.0,1.0,0.0,0.0,0.0,0.0,True,False,SCRA,x:scra,Poire,x:poire
@@ -4311,9 +4310,9 @@ api_extra,112854,2026-27,fra,regular,0002-Jornada 2,2026-10-31,4188,3974,2.0,5.0
 api_extra,112856,2026-27,fra,regular,0002-Jornada 2,2026-10-31,3956,3990,1.0,4.0,0.0,0.0,0.0,0.0,True,False,Nantes,x:nantes,Roubaix,x:roubaix
 api_extra,112857,2026-27,fra,regular,0002-Jornada 2,2026-10-31,3950,3984,0.0,4.0,0.0,0.0,0.0,0.0,True,False,Ploufragan,x:ploufragan,Quevert,x:quevert
 api_extra,112852,2026-27,fra,regular,0002-Jornada 2,2026-10-31,3964,35321,3.0,2.0,0.0,0.0,0.0,0.0,True,False,Merignac,x:merignac,Crehen,x:crehen
-api_extra,112850,2026-27,fra,regular,0001-Jornada 1,2026-10-24,3982,4188,2.0,0.0,0.0,0.0,0.0,0.0,True,False,Coutras,x:coutras,Poire,x:poire
-api_extra,112851,2026-27,fra,regular,0001-Jornada 1,2026-10-24,35321,4104,2.0,2.0,0.0,0.0,0.0,0.0,True,False,Crehen,x:crehen,Villejuif,x:villejuif
 api_extra,112846,2026-27,fra,regular,0001-Jornada 1,2026-10-24,3990,3964,2.0,3.0,0.0,0.0,0.0,0.0,True,False,Roubaix,x:roubaix,Merignac,x:merignac
 api_extra,112847,2026-27,fra,regular,0001-Jornada 1,2026-10-24,3984,3956,6.0,4.0,0.0,0.0,0.0,0.0,True,False,Quevert,x:quevert,Nantes,x:nantes
 api_extra,112848,2026-27,fra,regular,0001-Jornada 1,2026-10-24,3980,3950,11.0,0.0,0.0,0.0,0.0,0.0,True,False,SCRA,x:scra,Ploufragan,x:ploufragan
 api_extra,112849,2026-27,fra,regular,0001-Jornada 1,2026-10-24,3974,3952,10.0,0.0,0.0,0.0,0.0,0.0,True,False,La Vendeenne,x:la vendeenne,Noisy,x:noisy
+api_extra,112850,2026-27,fra,regular,0001-Jornada 1,2026-10-24,3982,4188,2.0,0.0,0.0,0.0,0.0,0.0,True,False,Coutras,x:coutras,Poire,x:poire
+api_extra,112851,2026-27,fra,regular,0001-Jornada 1,2026-10-24,35321,4104,2.0,2.0,0.0,0.0,0.0,0.0,True,False,Crehen,x:crehen,Villejuif,x:villejuif

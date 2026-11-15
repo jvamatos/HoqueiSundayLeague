@@ -1,0 +1,17 @@
+# assets replaced on 2026-11-15: delete in the next update once nothing references them
+/_blob/87e8fe141da63121ae10c2aeb5fb8d83
+/_blob/452429a1effe9e70256ae4d3604b825a
+/_blob/c9bc1a10b0b2fde50e54a429ac68c058
+/_blob/647ca6dbb8fdf8e91496b27e3d1376cb
+/_blob/802b5fac63e4e87ddb0f83e4fa4673c2
+/_blob/c9232a24a086713eafc7c98029b23983
+/_blob/c3b103c0395fea499c805eb18ab6d7fc
+/_blob/3ec12eecf131e408166935f318418415
+/_blob/aa17d084cd6c4784c139d66b9fa00de5
+/_blob/6bdf658189cb01f3379a9cfe103b5f95
+/_blob/acca29210fcf6e96926f8965f53f8700
+/_blob/483005a3bc7d6d8a926bd5a9af7f5716
+/_blob/cd26de3dd1e1eb5ee1886b8e91a0c711
+/_blob/38c8b72fee6db08898a9bd3ba3eedad0
+/_blob/da65c78945a1f1e98c9c45183ec30356
+/_blob/8e8299fd5984fcd5dd827be05f0f9076

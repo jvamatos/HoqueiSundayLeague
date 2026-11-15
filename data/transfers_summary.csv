@@ -143,39 +143,39 @@ season,team,d_att,d_def,d_goals,arrivals,departures,main_arrivals,main_departure
 2025-26,entroncamento,0.19215968180708626,-0.07059598668584433,-0.22657301675761543,5,5,"Lucas Marques, Pedro Beirante, Francisco Granadas","David Domingues, Francisco Ferreira “Chiquitita”, Duarte Ferreira",0.12156369512124193
 2025-26,academica,0.15401591696100303,-0.005903761228664525,-0.08477836609076705,1,2,Tiago Estarreja,"Hugo “Ulisses” Pereira, Gustavo “Guga” Carvalho",0.1481121557323385
 2025-26,murches,0.06928087310464287,0.08550897711642336,0.15318424450400592,6,6,"Guilherme Martins, Gonçalo “Guga” Gaspar, Miguel Alves","Tomás Moreira, Rafael “Rafa” Lourenço, Zé Costa",0.15478985022106623
-2026-27,candelaria,-0.04352269938981258,-0.1847980670452199,-0.1882931717661278,5,5,"Paulo “Xavi” Duro, Guilherme Magalhães, Joan Gangonells","Martim Vicente, Miguel Rocha, Francisco Abreu",-0.22832076643503246
-2026-27,sporting,-0.11335631882895097,-0.08225787979587523,-0.20067374793079074,3,2,"António Marante, João Pina, Nil Cervera","Alessandro Verona, Henrique Magalhães",-0.1956141986248262
+2026-27,candelaria,-0.0351654969252633,-0.20366397072746908,-0.18716487562008322,5,5,"Paulo “Xavi” Duro, Guilherme Magalhães, Joan Gangonells","Martim Vicente, Miguel Rocha, Francisco Abreu",-0.23882946765273239
 2026-27,oliveirense b,-0.024811484276596157,-0.15202508713813498,-0.4403901166509687,6,7,"Tomás Ferreira, Gonçalo Santos “Totti”, Gonçalo Lage","Diogo Lemos, Afonso Ribeiro, Bruno Torres",-0.17683657141473114
+2026-27,juventude viana,-0.08660969201980376,-0.07785004901237436,-0.15668285845089458,2,2,"Miguel Franco, Tomás Pereira","Andrés Castaño, Afonso Sousa",-0.16445974103217811
+2026-27,benfica b,-0.20806969265385009,0.058676738012142904,-0.6068294651151831,1,4,Diogo Ataíde,"Rodrigo Preciso, Diogo Duarte, Nuno Emídio",-0.14939295464170718
 2026-27,porto,-0.06041794936198386,-0.08227452546317837,-0.11779907600164075,1,1,César Carballeira,Eduard “Edu” Lamas,-0.14269247482516223
-2026-27,benfica b,-0.19450899914244876,0.05414601171531752,-0.5875887642850426,1,4,Diogo Ataíde,"Rodrigo Preciso, Diogo Duarte, Nuno Emídio",-0.14036298742713124
-2026-27,juventude viana,-0.07546819700221899,-0.06483607279808701,-0.09997464730719963,2,2,"Miguel Franco, Tomás Pereira","Andrés Castaño, Afonso Sousa",-0.140304269800306
 2026-27,sporting b,-0.1323320302449514,-0.007268150204527615,-0.2968360228151292,5,6,"João Maria Gatinho, Rafael Charraz, Sebastião Valadas","Lourenço Soares, Guilherme Caetano, Miguel Franco",-0.13960018044947903
-2026-27,porto b,-0.04674195401165811,-0.061302588254320806,-0.5392176663126071,4,4,"Duarte Ferreira, Afonso Oliveira “Carrais”, Martim “Tim” Oliveira","Tiago Saraiva, Filipe Sousa, Rodrigo Morais",-0.10804454226597891
-2026-27,oliveirense,-0.0687663211704752,-0.034521470260567205,0.0537231104875735,5,3,"Francisco “Kiko” Fernandes, Pedro Batista, João Almeida","Lucas Martínez, Nuno Santos, Franco Platero",-0.1032877914310424
+2026-27,sporting,-0.0758871236187342,-0.061956570913887454,-0.12928478401194043,3,1,"António Marante, João Pina, Nil Cervera",Henrique Magalhães,-0.13784369453262166
+2026-27,oliveirense,-0.06645662288105637,-0.050862072422841076,0.004891708069631129,4,3,"Francisco “Kiko” Fernandes, Pedro Batista, João Almeida","Lucas Martínez, Nuno Santos, Franco Platero",-0.11731869530389745
+2026-27,porto b,-0.0481084347495443,-0.05929952773781288,-0.5372732543550902,4,4,"Duarte Ferreira, Afonso Oliveira “Carrais”, Martim “Tim” Oliveira","Tiago Saraiva, Filipe Sousa, Rodrigo Morais",-0.10740796248735718
+2026-27,benfica,0.027989488863593592,-0.11113872214347431,0.24735739097803666,1,2,Martim Costa,"Diogo Rafael “Chiquinho”, Lucas Ordoñez",-0.08314923327988072
 2026-27,academica,-0.020638115623702727,-0.061413615115791104,-0.153392273320464,3,2,"Bernardo Oliveira, Miguel Cunha, Pedro Beirante","Tiago Estarreja, Vasco Pereira",-0.08205173073949383
-2026-27,barcelos,-0.10285446450486324,0.024880640792083075,-0.3527713813929654,1,1,Lucas Honório,Franco “Tato” Ferruccio,-0.07797382371278017
-2026-27,parede,0.020571472594664186,-0.09731018827918439,-0.12120819627111779,2,2,"Nuno Emídio, Martim Silva","Francisco “Kiko” Fernandes, Diogo Alves “Pákito”",-0.0767387156845202
+2026-27,parede,0.0233859337997806,-0.10063970145777612,-0.13402337185283142,2,2,"Nuno Emídio, Martim Silva","Francisco “Kiko” Fernandes, Diogo Alves “Pákito”",-0.07725376765799552
 2026-27,valongo b,-0.05283396371666166,-0.004359087763470835,-0.27974307485817973,3,3,"Vasco Sousa, João Monteiro, Daniel “Dani” Magalhães","Liloann Gélébart, Simão Dantas, João Pereira",-0.05719305148013249
-2026-27,benfica,0.029820203099230613,-0.08471468590879339,0.16700321975215493,1,2,Martim Costa,"Diogo Rafael “Chiquinho”, Lucas Ordoñez",-0.05489448280956277
-2026-27,famalicense,-0.021859108337536213,-0.015809981444000563,-0.05358048393517745,2,3,"Miguel Santos, Ricardo Fallé","Zé Pedro Pereira, Pedro Freitas, Guilherme Leitão",-0.037669089781536776
-2026-27,paco arcos,-0.054258996844011004,0.0185872054542916,-0.6640115279000587,6,4,"Afonso Sousa, Tomás Martins, Mateus Marques","Bruno Frade, Pedro Vaz, Zé Costa",-0.035671791389719404
-2026-27,termas,0.00147370943979655,-0.020902703103508585,-0.035316427436036246,1,1,Alexandre “Alex” Barreira,Octavio “Kochi” Zangheri,-0.019428993663712035
-2026-27,alcobacense,0.0277963356429618,-0.04349807550867424,-0.01159813996702952,4,3,"Martim Vicente, Diogo Almeida, Matías Chirino","Thomas Molina, Miguel Fialho, Santino Facca",-0.01570173986571244
-2026-27,alenquer,-0.06786432195123718,0.055764435560776135,-0.23547438941750465,5,4,"Zé Diogo Macedo, Matéo Avondo, Eloi Matas","Miguel Fortunato, Guilherme “Gui” Duro, Paulo “Xavi” Duro",-0.012099886390461043
-2026-27,oeiras,0.003914550224152269,-0.012948586116417499,-0.07749766875417952,3,3,"Bruno Frade, Guilherme Caetano, David Fonseca","Manuel Coimbra, Filipe Martins, Matéo Avondo",-0.00903403589226523
-2026-27,marinhense,-0.013513220125176341,0.0067091499746106675,0.1173347849339692,1,1,Lucas Bridge,Rúben Henriques,-0.006804070150565673
+2026-27,barcelos,-0.07800910676807282,0.027859075281155027,-0.13911924264891518,1,1,Lucas Honório,Franco “Tato” Ferruccio,-0.050150031486917795
+2026-27,paco arcos,-0.058711305735999836,0.015237079813300025,-0.6781142304730232,6,4,"Afonso Sousa, Tomás Martins, Mateus Marques","Bruno Frade, Pedro Vaz, Zé Costa",-0.04347422592269981
+2026-27,famalicense,-0.023710862477112727,-0.014002493355678238,-0.02543603239133896,2,3,"Miguel Santos, Ricardo Fallé","Zé Pedro Pereira, Pedro Freitas, Guilherme Leitão",-0.037713355832790965
+2026-27,termas,-0.00035600959982340363,-0.023799623384992835,-0.032880648097882936,1,1,Alexandre “Alex” Barreira,Octavio “Kochi” Zangheri,-0.02415563298481624
+2026-27,alcobacense,0.02819187805920728,-0.04073850940527052,0.01035068074495693,4,3,"Martim Vicente, Diogo Almeida, Matías Chirino","Thomas Molina, Miguel Fialho, Santino Facca",-0.012546631346063236
+2026-27,marinhense,-0.01400814658132386,0.004802125178940991,0.13946947939600407,1,1,Lucas Bridge,Rúben Henriques,-0.009206021402382868
+2026-27,alenquer,-0.06394132989769416,0.05484024515299507,-0.22106426229583764,5,4,"Zé Diogo Macedo, Matéo Avondo, Eloi Matas","Miguel Fortunato, Guilherme “Gui” Duro, Paulo “Xavi” Duro",-0.00910108474469909
+2026-27,pacense,0.10213225018229159,-0.1063443958504595,0.38405841840341126,3,1,"Franco “Tato” Ferruccio, Álvaro Shehda, Ezequiel Funes",Tomás Pereira,-0.00421214566816791
 2026-27,povoa,-0.031172852376981114,0.028023422142562093,0.46264981559234464,3,4,"João Pereira, Guilherme Leitão, Martim Oliveira","Luís Melo, Henrique “Kiko” Campos, Miguel Castro",-0.0031494302344190206
 2026-27,tomar,0.22488869167094483,-0.22534194539124358,0.7631871831561219,3,4,"Rodrigo Preciso, Diogo Duarte, Francisco “Xico” Veludo","António Marante, André Centeno, Julián Tamborindegui",-0.0004532537202987519
 2026-27,murches,-0.0011603788702729545,0.002585113514612769,-0.09757397658463507,1,2,André Lopes,"André Pimenta, Guilherme Martins",0.0014247346443398146
-2026-27,carvalhos,0.0008748516005209553,0.000696429087179623,0.19622818853833013,0,0,,,0.0015712806877005783
-2026-27,pacense,0.10394511193238952,-0.10236104637813843,0.4287503729967732,3,1,"Franco “Tato” Ferruccio, Álvaro Shehda, Ezequiel Funes",Tomás Pereira,0.001584065554251085
-2026-27,fisica,0.03368804904142905,-0.019900633543164875,0.045464454085158756,2,3,"Luís Francisco Oliveira, Francisco Ferreira “Chiquitita”","David Fonseca, Guilherme Maurício “Pico”, Diogo Miranda",0.013787415498264177
-2026-27,criar t,0.004691791740169565,0.025461468896883846,0.009150451516286795,1,1,Thomas Molina,Henrique Viçoso,0.03015326063705341
-2026-27,barcelos b,0.1757332696489745,-0.14051013246276572,0.15499387101746653,4,5,"Tiago Pereira, Simão Araújo, Rodrigo Rodrigues","João Duarte, João Chaves, Martim Oliveira",0.035223137186208786
-2026-27,cambra,0.04393021070023981,-0.00258212582847292,-0.0006182653473654209,1,2,Xavier “Xavi” Pinho,"Pedro Rego, Ricardo Fallé",0.04134808487176689
-2026-27,espinho,0.10182961283075681,-0.05884583022347778,0.12085953804068938,4,4,"Liloann Gélébart, Filipe Sousa, Alexandre Sousa","Xavier “Xavi” Pinho, Francisco “Kiko” Pereira, Lucas Bridge",0.04298378260727903
-2026-27,turquel,0.05635094608384409,-0.011251844605012964,0.00012475766471764516,3,4,"Guilherme “Gui” Duro, Zé Costa, Diogo Neves","Martim Costa, Diogo Almeida, Ezequiel Funes",0.04509910147883113
-2026-27,sanjoanense,0.04424661974362832,0.0017943565589671404,0.07561947202968122,2,4,"Francisco Torres “Tombita”, Renato Clavel","João Ramalho, Miguel Henriques, Joel “Negro” Martín",0.04604097630259546
-2026-27,braga,0.028011895966851084,0.04631031377185793,0.29209701639006713,2,2,"Afonso Ribeiro, Santiago Honório","Guilherme Magalhães, Paulo Pereira",0.07432220973870901
-2026-27,valongo,0.0762158850369626,0.009784846580527945,0.23150612797802195,2,3,"Henrique Magalhães, Marcos Blanqué","João Lima, Pedro Batista, Gabriel “Gabi” Azevedo",0.08600073161749054
-2026-27,riba dave,0.08967319946093219,-0.0029663890607321136,0.3760308711823759,5,4,"Tiago Saraiva, Filipe Martins, Pedro Rocha","Álvaro Shehda, Gonçalo Santos “Totti”, Antoine Thébaud",0.08670681040020008
+2026-27,oeiras,0.00838637552359725,-0.005156536092980835,-0.05372577444967819,3,2,"Bruno Frade, Guilherme Caetano, David Fonseca","Filipe Martins, Matéo Avondo",0.0032298394306164158
+2026-27,carvalhos,0.0013252662848776686,0.0024931481177368764,0.192040384046694,0,0,,,0.003818414402614545
+2026-27,fisica,0.027446155154112334,-0.017576351809911794,0.05400167185072413,2,3,"Luís Francisco Oliveira, Francisco Ferreira “Chiquitita”","David Fonseca, Guilherme Maurício “Pico”, Diogo Miranda",0.00986980334420054
+2026-27,criar t,-0.0009994199822626892,0.024404145618178393,0.0142271515189889,1,1,Thomas Molina,Henrique Viçoso,0.023404725635915703
+2026-27,turquel,0.049225941978278544,-0.019233989690206833,-0.010496522097187322,3,4,"Guilherme “Gui” Duro, Zé Costa, Diogo Neves","Martim Costa, Diogo Almeida, Ezequiel Funes",0.02999195228807171
+2026-27,barcelos b,0.17477049190250732,-0.13961479728068285,0.15903222100791603,5,5,"Rui Duarte, Tiago Pereira, Simão Araújo","João Duarte, João Chaves, Martim Oliveira",0.03515569462182447
+2026-27,cambra,0.04484755747584661,-0.0017278830081357277,-0.0025121608572200582,2,2,"Xavier “Xavi” Pinho, José “Zeka” Santos","Pedro Rego, Ricardo Fallé",0.04311967446771088
+2026-27,espinho,0.10211893160615354,-0.053955760149737825,0.12710372619421628,4,4,"Liloann Gélébart, Filipe Sousa, Alexandre Sousa","Xavier “Xavi” Pinho, Francisco “Kiko” Pereira, Lucas Bridge",0.048163171456415715
+2026-27,braga,0.026588424241587656,0.03984563241108757,0.25105100120980195,1,1,Afonso Ribeiro,Guilherme Magalhães,0.06643405665267522
+2026-27,valongo,0.0660983001183498,0.007579061360687089,0.19238322387000562,2,3,"Henrique Magalhães, Marcos Blanqué","João Lima, Pedro Batista, Gabriel “Gabi” Azevedo",0.07367736147903689
+2026-27,sanjoanense,0.07016892406798228,0.019505629379758624,0.056179112010770194,3,3,"Guilherme Pedruco, Francisco Torres “Tombita”, Renato Clavel","Miguel Henriques, Joel “Negro” Martín, Juan Manuel “Juanma” Carrión",0.0896745534477409
+2026-27,riba dave,0.08647231393723784,0.06420831125441391,0.30853444552878106,6,4,"Miguel Rocha, Tiago Saraiva, Filipe Martins","Álvaro Shehda, Gonçalo Santos “Totti”, Antoine Thébaud",0.15068062519165176
