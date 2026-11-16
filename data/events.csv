@@ -77553,26 +77553,6 @@ event_id,icon,side,period,minute,second,text
 110370,penalti_defendido,away,2.0,23.0,0.0,Defesa de penálti Santino Facca ®
 110370,time,away,2.0,23.0,0.0,Fim da 2ª parte.
 110370,time,away,2.0,23.0,0.0,Fim do jogo.
-110371,time,,,,,Início do jogo.
-110371,time,home,1.0,6.0,0.0,Timeout Riba d'Ave HC
-110371,golo_bola_corrida,home,1.0,10.0,0.0,1-0 Gonçalo Filipe
-110371,golo_bola_corrida,away,1.0,10.0,0.0,1-1 Franco Pósito
-110371,time,away,1.0,13.0,0.0,Timeout AD Valongo
-110371,time,home,1.0,17.0,0.0,Timeout Riba d'Ave HC
-110371,golo_bola_corrida,away,1.0,17.0,0.0,1-2 João Pedro
-110371,time,away,1.0,17.0,0.0,Fim da 1ª parte.
-110371,time,away,1.0,17.0,0.0,Início da 2ª parte.
-110371,advertencia,home,2.0,8.0,0.0,Cartão amarelo Daniel Pinheiro
-110371,time,away,2.0,9.0,0.0,Timeout AD Valongo
-110371,golo_bola_corrida,home,2.0,10.0,0.0,2-2 Tiago Saraiva
-110371,golo_de_livre_direto,home,2.0,16.0,0.0,3-2 Martim Leite (livre direto)
-110371,10f,away,2.0,16.0,0.0,10ª Falta de Equipa de AD Valongo
-110371,10f,home,2.0,19.0,0.0,10ª Falta de Equipa de Riba d'Ave HC
-110371,time,away,2.0,19.0,0.0,Timeout AD Valongo
-110371,golo_de_livre_direto,away,2.0,19.0,0.0,3-3 Marcos Blanqué (livre direto)
-110371,advertencia,home,2.0,24.0,0.0,Cartão amarelo Gustavo Pato
-110371,time,away,2.0,24.0,0.0,Fim da 2ª parte.
-110371,time,away,2.0,24.0,0.0,Fim do jogo.
 110374,time,,,,,Início do jogo.
 110374,golo_bola_corrida,home,1.0,2.0,0.0,1-0 Iván Morales
 110374,golo_bola_corrida,home,1.0,7.0,0.0,"2-0 Miguel Rocha, com assistência de Luís Querido"
@@ -77627,6 +77607,26 @@ event_id,icon,side,period,minute,second,text
 110375,golo_bola_corrida,home,2.0,20.0,0.0,"5-2 Filipe Fernandes, com assistência de Tomás Santos"
 110375,time,away,2.0,20.0,0.0,Fim da 2ª parte.
 110375,time,away,2.0,20.0,0.0,Fim do jogo.
+110371,time,,,,,Início do jogo.
+110371,time,home,1.0,6.0,0.0,Timeout Riba d'Ave HC
+110371,golo_bola_corrida,home,1.0,10.0,0.0,1-0 Gonçalo Filipe
+110371,golo_bola_corrida,away,1.0,10.0,0.0,1-1 Franco Pósito
+110371,time,away,1.0,13.0,0.0,Timeout AD Valongo
+110371,time,home,1.0,17.0,0.0,Timeout Riba d'Ave HC
+110371,golo_bola_corrida,away,1.0,17.0,0.0,1-2 João Pedro
+110371,time,away,1.0,17.0,0.0,Fim da 1ª parte.
+110371,time,away,1.0,17.0,0.0,Início da 2ª parte.
+110371,advertencia,home,2.0,8.0,0.0,Cartão amarelo Daniel Pinheiro
+110371,time,away,2.0,9.0,0.0,Timeout AD Valongo
+110371,golo_bola_corrida,home,2.0,10.0,0.0,2-2 Tiago Saraiva
+110371,golo_de_livre_direto,home,2.0,16.0,0.0,3-2 Martim Leite (livre direto)
+110371,10f,away,2.0,16.0,0.0,10ª Falta de Equipa de AD Valongo
+110371,10f,home,2.0,19.0,0.0,10ª Falta de Equipa de Riba d'Ave HC
+110371,time,away,2.0,19.0,0.0,Timeout AD Valongo
+110371,golo_de_livre_direto,away,2.0,19.0,0.0,3-3 Marcos Blanqué (livre direto)
+110371,advertencia,home,2.0,24.0,0.0,Cartão amarelo Gustavo Pato
+110371,time,away,2.0,24.0,0.0,Fim da 2ª parte.
+110371,time,away,2.0,24.0,0.0,Fim do jogo.
 110368,time,,,,,Início do jogo.
 110368,golo_bola_corrida,away,1.0,6.0,0.0,0-1 Tomás Pereira
 110368,cartao_azul,home,1.0,9.0,0.0,Cartão azul Diogo Abreu
@@ -77691,6 +77691,43 @@ event_id,icon,side,period,minute,second,text
 110369,golo_bola_corrida,home,2.0,25.0,0.0,"7-2 Tomás Almeida, com assistência de Joan Galbas"
 110369,time,away,2.0,25.0,0.0,Fim da 2ª parte.
 110369,time,away,2.0,25.0,0.0,Fim do jogo.
+110574,time,,,,,Início do jogo.
+110574,golo_bola_corrida,home,1.0,1.0,0.0,1-0 Rodrigo Fernandes
+110574,penalti_defendido,home,1.0,3.0,0.0,Defesa de penálti Martim Oliveira ®
+110574,penalti_falhado,away,1.0,3.0,0.0,Penálti falhado José Pedro Cunha
+110574,advertencia,away,1.0,8.0,0.0,Cartão amarelo Ricardo Azevedo
+110574,time,away,1.0,9.0,0.0,"Timeout AD Valongo ""B"""
+110574,time,home,1.0,11.0,0.0,Timeout CD Póvoa
+110574,time,away,1.0,17.0,0.0,"Timeout AD Valongo ""B"""
+110574,cartao_azul,home,1.0,20.0,0.0,"Cartão azul Henrique ""Kiko"" Campos"
+110574,cartao_azul,away,1.0,20.0,0.0,Cartão azul Diogo Abreu
+110574,golo_bola_corrida,home,1.0,23.0,0.0,2-0 Rodrigo Fernandes
+110574,golo_bola_corrida,home,1.0,24.0,0.0,3-0 Tiago Pinheiro
+110574,time,away,1.0,24.0,0.0,Fim da 1ª parte.
+110574,time,away,1.0,24.0,0.0,Início da 2ª parte.
+110574,golo_bola_corrida,home,2.0,1.0,0.0,4-0 Rodrigo Fernandes
+110574,10f,home,2.0,13.0,0.0,10ª Falta de Equipa de CD Póvoa
+110574,livre_direto_defendido,home,2.0,13.0,0.0,Defesa de livre direto Martim Oliveira ®
+110574,livre_direto_falhado,away,2.0,13.0,0.0,"Livre direto falhado Francisco ""Kiko"" Pinto"
+110574,golo_de_livre_direto,home,2.0,13.0,0.0,5-0 Rodrigo Fernandes (livre direto)
+110574,10f,away,2.0,13.0,0.0,"10ª Falta de Equipa de AD Valongo ""B"""
+110574,time,away,2.0,13.0,0.0,"Timeout AD Valongo ""B"""
+110574,inicio_power_play,home,2.0,14.0,0.0,Inicio Powerplay CD Póvoa
+110574,cartao_azul,away,2.0,14.0,0.0,Cartão azul Lucas Pereira
+110574,fim_power_play,home,2.0,16.0,0.0,Fim Powerplay CD Póvoa
+110574,golo_bola_corrida,home,2.0,17.0,0.0,6-0 Guilherme Leitão
+110574,time,home,2.0,17.0,0.0,Timeout CD Póvoa
+110574,golo_bola_corrida,home,2.0,21.0,0.0,7-0 João Pereira
+110574,time,home,2.0,21.0,0.0,Timeout CD Póvoa
+110574,substituicao,away,2.0,22.0,0.0,"Sai Afonso Venda ®, entra Guilherme Pimenta ®"
+110574,inicio_power_play,home,2.0,22.0,0.0,Inicio Powerplay CD Póvoa
+110574,cartao_azul,away,2.0,22.0,0.0,Cartão azul Diogo Abreu
+110574,fim_power_play,home,2.0,24.0,0.0,Fim Powerplay CD Póvoa
+110574,cartao_azul,home,2.0,25.0,0.0,"Cartão azul Henrique ""Kiko"" Campos"
+110574,inicio_power_play,away,2.0,25.0,0.0,"Inicio Powerplay AD Valongo ""B"""
+110574,golo_marcado_em_under_play2,home,2.0,25.0,0.0,8-0 João Pereira (under play)
+110574,time,away,2.0,25.0,0.0,Fim da 2ª parte.
+110574,time,away,2.0,25.0,0.0,Fim do jogo.
 110578,time,,,,,Início do jogo.
 110578,golo_bola_corrida,home,1.0,2.0,0.0,1-0 Tiago Moreira
 110578,time,away,1.0,4.0,0.0,Timeout HC Mealhada
@@ -77903,27 +77940,6 @@ event_id,icon,side,period,minute,second,text
 110572,cartao_azul,away,2.0,25.0,0.0,Cartão azul Afonso Veiga
 110572,time,away,2.0,25.0,0.0,Fim da 2ª parte.
 110572,time,away,2.0,25.0,0.0,Fim do jogo.
-110569,time,,,,,Início do jogo.
-110569,time,home,1.0,6.0,0.0,"Timeout OC Barcelos ""B"""
-110569,time,home,1.0,15.0,0.0,"Timeout OC Barcelos ""B"""
-110569,golo_bola_corrida,away,1.0,15.0,0.0,"0-1 José ""Zeka"" Santos"
-110569,10f,home,1.0,25.0,0.0,"10ª Falta de Equipa de OC Barcelos ""B"""
-110569,livre_direto_defendido,home,1.0,25.0,0.0,Defesa de livre direto Luís Belchior ®
-110569,livre_direto_falhado,away,1.0,25.0,0.0,"Livre direto falhado José ""Zeka"" Santos"
-110569,time,away,1.0,25.0,0.0,Fim da 1ª parte.
-110569,time,away,1.0,25.0,0.0,Início da 2ª parte.
-110569,golo_bola_corrida,home,2.0,4.0,0.0,1-1 Rui Duarte
-110569,time,home,2.0,10.0,0.0,"Timeout OC Barcelos ""B"""
-110569,inicio_power_play,home,2.0,12.0,0.0,"Inicio Powerplay OC Barcelos ""B"""
-110569,cartao_azul,away,2.0,12.0,0.0,"Cartão azul Miguel ""Migas"" Oliveira"
-110569,fim_power_play,home,2.0,14.0,0.0,"Fim Powerplay OC Barcelos ""B"""
-110569,time,away,2.0,17.0,0.0,Timeout HA Cambra
-110569,time,away,2.0,25.0,0.0,Timeout HA Cambra
-110569,15f,home,2.0,25.0,0.0,"15ª Falta de Equipa de OC Barcelos ""B"""
-110569,livre_direto_defendido,home,2.0,25.0,0.0,Defesa de livre direto Luís Belchior ®
-110569,livre_direto_falhado,away,2.0,25.0,0.0,"Livre direto falhado Miguel ""Migas"" Oliveira"
-110569,time,away,2.0,25.0,0.0,Fim da 2ª parte.
-110569,time,away,2.0,25.0,0.0,Fim do jogo.
 110573,time,,,,,Início do jogo.
 110573,golo_bola_corrida,home,1.0,11.0,0.0,1-0 Lucas Pereira
 110573,time,home,1.0,11.0,0.0,"Timeout AD Valongo ""B"""
@@ -77967,6 +77983,27 @@ event_id,icon,side,period,minute,second,text
 110573,fim_power_play,home,2.0,25.0,0.0,"Fim Powerplay AD Valongo ""B"""
 110573,time,away,2.0,25.0,0.0,Fim da 2ª parte.
 110573,time,away,2.0,25.0,0.0,Fim do jogo.
+110569,time,,,,,Início do jogo.
+110569,time,home,1.0,6.0,0.0,"Timeout OC Barcelos ""B"""
+110569,time,home,1.0,15.0,0.0,"Timeout OC Barcelos ""B"""
+110569,golo_bola_corrida,away,1.0,15.0,0.0,"0-1 José ""Zeka"" Santos"
+110569,10f,home,1.0,25.0,0.0,"10ª Falta de Equipa de OC Barcelos ""B"""
+110569,livre_direto_defendido,home,1.0,25.0,0.0,Defesa de livre direto Luís Belchior ®
+110569,livre_direto_falhado,away,1.0,25.0,0.0,"Livre direto falhado José ""Zeka"" Santos"
+110569,time,away,1.0,25.0,0.0,Fim da 1ª parte.
+110569,time,away,1.0,25.0,0.0,Início da 2ª parte.
+110569,golo_bola_corrida,home,2.0,4.0,0.0,1-1 Rui Duarte
+110569,time,home,2.0,10.0,0.0,"Timeout OC Barcelos ""B"""
+110569,inicio_power_play,home,2.0,12.0,0.0,"Inicio Powerplay OC Barcelos ""B"""
+110569,cartao_azul,away,2.0,12.0,0.0,"Cartão azul Miguel ""Migas"" Oliveira"
+110569,fim_power_play,home,2.0,14.0,0.0,"Fim Powerplay OC Barcelos ""B"""
+110569,time,away,2.0,17.0,0.0,Timeout HA Cambra
+110569,time,away,2.0,25.0,0.0,Timeout HA Cambra
+110569,15f,home,2.0,25.0,0.0,"15ª Falta de Equipa de OC Barcelos ""B"""
+110569,livre_direto_defendido,home,2.0,25.0,0.0,Defesa de livre direto Luís Belchior ®
+110569,livre_direto_falhado,away,2.0,25.0,0.0,"Livre direto falhado Miguel ""Migas"" Oliveira"
+110569,time,away,2.0,25.0,0.0,Fim da 2ª parte.
+110569,time,away,2.0,25.0,0.0,Fim do jogo.
 110571,time,,,,,Início do jogo.
 110571,golo_bola_corrida,home,1.0,3.0,0.0,1-0 Gonçalo Leal
 110571,time,home,1.0,14.0,0.0,"Timeout FC Porto ""B"""
@@ -78295,32 +78332,6 @@ event_id,icon,side,period,minute,second,text
 110565,livre_direto_falhado,away,2.0,19.0,0.0,Livre direto falhado Lucas Bento
 110565,time,away,2.0,19.0,0.0,Fim da 2ª parte.
 110565,time,away,2.0,19.0,0.0,Fim do jogo.
-110554,time,,,,,Início do jogo.
-110554,golo_bola_corrida,away,1.0,3.0,0.0,0-1 Rodrigo Fernandes
-110554,time,home,1.0,7.0,0.0,"Timeout OC Barcelos ""B"""
-110554,golo_bola_corrida,away,1.0,9.0,0.0,0-2 Rodrigo Fernandes
-110554,time,away,1.0,12.0,0.0,Timeout CD Póvoa
-110554,time,home,1.0,19.0,0.0,"Timeout OC Barcelos ""B"""
-110554,inicio_power_play,home,1.0,20.0,0.0,"Inicio Powerplay OC Barcelos ""B"""
-110554,cartao_azul,away,1.0,20.0,0.0,Cartão azul Hugo Barata
-110554,fim_power_play,home,1.0,22.0,0.0,"Fim Powerplay OC Barcelos ""B"""
-110554,time,away,1.0,22.0,0.0,Fim da 1ª parte.
-110554,time,away,1.0,22.0,0.0,Início da 2ª parte.
-110554,golo_bola_corrida,away,2.0,3.0,0.0,0-3 Rodrigo Fernandes
-110554,cartao_azul,home,2.0,5.0,0.0,Cartão azul Afonso Figueiredo
-110554,time,home,2.0,5.0,0.0,"Timeout OC Barcelos ""B"""
-110554,inicio_power_play,away,2.0,5.0,0.0,Inicio Powerplay CD Póvoa
-110554,fim_power_play,away,2.0,7.0,0.0,Fim Powerplay CD Póvoa
-110554,golo_bola_corrida,away,2.0,8.0,0.0,0-4 Tiago Pinheiro
-110554,livre_direto_falhado,home,2.0,11.0,0.0,Livre direto falhado Martim Bento
-110554,10f,away,2.0,11.0,0.0,10ª Falta de Equipa de CD Póvoa
-110554,livre_direto_defendido,away,2.0,11.0,0.0,Defesa de livre direto Martim Oliveira ®
-110554,advertencia,away,2.0,14.0,0.0,Cartão amarelo Delegado
-110554,time,away,2.0,16.0,0.0,Timeout CD Póvoa
-110554,time,home,2.0,20.0,0.0,"Timeout OC Barcelos ""B"""
-110554,golo_bola_corrida,away,2.0,25.0,0.0,0-5 Rodrigo Fernandes
-110554,time,away,2.0,25.0,0.0,Fim da 2ª parte.
-110554,time,away,2.0,25.0,0.0,Fim do jogo.
 110557,time,,,,,Início do jogo.
 110557,cartao_azul,home,1.0,4.0,0.0,Cartão azul Tomás Ferreira
 110557,inicio_power_play,away,1.0,4.0,0.0,Inicio Powerplay CH Carvalhos
@@ -78348,6 +78359,32 @@ event_id,icon,side,period,minute,second,text
 110557,golo_de_livre_direto,away,2.0,24.0,0.0,"1-5 Damián Paez ""Pipi"" (livre direto)"
 110557,time,away,2.0,24.0,0.0,Fim da 2ª parte.
 110557,time,away,2.0,24.0,0.0,Fim do jogo.
+110554,time,,,,,Início do jogo.
+110554,golo_bola_corrida,away,1.0,3.0,0.0,0-1 Rodrigo Fernandes
+110554,time,home,1.0,7.0,0.0,"Timeout OC Barcelos ""B"""
+110554,golo_bola_corrida,away,1.0,9.0,0.0,0-2 Rodrigo Fernandes
+110554,time,away,1.0,12.0,0.0,Timeout CD Póvoa
+110554,time,home,1.0,19.0,0.0,"Timeout OC Barcelos ""B"""
+110554,inicio_power_play,home,1.0,20.0,0.0,"Inicio Powerplay OC Barcelos ""B"""
+110554,cartao_azul,away,1.0,20.0,0.0,Cartão azul Hugo Barata
+110554,fim_power_play,home,1.0,22.0,0.0,"Fim Powerplay OC Barcelos ""B"""
+110554,time,away,1.0,22.0,0.0,Fim da 1ª parte.
+110554,time,away,1.0,22.0,0.0,Início da 2ª parte.
+110554,golo_bola_corrida,away,2.0,3.0,0.0,0-3 Rodrigo Fernandes
+110554,cartao_azul,home,2.0,5.0,0.0,Cartão azul Afonso Figueiredo
+110554,time,home,2.0,5.0,0.0,"Timeout OC Barcelos ""B"""
+110554,inicio_power_play,away,2.0,5.0,0.0,Inicio Powerplay CD Póvoa
+110554,fim_power_play,away,2.0,7.0,0.0,Fim Powerplay CD Póvoa
+110554,golo_bola_corrida,away,2.0,8.0,0.0,0-4 Tiago Pinheiro
+110554,livre_direto_falhado,home,2.0,11.0,0.0,Livre direto falhado Martim Bento
+110554,10f,away,2.0,11.0,0.0,10ª Falta de Equipa de CD Póvoa
+110554,livre_direto_defendido,away,2.0,11.0,0.0,Defesa de livre direto Martim Oliveira ®
+110554,advertencia,away,2.0,14.0,0.0,Cartão amarelo Delegado
+110554,time,away,2.0,16.0,0.0,Timeout CD Póvoa
+110554,time,home,2.0,20.0,0.0,"Timeout OC Barcelos ""B"""
+110554,golo_bola_corrida,away,2.0,25.0,0.0,0-5 Rodrigo Fernandes
+110554,time,away,2.0,25.0,0.0,Fim da 2ª parte.
+110554,time,away,2.0,25.0,0.0,Fim do jogo.
 110556,time,,,,,Início do jogo.
 110556,penalti_defendido,home,1.0,8.0,0.0,Defesa de penálti Martim Garrido ®
 110556,penalti_falhado,away,1.0,8.0,0.0,"Penálti falhado Miguel ""Migas"" Oliveira"
@@ -78446,36 +78483,6 @@ event_id,icon,side,period,minute,second,text
 110555,cartao_azul,away,2.0,24.0,0.0,Cartão azul Carlos Dias
 110555,time,away,2.0,24.0,0.0,Fim da 2ª parte.
 110555,time,away,2.0,24.0,0.0,Fim do jogo.
-110553,time,,,,,Início do jogo.
-110553,golo_bola_corrida,away,1.0,4.0,0.0,0-1 Bruno Alonso
-110553,golo_bola_corrida,home,1.0,5.0,0.0,"1-1 Matthew ""Matt"" Baker"
-110553,penalti_defendido,home,1.0,9.0,0.0,Defesa de penálti
-110553,penalti_falhado,away,1.0,9.0,0.0,Penálti falhado Pedro Cunha
-110553,time,home,1.0,13.0,0.0,Timeout Termas OC
-110553,advertencia,home,1.0,16.0,0.0,"Cartão amarelo Matthew ""Matt"" Baker"
-110553,time,away,1.0,16.0,0.0,Timeout Ass. Académica Espinho
-110553,golo_bola_corrida,away,1.0,20.0,0.0,1-2 Bruno Alonso
-110553,penalti_falhado,home,1.0,22.0,0.0,Penálti falhado Afonso Pereira
-110553,penalti_defendido,away,1.0,22.0,0.0,Defesa de penálti Pedro Bessa ®
-110553,time,away,1.0,24.0,0.0,Timeout Ass. Académica Espinho
-110553,advertencia,away,1.0,24.0,0.0,Cartão amarelo Lourenço Ventura
-110553,time,away,1.0,24.0,0.0,Fim da 1ª parte.
-110553,time,away,1.0,24.0,0.0,Início da 2ª parte.
-110553,10f,home,2.0,4.0,0.0,10ª Falta de Equipa de Termas OC
-110553,livre_direto_defendido,home,2.0,4.0,0.0,"Defesa de livre direto Marcelo Silva ""Cêllô"" ®"
-110553,livre_direto_falhado,away,2.0,4.0,0.0,Livre direto falhado Liloann Gélébart
-110553,livre_direto_falhado,home,2.0,7.0,0.0,Livre direto falhado Tiago Gaspar
-110553,10f,away,2.0,7.0,0.0,10ª Falta de Equipa de Ass. Académica Espinho
-110553,livre_direto_defendido,away,2.0,7.0,0.0,Defesa de livre direto Pedro Bessa ®
-110553,golo_bola_corrida,away,2.0,9.0,0.0,1-3 Liloann Gélébart
-110553,time,away,2.0,9.0,0.0,Timeout Ass. Académica Espinho
-110553,advertencia,away,2.0,12.0,0.0,Cartão amarelo Miguel Almeida
-110553,golo_de_penalti,away,2.0,12.0,0.0,1-4 David Castaño (penálti)
-110553,golo_bola_corrida,away,2.0,15.0,0.0,"1-5 Rafael ""Rafa"" Duarte"
-110553,golo_bola_corrida,home,2.0,21.0,0.0,2-5 Tiago Gaspar
-110553,golo_bola_corrida,home,2.0,23.0,0.0,"3-5 Matthew ""Matt"" Baker"
-110553,time,away,2.0,23.0,0.0,Fim da 2ª parte.
-110553,time,away,2.0,23.0,0.0,Fim do jogo.
 110558,time,,,,,Início do jogo.
 110558,golo_bola_corrida,away,1.0,6.0,0.0,0-1 Bruno Caniceiro
 110558,time,home,1.0,11.0,0.0,Timeout Ass. Académica Coimbra
@@ -78519,6 +78526,36 @@ event_id,icon,side,period,minute,second,text
 110558,fim_power_play,home,2.0,24.0,0.0,Fim Powerplay Ass. Académica Coimbra
 110558,time,away,2.0,24.0,0.0,Fim da 2ª parte.
 110558,time,away,2.0,24.0,0.0,Fim do jogo.
+110553,time,,,,,Início do jogo.
+110553,golo_bola_corrida,away,1.0,4.0,0.0,0-1 Bruno Alonso
+110553,golo_bola_corrida,home,1.0,5.0,0.0,"1-1 Matthew ""Matt"" Baker"
+110553,penalti_defendido,home,1.0,9.0,0.0,Defesa de penálti
+110553,penalti_falhado,away,1.0,9.0,0.0,Penálti falhado Pedro Cunha
+110553,time,home,1.0,13.0,0.0,Timeout Termas OC
+110553,advertencia,home,1.0,16.0,0.0,"Cartão amarelo Matthew ""Matt"" Baker"
+110553,time,away,1.0,16.0,0.0,Timeout Ass. Académica Espinho
+110553,golo_bola_corrida,away,1.0,20.0,0.0,1-2 Bruno Alonso
+110553,penalti_falhado,home,1.0,22.0,0.0,Penálti falhado Afonso Pereira
+110553,penalti_defendido,away,1.0,22.0,0.0,Defesa de penálti Pedro Bessa ®
+110553,time,away,1.0,24.0,0.0,Timeout Ass. Académica Espinho
+110553,advertencia,away,1.0,24.0,0.0,Cartão amarelo Lourenço Ventura
+110553,time,away,1.0,24.0,0.0,Fim da 1ª parte.
+110553,time,away,1.0,24.0,0.0,Início da 2ª parte.
+110553,10f,home,2.0,4.0,0.0,10ª Falta de Equipa de Termas OC
+110553,livre_direto_defendido,home,2.0,4.0,0.0,"Defesa de livre direto Marcelo Silva ""Cêllô"" ®"
+110553,livre_direto_falhado,away,2.0,4.0,0.0,Livre direto falhado Liloann Gélébart
+110553,livre_direto_falhado,home,2.0,7.0,0.0,Livre direto falhado Tiago Gaspar
+110553,10f,away,2.0,7.0,0.0,10ª Falta de Equipa de Ass. Académica Espinho
+110553,livre_direto_defendido,away,2.0,7.0,0.0,Defesa de livre direto Pedro Bessa ®
+110553,golo_bola_corrida,away,2.0,9.0,0.0,1-3 Liloann Gélébart
+110553,time,away,2.0,9.0,0.0,Timeout Ass. Académica Espinho
+110553,advertencia,away,2.0,12.0,0.0,Cartão amarelo Miguel Almeida
+110553,golo_de_penalti,away,2.0,12.0,0.0,1-4 David Castaño (penálti)
+110553,golo_bola_corrida,away,2.0,15.0,0.0,"1-5 Rafael ""Rafa"" Duarte"
+110553,golo_bola_corrida,home,2.0,21.0,0.0,2-5 Tiago Gaspar
+110553,golo_bola_corrida,home,2.0,23.0,0.0,"3-5 Matthew ""Matt"" Baker"
+110553,time,away,2.0,23.0,0.0,Fim da 2ª parte.
+110553,time,away,2.0,23.0,0.0,Fim do jogo.
 110759,time,,,,,Início do jogo.
 110759,golo_bola_corrida,away,1.0,2.0,0.0,0-1 Martim Silva
 110759,penalti_defendido,home,1.0,5.0,0.0,Defesa de penálti Rodrigo Teixeira ®
@@ -79295,36 +79332,6 @@ event_id,icon,side,period,minute,second,text
 110741,advertencia,away,2.0,24.0,0.0,Cartão amarelo Hélder Coelho
 110741,time,away,2.0,24.0,0.0,Fim da 2ª parte.
 110741,time,away,2.0,24.0,0.0,Fim do jogo.
-110740,time,,,,,Início do jogo.
-110740,time,home,1.0,7.0,0.0,Timeout CD Paço de Arcos
-110740,time,away,1.0,13.0,0.0,Timeout A Alcobacense CD
-110740,time,home,1.0,19.0,0.0,Timeout CD Paço de Arcos
-110740,golo_bola_corrida,away,1.0,22.0,0.0,0-1 Matías Chirino
-110740,advertencia,away,1.0,22.0,0.0,Cartão amarelo Hernâni Diniz
-110740,golo_de_livre_direto,away,1.0,22.0,0.0,"0-2 Francisco ""Panchi"" Briggs (livre direto)"
-110740,time,away,1.0,22.0,0.0,Fim da 1ª parte.
-110740,time,away,1.0,22.0,0.0,Início da 2ª parte.
-110740,livre_direto_falhado,home,2.0,5.0,0.0,Livre direto falhado Miguel Feio
-110740,10f,away,2.0,5.0,0.0,10ª Falta de Equipa de A Alcobacense CD
-110740,livre_direto_defendido,away,2.0,5.0,0.0,Defesa de livre direto Diogo Almeida ®
-110740,time,away,2.0,9.0,0.0,Timeout A Alcobacense CD
-110740,time,home,2.0,11.0,0.0,Timeout CD Paço de Arcos
-110740,time,away,2.0,15.0,0.0,Timeout A Alcobacense CD
-110740,golo_bola_corrida,away,2.0,15.0,0.0,0-3 Luís Silva
-110740,golo_bola_corrida,home,2.0,15.0,0.0,1-3 Miguel Feio
-110740,advertencia,home,2.0,17.0,0.0,Cartão amarelo Afonso Sousa
-110740,inicio_power_play,home,2.0,17.0,0.0,Inicio Powerplay CD Paço de Arcos
-110740,cartao_azul,away,2.0,17.0,0.0,"Cartão azul Francisco ""Panchi"" Briggs"
-110740,advertencia,away,2.0,17.0,0.0,Cartão amarelo Hernâni Diniz
-110740,cartao_azul_jogo_parado,away,2.0,17.0,0.0,Cartão azul (jogo parado) Hernâni Diniz
-110740,golo_marcado_em_power_play3,home,2.0,19.0,0.0,2-3 Bernardo Sousa (power play)
-110740,fim_power_play,home,2.0,21.0,0.0,Fim Powerplay CD Paço de Arcos
-110740,time,home,2.0,21.0,0.0,Timeout CD Paço de Arcos
-110740,advertencia,home,2.0,24.0,0.0,Cartão amarelo António Ribeiro
-110740,inicio_power_play,home,2.0,24.0,0.0,Inicio Powerplay CD Paço de Arcos
-110740,cartao_azul,away,2.0,24.0,0.0,Cartão azul João Santos
-110740,time,away,2.0,24.0,0.0,Fim da 2ª parte.
-110740,time,away,2.0,24.0,0.0,Fim do jogo.
 110737,time,,,,,Início do jogo.
 110737,golo_bola_corrida,home,1.0,2.0,0.0,1-0 Zé Pedro Marques
 110737,time,home,1.0,9.0,0.0,Timeout GD CRIAR-T
@@ -79355,6 +79362,36 @@ event_id,icon,side,period,minute,second,text
 110737,fim_power_play,away,2.0,24.0,0.0,"Fim Powerplay Sporting CP ""B"""
 110737,time,away,2.0,24.0,0.0,Fim da 2ª parte.
 110737,time,away,2.0,24.0,0.0,Fim do jogo.
+110740,time,,,,,Início do jogo.
+110740,time,home,1.0,7.0,0.0,Timeout CD Paço de Arcos
+110740,time,away,1.0,13.0,0.0,Timeout A Alcobacense CD
+110740,time,home,1.0,19.0,0.0,Timeout CD Paço de Arcos
+110740,golo_bola_corrida,away,1.0,22.0,0.0,0-1 Matías Chirino
+110740,advertencia,away,1.0,22.0,0.0,Cartão amarelo Hernâni Diniz
+110740,golo_de_livre_direto,away,1.0,22.0,0.0,"0-2 Francisco ""Panchi"" Briggs (livre direto)"
+110740,time,away,1.0,22.0,0.0,Fim da 1ª parte.
+110740,time,away,1.0,22.0,0.0,Início da 2ª parte.
+110740,livre_direto_falhado,home,2.0,5.0,0.0,Livre direto falhado Miguel Feio
+110740,10f,away,2.0,5.0,0.0,10ª Falta de Equipa de A Alcobacense CD
+110740,livre_direto_defendido,away,2.0,5.0,0.0,Defesa de livre direto Diogo Almeida ®
+110740,time,away,2.0,9.0,0.0,Timeout A Alcobacense CD
+110740,time,home,2.0,11.0,0.0,Timeout CD Paço de Arcos
+110740,time,away,2.0,15.0,0.0,Timeout A Alcobacense CD
+110740,golo_bola_corrida,away,2.0,15.0,0.0,0-3 Luís Silva
+110740,golo_bola_corrida,home,2.0,15.0,0.0,1-3 Miguel Feio
+110740,advertencia,home,2.0,17.0,0.0,Cartão amarelo Afonso Sousa
+110740,inicio_power_play,home,2.0,17.0,0.0,Inicio Powerplay CD Paço de Arcos
+110740,cartao_azul,away,2.0,17.0,0.0,"Cartão azul Francisco ""Panchi"" Briggs"
+110740,advertencia,away,2.0,17.0,0.0,Cartão amarelo Hernâni Diniz
+110740,cartao_azul_jogo_parado,away,2.0,17.0,0.0,Cartão azul (jogo parado) Hernâni Diniz
+110740,golo_marcado_em_power_play3,home,2.0,19.0,0.0,2-3 Bernardo Sousa (power play)
+110740,fim_power_play,home,2.0,21.0,0.0,Fim Powerplay CD Paço de Arcos
+110740,time,home,2.0,21.0,0.0,Timeout CD Paço de Arcos
+110740,advertencia,home,2.0,24.0,0.0,Cartão amarelo António Ribeiro
+110740,inicio_power_play,home,2.0,24.0,0.0,Inicio Powerplay CD Paço de Arcos
+110740,cartao_azul,away,2.0,24.0,0.0,Cartão azul João Santos
+110740,time,away,2.0,24.0,0.0,Fim da 2ª parte.
+110740,time,away,2.0,24.0,0.0,Fim do jogo.
 110742,time,,,,,Início do jogo.
 110742,golo_de_penalti,home,1.0,3.0,0.0,1-0 João Sardo (penálti)
 110742,golo_bola_corrida,away,1.0,7.0,0.0,1-1 Vasco Teixeira

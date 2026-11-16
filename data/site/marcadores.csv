@@ -7,30 +7,30 @@ id,liga,jogador,equipa,golos_por_jogo,jogos_recentes
 5877,1ª Divisão,Pau Bargalló,Benfica,0.93,19
 20650,1ª Divisão,Diogo Duarte,Tomar,0.92,23
 5481,1ª Divisão,João Rodrigues,Benfica,0.89,32
-5252,1ª Divisão,Franco Pósito,Valongo,0.88,32
+5252,1ª Divisão,Franco Pósito,Valongo,0.88,31
 5017,1ª Divisão,Danilo Rampulla,Sporting,0.84,40
 5755,2ª Divisão Norte,Miguel “Migas” Oliveira,Cambra,0.84,31
 6046,2ª Divisão Norte,Rúben Sousa “Rubinho”,Carvalhos,0.84,32
 4898,2ª Divisão Sul,Bernardo Ramalho,Parede,0.79,30
 4922,1ª Divisão,Bruno Frade,Oeiras,0.79,29
-21143,1ª Divisão,Iván Morales,Barcelos,0.75,21
+26236,2ª Divisão Norte,Rodrigo Fernandes,Póvoa,0.77,31
+21143,1ª Divisão,Iván Morales,Barcelos,0.75,20
 5300,1ª Divisão,Gonçalo Neto,Braga,0.73,31
 5589,1ª Divisão,Lucas Martínez,Oliveirense,0.72,30
 4964,1ª Divisão,Carlos Ramos “Carlitos”,Barcelos,0.72,33
 5250,1ª Divisão,Franco “Tato” Ferruccio,Pacense,0.72,25
-26236,2ª Divisão Norte,Rodrigo Fernandes,Póvoa,0.72,30
 5489,1ª Divisão,João Souto,Oliveirense,0.7,36
 5315,1ª Divisão,Gonzalo “Nolito” Romero,Sporting,0.69,38
 6264,1ª Divisão,Zé Miranda,Benfica,0.68,37
 6178,1ª Divisão,Tiago Saraiva,Riba d'Ave,0.68,17
 20787,1ª Divisão,Martim Costa,Benfica,0.67,29
 5810,2ª Divisão Sul,Nicolás “Nico” Carmona,Marinhense,0.65,31
-20702,2ª Divisão Norte,José Pedro Cunha,Valongo B,0.64,19
 4734,1ª Divisão,Alessandro Verona,Sporting,0.64,32
 6198,2ª Divisão Sul,Tomás Moreira,Murches,0.63,10
 5302,2ª Divisão Sul,Gonçalo Nunes,Paço de Arcos,0.62,26
 20845,1ª Divisão,Martim Leite,Riba d'Ave,0.62,32
 5363,1ª Divisão,Hugo Costa,Juventude de Viana,0.62,13
+20702,2ª Divisão Norte,José Pedro Cunha,Valongo B,0.62,20
 5432,1ª Divisão,João Almeida,Oliveirense,0.6,15
 5429,1ª Divisão,João “Joca” Guimarães,Pacense,0.59,27
 16962,2ª Divisão Norte,João Coelho,Famalicense,0.58,30
@@ -41,19 +41,20 @@ id,liga,jogador,equipa,golos_por_jogo,jogos_recentes
 4702,2ª Divisão Sul,Afonso Sousa,Paço de Arcos,0.52,33
 5771,2ª Divisão Sul,Miguel Fortunato,Alenquer,0.52,24
 5067,2ª Divisão Norte,Diogo Casanova,Carvalhos,0.51,32
+15138,2ª Divisão Norte,Tiago Pinheiro,Póvoa,0.51,31
 5484,2ª Divisão Sul,João Sardo,Murches,0.51,29
-15138,2ª Divisão Norte,Tiago Pinheiro,Póvoa,0.51,30
 4695,2ª Divisão Norte,Afonso Lima,Carvalhos,0.51,32
-5767,2ª Divisão Sul,Miguel Feio,Paço de Arcos,0.5,32
+5767,2ª Divisão Sul,Miguel Feio,Paço de Arcos,0.5,31
 21652,2ª Divisão Norte,Gonçalo Oliveira,Académica,0.5,29
 5076,2ª Divisão Norte,Diogo Graça,Académica,0.5,28
-5223,2ª Divisão Norte,Francisco “Kiko” Pinto,Valongo B,0.49,23
-5328,2ª Divisão Norte,Guilherme Leitão,Póvoa,0.48,25
+5328,2ª Divisão Norte,Guilherme Leitão,Póvoa,0.49,26
+16939,2ª Divisão Norte,João Pereira,Póvoa,0.49,30
 5191,2ª Divisão Sul,Filipe Bernardino,CRIAR-T,0.48,23
 5081,2ª Divisão Sul,Diogo Miranda,Física,0.48,26
 6132,2ª Divisão Sul,Tiago Almeida,Turquel,0.48,13
 6245,2ª Divisão Sul,Xavier “Xavi” Lourenço,Turquel,0.48,31
-20691,2ª Divisão Sul,Rodrigo Costa,Alenquer,0.48,27
+20691,2ª Divisão Sul,Rodrigo Costa,Alenquer,0.48,26
+5223,2ª Divisão Norte,Francisco “Kiko” Pinto,Valongo B,0.48,24
 6649,2ª Divisão Norte,Octavio “Kochi” Zangheri,Termas,0.47,21
 5221,2ª Divisão Sul,Francisco “Kiko” Contins,Alenquer,0.47,30
 4953,2ª Divisão Norte,Carlos Dias,Famalicense,0.47,32
@@ -61,11 +62,10 @@ id,liga,jogador,equipa,golos_por_jogo,jogos_recentes
 5009,2ª Divisão Sul,Daniel Passos,Turquel,0.46,33
 34903,2ª Divisão Sul,Lucas Bridge,Marinhense,0.46,30
 5485,2ª Divisão Sul,João Silva,Alcobacense,0.46,25
-16939,2ª Divisão Norte,João Pereira,Póvoa,0.46,29
 14857,2ª Divisão Norte,Luís Melo,Póvoa,0.46,24
 4693,2ª Divisão Sul,Afonso Esteves,Murches,0.46,29
 4806,2ª Divisão Sul,André Pimenta,Paço de Arcos,0.45,26
-4893,2ª Divisão Norte,Bernardo Marques,Espinho,0.45,10
+4893,2ª Divisão Norte,Bernardo Marques,Espinho,0.44,10
 15156,2ª Divisão Norte,Bruno Dinis,Mealhada,0.44,14
 15174,2ª Divisão Norte,Diogo Lemos,Oliveirense B,0.44,30
 31373,2ª Divisão Norte,Pol Perpiñan,Mealhada,0.43,24

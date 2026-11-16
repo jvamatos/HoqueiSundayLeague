@@ -9,10 +9,10 @@ id,liga,jogador,equipa,golos_evitados_por_jogo,jogos_recentes
 6429,1ª Divisão,Miguel Rocha,Riba d'Ave,0.74,31
 34900,1ª Divisão,Santino Facca,Candelária,0.57,23
 4670,1ª Divisão,Tiago Rodrigues,Juventude de Viana,0.5,18
+33401,2ª Divisão Norte,Martim Oliveira,Póvoa,0.46,16
 20492,2ª Divisão Sul,João Antunes,Benfica B,0.37,13
 4451,1ª Divisão,Bernardo Mendes,Oliveirense,0.36,20
 22790,1ª Divisão,Telmo Emídio,Oeiras,0.33,11
-33401,2ª Divisão Norte,Martim Oliveira,Póvoa,0.32,15
 20580,1ª Divisão,Bruno Torres,Braga,0.32,12
 20606,2ª Divisão Norte,Martim Garrido,Porto B,0.29,19
 4443,2ª Divisão Sul,António “Tony” Mendonça,Parede,0.24,13
@@ -24,11 +24,11 @@ id,liga,jogador,equipa,golos_evitados_por_jogo,jogos_recentes
 20648,2ª Divisão Sul,Nuno Emídio,Parede,0.15,8
 6380,2ª Divisão Sul,Albert Mola,Marinhense,0.14,31
 20865,2ª Divisão Sul,Guilherme “Gui” Duro,Turquel,0.11,20
-20745,2ª Divisão Norte,Afonso Venda,Valongo B,0.1,22
 4479,2ª Divisão Norte,David Nogueira,Cambra,0.08,32
 33384,2ª Divisão Sul,Lourenço Soares,Salesiana,0.06,20
 20768,2ª Divisão Sul,Gonçalo “Guga” Gaspar,Murches,0.01,17
 4538,2ª Divisão Sul,João Governo,Turquel,0.0,13
+20745,2ª Divisão Norte,Afonso Venda,Valongo B,-0.01,23
 4548,2ª Divisão Norte,João Seixas,Mealhada,-0.06,10
 4456,2ª Divisão Norte,Bruno Guia,Vila Praia,-0.07,14
 22146,2ª Divisão Norte,Matías “Mati” Bridge,Espinho,-0.08,10

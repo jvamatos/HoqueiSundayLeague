@@ -1,43 +1,43 @@
 id,liga,posicao,equipa,golos_marcados,golos_sofridos,saldo
-1div_benfica,1ª Divisão,1,Benfica,3.88,1.76,2.12
-1div_porto,1ª Divisão,2,Porto,4.04,2.11,1.93
-1div_sporting,1ª Divisão,3,Sporting,3.69,2.05,1.64
-1div_barcelos,1ª Divisão,4,Barcelos,3.97,2.59,1.39
-1div_oliveirense,1ª Divisão,5,Oliveirense,3.01,2.34,0.68
+1div_benfica,1ª Divisão,1,Benfica,3.88,1.76,2.13
+1div_porto,1ª Divisão,2,Porto,4.08,2.09,1.99
+1div_sporting,1ª Divisão,3,Sporting,3.69,2.04,1.65
+1div_barcelos,1ª Divisão,4,Barcelos,3.97,2.58,1.39
+1div_oliveirense,1ª Divisão,5,Oliveirense,3.02,2.33,0.68
 1div_tomar,1ª Divisão,6,Tomar,2.49,2.78,-0.29
 1div_braga,1ª Divisão,7,Braga,2.54,2.96,-0.41
 1div_valongo,1ª Divisão,8,Valongo,2.57,3.1,-0.53
 1div_pacense,1ª Divisão,9,Pacense,2.8,3.42,-0.62
-1div_sanjoanense,1ª Divisão,10,Sanjoanense,2.89,3.7,-0.82
+1div_sanjoanense,1ª Divisão,10,Sanjoanense,2.88,3.7,-0.82
 1div_riba-dave,1ª Divisão,11,Riba d'Ave,2.32,3.45,-1.13
-1div_juventude-viana,1ª Divisão,12,Juventude de Viana,2.49,3.76,-1.27
-1div_candelaria,1ª Divisão,13,Candelária,1.97,2.98,-1.01
-1div_oeiras,1ª Divisão,14,Oeiras,2.45,4.42,-1.97
-2div_norte_povoa,2ª Divisão Norte,1,Póvoa,3.84,2.47,1.37
-2div_norte_carvalhos,2ª Divisão Norte,2,Carvalhos,3.85,2.67,1.18
-2div_norte_famalicense,2ª Divisão Norte,3,Famalicense,3.62,2.65,0.97
-2div_norte_porto-b,2ª Divisão Norte,4,Porto B,3.44,2.64,0.8
-2div_norte_valongo-b,2ª Divisão Norte,5,Valongo B,3.7,3.07,0.63
-2div_norte_oliveirense-b,2ª Divisão Norte,6,Oliveirense B,3.17,2.72,0.45
-2div_norte_espinho,2ª Divisão Norte,7,Espinho,3.03,2.9,0.13
-2div_norte_cambra,2ª Divisão Norte,8,Cambra,2.91,2.89,0.02
-2div_norte_mealhada,2ª Divisão Norte,9,Mealhada,2.67,2.68,-0.01
-2div_norte_vila-praia,2ª Divisão Norte,10,Vila Praia,3.06,3.55,-0.49
-2div_norte_academica,2ª Divisão Norte,11,Académica,2.95,3.43,-0.48
-2div_norte_termas,2ª Divisão Norte,12,Termas,2.88,3.63,-0.75
-2div_norte_barcelos-b,2ª Divisão Norte,13,Barcelos B,1.59,2.92,-1.33
-2div_norte_lavra,2ª Divisão Norte,14,Lavra,1.95,3.69,-1.74
-2div_sul_turquel,2ª Divisão Sul,1,Turquel,4.19,2.36,1.83
-2div_sul_parede,2ª Divisão Sul,2,Parede,3.61,2.51,1.1
-2div_sul_paco-arcos,2ª Divisão Sul,3,Paço de Arcos,3.99,2.81,1.17
-2div_sul_alenquer,2ª Divisão Sul,4,Alenquer,4.09,3.25,0.84
-2div_sul_benfica-b,2ª Divisão Sul,5,Benfica B,3.92,3.22,0.71
-2div_sul_marinhense,2ª Divisão Sul,6,Marinhense,3.27,3.19,0.08
-2div_sul_alcobacense,2ª Divisão Sul,7,Alcobacense,2.57,2.57,0.0
-2div_sul_murches,2ª Divisão Sul,8,Murches,3.23,3.4,-0.17
-2div_sul_sporting-b,2ª Divisão Sul,9,Sporting B,3.52,3.72,-0.21
-2div_sul_fisica,2ª Divisão Sul,10,Física,2.68,2.96,-0.28
-2div_sul_salesiana,2ª Divisão Sul,11,Salesiana,2.92,3.87,-0.95
-2div_sul_criar-t,2ª Divisão Sul,12,CRIAR-T,2.4,3.31,-0.91
-2div_sul_tojal,2ª Divisão Sul,13,Tojal,2.26,3.57,-1.31
-2div_sul_grandola,2ª Divisão Sul,14,Grândola,2.24,3.6,-1.36
+1div_candelaria,1ª Divisão,12,Candelária,1.96,2.99,-1.02
+1div_juventude-viana,1ª Divisão,13,Juventude de Viana,2.47,3.78,-1.31
+1div_oeiras,1ª Divisão,14,Oeiras,2.44,4.43,-2.0
+2div_norte_povoa,2ª Divisão Norte,1,Póvoa,3.96,2.36,1.59
+2div_norte_carvalhos,2ª Divisão Norte,2,Carvalhos,3.85,2.63,1.22
+2div_norte_famalicense,2ª Divisão Norte,3,Famalicense,3.6,2.64,0.97
+2div_norte_porto-b,2ª Divisão Norte,4,Porto B,3.42,2.64,0.79
+2div_norte_oliveirense-b,2ª Divisão Norte,5,Oliveirense B,3.15,2.71,0.44
+2div_norte_valongo-b,2ª Divisão Norte,6,Valongo B,3.57,3.17,0.4
+2div_norte_espinho,2ª Divisão Norte,7,Espinho,3.01,2.89,0.12
+2div_norte_cambra,2ª Divisão Norte,8,Cambra,2.9,2.88,0.02
+2div_norte_mealhada,2ª Divisão Norte,9,Mealhada,2.67,2.67,-0.0
+2div_norte_academica,2ª Divisão Norte,10,Académica,2.93,3.43,-0.49
+2div_norte_vila-praia,2ª Divisão Norte,11,Vila Praia,3.04,3.57,-0.53
+2div_norte_termas,2ª Divisão Norte,12,Termas,2.87,3.61,-0.74
+2div_norte_barcelos-b,2ª Divisão Norte,13,Barcelos B,1.58,2.91,-1.33
+2div_norte_lavra,2ª Divisão Norte,14,Lavra,1.95,3.67,-1.72
+2div_sul_turquel,2ª Divisão Sul,1,Turquel,4.18,2.34,1.85
+2div_sul_parede,2ª Divisão Sul,2,Parede,3.6,2.5,1.1
+2div_sul_paco-arcos,2ª Divisão Sul,3,Paço de Arcos,3.98,2.8,1.17
+2div_sul_alenquer,2ª Divisão Sul,4,Alenquer,4.08,3.24,0.85
+2div_sul_benfica-b,2ª Divisão Sul,5,Benfica B,3.92,3.21,0.71
+2div_sul_marinhense,2ª Divisão Sul,6,Marinhense,3.24,3.19,0.04
+2div_sul_alcobacense,2ª Divisão Sul,7,Alcobacense,2.56,2.56,0.0
+2div_sul_murches,2ª Divisão Sul,8,Murches,3.22,3.39,-0.16
+2div_sul_sporting-b,2ª Divisão Sul,9,Sporting B,3.51,3.71,-0.2
+2div_sul_fisica,2ª Divisão Sul,10,Física,2.67,2.96,-0.28
+2div_sul_salesiana,2ª Divisão Sul,11,Salesiana,2.91,3.85,-0.94
+2div_sul_criar-t,2ª Divisão Sul,12,CRIAR-T,2.39,3.3,-0.91
+2div_sul_tojal,2ª Divisão Sul,13,Tojal,2.24,3.56,-1.32
+2div_sul_grandola,2ª Divisão Sul,14,Grândola,2.24,3.59,-1.35

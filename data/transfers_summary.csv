@@ -155,7 +155,7 @@ season,team,d_att,d_def,d_goals,arrivals,departures,main_arrivals,main_departure
 2026-27,benfica,0.027989488863593592,-0.11113872214347431,0.24735739097803666,1,2,Martim Costa,"Diogo Rafael “Chiquinho”, Lucas Ordoñez",-0.08314923327988072
 2026-27,academica,-0.020638115623702727,-0.061413615115791104,-0.153392273320464,3,2,"Bernardo Oliveira, Miguel Cunha, Pedro Beirante","Tiago Estarreja, Vasco Pereira",-0.08205173073949383
 2026-27,parede,0.0233859337997806,-0.10063970145777612,-0.13402337185283142,2,2,"Nuno Emídio, Martim Silva","Francisco “Kiko” Fernandes, Diogo Alves “Pákito”",-0.07725376765799552
-2026-27,valongo b,-0.05283396371666166,-0.004359087763470835,-0.27974307485817973,3,3,"Vasco Sousa, João Monteiro, Daniel “Dani” Magalhães","Liloann Gélébart, Simão Dantas, João Pereira",-0.05719305148013249
+2026-27,valongo b,-0.05381073104399495,-0.00024710306421917363,-0.22089882882643352,2,3,"Vasco Sousa, João Monteiro","Liloann Gélébart, Simão Dantas, João Pereira",-0.05405783410821412
 2026-27,barcelos,-0.07800910676807282,0.027859075281155027,-0.13911924264891518,1,1,Lucas Honório,Franco “Tato” Ferruccio,-0.050150031486917795
 2026-27,paco arcos,-0.058711305735999836,0.015237079813300025,-0.6781142304730232,6,4,"Afonso Sousa, Tomás Martins, Mateus Marques","Bruno Frade, Pedro Vaz, Zé Costa",-0.04347422592269981
 2026-27,famalicense,-0.023710862477112727,-0.014002493355678238,-0.02543603239133896,2,3,"Miguel Santos, Ricardo Fallé","Zé Pedro Pereira, Pedro Freitas, Guilherme Leitão",-0.037713355832790965
@@ -164,8 +164,8 @@ season,team,d_att,d_def,d_goals,arrivals,departures,main_arrivals,main_departure
 2026-27,marinhense,-0.01400814658132386,0.004802125178940991,0.13946947939600407,1,1,Lucas Bridge,Rúben Henriques,-0.009206021402382868
 2026-27,alenquer,-0.06394132989769416,0.05484024515299507,-0.22106426229583764,5,4,"Zé Diogo Macedo, Matéo Avondo, Eloi Matas","Miguel Fortunato, Guilherme “Gui” Duro, Paulo “Xavi” Duro",-0.00910108474469909
 2026-27,pacense,0.10213225018229159,-0.1063443958504595,0.38405841840341126,3,1,"Franco “Tato” Ferruccio, Álvaro Shehda, Ezequiel Funes",Tomás Pereira,-0.00421214566816791
-2026-27,povoa,-0.031172852376981114,0.028023422142562093,0.46264981559234464,3,4,"João Pereira, Guilherme Leitão, Martim Oliveira","Luís Melo, Henrique “Kiko” Campos, Miguel Castro",-0.0031494302344190206
 2026-27,tomar,0.22488869167094483,-0.22534194539124358,0.7631871831561219,3,4,"Rodrigo Preciso, Diogo Duarte, Francisco “Xico” Veludo","António Marante, André Centeno, Julián Tamborindegui",-0.0004532537202987519
+2026-27,povoa,-0.03421451575688869,0.03501401713956889,0.4815658651248187,3,3,"João Pereira, Guilherme Leitão, Martim Oliveira","Luís Melo, Miguel Castro, Rodolfo Sobral",0.0007995013826802011
 2026-27,murches,-0.0011603788702729545,0.002585113514612769,-0.09757397658463507,1,2,André Lopes,"André Pimenta, Guilherme Martins",0.0014247346443398146
 2026-27,oeiras,0.00838637552359725,-0.005156536092980835,-0.05372577444967819,3,2,"Bruno Frade, Guilherme Caetano, David Fonseca","Filipe Martins, Matéo Avondo",0.0032298394306164158
 2026-27,carvalhos,0.0013252662848776686,0.0024931481177368764,0.192040384046694,0,0,,,0.003818414402614545

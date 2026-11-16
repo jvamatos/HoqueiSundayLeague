@@ -16,7 +16,7 @@ id,periodo,liga,jogador,equipa,jogos,titular,golos,golos_por_jogo,assistencias,g
 2025-26_5481,2025/26,1ª Divisão,João Rodrigues,Benfica,34,31,31,0.91,4.0,35.0,14,7,0,4,6/13,6,0/1,0,0,0
 2025-26_6264,2025/26,1ª Divisão,Zé Miranda,Benfica,32,30,30,0.94,22.0,52.0,25,1,0,0,3/9,3,1/6,1,7,0
 2025-26_4922,2025/26,1ª Divisão,Bruno Frade,Paço de Arcos,26,26,29,1.12,,,17,2,0,1,6/18,6,3/13,3,9,0
-2025-26_5223,2025/26,1ª Divisão,Francisco “Kiko” Pinto,Valongo,34,15,29,0.85,0.0,29.0,15,6,0,0,0/3,0,8/19,8,2,0
+2025-26_5223,2025/26,2ª Divisão Norte,Francisco “Kiko” Pinto,Valongo,34,15,29,0.85,0.0,29.0,15,6,0,0,0/3,0,8/19,8,2,0
 2025-26_5499,2025/26,1ª Divisão,Joaquín Fernández,Juventude de Viana,26,24,29,1.12,,,23,2,1,1,0/1,0,2/5,2,4,0
 2025-26_5302,2025/26,2ª Divisão Sul,Gonçalo Nunes,Paço de Arcos,25,25,28,1.12,,,19,3,0,2,4/12,4,0/0,0,7,0
 2025-26_20702,2025/26,2ª Divisão Norte,José Pedro Cunha,Valongo,28,10,27,0.96,1.0,28.0,22,2,0,0,3/8,3,0/3,0,5,0
@@ -90,7 +90,7 @@ id,periodo,liga,jogador,equipa,jogos,titular,golos,golos_por_jogo,assistencias,g
 2025-26_5623,2025/26,1ª Divisão,Manuel Coimbra,Oeiras,27,25,16,0.59,,,10,3,1,0,0/0,0,2/4,2,5,0
 2025-26_5815,2025/26,1ª Divisão,Nil Roca,Benfica,31,24,16,0.52,4.0,20.0,16,0,0,0,0/1,0,0/0,0,5,0
 2025-26_6006,2025/26,1ª Divisão,Roberto “Roby” di Benedetto,Benfica,33,32,16,0.48,21.0,37.0,14,2,0,0,0/0,0,0/0,0,9,0
-2025-26_20611,2025/26,1ª Divisão,Ricardo Azevedo,Valongo B,24,24,16,0.67,,,14,2,0,0,0/2,0,0/2,0,11,1
+2025-26_20611,2025/26,2ª Divisão Norte,Ricardo Azevedo,Valongo B,24,24,16,0.67,,,14,2,0,0,0/2,0,0/2,0,11,1
 2025-26_20747,2025/26,1ª Divisão,Vítor Oliveira “Viti”,Benfica,33,10,16,0.48,7.0,23.0,13,2,0,0,1/2,1,0/0,0,3,0
 2025-26_34903,2025/26,2ª Divisão Sul,Lucas Bridge,Espinho,26,9,16,0.62,,,13,1,1,0,1/2,1,0/10,0,1,0
 2025-26_5358,2025/26,2ª Divisão Sul,Hernâni Diniz,Alcobacense,26,4,15,0.58,,,10,3,0,0,2/9,2,0/5,0,7,0
@@ -358,6 +358,7 @@ id,periodo,liga,jogador,equipa,jogos,titular,golos,golos_por_jogo,assistencias,g
 2025-26_60584,2025/26,1ª Divisão,Ângelo Santos,Pacense,1,0,0,0.0,0.0,0.0,0,0,0,0,0/0,0,0/1,0,0,0
 2025-26_60629,2025/26,2ª Divisão Sul,Diogo Bértolo,Parede,1,0,0,0.0,,,0,0,0,0,0/0,0,0/0,0,0,0
 2025-26_76720,2025/26,2ª Divisão Norte,Martinho Feliciano,Termas,2,0,0,0.0,,,0,0,0,0,0/0,0,0/0,0,0,0
+2026-27_26236,2026/27,2ª Divisão Norte,Rodrigo Fernandes,Póvoa,4,4,10,2.5,,,9,0,0,0,0/1,0,1/1,1,0,0
 2026-27_5782,2026/27,1ª Divisão,Miguel Rocha,Barcelos,2,2,8,4.0,1.0,9.0,3,4,0,0,1/2,1,0/0,0,0,0
 2026-27_5700,2026/27,2ª Divisão Sul,Mário “Marinho” Rodrigues,Alenquer,4,3,7,1.75,,,7,0,0,0,0/2,0,0/1,0,1,0
 2026-27_5987,2026/27,2ª Divisão Norte,Ricardo Fallé,Famalicense,4,3,7,1.75,,,6,0,0,0,1/1,1,0/2,0,0,0
@@ -365,15 +366,16 @@ id,periodo,liga,jogador,equipa,jogos,titular,golos,golos_por_jogo,assistencias,g
 2026-27_5067,2026/27,2ª Divisão Norte,Diogo Casanova,Carvalhos,4,4,6,1.5,,,3,3,0,0,0/0,0,0/0,0,0,0
 2026-27_5767,2026/27,2ª Divisão Sul,Miguel Feio,Paço de Arcos,4,3,6,1.5,,,4,2,0,0,0/0,0,0/2,0,0,0
 2026-27_16962,2026/27,2ª Divisão Norte,João Coelho,Famalicense,4,4,6,1.5,,,5,0,0,0,1/2,1,0/1,0,1,0
-2026-27_26236,2026/27,2ª Divisão Norte,Rodrigo Fernandes,Póvoa,3,3,6,2.0,,,6,0,0,0,0/1,0,0/0,0,0,0
 2026-27_34903,2026/27,2ª Divisão Sul,Lucas Bridge,Marinhense,4,4,6,1.5,,,5,1,0,0,0/0,0,0/0,0,1,0
 2026-27_4953,2026/27,2ª Divisão Norte,Carlos Dias,Famalicense,4,4,5,1.25,,,5,0,0,0,0/0,0,0/0,0,2,0
 2026-27_5788,2026/27,2ª Divisão Sul,Miguel Vicente,Turquel,4,2,5,1.25,,,3,2,0,0,0/0,0,0/0,0,1,0
 2026-27_6046,2026/27,2ª Divisão Norte,Rúben Sousa “Rubinho”,Carvalhos,4,4,5,1.25,,,4,1,0,0,0/0,0,0/0,0,0,0
 2026-27_6260,2026/27,2ª Divisão Sul,Zé Costa,Turquel,4,0,5,1.25,,,5,0,0,0,0/0,0,0/0,0,1,0
 2026-27_6639,2026/27,2ª Divisão Norte,Damián Paez “Pipi”,Carvalhos,4,0,5,1.25,,,3,0,0,0,0/0,0,2/3,2,0,0
+2026-27_15138,2026/27,2ª Divisão Norte,Tiago Pinheiro,Póvoa,4,1,5,1.25,,,5,0,0,0,0/0,0,0/1,0,2,0
+2026-27_16939,2026/27,2ª Divisão Norte,João Pereira,Póvoa,4,4,5,1.25,,,2,1,1,0,1/2,1,0/0,0,1,0
 2026-27_20623,2026/27,2ª Divisão Sul,João Maria Gatinho,Sporting B,3,3,5,1.67,,,3,0,0,0,1/4,1,1/1,1,2,0
-2026-27_20702,2026/27,2ª Divisão Norte,José Pedro Cunha,Valongo B,3,3,5,1.67,,,2,0,0,0,1/1,1,2/2,2,0,0
+2026-27_20702,2026/27,2ª Divisão Norte,José Pedro Cunha,Valongo B,4,4,5,1.25,,,2,0,0,0,1/2,1,2/2,2,0,0
 2026-27_33450,2026/27,2ª Divisão Norte,Bruno Caniceiro,Mealhada,4,4,5,1.25,,,3,0,2,0,0/0,0,0/1,0,0,0
 2026-27_4702,2026/27,2ª Divisão Sul,Afonso Sousa,Paço de Arcos,4,4,4,1.0,,,0,2,0,1,1/2,1,0/0,0,1,0
 2026-27_4901,2026/27,2ª Divisão Sul,Bernardo Sousa,Paço de Arcos,4,3,4,1.0,,,2,2,0,0,0/0,0,0/0,0,0,0
@@ -381,7 +383,6 @@ id,periodo,liga,jogador,equipa,jogos,titular,golos,golos_por_jogo,assistencias,g
 2026-27_5484,2026/27,2ª Divisão Sul,João Sardo,Murches,3,3,4,1.33,,,1,0,0,0,3/5,3,0/0,0,0,0
 2026-27_5517,2026/27,2ª Divisão Norte,José “Zeka” Santos,Cambra,3,0,4,1.33,,,3,0,0,0,1/2,1,0/1,0,0,0
 2026-27_6221,2026/27,2ª Divisão Sul,Vasco Teixeira,Salesiana,4,4,4,1.0,,,4,0,0,0,0/0,0,0/0,0,0,1
-2026-27_15138,2026/27,2ª Divisão Norte,Tiago Pinheiro,Póvoa,3,1,4,1.33,,,4,0,0,0,0/0,0,0/1,0,2,0
 2026-27_21894,2026/27,2ª Divisão Sul,Martim Silva,Parede,4,1,4,1.0,,,4,0,0,0,0/0,0,0/0,0,2,0
 2026-27_21978,2026/27,2ª Divisão Sul,Diogo Ruivo,Física,4,4,4,1.0,,,1,0,1,1,1/2,1,0/0,0,1,0
 2026-27_4700,2026/27,2ª Divisão Sul,Afonso Severino,Alenquer,4,4,3,0.75,,,3,0,0,0,0/0,0,0/0,0,0,0
@@ -395,7 +396,6 @@ id,periodo,liga,jogador,equipa,jogos,titular,golos,golos_por_jogo,assistencias,g
 2026-27_6610,2026/27,2ª Divisão Norte,Gonçalo Santos “Totti”,Oliveirense B,3,3,3,1.0,,,2,0,0,1,0/0,0,0/1,0,0,0
 2026-27_6656,2026/27,2ª Divisão Sul,João Mendes,Tojal,4,4,3,0.75,,,2,1,0,0,0/1,0,0/3,0,1,0
 2026-27_14849,2026/27,2ª Divisão Norte,Lourenço Ventura,Espinho,4,2,3,0.75,,,2,1,0,0,0/0,0,0/0,0,1,0
-2026-27_16939,2026/27,2ª Divisão Norte,João Pereira,Póvoa,3,3,3,1.0,,,1,1,0,0,1/2,1,0/0,0,1,0
 2026-27_20036,2026/27,1ª Divisão,David Fonseca,Oeiras,2,0,3,1.5,0.0,3.0,3,0,0,0,0/0,0,0/0,0,0,0
 2026-27_20416,2026/27,2ª Divisão Norte,Martim “Tim” Oliveira,Porto B,4,1,3,0.75,,,3,0,0,0,0/0,0,0/1,0,2,0
 2026-27_20418,2026/27,2ª Divisão Norte,Afonso Oliveira “Carrais”,Porto B,4,3,3,0.75,,,1,1,0,0,0/1,0,1/1,1,1,1
@@ -420,6 +420,7 @@ id,periodo,liga,jogador,equipa,jogos,titular,golos,golos_por_jogo,assistencias,g
 2026-27_5195,2026/27,1ª Divisão,Filipe Fernandes,Braga,2,2,2,1.0,0.0,2.0,2,0,0,0,0/0,0,0/0,0,1,0
 2026-27_5198,2026/27,2ª Divisão Sul,Filipe Lourenço,Tojal,4,0,2,0.5,,,1,1,0,0,0/2,0,0/0,0,1,0
 2026-27_5282,2026/27,1ª Divisão,Gonçalo Alves,Porto,1,0,2,2.0,0.0,2.0,1,0,0,0,1/1,1,0/0,0,0,0
+2026-27_5328,2026/27,2ª Divisão Norte,Guilherme Leitão,Póvoa,4,3,2,0.5,,,2,0,0,0,0/0,0,0/0,0,0,0
 2026-27_5360,2026/27,2ª Divisão Norte,Hugo Barata,Póvoa,3,0,2,0.67,,,2,0,0,0,0/0,0,0/1,0,1,0
 2026-27_5373,2026/27,1ª Divisão,Hugo Santos,Sanjoanense,2,2,2,1.0,1.0,3.0,1,0,0,0,1/1,1,0/1,0,2,0
 2026-27_5429,2026/27,1ª Divisão,João “Joca” Guimarães,Pacense,2,2,2,1.0,0.0,2.0,0,2,0,0,0/1,0,0/0,0,0,0
@@ -442,7 +443,7 @@ id,periodo,liga,jogador,equipa,jogos,titular,golos,golos_por_jogo,assistencias,g
 2026-27_6262,2026/27,2ª Divisão Norte,Zé Miguel “Zémi” Flores,Académica,3,3,2,0.67,,,1,1,0,0,0/0,0,0/1,0,1,0
 2026-27_6263,2026/27,1ª Divisão,Zé Miguel Gonçalves,Pacense,2,0,2,1.0,0.0,2.0,2,0,0,0,0/0,0,0/0,0,0,0
 2026-27_16561,2026/27,2ª Divisão Norte,Luís Cunha,Termas,4,0,2,0.5,,,0,0,0,0,2/3,2,0/0,0,0,0
-2026-27_20353,2026/27,2ª Divisão Norte,Lucas Pereira,Valongo B,2,0,2,1.0,,,2,0,0,0,0/0,0,0/0,0,1,0
+2026-27_20353,2026/27,2ª Divisão Norte,Lucas Pereira,Valongo B,3,0,2,0.67,,,2,0,0,0,0/0,0,0/0,0,2,0
 2026-27_20432,2026/27,2ª Divisão Norte,Gonçalo Cortez,Valongo B,2,0,2,1.0,,,2,0,0,0,0/0,0,0/0,0,0,0
 2026-27_20475,2026/27,2ª Divisão Sul,Sebastião Valadas,Sporting B,3,0,2,0.67,,,2,0,0,0,0/0,0,0/1,0,0,0
 2026-27_20491,2026/27,2ª Divisão Sul,Vasco “Vasquinho” Moreira,Benfica B,4,4,2,0.5,,,1,1,0,0,0/0,0,0/0,0,1,0
@@ -458,9 +459,9 @@ id,periodo,liga,jogador,equipa,jogos,titular,golos,golos_por_jogo,assistencias,g
 2026-27_34913,2026/27,2ª Divisão Sul,Matías Chirino,Alcobacense,4,2,2,0.5,,,2,0,0,0,0/0,0,0/0,0,0,0
 2026-27_35560,2026/27,2ª Divisão Sul,Rafael Correia,CRIAR-T,4,0,2,0.5,,,2,0,0,0,0/0,0,0/1,0,0,0
 2026-27_39315,2026/27,2ª Divisão Norte,Samuel Araújo,Barcelos B,4,4,2,0.5,,,2,0,0,0,0/0,0,0/0,0,1,0
-2026-27_40300,2026/27,2ª Divisão Norte,Diogo Abreu,Valongo B,3,3,2,0.67,,,1,1,0,0,0/0,0,0/0,0,0,0
+2026-27_40300,2026/27,2ª Divisão Norte,Diogo Abreu,Valongo B,4,4,2,0.5,,,1,1,0,0,0/0,0,0/0,0,2,0
 2026-27_95512,2026/27,2ª Divisão Sul,Tomás Soria,Alenquer,4,3,2,0.5,,,2,0,0,0,0/0,0,0/0,0,0,0
-2026-27_4549,2026/27,2ª Divisão Norte,Vasco Sousa,Valongo B,3,1,1,0.33,,,1,0,0,0,0/0,0,0/0,0,0,0
+2026-27_4549,2026/27,2ª Divisão Norte,Vasco Sousa,Valongo B,4,1,1,0.25,,,1,0,0,0,0/0,0,0/0,0,0,0
 2026-27_4693,2026/27,2ª Divisão Sul,Afonso Esteves,Murches,3,2,1,0.33,,,1,0,0,0,0/0,0,0/0,0,0,0
 2026-27_4857,2026/27,1ª Divisão,António Estrela,Oeiras,2,2,1,0.5,0.0,1.0,0,1,0,0,0/0,0,0/0,0,2,1
 2026-27_4919,2026/27,1ª Divisão,Bruno di Benedetto,Oliveirense,2,2,1,0.5,1.0,2.0,1,0,0,0,0/0,0,0/0,0,1,0
@@ -474,12 +475,11 @@ id,periodo,liga,jogador,equipa,jogos,titular,golos,golos_por_jogo,assistencias,g
 2026-27_5157,2026/27,2ª Divisão Sul,Fábio “Fabinho” Cambão,Física,4,4,1,0.25,,,1,0,0,0,0/0,0,0/0,0,0,0
 2026-27_5171,2026/27,1ª Divisão,Facundo “Facu” Navarro,Sporting,2,1,1,0.5,0.0,1.0,1,0,0,0,0/0,0,0/0,0,0,0
 2026-27_5174,2026/27,1ª Divisão,Facundo “Facu” Bridge,Sporting,1,0,1,1.0,0.0,1.0,1,0,0,0,0/0,0,0/0,0,0,0
-2026-27_5223,2026/27,1ª Divisão,Francisco “Kiko” Pinto,Valongo,3,1,1,0.33,0.0,1.0,0,1,0,0,0/0,0,0/0,0,0,0
+2026-27_5223,2026/27,2ª Divisão Norte,Francisco “Kiko” Pinto,Valongo B,4,2,1,0.25,0.0,1.0,0,1,0,0,0/0,0,0/1,0,0,0
 2026-27_5250,2026/27,1ª Divisão,Franco “Tato” Ferruccio,Pacense,2,2,1,0.5,0.0,1.0,1,0,0,0,0/0,0,0/1,0,2,0
 2026-27_5252,2026/27,1ª Divisão,Franco Pósito,Valongo,2,2,1,0.5,0.0,1.0,1,0,0,0,0/0,0,0/0,0,0,0
 2026-27_5288,2026/27,2ª Divisão Norte,Gonçalo Pereira da Costa,Porto B,2,0,1,0.5,,,1,0,0,0,0/1,0,0/0,0,0,0
 2026-27_5304,2026/27,1ª Divisão,Gonçalo Pinto,Benfica,2,1,1,0.5,0.0,1.0,1,0,0,0,0/0,0,0/0,0,0,0
-2026-27_5328,2026/27,2ª Divisão Norte,Guilherme Leitão,Póvoa,3,2,1,0.33,,,1,0,0,0,0/0,0,0/0,0,0,0
 2026-27_5478,2026/27,1ª Divisão,João Ramalho,Sanjoanense,1,0,1,1.0,0.0,1.0,1,0,0,0,0/0,0,0/0,0,0,0
 2026-27_5483,2026/27,2ª Divisão Sul,João Santos,Alcobacense,4,4,1,0.25,,,1,0,0,0,0/0,0,0/0,0,2,0
 2026-27_5488,2026/27,2ª Divisão Sul,João Silva “Jotta”,Parede,4,3,1,0.25,,,0,0,0,0,1/2,1,0/0,0,0,0
@@ -525,7 +525,7 @@ id,periodo,liga,jogador,equipa,jogos,titular,golos,golos_por_jogo,assistencias,g
 2026-27_20573,2026/27,1ª Divisão,Tomás Santos,Braga,2,0,1,0.5,1.0,2.0,1,0,0,0,0/0,0,0/0,0,0,0
 2026-27_20574,2026/27,2ª Divisão Norte,Francisco Marques,Porto B,4,4,1,0.25,,,1,0,0,0,0/0,0,0/0,0,0,0
 2026-27_20579,2026/27,2ª Divisão Norte,Gonçalo Amaral “Pika”,Mealhada,4,2,1,0.25,,,0,0,1,0,0/0,0,0/1,0,3,0
-2026-27_20611,2026/27,1ª Divisão,Ricardo Azevedo,Valongo,2,1,1,0.5,0.0,1.0,1,0,0,0,0/0,0,0/0,0,0,0
+2026-27_20611,2026/27,2ª Divisão Norte,Ricardo Azevedo,Valongo B,3,2,1,0.33,0.0,1.0,1,0,0,0,0/0,0,0/0,0,0,0
 2026-27_20624,2026/27,2ª Divisão Sul,Santiago “Santi” Pereira,Benfica B,4,4,1,0.25,,,0,0,1,0,0/0,0,0/0,0,0,0
 2026-27_20654,2026/27,1ª Divisão,Rodrigo Preciso,Tomar,1,0,1,1.0,0.0,1.0,1,0,0,0,0/0,0,0/0,0,1,0
 2026-27_20678,2026/27,2ª Divisão Sul,Filipe Pereira,Sporting B,3,3,1,0.33,,,1,0,0,0,0/0,0,0/2,0,0,0
@@ -553,7 +553,7 @@ id,periodo,liga,jogador,equipa,jogos,titular,golos,golos_por_jogo,assistencias,g
 2026-27_33572,2026/27,2ª Divisão Norte,João Dias “Kiko”,Termas,2,0,1,0.5,,,1,0,0,0,0/0,0,0/0,0,0,0
 2026-27_34249,2026/27,2ª Divisão Sul,Martim Nunes,Benfica B,3,2,1,0.33,,,1,0,0,0,0/1,0,0/0,0,2,0
 2026-27_34909,2026/27,2ª Divisão Sul,Marcio Sisti,Grândola,4,4,1,0.25,,,1,0,0,0,0/0,0,0/1,0,1,0
-2026-27_39351,2026/27,2ª Divisão Norte,João Monteiro,Valongo B,3,0,1,0.33,,,1,0,0,0,0/0,0,0/0,0,1,0
+2026-27_39351,2026/27,2ª Divisão Norte,João Monteiro,Valongo B,4,0,1,0.25,,,1,0,0,0,0/0,0,0/0,0,1,0
 2026-27_40840,2026/27,2ª Divisão Sul,Diogo Ataíde,Benfica B,4,0,1,0.25,,,1,0,0,0,0/0,0,0/0,0,0,0
 2026-27_43368,2026/27,1ª Divisão,Marc Rouzé,Oliveirense,2,2,1,0.5,1.0,2.0,1,0,0,0,0/0,0,0/0,0,0,0
 2026-27_56311,2026/27,2ª Divisão Sul,Javier Añon,Marinhense,4,4,1,0.25,,,1,0,0,0,0/0,0,0/0,0,1,0
@@ -570,7 +570,7 @@ id,periodo,liga,jogador,equipa,jogos,titular,golos,golos_por_jogo,assistencias,g
 2026-27_4806,2026/27,2ª Divisão Sul,André Pimenta,Paço de Arcos,4,0,0,0.0,,,0,0,0,0,0/0,0,0/0,0,0,0
 2026-27_4918,2026/27,2ª Divisão Norte,Bruno Costa,Lavra,4,4,0,0.0,,,0,0,0,0,0/2,0,0/0,0,0,0
 2026-27_4922,2026/27,1ª Divisão,Bruno Frade,Oeiras,2,0,0,0.0,2.0,2.0,0,0,0,0,0/0,0,0/1,0,0,0
-2026-27_4959,2026/27,2ª Divisão Norte,Carlos Loureiro,Póvoa,3,0,0,0.0,,,0,0,0,0,0/0,0,0/0,0,0,0
+2026-27_4959,2026/27,2ª Divisão Norte,Carlos Loureiro,Póvoa,4,0,0,0.0,,,0,0,0,0,0/0,0,0/0,0,0,0
 2026-27_4981,2026/27,1ª Divisão,César Carballeira,Porto,1,1,0,0.0,0.0,0.0,0,0,0,0,0/0,0,0/0,0,0,0
 2026-27_5010,2026/27,1ª Divisão,Daniel Pinheiro,Riba d'Ave,2,1,0,0.0,0.0,0.0,0,0,0,0,0/0,0,0/0,0,0,0
 2026-27_5011,2026/27,2ª Divisão Sul,Daniel Pires,Grândola,4,0,0,0.0,,,0,0,0,0,0/0,0,0/0,0,0,0
@@ -591,6 +591,7 @@ id,periodo,liga,jogador,equipa,jogos,titular,golos,golos_por_jogo,assistencias,g
 2026-27_5325,2026/27,2ª Divisão Norte,Guilherme Frias,Carvalhos,4,4,0,0.0,,,0,0,0,0,0/0,0,0/0,0,0,0
 2026-27_5340,2026/27,1ª Divisão,Gustavo Pato,Riba d'Ave,2,2,0,0.0,0.0,0.0,0,0,0,0,0/0,0,0/0,0,0,0
 2026-27_5343,2026/27,1ª Divisão,Hélder Nunes,Porto,1,1,0,0.0,0.0,0.0,0,0,0,0,0/0,0,0/0,0,0,0
+2026-27_5348,2026/27,2ª Divisão Norte,Henrique “Kiko” Campos,Póvoa,1,0,0,0.0,,,0,0,0,0,0/0,0,0/0,0,2,0
 2026-27_5350,2026/27,1ª Divisão,Henrique Magalhães,Valongo,2,1,0,0.0,0.0,0.0,0,0,0,0,0/0,0,0/0,0,0,0
 2026-27_5356,2026/27,2ª Divisão Sul,Henrique Viçoso,Grândola,3,2,0,0.0,,,0,0,0,0,0/1,0,0/0,0,0,0
 2026-27_5358,2026/27,2ª Divisão Sul,Hernâni Diniz,Alcobacense,4,0,0,0.0,,,0,0,0,0,0/0,0,0/0,0,1,0
@@ -623,7 +624,7 @@ id,periodo,liga,jogador,equipa,jogos,titular,golos,golos_por_jogo,assistencias,g
 2026-27_6006,2026/27,1ª Divisão,Roberto “Roby” di Benedetto,Benfica,2,1,0,0.0,1.0,1.0,0,0,0,0,0/0,0,0/0,0,0,0
 2026-27_6055,2026/27,1ª Divisão,Rui Ramos “Raminhos”,Candelária,2,2,0,0.0,0.0,0.0,0,0,0,0,0/0,0,0/0,0,0,0
 2026-27_6121,2026/27,1ª Divisão,Telmo Pinto,Porto,1,0,0,0.0,0.0,0.0,0,0,0,0,0/0,0,0/0,0,0,0
-2026-27_6166,2026/27,2ª Divisão Norte,Tiago Pereira “Bolinhas”,Póvoa,3,3,0,0.0,,,0,0,0,0,0/0,0,0/0,0,0,0
+2026-27_6166,2026/27,2ª Divisão Norte,Tiago Pereira “Bolinhas”,Póvoa,4,4,0,0.0,,,0,0,0,0,0/0,0,0/0,0,0,0
 2026-27_6201,2026/27,2ª Divisão Norte,Tomás Ramos,Lavra,4,0,0,0.0,,,0,0,0,0,0/0,0,0/0,0,0,0
 2026-27_6213,2026/27,2ª Divisão Norte,Vasco Casanova,Carvalhos,3,0,0,0.0,,,0,0,0,0,0/0,0,0/0,0,1,0
 2026-27_6220,2026/27,1ª Divisão,Vasco Soares,Candelária,2,1,0,0.0,0.0,0.0,0,0,0,0,0/0,0,0/0,0,0,0
@@ -652,7 +653,7 @@ id,periodo,liga,jogador,equipa,jogos,titular,golos,golos_por_jogo,assistencias,g
 2026-27_20575,2026/27,2ª Divisão Norte,Rodrigo Morais,Carvalhos,3,0,0,0.0,,,0,0,0,0,0/0,0,0/0,0,0,0
 2026-27_20578,2026/27,2ª Divisão Norte,Rodrigo Silva “Martinazzo”,Carvalhos,1,0,0,0.0,,,0,0,0,0,0/0,0,0/0,0,0,0
 2026-27_20609,2026/27,2ª Divisão Norte,Daniel “Dani” Magalhães,Valongo B,2,1,0,0.0,,,0,0,0,0,0/0,0,0/0,0,0,0
-2026-27_20610,2026/27,2ª Divisão Norte,Vasco Almeida,Valongo B,3,2,0,0.0,,,0,0,0,0,0/0,0,0/0,0,0,0
+2026-27_20610,2026/27,2ª Divisão Norte,Vasco Almeida,Valongo B,4,2,0,0.0,,,0,0,0,0,0/0,0,0/0,0,0,0
 2026-27_20618,2026/27,2ª Divisão Sul,Rodrigo Potier,Paço de Arcos,4,1,0,0.0,,,0,0,0,0,0/0,0,0/0,0,0,0
 2026-27_20620,2026/27,1ª Divisão,Diogo Gonçalves,Juventude de Viana,1,0,0,0.0,0.0,0.0,0,0,0,0,0/0,0,0/0,0,0,0
 2026-27_20629,2026/27,2ª Divisão Sul,João Lampreia,Sporting B,3,2,0,0.0,,,0,0,0,0,0/0,0,0/0,0,1,0
@@ -727,11 +728,11 @@ desde-2023-24_5810,desde 2023/24,2ª Divisão Sul,Nicolás “Nico” Carmona,Ma
 desde-2023-24_5489,desde 2023/24,1ª Divisão,João Souto,Oliveirense,95,47,79,0.83,,,50,4,0,2,3/12,3,20/55,20,22,1
 desde-2023-24_5289,desde 2023/24,2ª Divisão Sul,Gonçalo Domingues,Marinhense,80,72,77,0.96,,,58,6,0,1,0/1,0,12/50,12,9,1
 desde-2023-24_5252,desde 2023/24,1ª Divisão,Franco Pósito,Valongo,83,53,75,0.9,,,48,3,0,1,9/27,9,14/45,14,11,0
+desde-2023-24_26236,desde 2023/24,2ª Divisão Norte,Rodrigo Fernandes,Póvoa,81,39,75,0.93,,,47,12,0,4,3/18,3,9/33,9,11,0
 desde-2023-24_5315,desde 2023/24,1ª Divisão,Gonzalo “Nolito” Romero,Sporting,94,86,74,0.79,,,42,5,1,3,6/16,6,17/49,17,12,1
 desde-2023-24_4702,desde 2023/24,2ª Divisão Sul,Afonso Sousa,Paço de Arcos,84,55,72,0.86,,,56,8,1,1,4/8,4,2/4,2,24,0
 desde-2023-24_4857,desde 2023/24,1ª Divisão,António Estrela,Oeiras,79,69,72,0.91,,,55,2,0,0,4/16,4,11/28,11,22,2
 desde-2023-24_5589,desde 2023/24,1ª Divisão,Lucas Martínez,Oliveirense,85,24,71,0.84,,,49,3,0,0,2/3,2,17/60,17,12,0
-desde-2023-24_26236,desde 2023/24,2ª Divisão Norte,Rodrigo Fernandes,Póvoa,80,38,71,0.89,,,44,12,0,4,3/18,3,8/32,8,11,0
 desde-2023-24_4964,desde 2023/24,1ª Divisão,Carlos Ramos “Carlitos”,Barcelos,85,78,70,0.82,,,50,7,0,0,3/9,3,10/25,10,20,0
 desde-2023-24_5481,desde 2023/24,1ª Divisão,João Rodrigues,Benfica,66,59,70,1.06,,,45,8,0,6,11/26,11,0/4,0,1,0
 desde-2023-24_5171,desde 2023/24,1ª Divisão,Facundo “Facu” Navarro,Sporting,97,76,69,0.71,,,55,4,0,0,1/2,1,9/25,9,16,0
@@ -754,7 +755,7 @@ desde-2023-24_5484,desde 2023/24,2ª Divisão Sul,João Sardo,Murches,76,59,59,0
 desde-2023-24_5767,desde 2023/24,2ª Divisão Sul,Miguel Feio,Paço de Arcos,82,34,59,0.72,,,40,9,0,0,0/1,0,10/25,10,12,0
 desde-2023-24_5771,desde 2023/24,2ª Divisão Sul,Miguel Fortunato,Alenquer,69,47,59,0.86,,,40,8,2,0,7/16,7,2/8,2,12,0
 desde-2023-24_5081,desde 2023/24,2ª Divisão Sul,Diogo Miranda,Física,72,39,58,0.81,,,38,8,0,1,0/2,0,11/36,11,10,0
-desde-2023-24_5328,desde 2023/24,2ª Divisão Norte,Guilherme Leitão,Póvoa,68,35,56,0.82,,,43,4,0,1,2/3,2,6/25,6,7,0
+desde-2023-24_5328,desde 2023/24,2ª Divisão Norte,Guilherme Leitão,Póvoa,69,36,57,0.83,,,44,4,0,1,2/3,2,6/25,6,7,0
 desde-2023-24_5499,desde 2023/24,1ª Divisão,Joaquín Fernández,Juventude de Viana,76,59,55,0.72,,,48,3,1,1,0/1,0,2/8,2,14,0
 desde-2023-24_5877,desde 2023/24,1ª Divisão,Pau Bargalló,Benfica,43,35,55,1.28,,,33,4,0,3,0/1,0,15/36,15,6,0
 desde-2023-24_21652,desde 2023/24,2ª Divisão Norte,Gonçalo Oliveira,Académica,79,71,54,0.68,,,44,3,2,1,1/2,1,3/10,3,17,1
@@ -780,18 +781,18 @@ desde-2023-24_5086,desde 2023/24,2ª Divisão Sul,Diogo Pernas,Parede,84,64,48,0
 desde-2023-24_5250,desde 2023/24,1ª Divisão,Franco “Tato” Ferruccio,Pacense,56,25,48,0.86,,,31,9,0,1,1/3,1,6/29,6,29,2
 desde-2023-24_6055,desde 2023/24,1ª Divisão,Rui Ramos “Raminhos”,Candelária,83,75,48,0.58,,,40,7,0,0,0/0,0,1/14,1,19,0
 desde-2023-24_6260,desde 2023/24,2ª Divisão Sul,Zé Costa,Turquel,82,55,48,0.59,,,45,2,0,0,1/2,1,0/1,0,29,0
+desde-2023-24_15138,desde 2023/24,2ª Divisão Norte,Tiago Pinheiro,Póvoa,82,19,48,0.59,,,34,4,1,0,2/3,2,7/29,7,21,1
 desde-2023-24_5154,desde 2023/24,1ª Divisão,Ezequiel “Eze” Mena,Porto,104,28,47,0.45,,,46,0,0,0,0/0,0,1/1,1,9,0
 desde-2023-24_5157,desde 2023/24,2ª Divisão Sul,Fábio “Fabinho” Cambão,Física,82,78,47,0.57,,,46,1,0,0,0/0,0,0/0,0,2,0
 desde-2023-24_5959,desde 2023/24,2ª Divisão Sul,Rafael Ogura “Jatugalão”,CRIAR-T,82,45,47,0.57,,,43,2,0,0,1/4,1,1/10,1,19,1
 desde-2023-24_6245,desde 2023/24,2ª Divisão Sul,Xavier “Xavi” Lourenço,Turquel,80,44,47,0.59,,,27,2,1,3,7/23,7,7/24,7,32,0
-desde-2023-24_15138,desde 2023/24,2ª Divisão Norte,Tiago Pinheiro,Póvoa,81,19,47,0.58,,,33,4,1,0,2/3,2,7/29,7,21,1
 desde-2023-24_20691,desde 2023/24,2ª Divisão Sul,Rodrigo Costa,Alenquer,56,5,47,0.84,,,37,4,0,0,1/2,1,5/15,5,6,0
 desde-2023-24_5191,desde 2023/24,2ª Divisão Sul,Filipe Bernardino,CRIAR-T,54,54,46,0.85,,,33,4,0,3,4/19,4,2/17,2,15,1
 desde-2023-24_5432,desde 2023/24,1ª Divisão,João Almeida,Oliveirense,52,48,46,0.88,,,36,2,0,2,3/10,3,3/26,3,8,0
+desde-2023-24_16939,desde 2023/24,2ª Divisão Norte,João Pereira,Póvoa,81,64,46,0.57,,,37,4,1,1,3/6,3,0/0,0,11,0
 desde-2023-24_4806,desde 2023/24,2ª Divisão Sul,André Pimenta,Paço de Arcos,60,42,45,0.75,,,29,1,1,0,12/20,12,2/11,2,22,0
 desde-2023-24_4853,desde 2023/24,1ª Divisão,Antonio “Toni” Pérez,Sporting,61,36,44,0.72,,,40,3,0,0,1/1,1,0/1,0,11,0
 desde-2023-24_5815,desde 2023/24,1ª Divisão,Nil Roca,Benfica,100,91,44,0.44,,,43,1,0,0,0/1,0,0/1,0,13,0
-desde-2023-24_16939,desde 2023/24,2ª Divisão Norte,João Pereira,Póvoa,80,63,44,0.55,,,36,4,0,1,3/6,3,0/0,0,11,0
 desde-2023-24_20653,desde 2023/24,1ª Divisão,Santiago Honório,Braga,66,18,44,0.67,,,39,0,0,0,0/3,0,5/16,5,8,0
 desde-2023-24_30771,desde 2023/24,1ª Divisão,Joel “Negro” Martín,Candelária,79,53,44,0.56,,,25,4,0,0,8/20,8,7/33,7,21,0
 desde-2023-24_5101,desde 2023/24,2ª Divisão Norte,Duarte “Duda” Terra,Cambra,81,36,43,0.53,,,33,4,0,0,2/11,2,4/14,4,8,0
@@ -841,7 +842,7 @@ desde-2023-24_4763,desde 2023/24,1ª Divisão,Álvaro Morais “Alvarinho”,Bar
 desde-2023-24_5174,desde 2023/24,1ª Divisão,Facundo “Facu” Bridge,Sporting,72,16,34,0.47,,,30,1,0,2,1/4,1,0/0,0,6,0
 desde-2023-24_5458,desde 2023/24,2ª Divisão Norte,João Matias,Académica,79,53,34,0.43,,,23,2,0,0,0/1,0,9/43,9,26,2
 desde-2023-24_5627,desde 2023/24,2ª Divisão Sul,Manuel Neves,Alcobacense,45,27,34,0.76,,,29,3,1,0,1/2,1,0/4,0,10,0
-desde-2023-24_6166,desde 2023/24,2ª Divisão Norte,Tiago Pereira “Bolinhas”,Póvoa,82,77,34,0.41,,,27,2,0,0,0/0,0,5/17,5,11,0
+desde-2023-24_6166,desde 2023/24,2ª Divisão Norte,Tiago Pereira “Bolinhas”,Póvoa,83,78,34,0.41,,,27,2,0,0,0/0,0,5/17,5,11,0
 desde-2023-24_6178,desde 2023/24,1ª Divisão,Tiago Saraiva,Riba d'Ave,30,16,34,1.13,,,22,2,2,0,2/7,2,6/10,6,10,1
 desde-2023-24_6262,desde 2023/24,2ª Divisão Norte,Zé Miguel “Zémi” Flores,Académica,68,20,34,0.5,,,27,4,0,0,0/1,0,3/11,3,14,0
 desde-2023-24_6620,desde 2023/24,2ª Divisão Norte,Diogo Fernandes,Póvoa,24,22,34,1.42,,,25,2,0,0,2/2,2,5/23,5,6,1
@@ -859,8 +860,8 @@ desde-2023-24_5623,desde 2023/24,1ª Divisão,Manuel Coimbra,Oeiras,66,42,32,0.4
 desde-2023-24_5726,desde 2023/24,2ª Divisão Sul,Matéo Avondo,Alenquer,57,23,32,0.56,,,24,1,0,0,5/11,5,2/11,2,8,0
 desde-2023-24_5946,desde 2023/24,1ª Divisão,Pol Manrubia,Porto,94,32,32,0.34,,,32,0,0,0,0/2,0,0/0,0,13,0
 desde-2023-24_6213,desde 2023/24,2ª Divisão Norte,Vasco Casanova,Carvalhos,80,19,32,0.4,,,27,1,0,0,1/3,1,3/10,3,18,2
-desde-2023-24_20702,desde 2023/24,2ª Divisão Norte,José Pedro Cunha,Valongo B,31,13,32,1.03,,,24,2,0,0,4/9,4,2/5,2,5,0
-desde-2023-24_5223,desde 2023/24,1ª Divisão,Francisco “Kiko” Pinto,Valongo,39,16,31,0.79,,,16,7,0,0,0/3,0,8/19,8,2,0
+desde-2023-24_20702,desde 2023/24,2ª Divisão Norte,José Pedro Cunha,Valongo B,32,14,32,1.0,,,24,2,0,0,4/10,4,2/5,2,5,0
+desde-2023-24_5223,desde 2023/24,2ª Divisão Norte,Francisco “Kiko” Pinto,Valongo B,40,17,31,0.78,,,16,7,0,0,0/3,0,8/20,8,2,0
 desde-2023-24_5765,desde 2023/24,2ª Divisão Norte,Miguel Costa “Costinha”,Cambra,81,21,31,0.38,,,22,4,1,0,1/7,1,4/17,4,8,0
 desde-2023-24_5949,desde 2023/24,1ª Divisão,Rafael “Rafa” Almeida,Juventude de Viana,72,36,31,0.43,,,27,1,0,1,2/3,2,0/3,0,12,1
 desde-2023-24_6189,desde 2023/24,2ª Divisão Sul,Tomás Capela,Física,70,45,31,0.44,,,17,2,0,6,2/17,2,4/13,4,6,1
@@ -868,7 +869,7 @@ desde-2023-24_6653,desde 2023/24,2ª Divisão Sul,João Lima,Física,48,37,31,0.
 desde-2023-24_20232,desde 2023/24,1ª Divisão,Kyllian Gil,Barcelos,58,30,31,0.53,,,23,1,0,1,0/0,0,6/17,6,12,0
 desde-2023-24_22202,desde 2023/24,1ª Divisão,Pedro Mendes,Braga,82,72,31,0.38,,,26,2,1,0,1/8,1,1/15,1,11,0
 desde-2023-24_4893,desde 2023/24,2ª Divisão Norte,Bernardo Marques,Espinho,47,22,30,0.64,,,16,2,0,2,1/2,1,9/33,9,19,0
-desde-2023-24_5348,desde 2023/24,2ª Divisão Norte,Henrique “Kiko” Campos,Póvoa,71,21,30,0.42,,,23,2,0,1,0/1,0,4/9,4,19,2
+desde-2023-24_5348,desde 2023/24,2ª Divisão Norte,Henrique “Kiko” Campos,Póvoa,72,21,30,0.42,,,23,2,0,1,0/1,0,4/9,4,21,2
 desde-2023-24_5451,desde 2023/24,2ª Divisão Sul,João Lomba,Marinhense,83,41,30,0.36,,,27,2,0,0,0/2,0,1/2,1,14,0
 desde-2023-24_5869,desde 2023/24,1ª Divisão,Paolo Dias “Paulinho”,Candelária,77,43,30,0.39,,,26,2,0,0,2/5,2,0/0,0,21,0
 desde-2023-24_5972,desde 2023/24,1ª Divisão,Rémi Herman,Tomar,81,59,30,0.37,,,14,5,0,2,8/24,8,1/19,1,15,0
@@ -889,7 +890,7 @@ desde-2023-24_5024,desde 2023/24,2ª Divisão Norte,David Castaño,Espinho,83,51
 desde-2023-24_5257,desde 2023/24,1ª Divisão,Gabriel “Gabi” Azevedo,Valongo,91,29,27,0.3,,,23,3,0,1,0/1,0,0/1,0,13,2
 desde-2023-24_5840,desde 2023/24,1ª Divisão,Nuno Santos,Oliveirense,90,77,27,0.3,,,24,0,3,0,0/0,0,0/0,0,7,0
 desde-2023-24_14850,desde 2023/24,2ª Divisão Norte,Rafael “Rafa” Duarte,Espinho,76,34,27,0.36,,,23,2,0,0,0/0,0,2/4,2,25,1
-desde-2023-24_20611,desde 2023/24,1ª Divisão,Ricardo Azevedo,Valongo,54,29,27,0.5,,,25,2,0,0,0/2,0,0/4,0,22,1
+desde-2023-24_20611,desde 2023/24,2ª Divisão Norte,Ricardo Azevedo,Valongo B,55,30,27,0.49,,,25,2,0,0,0/2,0,0/4,0,22,1
 desde-2023-24_20623,desde 2023/24,2ª Divisão Sul,João Maria Gatinho,Sporting B,47,28,27,0.57,,,3,0,0,0,6/16,6,1/3,1,18,0
 desde-2023-24_20688,desde 2023/24,1ª Divisão,Martim Lopes,Tomar,53,31,27,0.51,,,25,0,1,0,1/2,1,0/0,0,2,0
 desde-2023-24_5078,desde 2023/24,2ª Divisão Sul,Diogo Lopes,Salesiana,50,22,26,0.52,,,16,2,1,0,5/10,5,2/14,2,9,0
@@ -1014,7 +1015,7 @@ desde-2023-24_20652,desde 2023/24,2ª Divisão Sul,João Maria Costa,Benfica B,3
 desde-2023-24_20710,desde 2023/24,2ª Divisão Norte,João Chaves,Barcelos B,30,24,11,0.37,,,10,0,0,0,1/7,1,0/1,0,3,0
 desde-2023-24_29438,desde 2023/24,2ª Divisão Sul,Diogo Neves,Turquel,30,24,11,0.37,,,7,0,0,0,1/3,1,3/7,3,3,0
 desde-2023-24_4791,desde 2023/24,2ª Divisão Sul,André Ferreira,Paço de Arcos,22,8,10,0.45,,,10,0,0,0,0/1,0,0/0,0,3,0
-desde-2023-24_4959,desde 2023/24,2ª Divisão Norte,Carlos Loureiro,Póvoa,77,51,10,0.13,,,5,0,0,0,5/7,5,0/0,0,4,0
+desde-2023-24_4959,desde 2023/24,2ª Divisão Norte,Carlos Loureiro,Póvoa,78,51,10,0.13,,,5,0,0,0,5/7,5,0/0,0,4,0
 desde-2023-24_5056,desde 2023/24,1ª Divisão,Dinis Abreu,Riba d'Ave,56,5,10,0.18,,,4,1,1,1,1/1,1,2/9,2,7,0
 desde-2023-24_5770,desde 2023/24,2ª Divisão Sul,Miguel Fialho,Alcobacense,48,9,10,0.21,,,6,0,0,1,2/5,2,1/4,1,6,0
 desde-2023-24_15144,desde 2023/24,2ª Divisão Norte,Tiago Belchior,Barcelos B,72,32,10,0.14,,,10,0,0,0,0/0,0,0/0,0,9,0
@@ -1055,11 +1056,11 @@ desde-2023-24_20042,desde 2023/24,2ª Divisão Sul,Diogo Sampaio,Tojal,32,4,6,0.
 desde-2023-24_20385,desde 2023/24,2ª Divisão Norte,Miguel “Mika” Silva,Barcelos B,28,18,6,0.21,,,5,1,0,0,0/2,0,0/0,0,2,1
 desde-2023-24_20577,desde 2023/24,2ª Divisão Norte,Simão Silva,Oliveirense B,23,1,6,0.26,,,6,0,0,0,0/0,0,0/1,0,2,0
 desde-2023-24_20579,desde 2023/24,2ª Divisão Norte,Gonçalo Amaral “Pika”,Mealhada,30,6,6,0.2,,,3,2,1,0,0/0,0,0/1,0,6,0
-desde-2023-24_20610,desde 2023/24,2ª Divisão Norte,Vasco Almeida,Valongo B,27,2,6,0.22,,,6,0,0,0,0/0,0,0/0,0,2,0
+desde-2023-24_20610,desde 2023/24,2ª Divisão Norte,Vasco Almeida,Valongo B,28,2,6,0.21,,,6,0,0,0,0/0,0,0/0,0,2,0
 desde-2023-24_21106,desde 2023/24,2ª Divisão Norte,Pedro Beirante,Académica,28,24,6,0.21,,,5,0,0,0,1/3,1,0/2,0,5,0
 desde-2023-24_21927,desde 2023/24,2ª Divisão Sul,Francisco “Cisco” Figueiredo,Salesiana,30,1,6,0.2,,,3,0,0,0,0/2,0,3/9,3,3,0
 desde-2023-24_22920,desde 2023/24,2ª Divisão Sul,Rúben Henriques,Marinhense,43,8,6,0.14,,,5,1,0,0,0/0,0,0/0,0,4,0
-desde-2023-24_40300,desde 2023/24,2ª Divisão Norte,Diogo Abreu,Valongo B,17,5,6,0.35,,,5,1,0,0,0/0,0,0/0,0,4,0
+desde-2023-24_40300,desde 2023/24,2ª Divisão Norte,Diogo Abreu,Valongo B,18,6,6,0.33,,,5,1,0,0,0/0,0,0/0,0,6,0
 desde-2023-24_4858,desde 2023/24,2ª Divisão Sul,António Pereira “Tojó”,Grândola,29,29,5,0.17,,,4,0,0,0,1/4,1,0/0,0,10,0
 desde-2023-24_4896,desde 2023/24,2ª Divisão Sul,Bernardo Pereira,Marinhense,14,0,5,0.36,,,4,1,0,0,0/0,0,0/1,0,2,0
 desde-2023-24_4897,desde 2023/24,2ª Divisão Sul,Bernardo Pinto,Alenquer,43,16,5,0.12,,,5,0,0,0,0/0,0,0/0,0,3,0
@@ -1101,7 +1102,7 @@ desde-2023-24_39591,desde 2023/24,2ª Divisão Sul,Guilherme Martins,Murches,17,
 desde-2023-24_40308,desde 2023/24,2ª Divisão Sul,Lourenço Miguelito,Paço de Arcos,16,5,3,0.19,,,2,1,0,0,0/0,0,0/1,0,1,0
 desde-2023-24_75152,desde 2023/24,2ª Divisão Sul,Francisco “Panchi” Briggs,Alcobacense,26,0,3,0.12,,,2,0,0,0,0/0,0,1/3,1,6,0
 desde-2023-24_95698,desde 2023/24,2ª Divisão Sul,Nahuel Frías,CRIAR-T,14,0,3,0.21,,,2,0,0,0,0/0,0,1/5,1,3,0
-desde-2023-24_4549,desde 2023/24,2ª Divisão Norte,Vasco Sousa,Valongo B,11,1,2,0.18,,,1,1,0,0,0/0,0,0/1,0,1,0
+desde-2023-24_4549,desde 2023/24,2ª Divisão Norte,Vasco Sousa,Valongo B,12,1,2,0.17,,,1,1,0,0,0/0,0,0/1,0,1,0
 desde-2023-24_4794,desde 2023/24,2ª Divisão Sul,André Garção,Alenquer,12,0,2,0.17,,,2,0,0,0,0/0,0,0/0,0,2,0
 desde-2023-24_4796,desde 2023/24,1ª Divisão,André Inácio,Oeiras,16,0,2,0.12,,,2,0,0,0,0/0,0,0/2,0,3,0
 desde-2023-24_4797,desde 2023/24,2ª Divisão Sul,André Jacinto,Física,27,6,2,0.07,,,2,0,0,0,0/0,0,0/0,0,2,0
@@ -1113,7 +1114,7 @@ desde-2023-24_5570,desde 2023/24,1ª Divisão,Léo Savreux,Barcelos,8,1,2,0.25,,
 desde-2023-24_5603,desde 2023/24,2ª Divisão Sul,Luís Francisco Oliveira,Física,4,0,2,0.5,,,2,0,0,0,0/0,0,0/1,0,2,0
 desde-2023-24_5734,desde 2023/24,1ª Divisão,Matías Platero,Sporting,33,16,2,0.06,,,1,0,0,0,1/1,1,0/0,0,3,0
 desde-2023-24_6043,desde 2023/24,2ª Divisão Sul,Rúben Martins “Pinto”,Parede,10,0,2,0.2,,,2,0,0,0,0/0,0,0/0,0,1,0
-desde-2023-24_20353,desde 2023/24,2ª Divisão Norte,Lucas Pereira,Valongo B,3,0,2,0.67,,,2,0,0,0,0/0,0,0/0,0,1,0
+desde-2023-24_20353,desde 2023/24,2ª Divisão Norte,Lucas Pereira,Valongo B,4,0,2,0.5,,,2,0,0,0,0/0,0,0/0,0,2,0
 desde-2023-24_20432,desde 2023/24,2ª Divisão Norte,Gonçalo Cortez,Valongo B,2,0,2,1.0,,,2,0,0,0,0/0,0,0/0,0,0,0
 desde-2023-24_20475,desde 2023/24,2ª Divisão Sul,Sebastião Valadas,Sporting B,3,0,2,0.67,,,2,0,0,0,0/0,0,0/1,0,0,0
 desde-2023-24_20572,desde 2023/24,2ª Divisão Norte,Afonso Ribeiro,Valongo B,11,0,2,0.18,,,2,0,0,0,0/0,0,0/0,0,1,0
@@ -1131,7 +1132,7 @@ desde-2023-24_32893,desde 2023/24,2ª Divisão Norte,Gonçalo Monteiro,Barcelos 
 desde-2023-24_33122,desde 2023/24,2ª Divisão Sul,Diogo Serrano,Salesiana,12,2,2,0.17,,,2,0,0,0,0/0,0,0/2,0,0,0
 desde-2023-24_33557,desde 2023/24,2ª Divisão Sul,João Gomes,Alcobacense,17,0,2,0.12,,,2,0,0,0,0/0,0,0/1,0,4,0
 desde-2023-24_34582,desde 2023/24,2ª Divisão Sul,Ivo Nascimento,Salesiana,12,3,2,0.17,,,1,1,0,0,0/1,0,0/0,0,6,0
-desde-2023-24_39351,desde 2023/24,2ª Divisão Norte,João Monteiro,Valongo B,5,0,2,0.4,,,2,0,0,0,0/0,0,0/0,0,1,0
+desde-2023-24_39351,desde 2023/24,2ª Divisão Norte,João Monteiro,Valongo B,6,0,2,0.33,,,2,0,0,0,0/0,0,0/0,0,1,0
 desde-2023-24_40306,desde 2023/24,2ª Divisão Sul,Tomás Martins,Paço de Arcos,10,1,2,0.2,,,1,0,0,1,0/1,0,0/0,0,0,0
 desde-2023-24_95512,desde 2023/24,2ª Divisão Sul,Tomás Soria,Alenquer,4,3,2,0.5,,,2,0,0,0,0/0,0,0/0,0,0,0
 desde-2023-24_4783,desde 2023/24,2ª Divisão Norte,André Amaral,Mealhada,15,2,1,0.07,,,1,0,0,0,0/0,0,0/0,0,1,0

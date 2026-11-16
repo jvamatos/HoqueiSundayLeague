@@ -1,17 +1,17 @@
-# assets replaced on 2026-11-15: delete in the next update once nothing references them
-/_blob/87e8fe141da63121ae10c2aeb5fb8d83
-/_blob/452429a1effe9e70256ae4d3604b825a
-/_blob/c9bc1a10b0b2fde50e54a429ac68c058
-/_blob/647ca6dbb8fdf8e91496b27e3d1376cb
-/_blob/802b5fac63e4e87ddb0f83e4fa4673c2
-/_blob/c9232a24a086713eafc7c98029b23983
-/_blob/c3b103c0395fea499c805eb18ab6d7fc
-/_blob/3ec12eecf131e408166935f318418415
-/_blob/aa17d084cd6c4784c139d66b9fa00de5
-/_blob/6bdf658189cb01f3379a9cfe103b5f95
-/_blob/acca29210fcf6e96926f8965f53f8700
-/_blob/483005a3bc7d6d8a926bd5a9af7f5716
-/_blob/cd26de3dd1e1eb5ee1886b8e91a0c711
-/_blob/38c8b72fee6db08898a9bd3ba3eedad0
-/_blob/da65c78945a1f1e98c9c45183ec30356
-/_blob/8e8299fd5984fcd5dd827be05f0f9076
+# assets replaced on 2026-11-16: delete in the next update once nothing references them
+/_blob/a1d21ec077bcd6a74e1c1dce85cffe3c
+/_blob/340620dd57e99f0953e44884e410b693
+/_blob/e5bc0bdd162863566843b662b0b33841
+/_blob/e8265b321c942bfa9524b3625dfc7ffa
+/_blob/da297f3b5147327a4c8c4f5d84cc49cd
+/_blob/dff88e7dff90c03d9dfe86475b8f5100
+/_blob/b662ef17ec05856bacfda1f5578d0b11
+/_blob/20c63c7b37b8bf4ff52a1fde6fd8aeaf
+/_blob/c5b18277a316c4b1e4c64c2b1b2d3c66
+/_blob/0bbb0ebf29664bc3817c78d7e4cf619a
+/_blob/592d7c9f1b1fe83d23534d48ffc85346
+/_blob/5b5048edcbbf91599f8878e51cb8b4fe
+/_blob/a5f624bcd77cc8c985787b7daca0095c
+/_blob/63aa6092fe7055b8a4efec0f63af1e6b
+/_blob/8a50d32e7f4a32a3e2989c3ceb03fc20
+/_blob/3dd1c8e6c2b86cfa923256ec9846ad13
